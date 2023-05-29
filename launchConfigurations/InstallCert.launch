@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/samplesProject/src/oz/infra/ssl/InstallCert.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.infra.ssl.InstallCert"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="fibi.corp:636"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="samplesProject"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djavax.net.ssl.trustStore=C:\Progra~1\Java\jre6\lib\security\cacerts&#13;&#10;-Djavax.net.ssl.trustStorePassword=changeit"/>
+</launchConfiguration>

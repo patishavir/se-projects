@@ -1,0 +1,267 @@
+--------------------------------------------------------------------------------
+PU        LS        NAU  LU        LU TYPE   Status         Description         
+--------------------------------------------------------------------------------
+IFS       ifs                                SSCP           
+                    254  EHCP401   Other     SSCP           
+                    255  EHCP501   Other     SSCP           
+                    100  LU100     Other     Active         
+                                             LUA Application                    
+                    101  LU101     Other     Active         
+                                             LUA Application                    
+                    102  LU102     Other     Active         
+                                             LUA Application                    
+                    103  LU103     Other     Active         
+                                             LUA Application                    
+                    104  LU104     Other     Active         
+                                             LUA Application                    
+                    105  LU105     Other     Active         
+                                             LUA Application                    
+                    106  LU106     Other     Active         
+                                             LUA Application                    
+                    107  LU107     Other     Active         
+                                             LUA Application                    
+                    108  LU108     Other     SSCP           
+                    109  LU109     Other     Active         
+                                             LUA Application                    
+                    110  LU110     Other     Active         
+                                             LUA Application                    
+                    111  LU111     Other     Active         
+                                             LUA Application                    
+                    112  LU112     Other     Active         
+                                             LUA Application                    
+                    113  LU113     Other     Active         
+                                             LUA Application                    
+                    114  LU114     Other     SSCP           
+                    115  LU115     Other     Active         
+                                             LUA Application                    
+                    116  LU116     Other     Active         
+                                             LUA Application                    
+                    117  LU117     Other     Active         
+                                             LUA Application                    
+                    118  LU118     Other     Active         
+                                             LUA Application                    
+                    119  LU119     Other     Active         
+                                             LUA Application                    
+                    120  LU120     Other     Active         
+                                             LUA Application                    
+                    121  LU121     Other     Active         
+                                             LUA Application                    
+                    122  LU122     Other     Active         
+                                             LUA Application                    
+                    123  LU123     Other     Active         
+                                             LUA Application                    
+                    124  LU124     Other     Active         
+                                             LUA Application                    
+                    125  LU125     Other     Active         
+                                             LUA Application                    
+                    126  LU126     Other     Active         
+                                             LUA Application                    
+                    127  LU127     Other     Active         
+                                             LUA Application                    
+                    128  LU128     Other     Active         
+                                             LUA Application                    
+                    129  LU129     Other     Active         
+                                             LUA Application                    
+                    130  LU130     Other     Active         
+                                             LUA Application                    
+                    131  LU131     Other     Active         
+                                             LUA Application                    
+                    132  LU132     Other     Active         
+                                             LUA Application                    
+                    133  LU133     Other     Active         
+                                             LUA Application                    
+                    134  LU134     Other     Active         
+                                             LUA Application                    
+                    135  LU135     Other     Active         
+                                             LUA Application                    
+                    136  LU136     Other     Active         
+                                             LUA Application                    
+                    137  LU137     Other     Active         
+                                             LUA Application                    
+                    138  LU138     Other     Active         
+                                             LUA Application                    
+                    139  LU139     Other     Active         
+                                             LUA Application                    
+                    140  LU140     Other     Active         
+                                             LUA Application                    
+                    141  LU141     Other     Active         
+                                             LUA Application                    
+                    142  LU142     Other     Active         
+                                             LUA Application                    
+                    143  LU143     Other     Active         
+                                             LUA Application                    
+                    144  LU144     Other     Active         
+                                             LUA Application                    
+                    145  LU145     Other     Active         
+                                             LUA Application                    
+                    146  LU146     Other     SSCP           
+                    147  LU147     Other     Active         
+                                             LUA Application                    
+                    148  LU148     Other     Active         
+                                             LUA Application                    
+                    149  LU149     Other     Active         
+                                             LUA Application                    
+                    150  LU150     Other     Active         
+                                             LUA Application                    
+                    151  LU151     Other     Active         
+                                             LUA Application                    
+                    152  LU152     Other     Active         
+                                             LUA Application                    
+                    153  LU153     Other     Active         
+                                             LUA Application                    
+                    154  LU154     Other     Active         
+                                             LUA Application                    
+                    155  LU155     Other     Active         
+                                             LUA Application                    
+                    156  LU156     Other     Active         
+                                             LUA Application                    
+                    157  LU157     Other     Active         
+                                             LUA Application                    
+                    158  LU158     Other     Active         
+                                             LUA Application                    
+                    159  LU159     Other     Active         
+                                             LUA Application                    
+                    160  LU160     Other     Active         
+                                             LUA Application                    
+                    161  LU161     Other     Active         
+                                             LUA Application                    
+                    162  LU162     Other     Active         
+                                             LUA Application                    
+                    163  LU163     Other     Active         
+                                             LUA Application                    
+                    164  LU164     Other     SSCP           
+                    165  LU165     Other     Active         
+                                             LUA Application                    
+                    166  LU166     Other     Active         
+                                             LUA Application                    
+                    167  LU167     Other     Active         
+                                             LUA Application                    
+                    168  LU168     Other     Active         
+                                             LUA Application                    
+                    169  LU169     Other     Active         
+                                             LUA Application                    
+                    170  LU170     Other     Active         
+                                             LUA Application                    
+                    171  LU171     Other     Active         
+                                             LUA Application                    
+                    172  LU172     Other     Active         
+                                             LUA Application                    
+                    173  LU173     Other     Active         
+                                             LUA Application                    
+                    174  LU174     Other     Active         
+                                             LUA Application                    
+                    175  LU175     Other     Active         
+                                             LUA Application                    
+                    176  LU176     Other     SSCP           
+                    177  LU177     Other     Active         
+                                             LUA Application                    
+                    178  LU178     Other     Active         
+                                             LUA Application                    
+                    179  LU179     Other     Active         
+                                             LUA Application                    
+                    180  LU180     Other     SSCP           
+                    181  LU181     Other     Active         
+                                             LUA Application                    
+                    182  LU182     Other     SSCP           
+                    183  LU183     Other     SSCP           
+                    184  LU184     Other     Active         
+                                             LUA Application                    
+                    185  LU185     Other     SSCP           
+                    186  LU186     Other     Active         
+                                             LUA Application                    
+                    187  LU187     Other     SSCP           
+                    188  LU188     Other     Active         
+                                             LUA Application                    
+                    189  LU189     Other     Active         
+                                             LUA Application                    
+                    190  LU190     Other     SSCP           
+                    191  LU191     Other     SSCP           
+                    192  LU192     Other     SSCP           
+                    193  LU193     Other     Active         
+                                             LUA Application                    
+                    194  LU194     Other     Active         
+                                             LUA Application                    
+                    195  LU195     Other     SSCP           
+                    196  LU196     Other     SSCP           
+                    197  LU197     Other     SSCP           
+                    198  LU198     Other     SSCP           
+                    199  LU199     Other     SSCP           
+                    200  LU200     Other     SSCP           
+                    201  LU201     Other     Active         
+                                             LUA Application                    
+                    202  LU202     Other     SSCP           
+                    203  LU203     Other     SSCP           
+                    204  LU204     Other     SSCP           
+                    205  LU205     Other     Active         
+                                             LUA Application                    
+                    206  LU206     Other     SSCP           
+                    207  LU207     Other     Active         
+                                             LUA Application                    
+                    208  LU208     Other     SSCP           
+                    209  LU209     Other     Active         
+                                             LUA Application                    
+                    210  LU210     Other     SSCP           
+                    211  LU211     Other     SSCP           
+                    212  LU212     Other     SSCP           
+                    213  LU213     Other     Active         
+                                             LUA Application                    
+                    214  LU214     Other     SSCP           
+                    215  LU215     Other     Active         
+                                             LUA Application                    
+                    216  LU216     Other     SSCP           
+                    217  LU217     Other     SSCP           
+                    218  LU218     Other     Active         
+                                             LUA Application                    
+                    219  LU219     Other     Active         
+                                             LUA Application                    
+                    220  LU220     Other     Active         
+                                             LUA Application                    
+                    221  LU221     Other     Active         
+                                             LUA Application                    
+                    222  LU222     Other     SSCP           
+                    223  LU223     Other     Active         
+                                             LUA Application                    
+                    224  LU224     Other     SSCP           
+                    225  LU225     Other     SSCP           
+                    226  LU226     Other     Active         
+                                             LUA Application                    
+                    227  LU227     Other     SSCP           
+                    228  LU228     Other     Active         
+                                             LUA Application                    
+                    229  LU229     Other     SSCP           
+                    230  LU230     Other     SSCP           
+                    231  LU231     Other     Active         
+                                             LUA Application                    
+                    232  LU232     Other     Active         
+                                             LUA Application                    
+                    233  LU233     Other     Active         
+                                             LUA Application                    
+                    234  LU234     Other     Active         
+                                             LUA Application                    
+                    235  LU235     Other     SSCP           
+                    236  LU236     Other     SSCP           
+                    237  LU237     Other     SSCP           
+                    238  LU238     Other     SSCP           
+                    239  LU239     Other     SSCP           
+                    240  LU240     Other     Active         
+                                             LUA Application                    
+                    241  LU241     Other     Active         
+                                             LUA Application                    
+                    242  LU242     Other     Active         
+                                             LUA Application                    
+                    243  LU243     Other     Active         
+                                             LUA Application                    
+                    244  LU244     Other     SSCP           
+                    245  LU245     Other     Active         
+                                             LUA Application                    
+                    246  LU246     Other     SSCP           
+                    247  LU247     Other     SSCP           
+                    248  LU248     Other     Active         
+                                             LUA Application                    
+                    249  LU249     Other     SSCP           
+                    250  LU250     Other     Active         
+                                             LUA Application                    
+                    251  LU251     Other     SSCP           
+                    252  LU252     Other     SSCP           
+                    253  LU253     Other     SSCP           
+--------------------------------------------------------------------------------

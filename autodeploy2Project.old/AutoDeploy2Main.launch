@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/autodeploy2Project/src/oz/utils/was/autodeploy/AutoDeployEarMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.was.autodeploy.AutoDeployEarMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="./args/AutoDeploy2.properties  ./args/earFiles/suswastest2/DBTestEAR/DBTest.ear # ./args/earFiles/snifit/DBTest/DBTest.ear ./args/earFiles/snifit/MatafEAR_T_OZ.ear  #./args/earFiles/S5381355/FatcaJobs.Q/FatcaJob.ear"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="autodeploy2Project"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DmyDebug=YES"/>
+</launchConfiguration>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="buildJarProject" default="buildJarFile" basedir=".">
+	<target name="buildJarFile">
+		<echo>Staring building jar file...</echo> 
+
+		<jar destfile=".\IdGenerator.jar" compress="true">
+			<fileset dir="./bin" />
+			<fileset dir="./src" />
+			<fileset dir="../InfraStructureProject/src" />
+			<fileset dir="../InfraStructureProject/bin" />
+			<manifest>
+				<attribute name="Main-Class"
+					value="oz.idgenerator.IdGeneratorMain" />
+			</manifest>
+		</jar>
+		<echo>Jar file built...</echo>
+	</target>
+</project>

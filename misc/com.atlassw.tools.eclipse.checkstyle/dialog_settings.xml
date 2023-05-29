@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.gui.RuleConfigurationEditDialog#JavadocMethod">
+		<item value="false" key="maximized"/>
+		<item value="702" key="height"/>
+		<item value="false" key="minimized"/>
+		<item value="562" key="width"/>
+		<item value="29" key="y"/>
+		<item value="359" key="x"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.properties.FileSetEditDialog">
+		<item value="false" key="maximized"/>
+		<item value="618" key="height"/>
+		<item value="false" key="minimized"/>
+		<item value="573" key="width"/>
+		<item value="0" key="y"/>
+		<item value="354" key="x"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.projectconfig.LocalCheckConfigurationWorkingSet">
+		<item value="-1" key="selectedRow"/>
+		<item value="129" key="colWidth2"/>
+		<item value="0" key="sortColumn"/>
+		<item value="130" key="colWidth1"/>
+		<item value="173" key="colWidth0"/>
+		<item value="1" key="sortDirection"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.gui.RuleConfigurationEditDialog#NoWhitespaceBefore">
+		<item value="false" key="maximized"/>
+		<item value="false" key="minimized"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.gui.ResolvablePropertiesDialog">
+		<item value="-1" key="selectedRow"/>
+		<item value="false" key="maximized"/>
+		<item value="0" key="sortColumn"/>
+		<item value="500" key="height"/>
+		<item value="false" key="minimized"/>
+		<item value="286" key="colWidth1"/>
+		<item value="286" key="colWidth0"/>
+		<item value="650" key="width"/>
+		<item value="1" key="sortDirection"/>
+		<item value="37" key="y"/>
+		<item value="263" key="x"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.gui.RuleConfigurationEditDialog#WhitespaceAfter">
+		<item value="false" key="maximized"/>
+		<item value="false" key="minimized"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.gui.CheckConfigurationConfigureDialog">
+		<item value="163" key="colWidth3"/>
+		<item value="93" key="colWidth2"/>
+		<item value="false" key="minimized"/>
+		<item value="203" key="colWidth1"/>
+		<item value="71" key="colWidth0"/>
+		<item value="718" key="width"/>
+		<item value="-1" key="selectedRow"/>
+		<item value="true" key="maximized"/>
+		<item value="0" key="sortColumn"/>
+		<item value="689" key="height"/>
+		<item value="1" key="sortDirection"/>
+		<item value="0" key="y"/>
+		<item value="281" key="x"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.GlobalCheckConfigurationWorkingSet">
+		<item value="61" key="colWidth3"/>
+		<item value="2" key="selectedRow"/>
+		<item value="137" key="colWidth2"/>
+		<item value="0" key="sortColumn"/>
+		<item value="183" key="colWidth1"/>
+		<item value="130" key="colWidth0"/>
+		<item value="1" key="sortDirection"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.gui.RuleConfigurationEditDialog#NoWhitespaceAfter">
+		<item value="false" key="maximized"/>
+		<item value="false" key="minimized"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.gui.RuleConfigurationEditDialog#TabCharacter">
+		<item value="false" key="maximized"/>
+		<item value="259" key="height"/>
+		<item value="false" key="minimized"/>
+		<item value="548" key="width"/>
+		<item value="325" key="y"/>
+		<item value="366" key="x"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.gui.RuleConfigurationEditDialog#WhitespaceAround">
+		<item value="false" key="maximized"/>
+		<item value="false" key="minimized"/>
+	</section>
+	<section name="com.atlassw.tools.eclipse.checkstyle.config.gui.RuleConfigurationEditDialog#LineLength">
+		<item value="false" key="maximized"/>
+		<item value="357" key="height"/>
+		<item value="false" key="minimized"/>
+		<item value="594" key="width"/>
+		<item value="259" key="y"/>
+		<item value="343" key="x"/>
+	</section>
+</section>

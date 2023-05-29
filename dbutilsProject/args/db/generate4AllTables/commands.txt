@@ -1,0 +1,8 @@
+
+REVOKE CONTROL ON TABLE "%schemaName%"."%tableName%" FROM USER DB2INST1;
+REVOKE ALL ON TABLE "%schemaName%"."%tableName%" FROM USER DB2INST1;
+REVOKE CONTROL ON TABLE "%schemaName%"."%tableName%" FROM USER MATAF;
+REVOKE ALL ON TABLE "%schemaName%"."%tableName%" FROM USER MATAF;
+REVOKE CONTROL ON TABLE "%schemaName%"."%tableName%" FROM USER MATAFAPP;
+REVOKE ALL ON TABLE "%schemaName%"."%tableName%" FROM USER MATAFAPP;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE "%schemaName%"."%tableName%" TO USER MATAFAPP;

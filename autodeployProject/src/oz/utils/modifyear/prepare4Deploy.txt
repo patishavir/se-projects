@@ -1,0 +1,40 @@
+@ECHO OFF
+
+@echo Starting  %~n0
+
+call \\s6540001\SCRIPT\scripts\common\common.bat
+
+set saveParamFileInFolder=\\s6540001\SCRIPT\EARfiles\parameters
+
+IF NOT DEFINED EARFilePath call %GUIGeneratorPath% %~dp0XML\%~n0.xml
+
+@echo EARFilePath: %EARFilePath%	APPLICATION_CODE: %APPLICATION_CODE%
+
+SET workDirPath=c:\temp\%~n0.workDir.%APPLICATION_CODE%
+
+call :settargetEARFilePath %EARFilePath%
+
+call %~dp0compressExtract\extractEar.bat
+SET ENVIRONMENT_CODE=%APPLICATION_CODE:~0,1%
+Rem pause 
+call %batchEditorPath% %~dp0args\ALL
+
+set PROD_ENV=NO
+
+FOR %%i IN (B L P) DO IF %%i==%ENVIRONMENT_CODE% SET PROD_ENV=YES
+ECHO PROD_ENV: %PROD_ENV%
+
+if /I %PROD_ENV%==NO (
+	echo Process NON_PROD deployments ... APPLICATION_CODE=%APPLICATION_CODE% ENVIRONMENT_CODE=%ENVIRONMENT_CODE%
+	call %batchEditorPath% %~dp0args\%ENVIRONMENT_CODE%
+	call %batchEditorPath% %~dp0args\NON_PROD
+)
+REM pause
+
+call %~dp0compressExtract\compressEar.bat
+Rem pause
+GOTO :EOF
+
+:settargetEARFilePath
+set targetEARFilePath=%~dpn1_%APPLICATION_CODE%%~x1
+@Echo targetEARFilePath = %targetEARFilePath%

@@ -1,0 +1,1 @@
+echo %~n0 %TIME% %COMPUTERNAM% >>c:\temp\%~n0.log

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/excelProject/src/oz/infra/excel/ExcelUtilsMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.infra.excel.ExcelUtilsMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="changeBgColorOnValueChange .\data\1.CSV 2  .\reports\1.xls mysheet YELLOW,WHITE,GREY_25_PERCENT,LIME,AQUA,LIGHT_GREEN,TAN,LIGHT_ORANGE,LIGHT_CORNFLOWER_BLUE,PALE_BLUE,LEMON_CHIFFON,PINK,ROSE,LIGHT_TURQUOISE,LIGHT_YELLOW,LAVENDER,GOLD,SKY_BLUE,SEA_GREEN"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="excelProject"/>
+</launchConfiguration>

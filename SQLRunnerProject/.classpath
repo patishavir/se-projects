@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GUIGeneratorProject"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/InfraStructureProject"/>
+	<classpathentry kind="lib" path="/JarContainer/Oracle/11/orai18n.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/Oracle/11/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/sqlserver/4.1/sqljdbc41.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/DB2/10.1.0.5/db2jcc4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

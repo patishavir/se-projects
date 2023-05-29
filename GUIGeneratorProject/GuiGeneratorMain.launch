@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/GUIGeneratorProject/src/oz/guigenerator/GuiGeneratorMain.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="myFileServerRoot" value="\\\\hrfs\\T24integration\\collateral\\Hrclient\\buildHRClient"/>
+        <mapEntry key="paramFile" value="\\hrfs\userinfo\oded\zvl.txt"/>
+        <mapEntry key="setparams" value="c:\\temp\\setparams.bat"/>
+    </mapAttribute>
+    <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+        <listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_SHOW_CODEDETAILS_IN_EXCEPTION_MESSAGES" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.guigenerator.GuiGeneratorMain"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="GUIGeneratorProject"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=".\XML\GUIGenerator.xml c:\temp\setparams.bat"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="GUIGeneratorProject"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dstam=L:\public$\scripts\ADgroupMembership\XML\ADgroupMembership.xml -DStam2=c:\temp\setparams.bat"/>
+</launchConfiguration>

@@ -1,0 +1,47 @@
+import time
+from time import gmtime, localtime, strftime
+print strftime("%d/%m/%Y %H:%M:%S ", localtime())
+
+print "Starting wsadmin script ..."
+targetCell=AdminControl.getCell()
+updateParams= '[  -operation update -contents %preparedEarFilePath%  -nopreCompileJSPs -installed.ear.destination $(APP_INSTALL_ROOT)/' + targetCell + ' -distributeApp -nouseMetaDataFromBinary -nodeployejb -createMBeansForResources -noreloadEnabled -nodeployws -validateinstall warn -processEmbeddedConfig  -filepermission .*\.dll=755#.*\.so=755#.*\.a=755#.*\.sl=755 -noallowDispatchRemoteInclude  -noallowServiceRemoteInclude -MapWebModToVH [[ MatafServer MatafServer.war,WEB-INF/web.xml %virtualHost% ][ BTTRuntimeMonitor BTTRuntimeMonitor.war,WEB-INF/web.xml %virtualHost% ]] -MapRolesToUsers [[ snifituser AppDeploymentOption.No AppDeploymentOption.Yes "" "" AppDeploymentOption.No "" "" ]]]'
+# print 'updateParams: ' + updateParams
+AdminApp.update('%applicationName%', 'app', updateParams)
+print strftime("%d/%m/%Y %H:%M:%S ", localtime()) + "Update has completed ..."
+AdminConfig.save()
+print strftime("%d/%m/%Y %H:%M:%S ", localtime()) + "Save has completed ..."
+
+for node in [ '%node1%' , '%node2%'] :	
+	SyncName = AdminControl.completeObjectName('type=NodeSync,node=' + node +',*')
+	print SyncName
+	SyncResult = AdminControl.invoke(SyncName, 'sync')
+	print strftime("%d/%m/%Y %H:%M:%S ", localtime()) + "Sync has completed ... " + SyncName + " sync result: " + SyncResult
+	time.sleep(5)
+
+cluster = AdminControl.completeObjectName('type=Cluster,name=%restartCluster%,*')
+print 'cluster: ' + cluster
+
+AdminControl.invoke(cluster, 'rippleStart')
+print strftime("%d/%m/%Y %H:%M:%S ", localtime()) + "rippleStart has completed ... " + cluster
+
+loopCount = 20
+sleepInterval = 12
+i = 0
+while i < loopCount :
+        i+=1
+        time.sleep(sleepInterval)
+        clusterState=AdminControl.getAttribute(cluster, 'state')
+        print str(i) +  ' clusterState: ' + clusterState
+        if clusterState == 'websphere.cluster.running':
+                break
+                
+loopCount = 20
+sleepInterval = 12
+i = 0
+while i < loopCount :
+        i+=1
+        time.sleep(sleepInterval)
+        appReady = AdminApp.isAppReady('%applicationName%')
+        print str(i) +  ' appReady: ' + appReady
+        if appReady == 'true':
+                break                

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters GUI="yes" sourceDir="d:\oj\CCviews\OzProj01_Fix\sources\ozComp01\folder1" 
+destinationDir="D:\oj\CCviews\OzProj01_Fix\sources\ozComp01\folder2" 
+show="different" operation="mirror" enableCC="yes" loggingLevel="FINE"
+xloggingHandlerClass="java.util.logging.FileHandler" />
+</InputParametersSet>
+
+
+

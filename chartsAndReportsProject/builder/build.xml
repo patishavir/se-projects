@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="buildJarProject" default="buildJarFile" basedir="..">
+	<target name="buildJarFile">
+		<jar destfile="./jars/charts.jar" compress="true">			
+			<fileset dir="./bin" />
+			<fileset dir="./src" />
+			<fileset dir="../InfraStructureProject/src" />
+			<fileset dir="../InfraStructureProject/bin" />
+			<fileset dir="../excelProject/src" />
+			<fileset dir="../excelProject/bin" />
+			<manifest>
+				<attribute name="Main-Class" value="oz.charts.ChartMain"/>
+			</manifest>
+		</jar>
+	</target>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/autodeploy2Project/src/oz/utils/autodeploy/AutoDeployMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.autodeploy.AutoDeployMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="COPYLOADRULES ./args/AutoDeploy2.properties snifit c:/temp/1.txt"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="autodeploy2Project"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DmyDebug=YES"/>
+</launchConfiguration>

@@ -1,0 +1,73 @@
+<html>
+<head></head>
+<body>		
+		<applet  codebase="FNJavaV1files" archive="ji.jar" code="ji.applet.jiApplet.class" name="viewONE" 
+			id="viewONE" width="100%" height="100%" hspace="0" vspace="0" align="middle" MAYSCRIPT="TRUE" >
+		
+			<param name="eventhandler" value="viewONEEventsHandler">
+					  
+			<param name="cabbase"					value="ji.cab">
+			<param name="backcolor"				value="192,192,192">
+			<param name="viewmode"				value="fullpage">
+			<param name="scale"						value="best">
+			<param name="fileButtonOpen"	value="false">
+			<param name="fileButtonSave"	value="false">
+			<param name="fileButtonClose"	value="false">
+			<param name="fileMenus"	      value="false">
+			<param name="invertbuttons"		value="true">
+			<param name="flipOptions"			value="true">
+			<!-- Other doc types routing (To External Viewers) -->
+			<param name="routeDocs"				value="true">
+			<param name="routeTarget"			value="_self">
+			<!--
+		  	<param name="filename" value="http://wksu102571a198/winflow/wins_objects/docutils/fnjavav1files/getdoc.asp?Token=&DocId=">
+		  	-->
+		  	<param name="filename" value="file://C|/WinFLowTest">
+		  	<param name="emptyOnClose"		value="true">
+			<param name="RenderSupport"		value="true">
+			  
+			<!-- FileNET specific parameters -->
+			<param name="filenet"					value="true">
+			<!--<param name="filenetUG" value="ep">-->
+			<!--
+			<param name="annotate"				value="true">
+            <param name="annotationFile" value="GetAnnotations.asp?DocID=">
+			<param name="annotateEdit"		value="true">
+			<param name="annotationColorMask" value="0bgr">
+			<param name="annotationUnits" value="inches">
+			<param name="annotationNoteRectangular" value="true">
+			<param name="annotationNoteColor" value="255,255,0">
+			<param name="annotationNoteSize" value="0.3,0.3">
+			<param name="annotationHideContextButtons" value="save,text,hyperlink,behind">
+			<param name="annotationHideContextButtonsids" value="note,freehand,stamp,arrow,highlight,text">
+			<param name="annotationhidebuttons" value="line, solidtext, highlightpoly, rectangle, redact, redactpoly, poly, openpoly, oval, hyperlink">			
+			<PARAM NAME="annotationSavePost" value="SaveAnnotations.asp?DocID=">
+			<PARAM NAME="annotationCache" value="false">
+			<param name="annotationFreeHandLimit" value="300">
+			<param name="AnnotationDefaultLineColor1" value="freehand: 0, 0, 255">
+			<param name="AnnotationDefaultLineColor2" value="arrow: 255, 0, 255">
+
+			Enable setAnnotationFile()  
+			<param name="annotationJavascriptExtensions" value="true">
+			
+			<!-- Trace options for debug purpose only -->
+			<param name="trace" value="false">
+			<param name="traceNet" value="false">
+			<param name="annotationTrace" value="false">
+
+			<!--
+			<param name="cachePath"				value="/">
+			<param name="annotationEncoding" value="UTF8">
+			-->
+		   
+		</applet> 
+		<script LANGUAGE="javascript" FOR="viewONE">
+
+			function viewONEEventsHandler(id, text)
+			{
+				//alert(text + " " + id)
+			}
+		
+		</script>
+</body>		
+</html>

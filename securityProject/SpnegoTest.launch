@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/securityProject/src/oz/spnego/SpnegoTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.spnego.SpnegoTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="http://www.fibi-kidma.co.il/snoop"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="securityProject"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.security.krb5.conf=krb5.conf -Djava.security.auth.login.config=login.conf -Djavax.security.auth.useSubjectCredsOnly=false -Dhttp.auth.preference=SPNEGO"/>
+</launchConfiguration>

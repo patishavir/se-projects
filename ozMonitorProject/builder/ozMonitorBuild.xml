@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="buildJarProject" default="buildJarFile" basedir="..">
+	<target name="buildJarFile">
+		<tstamp>
+			<format property="build.time" pattern="yyyy.MM.dd 'at' HH:mm:ss " />
+		</tstamp>
+		<echo file="./src/oz/monitor/buildInfo.txt" append="false">Build date: ${build.time}</echo>
+		<jar destfile="./jars/ozmonitor.jar" compress="true">
+			<fileset dir="./bin" />
+			<fileset dir="./src" />
+			<fileset dir="../InfraStructureProject/src" />
+			<fileset dir="../InfraStructureProject/bin" />
+			<fileset dir="../FibiInfraStructure/src" />
+			<fileset dir="../FibiInfraStructure/bin" />
+			<fileset dir="../clearCaseProject/src" />
+			<fileset dir="../clearCaseProject/bin" />
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Implementation-Version" value="build-id:${build.time}" />
+				<attribute name="Built-Date" value="${TODAY}" />
+				<attribute name="Main-Class" value="oz.monitor.OzMonitorMain" />
+			</manifest>
+		</jar>
+	</target>
+</project>

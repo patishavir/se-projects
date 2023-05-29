@@ -1,0 +1,5 @@
+echo do cleanup
+cd %productVersionFolder%
+find %productVersionFolder%/*  -mtime +%retentionDays% -type f -name '20[1-2][0-9]-[0-1][0-9]-[0-3][0-9].zip' -exec rm -fe '{}' \;
+find %productVersionFolder%/*  -mtime +%retentionDays% -type d -name '20[1-2][0-9]-[0-1][0-9]-[0-3][0-9]' -prune -exec rm -fre '{}' \;
+find %productBackupFolder%/*   -mtime +%retentionDays% -type f -name '*_backup_*[0-9][0-9].zip' -exec rm -fe  '{}' \;

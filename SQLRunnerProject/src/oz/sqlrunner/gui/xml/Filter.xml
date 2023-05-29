@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<topLevelContainer title="Filter database objects" />
+	<label value="Select parameters for database objects filtering"
+		foregroundcolor="BLUE" />
+	<combobox name="creator" displayName="Schema" values=" ,SYS%"
+		editAble="yes" helpText="Creator filter: Use % for wildcards" />
+	<textfield name="name" displayName="Table name" SIZE="10"
+		helpText="Name filter: Use % for wildcards" />
+	<submitButton value="Set database objects filter" />
+</params>
+
+

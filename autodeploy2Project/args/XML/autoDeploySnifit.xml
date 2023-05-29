@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+<label value="Snifit full version Deployment" foregroundcolor="Magenta" />
+<topLevelContainer title="Snifit full version Deployment" />
+
+<combobox name="autoDeploySystem" displayName="system" values="snifit" editAble="yes" />
+
+<label value="move load rules to database server" foregroundcolor="Gray"/>
+<combobox name="loadRulesFilePath" displayName="Load rules file path" values=",\\s6540001\SCRIPT\dbload_bmb\KZ5\20161121\dbload\zip\LoadRules_6.02.51.zip,\\s6540001\SCRIPT\dbload_bmb\QZ9\20161121\dbload\zip\LoadRules_6.03.05.zip,S:\dbload_bmb\TOZ\20160816\TOZ_TEST_LoadRules_6.03.01.zip,S:\dbload_bmb\QZ9\20160816\LoadRules_6.03.01.zip, " editAble="yes" />
+
+<label value="change database version in dbload cfg file" foregroundcolor="Gray"/>
+<combobox name="appId" displayName="appId" values=",OZ77,KZ5,VZ9,MATAFDBB,MATAFDBT,VZX,VZY,VZ4,QZ2,QZ9,QZQ,QZW,TB4V,COMMONDB_K,COMMONDB_Q,COMMONDB_T,COMMONDB_V" editAble="yes"/>
+<combobox name="version" displayName="version" values=",6.02.51,6.03.05,6.67.68,6.78.89," editAble="yes" />
+
+<label value="run db changes" foregroundcolor="Gray"/>
+<combobox name="dbChangesDB" displayName="DB changes databse" values=",OZ77,VZ9,MATAFDBB,MATAFDBT,KZ5,VZX,VZY,VZ4,QZ2,QZ9,QZQ,QZW,TB4V,COMMONDB_K,COMMONDB_Q,COMMONDB_T,COMMONDB_V" editAble="yes" />
+<combobox name="dbChangesScriptsFolderPath" displayName="db changes scripts folder path" values=",\\s6540001\SCRIPT\dbChanges\KZ5\20161121,S:\dbChanges\OZ77\20160531\,\\s6540001\SCRIPT\dbChanges\QZ9\20161121" editAble="yes" />
+
+<label value="run common db changes" foregroundcolor="Gray"/>
+<combobox name="dbChangesCommonDB" displayName="DB changes common databse" values=",COMMONDB_OZ,COMMONDB_T,COMMONDB_V" editAble="yes" />
+<combobox name="commonDbChangesScriptsFolderPath" displayName="common db changes scripts folder path" values=",S:\dbChanges\OZ77\20160531\" editAble="yes" />
+
+<label value="update ear" foregroundcolor="Gray"/>
+<combobox name="earFilePath" displayName="Ear file path" values=", \\s6540001\SCRIPT\EARfiles\K_Z5\20161121\snifit\MatafEAR_K_Z5.ear,\\s6540001\SCRIPT\EARfiles\Q_Z9\20161121\MatafEAR.ear,O:\Scripts\java\autoDeploy2\test\snifit\DBTest.ear,%~dp0test\snifit\DBTest.ear,O:\Scripts\java\autoDeploy2\test\snifit\DBTest.ear,O:\Scripts\java\autoDeploy2\test\snifit\MatafEAR_T_OZ.ear,O:\Scripts\java\autoDeploy2\test\snifit\conntectivityTest.ear,C:\temp\MatafEAR_T_OZ.ear," editAble="yes"/>
+
+<submitButton value="Submit"/> 
+</params>

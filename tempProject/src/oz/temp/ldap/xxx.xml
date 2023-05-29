@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<label value="User recursive group membership" foregroundcolor="Magenta" />
+	<topLevelContainer title="User recursive group membership" />
+	<combobox name="url" displayName="url"
+		values="ldap://fibildap1.fibi.corp:389,ldap://fibildap1.fibi.corp:3268,ldap://fibildap2.fibi.corp:389,ldap://fibildap2.fibi.corp:3268,ldap://s5380067.fibi.corp:389,ldap://s5380067.fibi.corp:3268"
+		editAble="yes" />
+	<textfield name="bindUser" displayName="Bind user"
+		defaultValue="%USERNAME%" size="12" />
+	<password name="password" displayName="Bind password"
+		defaultValue="*********" size="12" />
+	<combobox name="domain" displayName="Domain" values="fibi.corp,fibi.ext"
+		editAble="no" size="12" />
+	<textfield name="baseDN" displayName="Base DN" defaultValue="DC=FIBI,DC=CORP"
+		size="12" />
+	<textfield name="user" displayName="User" defaultValue="S177571"
+		size="12" />
+	<submitButton value="Submit" />
+</params>

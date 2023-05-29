@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ozutilsProject/src/oz/utils/clearcase/ClearCaseRemoveChangeSetMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.clearcase.ClearCaseRemoveChangeSetMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="CRMts00001760@\tempPVOB01 c:\temp\ttt.log&#13;&#10;&#13;&#10;&#13;&#10;HRUCM00113402@\HRPvob01 c:\temp\ClearCaseRemoveChangeSetMain.log"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ozutilsProject"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms512M -Xmx1024M"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\CCViews\tempProj01_Dev"/>
+</launchConfiguration>

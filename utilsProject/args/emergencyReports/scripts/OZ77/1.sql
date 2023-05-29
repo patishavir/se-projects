@@ -1,0 +1,1 @@
+Select * from MATAF.GLST_SEX

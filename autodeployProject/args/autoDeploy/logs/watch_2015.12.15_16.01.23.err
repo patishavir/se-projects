@@ -1,0 +1,9 @@
+16:01:23 INFO oz.utils.was.autodeploy.watcher.EarFileProcessr processValidFile:  target ear file: C:\oj\TEMP\AutoDeployWorkFolder\inProgress\DBTest_watch.2015.12.15_16.01.23.ear
+16:01:23 INFO oz.infra.thread.ThreadUtils sleep:  oz.utils.was.autodeploy.watcher.EarFileProcessr processValidFile Start sleeping for 1000 milli seconds
+16:01:24 INFO oz.utils.was.autodeploy.watcher.EarFileProcessr processValidFile:  C:\oj\TEMP\AutoDeploy\watch\snifit\DBTest.ear has been move to C:\oj\TEMP\AutoDeployWorkFolder\inProgress\DBTest_watch.2015.12.15_16.01.23.ear
+16:01:24 INFO oz.utils.was.autodeploy.snifit.AutoDeployEarFileProcessor processEarFile:  Start processing C:\oj\TEMP\AutoDeployWorkFolder\inProgress\DBTest_watch.2015.12.15_16.01.23.ear ... Suffix: watch
+16:01:24 SEVERE oz.infra.system.SystemUtils printMessageAndExit:  oz.utils.was.autodeploy.snifit.AutoDeployEarFileProcessor processEarFile
+
+No properties file found for application watch.
+File will not be processed !
+System will exit now ...

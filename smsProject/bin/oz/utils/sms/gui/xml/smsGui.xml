@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<log level="info" />
+	<label value="Send SMS" foregroundcolor="Magenta" />
+	<topLevelContainer title="Send SMS" orientation="RIGHT_TO_LEFT" />
+
+	<combobox name="to" displayName="אל:" values="Oded Zimerman-S705409,"
+		editAble="yes" sort="ascending" />
+	<textarea name="messageText" displayName="תוכן ההודעה"
+		wdith="600" height="120" gridWidth="2" />
+
+	<submitButton value="Send Sms !" />
+</params>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+	<InputParameters GUI="yes" sourceDir="c:\temp\jdir\zvl3"
+		destinationDir="c:\temp\jdir\zvl4" show="all" operation="Sync"
+		enableCC="nes" loggingLevel="INFO" 
+		fileComparisonCriteria="Size and time stamp" />
+</InputParametersSet>
+
+
+

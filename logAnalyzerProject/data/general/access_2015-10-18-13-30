@@ -1,0 +1,5 @@
+10.170.194.5 [18/Oct/2015:13:44:55 +0300] "GET /MatafServer_B_Z7/servlet/com.ibm.btt.cs.servlet.CSReqProtocolServlet HTTP/1.1" 200 220 snifpload02:9080 100000
+10.170.194.5 [18/Oct/2015:13:44:55 +0300] "GET /MatafServer_B_Z7/servlet/com.ibm.btt.cs.servlet.CSReqProtocolServlet HTTP/1.1" 200 220 snifpload02:9080 300000
+10.175.137.1 [18/Oct/2015:13:44:56 +0300] "GET /MatafServer_B_Z7/SmServlet?type=2 HTTP/1.0" 200 148 snifpprod01:9080 50000
+10.175.137.1 [18/Oct/2015:13:44:56 +0300] "GET /MatafServer_B_Z7/SmServlet?type=2 HTTP/1.0" 200 148 snifpprod01:9080 90000
+10.171.182.10 [03/Nov/2015:09:34:50 +0200] "GET /RCM/emptyFrameContent.htm HTTP/1.1" 304 -  292

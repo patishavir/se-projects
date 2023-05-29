@@ -1,0 +1,330 @@
+package oz.utils.was.autodeploy.portal;
+
+import java.io.File;
+import java.util.List;
+import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import oz.infra.array.ArrayUtils;
+import oz.infra.constants.OzConstants;
+import oz.infra.datetime.DateTimeUtils;
+import oz.infra.io.FolderUtils;
+import oz.infra.io.PathUtils;
+import oz.infra.io.filefilter.FileFilterIsDirectory;
+import oz.infra.io.filefilter.FileNameFilterRegExpression;
+import oz.infra.io.nio.NioUtils;
+import oz.infra.logging.jul.JulUtils;
+import oz.infra.properties.PropertiesUtils;
+import oz.infra.regexp.RegexpUtils;
+import oz.infra.ssh.SshParams;
+import oz.infra.ssh.jsch.JschUtils;
+import oz.infra.string.StringUtils;
+import oz.infra.system.SystemUtils;
+import oz.infra.zip.ZipUtils;
+import oz.infra.zip4j.Zip4jUtils;
+import oz.utils.was.autodeploy.AutoDeployEarUtils;
+import oz.utils.was.autodeploy.parameters.AutoDeployGlobalParameters;
+import oz.utils.was.autodeploy.portal.parameters.PortalDeploymentParameters;
+
+class BetaPortalDeploymentProcessor {
+	private enum PortalDeploymentFoldersEnum {
+		EARs, Portlets, Properties, Resources, shared, xmlAccess;
+	}
+
+	private static final String LOCAL_SCRIPTS_FOLDER_NAME = "scripts";
+	private static final String LOCAL_PORTAL_FOLDER_NAME = "portal";
+	private static FileNameFilterRegExpression fileNameFilterRegExpression = new FileNameFilterRegExpression(
+			RegexpUtils.EAR_FILES_REG_EXPRESSION);
+	private static FileFilterIsDirectory fileFilterIsDirectory = new FileFilterIsDirectory();
+	private static final String INSTALL_WARS_XML_PATH_PLACE_HOLDER = "%installWarsXml%";
+	private static final String TIME_STAMP_PLACE_HOLDER = "%timeStamp%";
+
+	private static Logger logger = JulUtils.getLogger();
+
+	private static String buildMatafInstallFilesZip(final String matafLocalFolderPath) {
+		File matafLocalFolder = new File(matafLocalFolderPath);
+		String folderName = matafLocalFolder.getName();
+		String parent = matafLocalFolder.getParent();
+		String zipFolderPath = getLocalPortalZipFilesFolder();
+		String zipFilePath = PathUtils.getFullPath(zipFolderPath, StringUtils.concat(folderName, OzConstants.UNDERSCORE,
+				DateTimeUtils.getTimeStamp(), OzConstants.ZIP_SUFFIX));
+		ZipUtils.zipFolder(zipFilePath, matafLocalFolderPath, parent);
+		ZipUtils.logZipFileContents(zipFilePath);
+		logger.info(
+				StringUtils.concat("\nlocal folder path: ", matafLocalFolderPath, "\t zip file path: ", zipFilePath));
+		return zipFilePath;
+	}
+
+	private static void copyFile2RemoteServers(final String localFilePath, final String remoteFilePath) {
+		int serverCount = 0;
+		Properties remoteProperties = getRemoteProperties();
+		remoteProperties.put(SshParams.SOURCE_FILE, localFilePath);
+		remoteProperties.put(SshParams.DESTINATION_FILE, remoteFilePath);
+		String[] applicationServersArray = PortalDeploymentParameters.getApplicationServersArray();
+		for (String applicationServer : applicationServersArray) {
+			remoteProperties.put(SshParams.SERVER, applicationServer);
+			JschUtils.scpTo(remoteProperties);
+			serverCount++;
+		}
+		logger.info(StringUtils.concat(localFilePath, " has been copied to ", remoteFilePath, " to ",
+				String.valueOf(serverCount), " servers"));
+	}
+
+	private static String generateBackupScript(final String folder1Path) {
+		String folderName = PathUtils.getFileName(folder1Path);
+		logger.info(StringUtils.concat("folder1 Path: ", folder1Path, " folder Name: ", folderName));
+		List<String> filesList = NioUtils.recursivelyListFilesInFolder(folder1Path);
+		String portalBackupFolder = PortalDeploymentParameters.getRemotePortalBackupFolder();
+		String backupFilePath = StringUtils.concat(portalBackupFolder, OzConstants.UNIX_FILE_SEPARATOR, folderName,
+				OzConstants.UNDERSCORE, DateTimeUtils.getTimeStamp(), OzConstants.ZIP_SUFFIX);
+		String portalFolder = PortalDeploymentParameters.getPortalFolder();
+		String backupScriptContents = StringUtils.concat("cd ", portalFolder, OzConstants.UNIX_LINE_SEPARATOR);
+		for (String localPath1 : filesList) {
+			String localRelativePath = StringUtils.concat(folderName, localPath1.substring(folder1Path.length()));
+			String remoteRelativeFilePath = localRelativePath.replaceAll("\\\\", "/");
+			String line1 = StringUtils.concat("zip ", backupFilePath, " ./", remoteRelativeFilePath,
+					OzConstants.UNIX_LINE_SEPARATOR);
+			backupScriptContents = backupScriptContents.concat(line1);
+		}
+		backupScriptContents.concat("echo all done !");
+		logger.info(StringUtils.concat("backup script:\n", backupScriptContents));
+		String backupScriptFileFullName = StringUtils.concat(folderName, "_backup_",
+				PathUtils.getTemporaryFileName().concat(OzConstants.SH_SUFFIX));
+		String backupScriptLocalPath = PathUtils.getFullPath(getLocalScriptsFolderPath(), backupScriptFileFullName);
+		NioUtils.writeString2File(backupScriptLocalPath, backupScriptContents);
+		return backupScriptLocalPath;
+	}
+
+	private static String getLocalPortalZipFilesFolder() {
+		String portalZipFolder = PathUtils.getFullPath(AutoDeployGlobalParameters.getPortalFolderPath(),
+				PortalDeploymentParameters.getProtalZipFolderName());
+		FolderUtils.createFolderIfNotExists(portalZipFolder);
+		return portalZipFolder;
+	}
+
+	private static String getLocalScriptsFolderPath() {
+		String localScriptsFolderPath = PathUtils.getFullPath(AutoDeployGlobalParameters.getPortalFolderPath(),
+				LOCAL_SCRIPTS_FOLDER_NAME);
+		FolderUtils.createFolderIfNotExists(localScriptsFolderPath);
+		return localScriptsFolderPath;
+	}
+
+	private static File getPortalDeploymentFilesFolder(final String portalFilePath) {
+		File portalFile = new File(portalFilePath);
+		String folder2ProcessPath = null;
+		if (portalFile.isFile()) {
+			String fileType = PathUtils.getFileType(portalFile);
+			logger.info("fileType: ".concat(fileType));
+			if (fileType.equals(OzConstants.ZIP_SUFFIX.substring(1))) {
+				String portalFolderPath = AutoDeployGlobalParameters.getPortalFolderPath();
+				String timeStamp = DateTimeUtils.getTimeStamp();
+				folder2ProcessPath = PathUtils.getFullPath(portalFolderPath, timeStamp);
+				logger.info("folder2ProcessPath: ".concat(folder2ProcessPath));
+				Zip4jUtils.extractAllFiles(portalFilePath, folder2ProcessPath);
+			} else {
+				SystemUtils.printMessageAndExit("zip file expected. Processing has been aborted.",
+						OzConstants.EXIT_STATUS_ABNORMAL);
+			}
+		} else {
+			if (portalFile.isDirectory()) {
+				folder2ProcessPath = portalFilePath;
+				logger.info("processing folder: ".concat(folder2ProcessPath));
+			} else {
+				SystemUtils.printMessageAndExit(portalFilePath + " does not exist !. Proccessing has been aborted",
+						OzConstants.EXIT_STATUS_ABNORMAL, false);
+
+			}
+		}
+		File folder2ProcessFile = PathUtils.goDownTheFolderTree(folder2ProcessPath, 1);
+		logger.info("processing deployment folder: ".concat(folder2ProcessFile.getAbsolutePath()));
+		return folder2ProcessFile;
+	}
+
+	private static String getRemoteMkDirsCommand() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(StringUtils.concat("mkdir -p ", PortalDeploymentParameters.getPortalDeploymentWorkFolder(),
+				OzConstants.SEMICOLON));
+		sb.append(StringUtils.concat("mkdir -p ", PortalDeploymentParameters.getRemotePortalBackupFolder(),
+				OzConstants.SEMICOLON));
+		sb.append(StringUtils.concat("mkdir -p ", PortalDeploymentParameters.getRemotePortalScriptsFolder(),
+				OzConstants.SEMICOLON));
+		sb.append(StringUtils.concat("mkdir -p ", PortalDeploymentParameters.getRemotePortalZipFolder()));
+		return sb.toString();
+	}
+
+	private static Properties getRemoteProperties() {
+		String remotePropertiesFilePath = PortalDeploymentParameters.getRemotePropertiesFilePath();
+		Properties remoteProperties = PropertiesUtils.loadPropertiesFile(remotePropertiesFilePath);
+		return remoteProperties;
+	}
+
+	private static String getRemoteScriptPath(final String localScriptPath) {
+		String scriptFileFullName = PathUtils.getFileNameAndType(localScriptPath);
+		String remotecriptPath = StringUtils.concat(PortalDeploymentParameters.getRemotePortalScriptsFolder(),
+				OzConstants.UNIX_FILE_SEPARATOR, scriptFileFullName);
+		return remotecriptPath;
+	}
+
+	private static String getRemoteZipFilePath(final String localZipFilePath) {
+		String remoteZipFolder = PortalDeploymentParameters.getRemotePortalZipFolder()
+				.concat(OzConstants.UNIX_FILE_SEPARATOR);
+		String zipFileName = PathUtils.getFileNameAndType(localZipFilePath);
+		String remoteZipFilePath = StringUtils.concat(remoteZipFolder, zipFileName);
+		return remoteZipFilePath;
+	}
+
+	private static String moveEarFiles(final String folderPath) {
+		String portalWorkDirPath = AutoDeployGlobalParameters.getPortalFolderPath();
+		String temporayFolderName = PathUtils.getTemporaryFileName();
+		String localEarFolderpath = PathUtils.getFullPath(portalWorkDirPath,
+				StringUtils.concat(temporayFolderName, File.separator, LOCAL_PORTAL_FOLDER_NAME));
+		File targetEarFolder = new File(localEarFolderpath);
+		targetEarFolder.mkdirs();
+		File folderFile = new File(folderPath);
+		File[] earFiles = folderFile.listFiles(fileNameFilterRegExpression);
+		ArrayUtils.printArray(earFiles, SystemUtils.LINE_SEPARATOR);
+		String earFileFullName = null;
+		String targetName = null;
+		for (File earFile1 : earFiles) {
+			logger.info(earFile1.getAbsolutePath());
+			earFileFullName = earFile1.getName();
+			if (earFileFullName.indexOf(OzConstants.UNDERSCORE) > OzConstants.STRING_NOT_FOUND) {
+				String[] earNameArray = earFileFullName.split(OzConstants.UNDERSCORE);
+				targetName = StringUtils.concat(earNameArray[0], OzConstants.EAR_SUFFIX);
+				logger.info(targetName);
+			} else {
+				targetName = earFileFullName;
+			}
+			String targetEarFilePath = PathUtils.getFullPath(localEarFolderpath, targetName);
+			NioUtils.copy(earFile1.getAbsolutePath(), targetEarFilePath);
+		}
+		return localEarFolderpath;
+	}
+
+	static void processDeploymentFolder(final String portalDeploymentFilePath) {
+		runRemoteCommand(getRemoteMkDirsCommand());
+		File folder2ProcessFile = getPortalDeploymentFilesFolder(portalDeploymentFilePath);
+		File[] folderList = folder2ProcessFile.listFiles(fileFilterIsDirectory);
+		for (File folder1 : folderList) {
+			String folderName = folder1.getName();
+			String folder1Path = folder1.getAbsolutePath();
+			PortalDeploymentFoldersEnum portalDeploymentFoldersEnum = PortalDeploymentFoldersEnum.valueOf(folderName);
+			switch (portalDeploymentFoldersEnum) {
+			case EARs:
+				processEarFiles(folder1Path);
+				break;
+			case Resources:
+				processMatafPortalFiles(folder1Path);
+				break;
+			case Properties:
+				processMatafPortalFiles(folder1Path);
+				break;
+			case Portlets:
+				processPortLets(folder1Path);
+				break;
+			default:
+				logger.warning(StringUtils.concat(folder1Path, " has not been processed !"));
+			}
+		}
+	}
+
+	private static void processEarFiles(final String folder1Path) {
+		String targetEarFolderpath = moveEarFiles(folder1Path);
+		String[] earDeplymentPatameter = { null, targetEarFolderpath };
+		AutoDeployEarUtils.processEarsPatameter(earDeplymentPatameter);
+	}
+
+	private static void processMatafPortalFiles(final String matafFolderPath) {
+		String backupScriptLocalPath = generateBackupScript(matafFolderPath);
+		String remoteScriptPath = getRemoteScriptPath(backupScriptLocalPath);
+		copyFile2RemoteServers(backupScriptLocalPath, remoteScriptPath);
+		runRemoteCommand(StringUtils.concat("chmod 700 ", remoteScriptPath));
+		runRemoteCommand(remoteScriptPath);
+		boolean zipAndcopy = true;
+		if (zipAndcopy) {
+			String localZipFilePath = buildMatafInstallFilesZip(matafFolderPath);
+			String remoteZipFilePath = getRemoteZipFilePath(localZipFilePath);
+			copyFile2RemoteServers(localZipFilePath, remoteZipFilePath);
+			String unzipCommand = StringUtils.concat("cd ", PortalDeploymentParameters.getPortalFolder(),
+					OzConstants.SEMICOLON, " unzip -o ", remoteZipFilePath);
+			runRemoteCommand(unzipCommand);
+		} else {
+			scpMatafFiles(matafFolderPath);
+		}
+	}
+
+	private static void processPortLets(final String portletsPath) {
+		String parentFolderPath = PathUtils.getParentFolderPath(portletsPath);
+		String localZipFilePath = buildMatafInstallFilesZip(parentFolderPath);
+		String remoteZipFilePath = getRemoteZipFilePath(localZipFilePath);
+		copyFile2RemoteServers(localZipFilePath, remoteZipFilePath);
+		String portalVersionFolderPath = PortalDeploymentParameters.getRemotePortalVersionFolderPath();
+		String unzipCommand = StringUtils.concat("mkdir ", portalVersionFolderPath, OzConstants.SEMICOLON, "cd ",
+				portalVersionFolderPath, OzConstants.SEMICOLON, " unzip -o ", remoteZipFilePath);
+		runRemoteCommand(unzipCommand);
+		String installWarsPath = getInstallWarsPath(portletsPath);
+		String xmlAccessCommand = PortalDeploymentParameters.getXmlAccessCommand();
+		xmlAccessCommand = xmlAccessCommand.replace(INSTALL_WARS_XML_PATH_PLACE_HOLDER, installWarsPath);
+		xmlAccessCommand = xmlAccessCommand.replace(TIME_STAMP_PLACE_HOLDER, DateTimeUtils.getTimeStamp());
+		String[] applicationServersArray = PortalDeploymentParameters.getApplicationServersArray();
+		Properties remoteProperties = getRemoteProperties();
+		remoteProperties.put(SshParams.COMMAND_LINE, xmlAccessCommand);
+		remoteProperties.put(SshParams.SERVER, applicationServersArray[0]);
+		JschUtils.exec(remoteProperties);
+	}
+
+	private static String getInstallWarsPath(final String portletsPath) {
+		File parentFile = new File(portletsPath).getParentFile();
+		String grandParentPath = parentFile.getParent();
+		String relativePath = PathUtils.getRelativePath(portletsPath, grandParentPath, Level.INFO);
+		String installWarsPath = StringUtils.concat(PortalDeploymentParameters.getRemotePortalVersionFolderPath(),
+				OzConstants.UNIX_FILE_SEPARATOR, relativePath, PortalDeploymentParameters.getInstallWarsXmlFileName());
+		logger.info(installWarsPath);
+		return installWarsPath;
+	}
+
+	private static void runRemoteCommand(final String commandLine) {
+		StringBuilder sb = new StringBuilder();
+		Properties remoteProperties = getRemoteProperties();
+		String[] applicationServersArray = PortalDeploymentParameters.getApplicationServersArray();
+		remoteProperties.put(SshParams.COMMAND_LINE, commandLine);
+		for (String applicationServer : applicationServersArray) {
+			remoteProperties.put(SshParams.SERVER, applicationServer);
+			JschUtils.exec(remoteProperties);
+			if (sb.length() > 0) {
+				sb.append(OzConstants.COMMA);
+			}
+			sb.append(applicationServer);
+		}
+		logger.info(StringUtils.concat(commandLine, " has been run on ", sb.toString()));
+	}
+
+	private static void scpMatafFiles(final String matafLocalFolderPath) {
+		File matafLocalFolder = new File(matafLocalFolderPath);
+		List<File> localfilesList = FolderUtils.getRecursivelyAllFiles(matafLocalFolderPath);
+		String remoteFileRootPath = PortalDeploymentParameters.getPortalFolder();
+		Properties remoteProperties = getRemoteProperties();
+		String[] applicationServersArray = PortalDeploymentParameters.getApplicationServersArray();
+		int fileCount = 0;
+		int serverCount = 0;
+		for (String applicationServer : applicationServersArray) {
+			serverCount++;
+			remoteProperties.put(SshParams.SERVER, applicationServer);
+			fileCount = 0;
+			logger.info(StringUtils.concat("start scp to ", applicationServer, OzConstants.UNIX_LINE_SEPARATOR));
+			for (File matafLocalFile1 : localfilesList) {
+				String relativePath = PathUtils.getRelativePath(matafLocalFile1, matafLocalFolder.getParentFile(),
+						Level.FINEST);
+				String sourceFilePath = matafLocalFile1.getAbsolutePath();
+				String destinationPath = StringUtils.concat(remoteFileRootPath, relativePath);
+				remoteProperties.setProperty(SshParams.SOURCE_FILE, sourceFilePath);
+				remoteProperties.setProperty(SshParams.DESTINATION_FILE, destinationPath);
+				JschUtils.scpTo(remoteProperties);
+				fileCount++;
+			}
+		}
+		logger.info(StringUtils.concat(String.valueOf(fileCount), " files have been copied to ", remoteFileRootPath,
+				" on ", String.valueOf(serverCount), " servers"));
+	}
+}

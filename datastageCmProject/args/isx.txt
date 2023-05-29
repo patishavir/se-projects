@@ -1,0 +1,2 @@
+C:\Temp>D:\IBM\InformationServer11.7\Clients\istools\cli\istool.bat import -domain sltdstage-app:9446 -username dsdev  -password ******** -archive c:\Temp\ClearCase_20190220.isx  -replace -datastage SLTDSTAGE-APP.fibi.corp/ClearCase
+D:\IBM\InformationServer11.7\Clients\Classic\dscmdimport.exe /H=SLTDSTAGE-APP.FIBI.CORP /D=sltdstage-app:9446 /U=dsdev /P=app963 ClearCase Q:\ClearCase$\Oded-test\20151223\dsx\currentVersion\ClearCase~s177571~DochH69B~20151223~py#47292.dsx /NUA

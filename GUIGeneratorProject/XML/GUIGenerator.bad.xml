@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+<label value="Deploy Ear File" foregroundcolor="Magenta" />
+<topLevelContainer title="Deploy Ear File" />
+<combobox name="earFilePath" displayName="Ear file path" values="c:\temp\autodeploy,O:\Scripts\java\autoDeploy2\test\snifit\DBTest.ear,O:\Scripts\java\autoDeploy2\test\snifit\MatafEAR_T_OZ.ear,\\matafcc\public$\autoDeploy2\systems\mayaprod\conntectivityTest\conntectivityTest.ear,L:\public$\autoDeploy2\systems\mayaprod\P8CMEAR,O:\Scripts\java\autoDeploy2\test\finovestProd\connectivityTest.ear,O:\Scripts\java\autoDeploy2\prod\finovestProd" editAble="yes" />
+<combobox name="autoDeploySystem" displayName="autoDeploy system" values=,finovestTest,finovestQ,finovestProd,intranetTest,PortalQ,snifit,snifitProd" editAble="yes" />
+<submitButton value="Submit"/> 
+</params>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/InfraStructureProject"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FibiInfraStructure"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/clearCaseProject"/>
+	<classpathentry kind="lib" path="/JarContainer/log4j/1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/sqlserver/4.0/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/DB2/10.1.0.5/db2jcc4.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/httpclient/4.5.3/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/httpclient/4.5.3/httpclient-4.5.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

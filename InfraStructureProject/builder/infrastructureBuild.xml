@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="buildJarProject" default="buildJarFile" basedir=".">
+	<target name="buildJarFile">
+		<tstamp>
+			<format property="build.time" pattern="yyyy.MM.dd 'at' HH:mm:ss " />
+		</tstamp>
+		<echo file="../src/oz/infra/buildInfo.txt" append="false">Bulid date: ${build.time}</echo>
+		<echo>Start building jar file...</echo>
+		<jar destfile="..\jars\infrastructure.jar" compress="true">
+			<fileset dir="../bin" />
+			<fileset dir="../src" />
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Main-Class" value="oz.utils.was.autodeploy.AutoDeployMain" />
+				<attribute name="Implementation-Version" value="build-id:${build.time}" />
+				<attribute name="Built-Date" value="${build.time}" />
+			</manifest>
+		</jar>
+		<echo>Jar file built...</echo>
+	</target>
+</project>

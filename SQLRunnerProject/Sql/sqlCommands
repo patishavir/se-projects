@@ -1,0 +1,53 @@
+CREATE TABLE table_name
+(
+column_name1 data_type,
+column_name2 data_type,
+column_name3 data_type,
+....
+)
+INSERT 	INTO table_name (column1, column2, column3,...) 
+		VALUES (value1, value2, value3,...)
+
+
+UPDATE table_name
+	SET column1=value, column2=value2,...
+	WHERE some_column=some_value
+	
+DELETE FROM table_name
+WHERE some_column=some_value	
+
+Samples
+
+CREATE MATAF.TABLE Persons
+(
+P_Id int,
+LastName varchar(255),
+FirstName varchar(255),
+Address varchar(255),
+City varchar(255)
+)
+
+INSERT INTO MATAF.Persons (P_Id, LastName, FirstName) VALUES (5, 'Tjessem', 'Jakob')
+
+UPDATE MATAF.Persons
+SET Address='Nissestien 67', City='Sandnes'
+WHERE LastName='Tjessem' AND FirstName='Jakob'
+
+DELETE FROM MATAF.Persons
+WHERE LastName='Tjessem' AND FirstName='Jakob'
+
+OZ
+
+CREATE TABLE HADRTEST.ODED ( MESSAGE varchar(50))
+
+INSERT 	INTO HADRTEST.ODED ( MESSAGE ) VALUES ('Hello HADR ...')
+		
+DELETE FROM HADRTEST.ODED WHERE MESSAGE LIKE '%Amba%'		
+		
+DROP TABLE HADRTEST.ODED
+
+
+
+AIX
+===
+ CONNECT TO sample IN SHARE MODE USER smith USING pw	

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/SQLRunnerProject/src/oz/sqlrunner/SQLRunnerMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="defaultBrowseMaxNumberOfRecords" value="172"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.sqlrunner.SQLRunnerMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=".\args\database.properties .\args\SQLRunner.properties c:\temp\SQLRunner.log"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SQLRunnerProject"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dfile.encoding-UTF-8 -Dclient.encoding.override=UTF-8"/>
+</launchConfiguration>

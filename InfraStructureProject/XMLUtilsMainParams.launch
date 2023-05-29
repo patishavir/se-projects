@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/InfraStructureProject/src/oz/infra/xml/XMLUtilsMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.infra.xml.XMLUtilsMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="operation=&quot;setXMLAttributeValue&quot; inXMLFilePath=&quot;C:\oj\projects\InfraStructureProject\src\oz\infra\xml\XML\dse.xml&quot; outXMLFilePath=&quot;C:\oj\projects\InfraStructureProject\src\oz\infra\xml\XML\XMLUtilsTest.out.xml&quot; elementPath=&quot;dse.ini#kColl#kColl#kColl&quot; elementDelimiter=&quot;#&quot; attributeName=&quot;kakun&quot;  newAttributeText=&quot;bonbonnaknik&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="InfraStructureProject"/>
+</launchConfiguration>

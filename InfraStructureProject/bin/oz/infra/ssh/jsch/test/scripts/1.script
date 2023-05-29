@@ -1,0 +1,26 @@
+var=varvar
+export folders="folder1 folder2 /etc/folder3 /tmp/ /etc/hosts"
+for folder1 in $folders; do
+	if [[ -d $folder1 ]] ; then
+		echo $folder1 is a folder !!	
+	elif [[ -f $folder1 ]] ; then
+		echo $folder1 is a file !!!
+	else
+		echo $folder1 is nothing !!!!	
+	fi		
+done 
+echo value of var is: $var
+
+mkdir -p /tmp/empty
+export emptyFolder=/tmp/empty
+if [[ $(find $emptyFolder -type f | wc -l) -eq 0 ]] ; then
+	echo $emptyFolder is empty !
+else
+	echo $emptyFolder is not empty!!
+fi
+touch $emptyFolder/zvl.txt
+if [[ $(find $emptyFolder -type f | wc -l) -eq 0 ]] ; then
+	echo $emptyFolder is empty !
+else
+	echo $emptyFolder is not empty!!
+fi

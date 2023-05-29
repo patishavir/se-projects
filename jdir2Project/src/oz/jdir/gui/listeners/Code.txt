@@ -1,0 +1,45 @@
+	//			case 6 : // Date
+					if (!(JdirParameters.getSd().getMatchTableEntries() > 0)) {
+						JOptionPane.showMessageDialog(null,
+								"No files to process. Request ignored");
+						return;
+					}
+					if (JdirParameters.getSd().getDirPanel().getDateJDialog() == null) {
+						JdirParameters.getSd().getDirPanel().setDateJDialog(
+								new DateJDialog(JdirParameters.getSd()
+										.getDirPanel()));
+					}
+					JdirParameters.getSd().getDirPanel().getDateJDialog()
+							.setVisible(true);
+					new MultipleFileOperation().multipleFileOperation(
+							JdirParameters.getSd(), JdirParameters.getDd(),
+							null,
+							(FileOperation) (new SetFileModifyDateOperation()));
+					break;
+	//			case 10 : // ClearToolPath
+					if (JdirParameters.isClearCaseIntegrationEnabled()) {
+						JOptionPane
+								.showMessageDialog(
+										null,
+										"ClearCase integration already enabled"
+												+ "\ncleartool.exe path cannot be changed.");
+						return;
+					}
+					ccc = new ClearCaseClass();
+					String myClearToolExePath = (String) JOptionPane
+							.showInputDialog(null,
+									"Enter Cleartool.exe full path:", "Input",
+									JOptionPane.INFORMATION_MESSAGE, null,
+									null, ccc.getClearToolExePath());
+					if (myClearToolExePath == null) {
+						break;
+					}
+					File myClearToolFile = new File(myClearToolExePath);
+					if (myClearToolFile.isFile()) {
+						ccc.setClearToolExePath(myClearToolExePath);
+					} else {
+						JOptionPane.showMessageDialog(null, myClearToolExePath
+								+ " does not exists!"
+								+ "\ncleartool.exe path has not changed.");
+					}
+					break;

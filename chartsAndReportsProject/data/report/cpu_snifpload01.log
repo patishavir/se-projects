@@ -1,0 +1,172 @@
+20111011 07:00:25 snifpload01 cpu utilzation 12 % is below the 96% threshhold !
+20111011 07:03:29 snifpload01 cpu utilzation 2 % is below the 96% threshhold !
+20111011 07:06:33 snifpload01 cpu utilzation 6 % is below the 96% threshhold !
+20111011 07:09:37 snifpload01 cpu utilzation 5 % is below the 96% threshhold !
+20111011 07:12:41 snifpload01 cpu utilzation 5 % is below the 96% threshhold !
+20111011 07:15:45 snifpload01 cpu utilzation 5 % is below the 96% threshhold !
+20111011 07:18:49 snifpload01 cpu utilzation 23 % is below the 96% threshhold !
+20111011 07:21:53 snifpload01 cpu utilzation 22 % is below the 96% threshhold !
+20111011 07:24:57 snifpload01 cpu utilzation 24 % is below the 96% threshhold !
+20111011 07:28:01 snifpload01 cpu utilzation 21 % is below the 96% threshhold !
+20111011 07:31:05 snifpload01 cpu utilzation 8 % is below the 96% threshhold !
+20111011 07:34:10 snifpload01 cpu utilzation 26 % is below the 96% threshhold !
+20111011 07:37:14 snifpload01 cpu utilzation 28 % is below the 96% threshhold !
+20111011 07:40:18 snifpload01 cpu utilzation 46 % is below the 96% threshhold !
+20111011 07:43:22 snifpload01 cpu utilzation 33 % is below the 96% threshhold !
+20111011 07:46:26 snifpload01 cpu utilzation 44 % is below the 96% threshhold !
+20111011 07:49:30 snifpload01 cpu utilzation 27 % is below the 96% threshhold !
+20111011 07:52:34 snifpload01 cpu utilzation 26 % is below the 96% threshhold !
+20111011 07:55:38 snifpload01 cpu utilzation 73 % is below the 96% threshhold !
+20111011 07:58:42 snifpload01 cpu utilzation 58 % is below the 96% threshhold !
+20111011 08:01:46 snifpload01 cpu utilzation 71 % is below the 96% threshhold !
+20111011 08:04:50 snifpload01 cpu utilzation 69 % is below the 96% threshhold !
+20111011 08:07:54 snifpload01 cpu utilzation 76 % is below the 96% threshhold !
+20111011 08:10:58 snifpload01 cpu utilzation 75 % is below the 96% threshhold !
+20111011 08:17:07 snifpload01 cpu utilzation 87 % is below the 96% threshhold !
+20111011 08:26:19 cpu utilzation 98 % is above the 96% threshhold !
+20111011 08:26:19 Cpu utilization is unavailable since 08:26:19
+20111011 08:35:32 cpu utilzation 98 % is above the 96% threshhold !
+20111011 08:44:45 cpu utilzation 98 % is above the 96% threshhold !
+20111011 08:53:57 cpu utilzation 98 % is above the 96% threshhold !
+20111011 09:03:10 cpu utilzation 99 % is above the 96% threshhold !
+20111011 09:12:23 cpu utilzation 99 % is above the 96% threshhold !
+20111011 09:21:35 cpu utilzation 98 % is above the 96% threshhold !
+20111011 09:30:48 cpu utilzation 98 % is above the 96% threshhold !
+20111011 09:40:00 cpu utilzation 98 % is above the 96% threshhold !
+20111011 09:49:13 cpu utilzation 98 % is above the 96% threshhold !
+20111011 09:55:21 snifpload01 cpu utilzation 91 % is below the 96% threshhold !
+20111011 09:55:21 Cpu utilization is up now. Has been down for 01:29:02.155 from 08:26:19 to 09:55:21
+20111011 10:04:34 cpu utilzation 98 % is above the 96% threshhold !
+20111011 10:04:34 Cpu utilization is unavailable since 10:04:34
+20111011 10:13:47 snifpload01 cpu utilzation 90 % is below the 96% threshhold !
+20111011 10:13:47 Cpu utilization is up now. Has been down for 00:09:12.481 from 10:04:34 to 10:13:47
+20111011 10:22:59 cpu utilzation 98 % is above the 96% threshhold !
+20111011 10:22:59 Cpu utilization is unavailable since 10:22:59
+20111011 10:32:12 cpu utilzation 98 % is above the 96% threshhold !
+20111011 10:41:25 cpu utilzation 98 % is above the 96% threshhold !
+20111011 10:50:37 cpu utilzation 98 % is above the 96% threshhold !
+20111011 10:53:41 snifpload01 cpu utilzation 94 % is below the 96% threshhold !
+20111011 10:53:41 Cpu utilization is up now. Has been down for 00:30:42.83 from 10:22:59 to 10:53:41
+20111011 10:56:46 snifpload01 cpu utilzation 93 % is below the 96% threshhold !
+20111011 11:05:58 cpu utilzation 98 % is above the 96% threshhold !
+20111011 11:05:58 Cpu utilization is unavailable since 11:05:58
+20111011 11:15:11 snifpload01 cpu utilzation 81 % is below the 96% threshhold !
+20111011 11:15:11 Cpu utilization is up now. Has been down for 00:09:12.610 from 11:05:58 to 11:15:11
+20111011 11:24:23 cpu utilzation 98 % is above the 96% threshhold !
+20111011 11:24:23 Cpu utilization is unavailable since 11:24:23
+20111011 11:33:36 cpu utilzation 98 % is above the 96% threshhold !
+20111011 11:42:49 snifpload01 cpu utilzation 83 % is below the 96% threshhold !
+20111011 11:42:49 Cpu utilization is up now. Has been down for 00:18:25.157 from 11:24:23 to 11:42:49
+20111011 11:45:53 snifpload01 cpu utilzation 91 % is below the 96% threshhold !
+20111011 11:55:05 cpu utilzation 98 % is above the 96% threshhold !
+20111011 11:55:05 Cpu utilization is unavailable since 11:55:05
+20111011 12:04:18 cpu utilzation 98 % is above the 96% threshhold !
+20111011 12:10:27 snifpload01 cpu utilzation 92 % is below the 96% threshhold !
+20111011 12:10:27 Cpu utilization is up now. Has been down for 00:15:21.85 from 11:55:05 to 12:10:27
+20111011 12:19:39 cpu utilzation 98 % is above the 96% threshhold !
+20111011 12:19:39 Cpu utilization is unavailable since 12:19:39
+20111011 12:22:43 snifpload01 cpu utilzation 92 % is below the 96% threshhold !
+20111011 12:22:43 Cpu utilization is up now. Has been down for 00:03:04.109 from 12:19:39 to 12:22:43
+20111011 12:31:56 cpu utilzation 98 % is above the 96% threshhold !
+20111011 12:31:56 Cpu utilization is unavailable since 12:31:56
+20111011 12:41:09 cpu utilzation 98 % is above the 96% threshhold !
+20111011 12:50:22 snifpload01 cpu utilzation 91 % is below the 96% threshhold !
+20111011 12:50:22 Cpu utilization is up now. Has been down for 00:18:25.602 from 12:31:56 to 12:50:22
+20111011 12:56:30 snifpload01 cpu utilzation 92 % is below the 96% threshhold !
+20111011 13:02:38 snifpload01 cpu utilzation 92 % is below the 96% threshhold !
+20111011 13:05:42 snifpload01 cpu utilzation 50 % is below the 96% threshhold !
+20111011 13:08:47 snifpload01 cpu utilzation 73 % is below the 96% threshhold !
+20111011 13:11:51 snifpload01 cpu utilzation 72 % is below the 96% threshhold !
+20111011 13:21:03 cpu utilzation 98 % is above the 96% threshhold !
+20111011 13:21:03 Cpu utilization is unavailable since 13:21:03
+20111011 13:27:12 snifpload01 cpu utilzation 92 % is below the 96% threshhold !
+20111011 13:27:12 Cpu utilization is up now. Has been down for 00:06:08.589 from 13:21:03 to 13:27:12
+20111011 13:30:16 snifpload01 cpu utilzation 88 % is below the 96% threshhold !
+20111011 13:33:20 snifpload01 cpu utilzation 92 % is below the 96% threshhold !
+20111011 13:42:33 cpu utilzation 98 % is above the 96% threshhold !
+20111011 13:42:33 Cpu utilization is unavailable since 13:42:33
+20111011 13:45:37 snifpload01 cpu utilzation 86 % is below the 96% threshhold !
+20111011 13:45:37 Cpu utilization is up now. Has been down for 00:03:04.97 from 13:42:33 to 13:45:37
+20111011 13:54:49 cpu utilzation 98 % is above the 96% threshhold !
+20111011 13:54:49 Cpu utilization is unavailable since 13:54:49
+20111011 14:04:02 cpu utilzation 97 % is above the 96% threshhold !
+20111011 14:07:06 snifpload01 cpu utilzation 82 % is below the 96% threshhold !
+20111011 14:07:06 Cpu utilization is up now. Has been down for 00:12:16.680 from 13:54:49 to 14:07:06
+20111011 14:16:19 cpu utilzation 98 % is above the 96% threshhold !
+20111011 14:16:19 Cpu utilization is unavailable since 14:16:19
+20111011 14:19:23 snifpload01 cpu utilzation 92 % is below the 96% threshhold !
+20111011 14:19:23 Cpu utilization is up now. Has been down for 00:03:04.107 from 14:16:19 to 14:19:23
+20111011 14:22:27 snifpload01 cpu utilzation 79 % is below the 96% threshhold !
+20111011 14:31:40 cpu utilzation 98 % is above the 96% threshhold !
+20111011 14:31:40 Cpu utilization is unavailable since 14:31:40
+20111011 14:40:52 snifpload01 cpu utilzation 80 % is below the 96% threshhold !
+20111011 14:40:52 Cpu utilization is up now. Has been down for 00:09:12.502 from 14:31:40 to 14:40:52
+20111011 14:50:05 cpu utilzation 98 % is above the 96% threshhold !
+20111011 14:50:05 Cpu utilization is unavailable since 14:50:05
+20111011 14:53:09 snifpload01 cpu utilzation 91 % is below the 96% threshhold !
+20111011 14:53:09 Cpu utilization is up now. Has been down for 00:03:04.90 from 14:50:05 to 14:53:09
+20111011 15:02:22 cpu utilzation 98 % is above the 96% threshhold !
+20111011 15:02:22 Cpu utilization is unavailable since 15:02:22
+20111011 15:11:34 snifpload01 cpu utilzation 51 % is below the 96% threshhold !
+20111011 15:11:34 Cpu utilization is up now. Has been down for 00:09:12.451 from 15:02:22 to 15:11:34
+20111011 15:14:38 snifpload01 cpu utilzation 78 % is below the 96% threshhold !
+20111011 15:17:42 snifpload01 cpu utilzation 81 % is below the 96% threshhold !
+20111011 15:23:50 snifpload01 cpu utilzation 85 % is below the 96% threshhold !
+20111011 15:26:54 snifpload01 cpu utilzation 44 % is below the 96% threshhold !
+20111011 15:29:59 snifpload01 cpu utilzation 36 % is below the 96% threshhold !
+20111011 15:33:03 snifpload01 cpu utilzation 58 % is below the 96% threshhold !
+20111011 15:36:07 snifpload01 cpu utilzation 90 % is below the 96% threshhold !
+20111011 15:39:11 snifpload01 cpu utilzation 40 % is below the 96% threshhold !
+20111011 15:42:15 snifpload01 cpu utilzation 68 % is below the 96% threshhold !
+20111011 15:45:19 snifpload01 cpu utilzation 38 % is below the 96% threshhold !
+20111011 15:48:23 snifpload01 cpu utilzation 60 % is below the 96% threshhold !
+20111011 15:51:27 snifpload01 cpu utilzation 33 % is below the 96% threshhold !
+20111011 15:54:31 snifpload01 cpu utilzation 48 % is below the 96% threshhold !
+20111011 15:57:35 snifpload01 cpu utilzation 37 % is below the 96% threshhold !
+20111011 16:00:39 snifpload01 cpu utilzation 17 % is below the 96% threshhold !
+20111011 16:03:43 snifpload01 cpu utilzation 28 % is below the 96% threshhold !
+20111011 16:06:47 snifpload01 cpu utilzation 26 % is below the 96% threshhold !
+20111011 16:09:51 snifpload01 cpu utilzation 28 % is below the 96% threshhold !
+20111011 16:12:55 snifpload01 cpu utilzation 27 % is below the 96% threshhold !
+20111011 16:16:00 snifpload01 cpu utilzation 16 % is below the 96% threshhold !
+20111011 16:19:04 snifpload01 cpu utilzation 20 % is below the 96% threshhold !
+20111011 16:22:08 snifpload01 cpu utilzation 34 % is below the 96% threshhold !
+20111011 16:25:12 snifpload01 cpu utilzation 8 % is below the 96% threshhold !
+20111011 16:28:16 snifpload01 cpu utilzation 22 % is below the 96% threshhold !
+20111011 16:31:20 snifpload01 cpu utilzation 14 % is below the 96% threshhold !
+20111011 16:34:24 snifpload01 cpu utilzation 12 % is below the 96% threshhold !
+20111011 16:37:28 snifpload01 cpu utilzation 11 % is below the 96% threshhold !
+20111011 16:40:32 snifpload01 cpu utilzation 9 % is below the 96% threshhold !
+20111011 16:43:36 snifpload01 cpu utilzation 1 % is below the 96% threshhold !
+20111011 16:46:40 snifpload01 cpu utilzation 7 % is below the 96% threshhold !
+20111011 16:49:44 snifpload01 cpu utilzation 2 % is below the 96% threshhold !
+20111011 16:52:48 snifpload01 cpu utilzation 2 % is below the 96% threshhold !
+20111011 16:55:53 snifpload01 cpu utilzation 5 % is below the 96% threshhold !
+20111011 16:58:57 snifpload01 cpu utilzation 5 % is below the 96% threshhold !
+20111011 17:02:01 snifpload01 cpu utilzation 17 % is below the 96% threshhold !
+20111011 17:05:05 snifpload01 cpu utilzation 6 % is below the 96% threshhold !
+20111011 17:08:09 snifpload01 cpu utilzation 3 % is below the 96% threshhold !
+20111011 17:11:13 snifpload01 cpu utilzation 6 % is below the 96% threshhold !
+20111011 17:14:17 snifpload01 cpu utilzation 2 % is below the 96% threshhold !
+20111011 17:17:21 snifpload01 cpu utilzation 13 % is below the 96% threshhold !
+20111011 17:20:25 snifpload01 cpu utilzation 2 % is below the 96% threshhold !
+20111011 17:23:29 snifpload01 cpu utilzation 14 % is below the 96% threshhold !
+20111011 17:26:33 snifpload01 cpu utilzation 3 % is below the 96% threshhold !
+20111011 17:29:37 snifpload01 cpu utilzation 2 % is below the 96% threshhold !
+20111011 17:32:41 snifpload01 cpu utilzation 7 % is below the 96% threshhold !
+20111011 17:35:45 snifpload01 cpu utilzation 5 % is below the 96% threshhold !
+20111011 17:38:49 snifpload01 cpu utilzation 3 % is below the 96% threshhold !
+20111011 17:41:54 snifpload01 cpu utilzation 1 % is below the 96% threshhold !
+20111011 17:44:58 snifpload01 cpu utilzation 2 % is below the 96% threshhold !
+20111011 17:48:02 snifpload01 cpu utilzation 13 % is below the 96% threshhold !
+20111011 17:51:06 snifpload01 cpu utilzation 3 % is below the 96% threshhold !
+20111011 17:54:10 snifpload01 cpu utilzation 5 % is below the 96% threshhold !
+20111011 17:57:14 snifpload01 cpu utilzation 3 % is below the 96% threshhold !
+20111011 18:00:18 snifpload01 cpu utilzation 3 % is below the 96% threshhold !
+20111011 18:03:22 snifpload01 cpu utilzation 1 % is below the 96% threshhold !
+20111011 18:06:26 snifpload01 cpu utilzation 9 % is below the 96% threshhold !
+20111011 18:09:30 snifpload01 cpu utilzation 12 % is below the 96% threshhold !
+20111011 18:12:34 snifpload01 cpu utilzation 15 % is below the 96% threshhold !
+20111011 18:15:38 snifpload01 cpu utilzation 2 % is below the 96% threshhold !
+20111011 18:18:42 snifpload01 cpu utilzation 2 % is below the 96% threshhold !
+20111011 18:21:46 snifpload01 cpu utilzation 1 % is below the 96% threshhold !

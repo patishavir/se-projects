@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="src" path="/InfraStructureProject"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/GUIGeneratorProject"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/clearCaseProject"/>
+	<classpathentry kind="lib" path="/JarContainer/commons/io/2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

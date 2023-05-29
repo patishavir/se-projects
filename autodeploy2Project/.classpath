@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/JarContainer/commons/email/1.5/commons-email-1.5.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/InfraStructureProject"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FibiInfraStructure"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/InfraStructure7Project"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

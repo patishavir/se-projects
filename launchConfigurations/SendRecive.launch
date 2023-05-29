@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/tempProject/src/oz/samples/mq/SendRecive.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.samples.mq.SendRecive"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="s5380503 1414 CHAN1 ODED.TEST.REQ ODED.TEST.RESP helloWmq 5"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="tempProject"/>
+</launchConfiguration>

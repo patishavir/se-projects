@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<topLevelContainer title="Object Explorer context menu" />
+	<radioButton name="BROWSE" displayName="Browse data"
+		selected="yes" group="ObjectExplorerOperation" toolTipText="Select required operation" />
+	<radioButton name="COUNT" displayName="Count rows"
+		selected="no" group="ObjectExplorerOperation" toolTipText="Select required operation" />
+	<radioButton name="DROP" displayName="Drop table" selected="no"
+		group="ObjectExplorerOperation" toolTipText="Select required operation" />
+	<radioButton name="TRUNCATE" displayName="Truncate table"
+		selected="no" group="ObjectExplorerOperation" toolTipText="Select required operation" />
+	<radioButton name="EXPORT" displayName="Export table"
+		selected="no" group="ObjectExplorerOperation" toolTipText="Select required operation" />
+	<radioButton name="IMPORT" displayName="Import into table"
+		selected="no" group="ObjectExplorerOperation" toolTipText="Select required operation" />
+	<radioButton name="SHOW_META_DATA" displayName="Show metaData"
+		selected="no" group="ObjectExplorerOperation" toolTipText="Select required operation" />
+	<radioButton name="SHOW_PRIVILEGES" displayName="Show privileges"
+		selected="no" group="ObjectExplorerOperation" toolTipText="Select required operation" />
+	<radioButton name="SHOW_PRIMARY_KEYS" displayName="Show primary keys"
+		selected="no" group="ObjectExplorerOperation" toolTipText="Select required operation" />
+	<radioButtonGroup name="ObjectExplorerOperation"
+		displayName="Select operation:" rows="9" toolTipText="Select required operation" />
+	<textfield name="numberOfRecords" displayName="Max records to browse:"
+		defaultValue="50" SIZE="4" validationRule="NUMERIC" />
+	<submitButton value="Perform operation" />
+</params>

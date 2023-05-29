@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jdirProject" default="buildJdirJarFile" basedir=".">
+	<target name="buildJdirJarFile">
+		<tstamp>
+			<format property="build.time" pattern="yyyy.MM.dd 'at' HH:mm:ss " />
+		</tstamp>	
+		<echo file="./src/oz/jdir/versionInfo.txt" append="false">Bulid date: ${build.time}</echo>
+		<jar destfile=".\jdir.jar" compress="true">			
+			<fileset dir="./bin" />
+			<fileset dir="./src" />
+			<fileset dir="../InfraStructureProject/src" />
+			<fileset dir="../InfraStructureProject/bin" />
+			<fileset dir="../GUIGeneratorProject/src" />
+			<fileset dir="../GUIGeneratorProject/bin" />
+			<manifest>
+				<attribute name="Main-Class" value="oz.jdir.JDirMain"/>
+			</manifest>
+		</jar>
+	</target>
+</project>

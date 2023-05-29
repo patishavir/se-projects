@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/pdf2tif/src/oz/utils/pdf/Pdf2Mtiff.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.pdf.Pdf2Mtiff"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="./args/log4j.properties"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="pdf2tif"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djna.library.path=Z:\Oded\projects\JarContainer\ghost4j\win32-x86-64\"/>
+</launchConfiguration>

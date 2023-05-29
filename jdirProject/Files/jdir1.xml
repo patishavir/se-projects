@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters GUI="yes" sourceDir="F:\jdirTest\f1" 
+destinationDir="F:\jdirTest\f2" show="all" operation="Mirror" enableCC="nes" loggingLevel="INFO"/>
+</InputParametersSet>
+
+
+

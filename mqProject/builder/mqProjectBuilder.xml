@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="buildJarProject" default="buildJarFile" basedir="..">
+	<target name="buildJarFile">
+		<tstamp>
+			<format property="build.time" pattern="yyyy.MM.dd 'at' HH:mm:ss " />
+		</tstamp>
+		<echo file="./src/oz/utils/buildInfo.txt" append="false">Build date: ${build.time}</echo>
+		<jar destfile="./jars/putmessage.jar" compress="true">
+			<fileset dir="./bin" />
+			<fileset dir="./src" />
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Main-Class" value="oz.utils.mq.MQUtilsMain" />
+				<attribute name="Implementation-Version" value="build-id:${build.time}" />
+				<attribute name="Built-Date" value="${build.time}" />
+			</manifest>
+		</jar>
+	</target>
+</project>

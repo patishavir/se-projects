@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+<label value="Change CQ entity state" foregroundcolor="Magenta" />
+<topLevelContainer title="Change CQ entity state"  />
+<param name="Connection" defaultValue="DB2S" />
+<combobox name="database"  values="cqHrucmTest,cqhrucm" editAble="yes"  />
+<combobox name="entitydefname"  values="BugReoprt,Pniya" editAble="yes"  />
+<param name="cqId" size="12"/>
+<combobox name="oldState"  values="Submitted,Fixed,Closed,Rejected" editAble="yes"  />
+<combobox name="newState"  values="Submitted,Fixed,Closed,Rejected" editAble="yes"  />
+<filePath value="%paramFile%" />
+<submitButton value="submit"/> 
+</params>

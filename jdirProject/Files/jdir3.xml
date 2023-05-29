@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters GUI="yes" sourceDirectory="f:\jdirTest\docs1\oded" 
+destinationDirectory="f:\jdirTest\docs2\oded" show="all"  loggingLevel="FINE"/>
+</InputParametersSet>
+
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/notes/wmq/com.ibm.mq.commonservices.jar"/>
+	<classpathentry kind="lib" path="lib/notes/wmq/com.ibm.mq.headers.jar"/>
+	<classpathentry kind="lib" path="lib/notes/wmq/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="lib/notes/wmq/com.ibm.mq.jmqi.jar"/>
+	<classpathentry kind="lib" path="lib/notes/wmq/com.ibm.mq.pcf.jar"/>
+	<classpathentry kind="lib" path="lib/notes/wmq/connector.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/lotus/8.5.3/Notes.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/InfraStructureProject"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

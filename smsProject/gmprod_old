@@ -1,0 +1,59 @@
+10:41:30 INFO oz.infra.mq.MQUtils writeMessage:  hostname: supwmqpnim1.fibi.corp port:1514 outputQName:GM.SOURCE.EVENTS qManager:Q538GM0P channel:CHAN1
+message: <?xml version="1.0"?><sms><addressType>ad</addressType><from>Oded Zimerman</from><to>s177571</to><smsMsg>Batch mesage 123 2508</smsMsg></sms>
+10:41:52 WARNING oz.infra.exception.ExceptionUtils printMessageAndStackTrace:  
+oz.infra.mq.MQUtils writeMessage 
+MQJE001: Completion Code '2', Reason '2059'.
+
+com.ibm.mq.MQException: MQJE001: Completion Code '2', Reason '2059'.
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:238)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:505)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:547)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:95)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:182)
+	at com.ibm.mq.MQQueueManagerFactory.obtainBaseMQQueueManager(MQQueueManagerFactory.java:869)
+	at com.ibm.mq.MQQueueManagerFactory.procure(MQQueueManagerFactory.java:761)
+	at com.ibm.mq.MQQueueManagerFactory.constructQueueManager(MQQueueManagerFactory.java:712)
+	at com.ibm.mq.MQQueueManagerFactory.createQueueManager(MQQueueManagerFactory.java:171)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:603)
+	at oz.infra.mq.MQUtils.writeMessage(MQUtils.java:63)
+	at oz.infra.mq.MQUtils.writeMessage(MQUtils.java:47)
+	at oz.infra.fibi.gm.GMUtils.sendSms(GMUtils.java:113)
+	at oz.utils.sms.SendSmsParameters.processParameters(SendSmsParameters.java:38)
+	at oz.utils.sms.SendSmsMain.main(SendSmsMain.java:9)
+Caused by: com.ibm.mq.jmqi.JmqiException: CC=2;RC=2059;AMQ9204: Connection to host 'supwmqpnim1.fibi.corp(1514)' rejected. [1=com.ibm.mq.jmqi.JmqiException[CC=2;RC=2059;AMQ9213: A communications error for  occurred. [1=java.net.ConnectException[Connection timed out: connect],3=supwmqpnim1.fibi.corp]],3=supwmqpnim1.fibi.corp(1514),5=RemoteTCPConnection.connnectUsingLocalAddress]
+	at com.ibm.mq.jmqi.remote.internal.RemoteFAP.jmqiConnect(RemoteFAP.java:2010)
+	at com.ibm.mq.jmqi.remote.internal.RemoteFAP.jmqiConnect(RemoteFAP.java:1227)
+	at com.ibm.mq.MQSESSION.MQCONNX_j(MQSESSION.java:915)
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:227)
+	... 14 more
+Caused by: com.ibm.mq.jmqi.JmqiException: CC=2;RC=2059;AMQ9213: A communications error for  occurred. [1=java.net.ConnectException[Connection timed out: connect],3=supwmqpnim1.fibi.corp]
+	at com.ibm.mq.jmqi.remote.internal.RemoteTCPConnection.connnectUsingLocalAddress(RemoteTCPConnection.java:663)
+	at com.ibm.mq.jmqi.remote.internal.RemoteTCPConnection.protocolConnect(RemoteTCPConnection.java:991)
+	at com.ibm.mq.jmqi.remote.internal.system.RemoteConnection.connect(RemoteConnection.java:1112)
+	at com.ibm.mq.jmqi.remote.internal.system.RemoteConnectionPool.getConnection(RemoteConnectionPool.java:350)
+	at com.ibm.mq.jmqi.remote.internal.RemoteFAP.jmqiConnect(RemoteFAP.java:1599)
+	... 17 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.ibm.mq.jmqi.remote.internal.RemoteTCPConnection$5.run(RemoteTCPConnection.java:650)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.ibm.mq.jmqi.remote.internal.RemoteTCPConnection.connnectUsingLocalAddress(RemoteTCPConnection.java:643)
+	... 21 more
+
+10:41:52 WARNING oz.infra.properties.PropertiesUtils printProperties:  oz.infra.properties.PropertiesUtils printProperties
+outputQName = GM.SOURCE.EVENTS
+ccsid = 916
+qManager = Q538GM0P
+port = 1514
+hostname = supwmqpnim1.fibi.corp
+message = <?xml version="1.0"?><sms><addressType>ad</addressType><from>Oded Zimerman</from><to>s177571</to><smsMsg>Batch mesage 123 2508</smsMsg></sms>
+channel = CHAN1
+

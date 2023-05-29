@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters operation="setXMLElementValue" inXMLFilePath="d:\\oj\\projects\\InfraStructureProject\\src\\oz\\infra\\xml\\XMLUtilTest.xml" 
+outXMLFilePath="D:\oj\projects\InfraStructureProject\src\oz\infra\xml\XMLUtilsTest.out.xml" elementPath="InputParametersSet#secodLevel#thirdLevel" elementDelimiter="#" newElementText="NEWWW123456" 
+attributeName="kakun"  newAttributeText="nununu123456" />
+</InputParametersSet>

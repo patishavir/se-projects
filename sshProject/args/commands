@@ -1,0 +1,86 @@
+/etc/rc.shutdownZZZ
+/etc/rc.sna
+/etc/rc.was
+/nd61/IBM/HTTPServer/bin/apachectl restart
+/nd61/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/backupConfig.sh -nostop
+/nd61/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh
+/nd61/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/syncNode.sh snifp-http01
+/nd61/IBM/WebSphere/AppServer/profiles/Custom01/bin/stopNode.sh
+/nd61/IBM/WebSphere/AppServer/profiles/Custom01/bin/syncNode.sh snifp-http01
+/nd7/IBM/WebSphere/AppServer/bin/versionInfo.sh
+/snifit/scripts/java/ozmonitor/snifit/monitors/hostsToTerminate/terminateAll.sh
+/snifit/scripts/sys/cron/backupCrontab.sh
+/snifit/scripts/sys/cron/backupConfig61.sh
+/snifit/scripts/sys/mount/Image_Hiyuvim.sh
+/snifit/scripts/sys/ps/ps_was.sh
+/snifit/scripts/sys/tz/fixtz.sh
+/snifit/scripts/was/6.1/restartServer.sh
+/snifit/scripts/was/7.0/rc.was7.shutdown
+/snifit/scripts/was/fullRestartAndSync.sh
+/snifit/scripts/was/wsadmin/AdminControl/rippleStart/rippleStart.sh ZZ ClusterOZ ClusterSSO ClusterT ClusterProd
+/usr/java6_64/bin/java -version
+bootinfo -r
+bootinfo -y
+cat /etc/sna/sna_node.cfg
+cat /nd61/IBM/HTTPServer/Plugins/config/snif-http61/plugin-cfg.xml
+cat /usr/IBM/WebSphere/UpdateInstaller/version.txt
+cp -p /snifit/scripts/sys/.tcshrc  /root/
+cp -p /snifit/tmp/ADWASSnifTestSPN.keytab /etc/krb5/
+cp -p /snifit/tmp/krb5.conf /etc/krb5/
+cp -p /etc/hosts /snifit/tmp/hosts/hosts.`hostname`
+cp -p /snifit/tmp/hosts.xxx /etc/hosts
+cp -p /etc/inittab /etc/inittab.`date +"%Y%m%d"`
+cp -p /etc/inittab  /snifit/backup/config/inittab.$(hostname).$(date +"%w").backup
+cp -p /etc/inittab  /snifit/backup/config/inittab.`hostname`.`date +"%w"`.backup
+crontab -l | grep shutdown
+date
+df -g
+grep TZ /etc/environment
+grep -r .webservices.http.connectionTimeout /nd61/IBM/WebSphere/AppServer/profiles/Dmgr01/config/cells
+grep Version /usr/IBM/WebSphere/UpdateInstaller/version.txt
+hostname
+ls -l /etc/krb5
+ls -l /etc/hosts
+ls -l /Image_Hiyuvim/ITTI_FROM
+ls -l /Image_Hiyuvim_V/ITTI_FROM
+ls -l /Image_Hiyuvim_V/ITTI_FROM/000020001.tif
+ls -l /Image_Hiyuvim/ITTI_FROM/0016802*
+ls -l /logs/folder4Scp
+ls -l /logs/was7/B_Z7_SSO
+ls -l /nd7
+ls -l /nd7/IBM/WebSphere/AppServer/bin/liblu0wrap.so
+ls -l /nd7/IBM/WebSphere/drivers/db2/9.7
+ls -l /nd7/IBM/WebSphere/drivers/db2/10.1.0.2
+ls -l /nd7/IBM/WebSphere/AppServer/profiles
+ls -l /nd7/IBM/WebSphere/AppServer/profiles/AppSrv01/installedConnectors/snalu0.rar
+ls -l /nd7/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/soap.client.props
+ls -l /snifit
+lsattr -El sys0
+lsattr -El sys0 -a realmem
+lslpp -L | grep -i websph
+lslpp -L | grep -i plugin
+mount
+/usr/bin/netstat -na | grep 1414 | wc
+/usr/bin/netstat -nr
+ntpdate fibi.corp
+oslevel -r
+ps -ef | grep httpd
+ps -ef | grep java
+ps -ef | grep oz
+sudo su - -c "id"
+sudo su - -c "/snifit/scripts/sys/ps/ps_was7.sh"
+sudo su - -c "/usr/bin/crontab -l | grep 61"
+sudo su - -c "/usr/bin/netstat -nr > /snifit/backup/config/`hostname`_netstat-r.txt"
+sudo su - -c "/snifit/scripts/sys/ps/ps_was7.sh"
+sudo su - -c "cp /tmp/ADWASSnifProdSPN.keytab /etc/krb5/ADWASSnifProdSPN.keytab"
+sudo su - -c "/usr/bin/odmget -q "attribute=route" CuAt"
+sudo su - -c "umount -f /snifit;mount /snifit"
+sudo su - -c "snaadmin status_connectivity;snaadmin status_dlur"
+SSSSSSSSSSSSSSSSSSSSsudo su - -c "shutdown -r now"
+/usr/bin/tail /nd7/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/syncNode.log
+/usr/bin/tail -n30 /var/sna/sna.err
+/usr/bin/tail -n50 /usr/tivoli/tsm/client/ba/bin/dsmsched.log | grep Objects
+telnet s298ac04 2049
+telnet w048k411 8082
+/usr/bin/uptime
+wc -l /logs/ihs/access/access_2010-11-11-10-00

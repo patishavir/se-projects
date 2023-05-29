@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="buildJarProject" default="buildJarFile" basedir="..">
+	<target name="buildJarFile">
+		<tstamp>
+			<format property="build.time" pattern="yyyy.MM.dd 'at' HH:mm:ss " />
+		</tstamp>
+		<echo file="./src/oz/buildInfo.txt" append="false">Build date: ${build.time}</echo>
+		<jar destfile="./jars/temp3.jar" compress="true">
+			<fileset dir="./bin" />
+			<fileset dir="./src" />
+			<fileset dir="../InfraStructureProject/src" />
+			<fileset dir="../InfraStructureProject/bin" />
+		</jar>
+	</target>
+</project>

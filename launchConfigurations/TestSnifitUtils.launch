@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/FibiInfraStructure/src/oz/infra/snifit/test/TestSnifitUtils.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.infra.snifit.test.TestSnifitUtils"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="..\InfraStructureProject\src\oz\infra\spnego\test\args\spnego.properties http://snif-http.fibi.corp:82/MatafServer_T_UK1/generalClientDefines.properties  25  2500"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="FibiInfraStructure"/>
+</launchConfiguration>

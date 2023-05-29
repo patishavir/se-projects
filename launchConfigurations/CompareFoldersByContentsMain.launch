@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/utilsProject/src/oz/utils/io/CompareFoldersByContentsMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.io.CompareFoldersByContentsMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="c:\temp\projects_WKSU102573A06_2008.11.12.10.03 c:\temp\projects_WKSU102573A06_2008.11.12.10.03_"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="utilsProject"/>
+</launchConfiguration>

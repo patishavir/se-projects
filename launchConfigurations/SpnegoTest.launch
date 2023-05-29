@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/InfraStructureProject/src/oz/infra/spnego/test/SpnegoTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.infra.spnego.test.SpnegoTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="src/oz/infra/spnego/test/args/spnego.properties  http://snifp-http.fibi.corp:85/MatafServer_B_Z7/SmServlet?type=2  http://snifp-http.fibi.corp/snoop http://snif-http.fibi.corp/MatafServer_T_UE8/TestLoadSrv"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="InfraStructureProject"/>
+</launchConfiguration>

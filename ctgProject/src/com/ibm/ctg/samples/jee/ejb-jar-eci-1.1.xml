@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Licensed Materials - Property of IBM  
+  
+ 5724-I81,5655-Y20 
+  
+ (C) Copyright IBM Corp. 2004, 2014 All Rights Reserved.  
+  
+ US Government Users Restricted Rights - Use, duplication or  
+ disclosure restricted by GSA ADP Schedule Contract with  
+ IBM Corp.  
+   
+   Status: Version 9 Release 1 
+-->
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar id="ejb-jar_ID">
+	<display-name>ECIDateTimeEJB</display-name>
+	<enterprise-beans>
+		<session id="ECIDateTime">
+			<ejb-name>ECIDateTime</ejb-name>
+			<home>com.ibm.ctg.samples.jee.ECIDateTimeHome</home>
+			<remote>com.ibm.ctg.samples.jee.ECIDateTime</remote>
+			<ejb-class>com.ibm.ctg.samples.jee.ECIDateTimeBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_ECI">
+				<description></description>
+				<res-ref-name>ECI</res-ref-name>
+				<res-type>javax.resource.cci.ConnectionFactory</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+	</enterprise-beans>
+</ejb-jar>

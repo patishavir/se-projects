@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<topLevelContainer title="JDir options" />
+	<runCommandDelimiter value="_" />
+	<pane title="Comparison Settings"/>
+	<combobox name="FileComparisonCriteria"  delimiter="#" values="Size and message digest#Size and time stamp#Size and binary comparison" editAble="n"/>		                
+	<combobox name="MessageDigestAlgorithm"  values="MD5,SHA-1,SHA-256" editAble="n"/>
+	<param name="CompareUtilityPath" defaultValue="C:\Program Files\Rational\ClearCase\bin\cleardiffmrg.exe" size="12" browseButton="yes"/>
+	<pane title="logging"/>
+	<param name="LogFilePath" defaultValue="C:\temp\jdir.log" browseButton="yes"/>
+	<radioButton name="yes" selected="yes"  group="ConsoleHandler"/>
+	<radioButton name="no" selected="no"  group="ConsoleHandler"/>
+	<radioButtonGroup name="ConsoleHandler" />
+	<radioButton name="yes" selected="no"  group="FileHandler"/>
+	<radioButton name="no" selected="yes"  group="FileHandler"/>
+	<radioButtonGroup name="FileHandler"/>	
+	<radioButton name="Severe" selected="no"  group="LoggingLevel"/> 			
+	<radioButton name="Warning" selected="no"  group="LoggingLevel"/>
+	<radioButton name="Info" selected="yes"  group="LoggingLevel"/>
+	<radioButton name="Config" selected="no"  group="LoggingLevel"/> 
+	<radioButton name="Fine" selected="no"  group="LoggingLevel"/> 
+	<radioButton name="Finer" selected="no"  group="LoggingLevel"/> 
+	<radioButton name="Finest" selected="no"  group="LoggingLevel"/> 
+	<radioButton name="All" selected="no"  group="LoggingLevel"/>
+	<radioButtonGroup name="LoggingLevel" rows="2"/>
+	<pane title="file filters"/>
+	<label value="file filters" foregroundcolor="BLUE"/>
+	<param name="FilePathIncludeFilter" size="5" toolTipText="Select only files whose path contain this string" />
+	<param name="FilePathExcludeFilter" size="5" toolTipText="Select only files whose path does not contain this string" />
+	<pane title="ClearCase filters"/>
+	<label value="ClearCase filters" foregroundcolor="BLUE"/>
+	<checkbox name="ChechedOutFilter" defaultValue="no" toolTipText="Select only checked out files in case ClearCase integration is enabled. Ignore otherwise"/>
+	<checkbox name="ViewPrivateFilter" defaultValue="no" toolTipText="Select only view private files in case ClearCase integration is enabled. Ignore otherwise"/>
+	<jpanel />
+	<submitButton value="set Parameters" />	
+</params>
+
+

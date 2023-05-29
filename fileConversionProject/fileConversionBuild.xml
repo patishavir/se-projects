@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="buildProject" default="buildJarFile" basedir=".">
+	<target name="buildJarFile">
+		<tstamp>
+			<format property="build.time" pattern="yyyy.MM.dd 'at' HH:mm:ss " />
+		</tstamp>	
+		<echo file="./src/oz/utils/fileconversion/versionInfo.txt" append="false">Bulid date: ${build.time}</echo>
+		<jar destfile=".\fileconversion.jar" compress="true">			
+			<fileset dir="./bin" />
+			<fileset dir="./src" />
+			<fileset dir="../InfraStructureProject/src" />
+			<fileset dir="../InfraStructureProject/bin" />
+			<manifest>
+				<attribute name="Main-Class" value="oz.utils.fileconversion.FileConversionMain"/>
+			</manifest>
+		</jar>
+	</target>
+</project>

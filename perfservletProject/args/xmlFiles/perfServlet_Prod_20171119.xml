@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PerformanceMonitor SYSTEM "/wasPerfTool/dtd/performancemonitor.dtd">
+<PerformanceMonitor responseStatus="success" version="">
+	<Node name="snifpprod01Node85">
+		<Server name="p1">
+			<Stat name="Web Applications">
+				<Stat name="MatafEAR_P_Z6#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2" lastSampleTime="1510510396630"
+								name="RequestCount" startTime="1510510377246" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510510396677"
+								max="3637" min="47" name="ServiceTime" startTime="1510510377246"
+								totalTime="3684" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2" lastSampleTime="1510510396630"
+							name="RequestCount" startTime="1510509447153" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510510396677"
+							max="3637" min="47" name="ServiceTime" startTime="1510509447153"
+							totalTime="3684" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="ibmasyncrsp#ibmasyncrsp.war">
+					<Stat name="Servlets">
+						<Stat name="rspservlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509435122"
+								name="RequestCount" startTime="1510509435122" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509435123"
+								max="0" min="0" name="ServiceTime" startTime="1510509435123"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="0" lastSampleTime="1510509454051"
+							name="RequestCount" startTime="1510509434425" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509435123"
+							max="0" min="0" name="ServiceTime" startTime="1510509434425"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="perfServletApp#perfServletApp.war">
+					<Stat name="Servlets">
+						<Stat name="controller">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510767170673"
+								name="RequestCount" startTime="1510767170434" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510767207843"
+								max="37169" min="37169" name="ServiceTime" startTime="1510767170434"
+								totalTime="37169" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="perfservlet60">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510767170724"
+								name="RequestCount" startTime="1510767170722" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510767207819"
+								max="37094" min="37094" name="ServiceTime" startTime="1510767170722"
+								totalTime="37094" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2" lastSampleTime="1510767170724"
+							name="RequestCount" startTime="1510509435227" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510767207843"
+							max="37169" min="37094" name="ServiceTime" startTime="1510509435227"
+							totalTime="74263" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_B_Z7#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510510138562"
+								name="RequestCount" startTime="1510510137604" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510510142886"
+								max="4324" min="4324" name="ServiceTime" startTime="1510510137604"
+								totalTime="4324" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="40" lastSampleTime="1511088217439"
+								name="RequestCount" startTime="1510551945896" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511088217444"
+								max="221" min="1" name="ServiceTime" startTime="1510551945896"
+								totalTime="455" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="40233"
+								lastSampleTime="1511089307608" name="RequestCount" startTime="1510553718978"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089307671"
+								max="30081" min="2" name="ServiceTime" startTime="1510553718978"
+								totalTime="3112997" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="40274"
+							lastSampleTime="1511089307608" name="RequestCount" startTime="1510509463753"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089307671"
+							max="30081" min="1" name="ServiceTime" startTime="1510509463753"
+							totalTime="3117776" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_L_Z8#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2822"
+								lastSampleTime="1511089299106" name="RequestCount" startTime="1510509479980"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089299117"
+								max="551" min="0" name="ServiceTime" startTime="1510509479980"
+								totalTime="26423" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2530377"
+								lastSampleTime="1511089308413" name="RequestCount" startTime="1510509495363"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089308415"
+								max="35527" min="1" name="ServiceTime" startTime="1510509495367"
+								totalTime="183811758" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2533199"
+							lastSampleTime="1511089308413" name="RequestCount" startTime="1510509470644"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089308415"
+							max="35527" min="0" name="ServiceTime" startTime="1510509470644"
+							totalTime="183838181" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<CountStatistic ID="11" count="2573477"
+					lastSampleTime="1511089308413" name="RequestCount" startTime="1510509435123"
+					unit="N/A" />
+				<TimeStatistic ID="13" lastSampleTime="1511089308415"
+					max="37169" min="0" name="ServiceTime" startTime="1510509435123"
+					totalTime="187033904" unit="MILLISECOND" />
+			</Stat>
+		</Server>
+		<Server name="nodeagent" />
+	</Node>
+	<Node name="snifpprod02Node01">
+		<Server name="kyc02">
+			<Stat name="Web Applications">
+				<Stat name="RCM_war#RCM.war">
+					<Stat name="Servlets">
+						<Stat name="/acegi/heartBeat.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="70" lastSampleTime="1511059269132"
+								name="RequestCount" startTime="1510510430257" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511059269135"
+								max="49" min="2" name="ServiceTime" startTime="1510510430257"
+								totalTime="322" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="AdminServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509836829"
+								name="RequestCount" startTime="1510509836829" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509836829"
+								max="0" min="0" name="ServiceTime" startTime="1510509836829"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="InitConnections">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509821381"
+								name="RequestCount" startTime="1510509821381" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509821381"
+								max="0" min="0" name="ServiceTime" startTime="1510509821381"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="JreportHelp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509836719"
+								name="RequestCount" startTime="1510509836719" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509836719"
+								max="0" min="0" name="ServiceTime" startTime="1510509836719"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="mvc">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509822154"
+								name="RequestCount" startTime="1510509822154" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509822154"
+								max="0" min="0" name="ServiceTime" startTime="1510509822154"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="plugin">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510651504668"
+								name="RequestCount" startTime="1510651504668" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510651504668"
+								max="0" min="0" name="ServiceTime" startTime="1510651504668"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="70" lastSampleTime="1511059269132"
+							name="RequestCount" startTime="1510509780448" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511059269135"
+							max="49" min="2" name="ServiceTime" startTime="1510509780448"
+							totalTime="322" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="ibmasyncrsp#ibmasyncrsp.war">
+					<Stat name="Servlets">
+						<Stat name="rspservlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509778910"
+								name="RequestCount" startTime="1510509778910" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509778910"
+								max="0" min="0" name="ServiceTime" startTime="1510509778910"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="0" lastSampleTime="1510509778910"
+							name="RequestCount" startTime="1510509778513" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509778910"
+							max="0" min="0" name="ServiceTime" startTime="1510509778513"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<CountStatistic ID="11" count="70" lastSampleTime="1511059269132"
+					name="RequestCount" startTime="1510509778910" unit="N/A" />
+				<TimeStatistic ID="13" lastSampleTime="1511059269135"
+					max="49" min="2" name="ServiceTime" startTime="1510509778910"
+					totalTime="322" unit="MILLISECOND" />
+			</Stat>
+		</Server>
+		<Server name="nodeagent" />
+	</Node>
+	<Node name="snifphttp02Node85">
+		<Server name="nodeagent" />
+	</Node>
+	<Node name="snifpprod01Node01">
+		<Server name="kyc01">
+			<Stat name="Web Applications">
+				<Stat name="RCM_war#RCM.war">
+					<Stat name="Servlets">
+						<Stat name="/Blank.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="7" lastSampleTime="1510747897564"
+								name="RequestCount" startTime="1510648500653" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510747897564"
+								max="0" min="0" name="ServiceTime" startTime="1510648500653"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/BlankWithIndicator.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2142"
+								lastSampleTime="1511089251855" name="RequestCount" startTime="1510553763900"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089251855"
+								max="21" min="0" name="ServiceTime" startTime="1510553763900"
+								totalTime="433" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/Shared.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="74393"
+								lastSampleTime="1511089294021" name="RequestCount" startTime="1510553343617"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089294021"
+								max="725" min="0" name="ServiceTime" startTime="1510553343617"
+								totalTime="63244" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/AttachmentsContent.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="6" lastSampleTime="1510659382434"
+								name="RequestCount" startTime="1510648499683" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510659382436"
+								max="70" min="1" name="ServiceTime" startTime="1510648499683"
+								totalTime="117" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/AttachmentsErrors.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="6" lastSampleTime="1510659382431"
+								name="RequestCount" startTime="1510648499607" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510659382431"
+								max="2" min="0" name="ServiceTime" startTime="1510648499607"
+								totalTime="2" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/ChangeStatusContent.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="6" lastSampleTime="1510659382431"
+								name="RequestCount" startTime="1510648499580" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510659382437"
+								max="160" min="6" name="ServiceTime" startTime="1510648499580"
+								totalTime="309" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/DialogCloserAfterStatusChanged.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="6" lastSampleTime="1510659387748"
+								name="RequestCount" startTime="1510648508539" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510659387748"
+								max="1" min="0" name="ServiceTime" startTime="1510648508539"
+								totalTime="1" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/alerts/Alerts.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="30" lastSampleTime="1510907587261"
+								name="RequestCount" startTime="1510648444688" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587294"
+								max="1596" min="10" name="ServiceTime" startTime="1510648444688"
+								totalTime="2616" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/alerts/ChangeStatus.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="6" lastSampleTime="1510659382430"
+								name="RequestCount" startTime="1510648499494" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510659382438"
+								max="348" min="8" name="ServiceTime" startTime="1510648499494"
+								totalTime="506" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/cases/Cases.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="4" lastSampleTime="1510747908798"
+								name="RequestCount" startTime="1510729617016" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510747908818"
+								max="375" min="7" name="ServiceTime" startTime="1510729617016"
+								totalTime="411" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/exceptions/ACMError.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="32071"
+								lastSampleTime="1511089294021" name="RequestCount" startTime="1510553398087"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089294021"
+								max="1216" min="0" name="ServiceTime" startTime="1510553398087"
+								totalTime="34314" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/i18n/dynamicScripts.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2808"
+								lastSampleTime="1511089235161" name="RequestCount" startTime="1510553348430"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089235161"
+								max="22" min="0" name="ServiceTime" startTime="1510553348430"
+								totalTime="693" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/i18n/jsDateConstants.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2807"
+								lastSampleTime="1511089235161" name="RequestCount" startTime="1510553348445"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089235161"
+								max="7" min="0" name="ServiceTime" startTime="1510553348445"
+								totalTime="272" unit="MILLISECOND" />
+						</Stat>
+						<Stat
+							name="/WEB-INF/views/infrastructure/security/csrf/csrfGuardHelperJS.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="74489"
+								lastSampleTime="1511089294021" name="RequestCount" startTime="1510509681455"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089294021"
+								max="293" min="0" name="ServiceTime" startTime="1510509681455"
+								totalTime="2509" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/plugin/DialogPage.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="6204"
+								lastSampleTime="1511089285273" name="RequestCount" startTime="1510553764815"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089285278"
+								max="782" min="0" name="ServiceTime" startTime="1510553764815"
+								totalTime="77680" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/plugin/TabPage.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="36053"
+								lastSampleTime="1511089289724" name="RequestCount" startTime="1510553343567"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089289734"
+								max="1429" min="2" name="ServiceTime" startTime="1510553343567"
+								totalTime="775840" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/CBBodyTagEnd.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="36" lastSampleTime="1510907587294"
+								name="RequestCount" startTime="1510648446282" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587294"
+								max="1" min="0" name="ServiceTime" startTime="1510648446282"
+								totalTime="2" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/CBBodyTagStart.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="36" lastSampleTime="1510907587262"
+								name="RequestCount" startTime="1510648444724" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587262"
+								max="32" min="0" name="ServiceTime" startTime="1510648444724"
+								totalTime="65" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/CBColumnBaseFastFilterTag.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="30" lastSampleTime="1510907587266"
+								name="RequestCount" startTime="1510648445728" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587266"
+								max="9" min="0" name="ServiceTime" startTime="1510648445728"
+								totalTime="13" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/CBMenuTag.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="30" lastSampleTime="1510907587265"
+								name="RequestCount" startTime="1510648444872" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587265"
+								max="2" min="0" name="ServiceTime" startTime="1510648444872"
+								totalTime="8" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/CBPanelTag.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="30" lastSampleTime="1510907587292"
+								name="RequestCount" startTime="1510648446252" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587294"
+								max="21" min="1" name="ServiceTime" startTime="1510648446252"
+								totalTime="99" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/CBToolbarTagEnd.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="30" lastSampleTime="1510907587266"
+								name="RequestCount" startTime="1510648445755" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587272"
+								max="129" min="2" name="ServiceTime" startTime="1510648445755"
+								totalTime="336" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/CBToolbarTagStart.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="30" lastSampleTime="1510907587266"
+								name="RequestCount" startTime="1510648445630" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587266"
+								max="2" min="0" name="ServiceTime" startTime="1510648445630"
+								totalTime="2" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/IconActionsGroupTag.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="30" lastSampleTime="1510907587266"
+								name="RequestCount" startTime="1510648445781" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587272"
+								max="106" min="2" name="ServiceTime" startTime="1510648445781"
+								totalTime="298" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/IconActionsTag.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="180"
+								lastSampleTime="1510907587272" name="RequestCount" startTime="1510648445846"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907587272"
+								max="68" min="0" name="ServiceTime" startTime="1510648445846"
+								totalTime="293" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/WEB-INF/views/tags/newMenuTag.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="36052"
+								lastSampleTime="1511089289727" name="RequestCount" startTime="1510553344518"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089289727"
+								max="439" min="0" name="ServiceTime" startTime="1510553344518"
+								totalTime="11324" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/acegi/ExternalAuthenticationError.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2" lastSampleTime="1510654263278"
+								name="RequestCount" startTime="1510652807349" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510654263279"
+								max="1" min="1" name="ServiceTime" startTime="1510652807349"
+								totalTime="2" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/acegi/SessionTimeoutPage.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="5" lastSampleTime="1510907812781"
+								name="RequestCount" startTime="1510652945786" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510907812783"
+								max="13" min="2" name="ServiceTime" startTime="1510652945786"
+								totalTime="21" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/acegi/acegilogin.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="106"
+								lastSampleTime="1511086581630" name="RequestCount" startTime="1510509681228"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511086581633"
+								max="349" min="2" name="ServiceTime" startTime="1510509681228"
+								totalTime="1012" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/acegi/authentication_target_dummy.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510553337454"
+								name="RequestCount" startTime="1510553337454" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510553337454"
+								max="0" min="0" name="ServiceTime" startTime="1510553337454"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/acegi/heartBeat.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="9677"
+								lastSampleTime="1511089268904" name="RequestCount" startTime="1510509309470"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089268906"
+								max="421" min="1" name="ServiceTime" startTime="1510509309470"
+								totalTime="34473" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/acegi/logout.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510736909346"
+								name="RequestCount" startTime="1510736909342" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510736909347"
+								max="1" min="1" name="ServiceTime" startTime="1510736909342"
+								totalTime="1" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/index.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="19" lastSampleTime="1510841189731"
+								name="RequestCount" startTime="1510561252838" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510841189742"
+								max="43" min="0" name="ServiceTime" startTime="1510561252838"
+								totalTime="123" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/jsp/exception/RuntimeError.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="5711"
+								lastSampleTime="1511089241352" name="RequestCount" startTime="1510553481935"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510553481935"
+								max="0" min="0" name="ServiceTime" startTime="1510553481935"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/jsp/exception/error403.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="15" lastSampleTime="1511072986411"
+								name="RequestCount" startTime="1510553925641" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511072986412"
+								max="1" min="0" name="ServiceTime" startTime="1510553925641"
+								totalTime="11" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="/parameterRedirection.jsp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="6091"
+								lastSampleTime="1511089276812" name="RequestCount" startTime="1510553341843"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089276812"
+								max="22" min="0" name="ServiceTime" startTime="1510553341843"
+								totalTime="1175" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="AdminServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509256043"
+								name="RequestCount" startTime="1510509256043" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509256043"
+								max="0" min="0" name="ServiceTime" startTime="1510509256043"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="AxisServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="7348"
+								lastSampleTime="1511089285501" name="RequestCount" startTime="1510553923538"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089285530"
+								max="4666" min="10" name="ServiceTime" startTime="1510553923538"
+								totalTime="568555" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="FilterProxyServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="17" lastSampleTime="1510841189730"
+								name="RequestCount" startTime="1510561252819" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510841189743"
+								max="44" min="1" name="ServiceTime" startTime="1510561252819"
+								totalTime="159" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="InitConnections">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509238798"
+								name="RequestCount" startTime="1510509238798" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509238798"
+								max="0" min="0" name="ServiceTime" startTime="1510509238798"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="JreportHelp">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509255902"
+								name="RequestCount" startTime="1510509255902" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509255902"
+								max="0" min="0" name="ServiceTime" startTime="1510509255902"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="mvc">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2876"
+								lastSampleTime="1511089235160" name="RequestCount" startTime="1510509239711"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089235162"
+								max="10917" min="0" name="ServiceTime" startTime="1510509239711"
+								totalTime="85666" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="plugin">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="187889"
+								lastSampleTime="1511089300818" name="RequestCount" startTime="1510553333826"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089302620"
+								max="39514" min="0" name="ServiceTime" startTime="1510553333826"
+								totalTime="179155778" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="translationConstants">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2810"
+								lastSampleTime="1511089235334" name="RequestCount" startTime="1510553348884"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089235337"
+								max="504" min="2" name="ServiceTime" startTime="1510553348884"
+								totalTime="13260" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="490089"
+							lastSampleTime="1511089300818" name="RequestCount" startTime="1510509190163"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089302620"
+							max="39514" min="0" name="ServiceTime" startTime="1510509190163"
+							totalTime="180831623" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="ibmasyncrsp#ibmasyncrsp.war">
+					<Stat name="Servlets">
+						<Stat name="rspservlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509187493"
+								name="RequestCount" startTime="1510509187493" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509187494"
+								max="0" min="0" name="ServiceTime" startTime="1510509187494"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="0" lastSampleTime="1510509187494"
+							name="RequestCount" startTime="1510509186984" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509187494"
+							max="0" min="0" name="ServiceTime" startTime="1510509186984"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<CountStatistic ID="11" count="490089"
+					lastSampleTime="1511089300818" name="RequestCount" startTime="1510509187494"
+					unit="N/A" />
+				<TimeStatistic ID="13" lastSampleTime="1511089302620"
+					max="39514" min="0" name="ServiceTime" startTime="1510509187494"
+					totalTime="180831623" unit="MILLISECOND" />
+			</Stat>
+		</Server>
+		<Server name="nodeagent" />
+	</Node>
+	<Node name="snifpbeta01Node85">
+		<Server name="b1">
+			<Stat name="Web Applications">
+				<Stat name="ibmasyncrsp#ibmasyncrsp.war">
+					<Stat name="Servlets">
+						<Stat name="rspservlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509192714"
+								name="RequestCount" startTime="1510509192714" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509192714"
+								max="0" min="0" name="ServiceTime" startTime="1510509192714"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="0" lastSampleTime="1510509193230"
+							name="RequestCount" startTime="1510509190696" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509192714"
+							max="0" min="0" name="ServiceTime" startTime="1510509190696"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="perfServletApp#perfServletApp.war">
+					<Stat name="Servlets">
+						<Stat name="controller">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1511089300788"
+								name="RequestCount" startTime="1511089300768" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089300768"
+								max="0" min="0" name="ServiceTime" startTime="1511089300768"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="perfservlet60">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1511089300868"
+								name="RequestCount" startTime="1511089300867" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089300867"
+								max="0" min="0" name="ServiceTime" startTime="1511089300867"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2" lastSampleTime="1511089300868"
+							name="RequestCount" startTime="1510509192866" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089300867"
+							max="0" min="0" name="ServiceTime" startTime="1510509192866"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_L_Z8#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2822"
+								lastSampleTime="1511089275310" name="RequestCount" startTime="1510509474024"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089275313"
+								max="692" min="0" name="ServiceTime" startTime="1510509474024"
+								totalTime="42499" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2497177"
+								lastSampleTime="1511089307624" name="RequestCount" startTime="1510509485856"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089307535"
+								max="36431" min="1" name="ServiceTime" startTime="1510509485856"
+								totalTime="252966088" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2499999"
+							lastSampleTime="1511089307624" name="RequestCount" startTime="1510509207136"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089307535"
+							max="36431" min="0" name="ServiceTime" startTime="1510509207136"
+							totalTime="253008587" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_P_Z6#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510510382010"
+								name="RequestCount" startTime="1510510381998" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510510383556"
+								max="1546" min="1546" name="ServiceTime" startTime="1510510381998"
+								totalTime="1546" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="1" lastSampleTime="1510510382010"
+							name="RequestCount" startTime="1510509225181" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510510383556"
+							max="1546" min="1546" name="ServiceTime" startTime="1510509225181"
+							totalTime="1546" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_B_Z7#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="6" lastSampleTime="1510826092448"
+								name="RequestCount" startTime="1510510146493" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510826092458"
+								max="6177" min="10" name="ServiceTime" startTime="1510510146493"
+								totalTime="9548" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="45" lastSampleTime="1511086684168"
+								name="RequestCount" startTime="1510550517158" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511086684170"
+								max="253" min="1" name="ServiceTime" startTime="1510550517158"
+								totalTime="809" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="38948"
+								lastSampleTime="1511089304118" name="RequestCount" startTime="1510553073952"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089304186"
+								max="30104" min="2" name="ServiceTime" startTime="1510553073952"
+								totalTime="4187344" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="38999"
+							lastSampleTime="1511089304118" name="RequestCount" startTime="1510509233216"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089304186"
+							max="30104" min="1" name="ServiceTime" startTime="1510509233216"
+							totalTime="4197701" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<CountStatistic ID="11" count="2539001"
+					lastSampleTime="1511089307624" name="RequestCount" startTime="1510509192714"
+					unit="N/A" />
+				<TimeStatistic ID="13" lastSampleTime="1511089307535"
+					max="36431" min="0" name="ServiceTime" startTime="1510509192714"
+					totalTime="257207834" unit="MILLISECOND" />
+			</Stat>
+		</Server>
+		<Server name="nodeagent" />
+	</Node>
+	<Node name="snifpload02Node85">
+		<Server name="l2">
+			<Stat name="Web Applications">
+				<Stat name="ibmasyncrsp#ibmasyncrsp.war">
+					<Stat name="Servlets">
+						<Stat name="rspservlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509161532"
+								name="RequestCount" startTime="1510509161532" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509161532"
+								max="0" min="0" name="ServiceTime" startTime="1510509161532"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="0" lastSampleTime="1510509164690"
+							name="RequestCount" startTime="1510509160917" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509161532"
+							max="0" min="0" name="ServiceTime" startTime="1510509160917"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="perfServletApp#perfServletApp.war">
+					<Stat name="Servlets">
+						<Stat name="controller">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510767827165"
+								name="RequestCount" startTime="1510767826988" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510767834709"
+								max="7544" min="7544" name="ServiceTime" startTime="1510767826988"
+								totalTime="7544" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="perfservlet60">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510767827213"
+								name="RequestCount" startTime="1510767827213" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510767834683"
+								max="7470" min="7470" name="ServiceTime" startTime="1510767827213"
+								totalTime="7470" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2" lastSampleTime="1510767827213"
+							name="RequestCount" startTime="1510509161603" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510767834709"
+							max="7544" min="7470" name="ServiceTime" startTime="1510509161603"
+							totalTime="15014" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_L_Z8#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2840"
+								lastSampleTime="1511089091863" name="RequestCount" startTime="1510509474213"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089091873"
+								max="430" min="0" name="ServiceTime" startTime="1510509474213"
+								totalTime="26851" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2560654"
+								lastSampleTime="1511089307212" name="RequestCount" startTime="1510509482979"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089307248"
+								max="30323" min="1" name="ServiceTime" startTime="1510509482979"
+								totalTime="172055141" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2563494"
+							lastSampleTime="1511089307212" name="RequestCount" startTime="1510509170767"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089307248"
+							max="30323" min="0" name="ServiceTime" startTime="1510509170767"
+							totalTime="172081992" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_P_Z6#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2" lastSampleTime="1511088324541"
+								name="RequestCount" startTime="1510510376962" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511088324803"
+								max="5968" min="262" name="ServiceTime" startTime="1510510376962"
+								totalTime="6230" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2" lastSampleTime="1511088324541"
+							name="RequestCount" startTime="1510509184937" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511088324803"
+							max="5968" min="262" name="ServiceTime" startTime="1510509184937"
+							totalTime="6230" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_B_Z7#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510510130211"
+								name="RequestCount" startTime="1510510129865" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510510137451"
+								max="7240" min="7240" name="ServiceTime" startTime="1510510129865"
+								totalTime="7240" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="43" lastSampleTime="1511079680215"
+								name="RequestCount" startTime="1510554137453" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511079680216"
+								max="543" min="0" name="ServiceTime" startTime="1510554137453"
+								totalTime="892" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="22643"
+								lastSampleTime="1511089295075" name="RequestCount" startTime="1510554138482"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089295092"
+								max="27276" min="2" name="ServiceTime" startTime="1510554138482"
+								totalTime="1549012" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="22687"
+							lastSampleTime="1511089295075" name="RequestCount" startTime="1510509190827"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089295092"
+							max="27276" min="0" name="ServiceTime" startTime="1510509190827"
+							totalTime="1557144" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<CountStatistic ID="11" count="2586185"
+					lastSampleTime="1511089307212" name="RequestCount" startTime="1510509161532"
+					unit="N/A" />
+				<TimeStatistic ID="13" lastSampleTime="1511089307248"
+					max="30323" min="0" name="ServiceTime" startTime="1510509161532"
+					totalTime="173660380" unit="MILLISECOND" />
+			</Stat>
+		</Server>
+		<Server name="nodeagent" />
+	</Node>
+	<Node name="snifpload01Node85">
+		<Server name="l1">
+			<Stat name="Web Applications">
+				<Stat name="ibmasyncrsp#ibmasyncrsp.war">
+					<Stat name="Servlets">
+						<Stat name="rspservlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509233350"
+								name="RequestCount" startTime="1510509233350" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509233350"
+								max="0" min="0" name="ServiceTime" startTime="1510509233350"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="0" lastSampleTime="1510509236715"
+							name="RequestCount" startTime="1510509233243" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509233350"
+							max="0" min="0" name="ServiceTime" startTime="1510509233243"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="perfServletApp#perfServletApp.war">
+					<Stat name="Servlets">
+						<CountStatistic ID="11" count="0" lastSampleTime="1510509236715"
+							name="RequestCount" startTime="1510509232423" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509232423"
+							max="0" min="0" name="ServiceTime" startTime="1510509232423"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_L_Z8#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2854"
+								lastSampleTime="1511088476289" name="RequestCount" startTime="1510509474646"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511088476299"
+								max="968" min="0" name="ServiceTime" startTime="1510509474646"
+								totalTime="23024" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2552720"
+								lastSampleTime="1511089307444" name="RequestCount" startTime="1510509492503"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089307503"
+								max="39084" min="1" name="ServiceTime" startTime="1510509492503"
+								totalTime="178377723" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2555574"
+							lastSampleTime="1511089307444" name="RequestCount" startTime="1510509245648"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089307503"
+							max="39084" min="0" name="ServiceTime" startTime="1510509245648"
+							totalTime="178400747" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_P_Z6#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2" lastSampleTime="1510510383590"
+								name="RequestCount" startTime="1510510383554" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510510390674"
+								max="7083" min="17" name="ServiceTime" startTime="1510510383554"
+								totalTime="7100" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2" lastSampleTime="1510510383590"
+							name="RequestCount" startTime="1510509262623" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510510390674"
+							max="7083" min="17" name="ServiceTime" startTime="1510509262623"
+							totalTime="7100" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_B_Z7#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510510156821"
+								name="RequestCount" startTime="1510510129400" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510510156843"
+								max="22" min="22" name="ServiceTime" startTime="1510510129400"
+								totalTime="22" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="29" lastSampleTime="1511084138488"
+								name="RequestCount" startTime="1510553842822" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511084138493"
+								max="391" min="0" name="ServiceTime" startTime="1510553842822"
+								totalTime="610" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="31105"
+								lastSampleTime="1511089301346" name="RequestCount" startTime="1510556147196"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089301356"
+								max="30100" min="2" name="ServiceTime" startTime="1510556147196"
+								totalTime="2403331" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="31135"
+							lastSampleTime="1511089301346" name="RequestCount" startTime="1510509269425"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089301356"
+							max="30100" min="0" name="ServiceTime" startTime="1510509269425"
+							totalTime="2403963" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<CountStatistic ID="11" count="2586711"
+					lastSampleTime="1511089307444" name="RequestCount" startTime="1510509233350"
+					unit="N/A" />
+				<TimeStatistic ID="13" lastSampleTime="1511089307503"
+					max="39084" min="0" name="ServiceTime" startTime="1510509233350"
+					totalTime="180811810" unit="MILLISECOND" />
+			</Stat>
+		</Server>
+		<Server name="nodeagent" />
+	</Node>
+	<Node name="snifpbeta02Node85">
+		<Server name="b2">
+			<Stat name="Web Applications">
+				<Stat name="ibmasyncrsp#ibmasyncrsp.war">
+					<Stat name="Servlets">
+						<Stat name="rspservlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509111231"
+								name="RequestCount" startTime="1510509111231" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509111232"
+								max="0" min="0" name="ServiceTime" startTime="1510509111232"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="0" lastSampleTime="1510509121331"
+							name="RequestCount" startTime="1510509110602" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509111232"
+							max="0" min="0" name="ServiceTime" startTime="1510509110602"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="perfServletApp#perfServletApp.war">
+					<Stat name="Servlets">
+						<Stat name="controller">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1511089224230"
+								name="RequestCount" startTime="1510767170641" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089252538"
+								max="28308" min="28308" name="ServiceTime" startTime="1510767170641"
+								totalTime="28308" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="perfservlet60">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1511089224279"
+								name="RequestCount" startTime="1511089224278" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089252411"
+								max="28132" min="28132" name="ServiceTime" startTime="1511089224278"
+								totalTime="28132" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2" lastSampleTime="1511089224279"
+							name="RequestCount" startTime="1510509111303" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089252538"
+							max="28308" min="28132" name="ServiceTime" startTime="1510509111303"
+							totalTime="56440" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_B_Z7#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="3" lastSampleTime="1510826084259"
+								name="RequestCount" startTime="1510510149521" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510826085396"
+								max="12633" min="1137" name="ServiceTime" startTime="1510510149521"
+								totalTime="20526" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="28" lastSampleTime="1511080518249"
+								name="RequestCount" startTime="1510550517702" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511080518250"
+								max="127" min="0" name="ServiceTime" startTime="1510550517702"
+								totalTime="276" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="29919"
+								lastSampleTime="1511089287789" name="RequestCount" startTime="1510550518784"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089287797"
+								max="28775" min="2" name="ServiceTime" startTime="1510550518784"
+								totalTime="2601451" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="29950"
+							lastSampleTime="1511089287789" name="RequestCount" startTime="1510509122133"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089287797"
+							max="28775" min="0" name="ServiceTime" startTime="1510509122133"
+							totalTime="2622253" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_L_Z8#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2784"
+								lastSampleTime="1511088910445" name="RequestCount" startTime="1510509474038"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511088910446"
+								max="331" min="0" name="ServiceTime" startTime="1510509474038"
+								totalTime="23229" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2504435"
+								lastSampleTime="1511089308341" name="RequestCount" startTime="1510509480693"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089308242"
+								max="60141" min="1" name="ServiceTime" startTime="1510509480693"
+								totalTime="166367506" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2507219"
+							lastSampleTime="1511089308341" name="RequestCount" startTime="1510509137665"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089308242"
+							max="60141" min="0" name="ServiceTime" startTime="1510509137665"
+							totalTime="166390735" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_P_Z6#MatafServer.war">
+					<Stat name="Servlets">
+						<CountStatistic ID="11" count="0" lastSampleTime="1510509144410"
+							name="RequestCount" startTime="1510509144410" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509144410"
+							max="0" min="0" name="ServiceTime" startTime="1510509144410"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<CountStatistic ID="11" count="2537171"
+					lastSampleTime="1511089308341" name="RequestCount" startTime="1510509111232"
+					unit="N/A" />
+				<TimeStatistic ID="13" lastSampleTime="1511089308242"
+					max="60141" min="0" name="ServiceTime" startTime="1510509111232"
+					totalTime="169069428" unit="MILLISECOND" />
+			</Stat>
+		</Server>
+		<Server name="nodeagent" />
+	</Node>
+	<Node name="snifphttp01Node85">
+		<Server name="nodeagent" />
+	</Node>
+	<Node name="snifpprod02Node85">
+		<Server name="p2">
+			<Stat name="Web Applications">
+				<Stat name="MatafEAR_L_Z8#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2614871"
+								lastSampleTime="1511089307551" name="RequestCount" startTime="1510510091534"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089307567"
+								max="300038" min="1" name="ServiceTime" startTime="1510510091534"
+								totalTime="179067746" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="2767"
+								lastSampleTime="1511089158505" name="RequestCount" startTime="1510547017605"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089158508"
+								max="171" min="0" name="ServiceTime" startTime="1510547017605"
+								totalTime="20104" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1511088325347"
+								name="RequestCount" startTime="1511088325341" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511088325469"
+								max="122" min="122" name="ServiceTime" startTime="1511088325341"
+								totalTime="122" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="2617639"
+							lastSampleTime="1511089307551" name="RequestCount" startTime="1510510002777"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089307567"
+							max="300038" min="0" name="ServiceTime" startTime="1510510002777"
+							totalTime="179087972" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="ibmasyncrsp#ibmasyncrsp.war">
+					<Stat name="Servlets">
+						<Stat name="rspservlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1510509992648"
+								name="RequestCount" startTime="1510509992648" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510509992648"
+								max="0" min="0" name="ServiceTime" startTime="1510509992648"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="0" lastSampleTime="1510510010990"
+							name="RequestCount" startTime="1510509992576" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510509992648"
+							max="0" min="0" name="ServiceTime" startTime="1510509992576"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="perfServletApp#perfServletApp.war">
+					<Stat name="Servlets">
+						<Stat name="controller">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="0" lastSampleTime="1511089300567"
+								name="RequestCount" startTime="1511089300567" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089300567"
+								max="0" min="0" name="ServiceTime" startTime="1511089300567"
+								totalTime="0" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="0" lastSampleTime="1511089300567"
+							name="RequestCount" startTime="1510509991885" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089300567"
+							max="0" min="0" name="ServiceTime" startTime="1510509991885"
+							totalTime="0" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_P_Z6#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="1" lastSampleTime="1510510381010"
+								name="RequestCount" startTime="1510510381005" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1510510381931"
+								max="921" min="921" name="ServiceTime" startTime="1510510381005"
+								totalTime="921" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="1" lastSampleTime="1510510381010"
+							name="RequestCount" startTime="1510510016786" unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1510510381931"
+							max="921" min="921" name="ServiceTime" startTime="1510510016786"
+							totalTime="921" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<Stat name="MatafEAR_B_Z7#MatafServer.war">
+					<Stat name="Servlets">
+						<Stat name="SmServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="3" lastSampleTime="1511088325199"
+								name="RequestCount" startTime="1510510142932" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511088325324"
+								max="3085" min="5" name="ServiceTime" startTime="1510510142932"
+								totalTime="3215" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="37" lastSampleTime="1511074951267"
+								name="RequestCount" startTime="1510551946173" unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511074951277"
+								max="108" min="0" name="ServiceTime" startTime="1510551946173"
+								totalTime="299" unit="MILLISECOND" />
+						</Stat>
+						<Stat name="CSReqProtocolServlet">
+							<Stat name="URLs" />
+							<CountStatistic ID="11" count="37633"
+								lastSampleTime="1511089290581" name="RequestCount" startTime="1510551946461"
+								unit="N/A" />
+							<TimeStatistic ID="13" lastSampleTime="1511089290627"
+								max="17628" min="1" name="ServiceTime" startTime="1510551946461"
+								totalTime="2499055" unit="MILLISECOND" />
+						</Stat>
+						<CountStatistic ID="11" count="37673"
+							lastSampleTime="1511089290581" name="RequestCount" startTime="1510510022452"
+							unit="N/A" />
+						<TimeStatistic ID="13" lastSampleTime="1511089290627"
+							max="17628" min="0" name="ServiceTime" startTime="1510510022452"
+							totalTime="2502569" unit="MILLISECOND" />
+					</Stat>
+				</Stat>
+				<CountStatistic ID="11" count="2655313"
+					lastSampleTime="1511089307551" name="RequestCount" startTime="1510509992649"
+					unit="N/A" />
+				<TimeStatistic ID="13" lastSampleTime="1511089307567"
+					max="300038" min="0" name="ServiceTime" startTime="1510509992649"
+					totalTime="181591462" unit="MILLISECOND" />
+			</Stat>
+		</Server>
+		<Server name="nodeagent" />
+	</Node>
+</PerformanceMonitor>

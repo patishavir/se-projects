@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters folder="\\\\matafcc\\private$\\s177571\\Scripts\\java\\DownloadGzipFromUrl\\logs" namePattern="[\w\W]*.log" recursive="no" depth="1" deleteIfAgeinDaysIsGreaterThan="3" actuallyDelete="yes" />
+<InputParameters folder="\\\\matafcc\\private$\\s177571\\Scripts\\java\\DownloadGzipFromUrl\\logs" namePattern="[\w\W]*.err" recursive="no" depth="1" deleteIfAgeinDaysIsGreaterThan="3" actuallyDelete="yes" />
+</InputParametersSet>

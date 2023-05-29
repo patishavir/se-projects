@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/clearCaseProject/src/oz/clearcase/utils/ListChangeSet.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.clearcase.utils.ListChangeSet"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="M:\t195103_Portal_int\intVOB\portalComp deliver.Portal_Dev.20160519.175850@\intPVOB&#13;&#10;&#13;&#10;M:\tmpProj01_Fix_Dyn\tmpVOB\  Activity_4Fix_Stream@\tmpPVOB"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="clearCaseProject"/>
+</launchConfiguration>

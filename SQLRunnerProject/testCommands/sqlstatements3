@@ -1,0 +1,39 @@
+SELECT
+   OP_SEX,OP_SEX_DESC 
+FROM
+   MATAF.GLST_SEX 
+FETCH FIRST 50 ROWS ONLY;
+
+SELECT
+   VERSION 
+FROM
+   MATAF.BTT_VERSION_SUPPORT 
+FETCH FIRST 50 ROWS ONLY
+
+;
+SELECT
+   VERSION 
+FROM
+   MATAF.BTT_VERSION_SUPPORT 
+FETCH FIRST 50 ROWS ONLY  
+;
+CREATE TABLE  MATAF.Persons
+(
+ P_Id int,
+ LastName varchar(255),
+ FirstName varchar(255),
+ Address varchar(255),
+ City varchar(255)
+);
+
+INSERT INTO MATAF.Persons (P_Id, LastName, FirstName) VALUES (5, 'Tjessem', 'Jakob')
+;
+
+UPDATE MATAF.Persons
+SET Address='Nissestien 67', City='Sandnes'
+WHERE LastName='Tjessem' AND FirstName='Jakob'
+
+;
+
+-- DELETE FROM MATAF.Persons
+-- WHERE LastName='Tjessem' AND FirstName='Jakob';

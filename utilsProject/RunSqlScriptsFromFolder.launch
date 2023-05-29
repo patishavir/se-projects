@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/dbutilsProject/src/oz/utils/db/run/folder/RunSqlScriptsFromFolderMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.db.run.folder.RunSqlScriptsFromFolderMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=".\args\\dbproperties\TOZ.properties&#13;&#10;.\args\db\runSqlScript\sqlScriptsFolder6&#13;&#10;Cp1255&#13;&#10;.\args\db\runSqlScript\mail_fibi.properties&#13;&#10;c:\temp\"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="dbutilsProject"/>
+</launchConfiguration>

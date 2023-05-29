@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/InfraStructureProject/src/oz/infra/email/EmailUtils.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.infra.email.EmailUtils"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="C:\oj\projects\InfraStructureProject\src\oz\infra\email\files\fibi\fibihtml.properties&#13;&#10;C:\oj\projects\InfraStructureProject\src\oz\infra\email\files\fibi\fibiMultiPart.properties"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="InfraStructureProject"/>
+</launchConfiguration>

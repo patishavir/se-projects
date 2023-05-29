@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/xmlBeansProject"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.xml.xslt.PerformXslTransformation"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="C:\oj\projects\XMLProject\files\performace\perfservlet.xml&#13;&#10;C:\oj\projects\XMLProject\files\performace\JDBC.xsl&#13;&#10;C:\oj\projects\XMLProject\files\performace\TransactionManager.xsl&#13;&#10;C:\oj\projects\XMLProject\files\performace\WebApplications.xsl&#13;&#10;C:\oj\projects\XMLProject\files\performace\JVMRunTime.xsl"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="xmlBeansProject"/>
+</launchConfiguration>

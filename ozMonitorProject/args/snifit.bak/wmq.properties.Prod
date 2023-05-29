@@ -1,0 +1,18 @@
+#hostname=localhost
+#port=1414
+#qManager=QMGR01
+#outputQName=Q01
+# channel=SRVCONN_CHAN
+#ccsid=862
+
+hostname=matafmqT
+port=1416
+qManager=Q538GT00
+outputQName=gm.dev.sms
+channel=CHAN1
+ccsid=862
+
+# alertType=WRITE_MQ_MESSAGE
+# hostname=localhost
+# outputQName=Q01
+# qManager=Qmgr01

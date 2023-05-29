@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/clearCaseProject/src/oz/clearcase/view/mkview/test/MkViewTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="targetRootFolder" value="c:\ccviews\bisly"/>
+<mapEntry key="viewFolderName" value="QQWWEERR"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.clearcase.view.mkview.test.MkViewTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="clearCaseProject"/>
+</launchConfiguration>

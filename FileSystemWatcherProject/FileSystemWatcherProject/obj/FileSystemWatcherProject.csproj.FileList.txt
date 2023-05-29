@@ -1,0 +1,8 @@
+bin\Debug\FileSystemWatcherProject.exe
+bin\Debug\FileSystemWatcherProject.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\FileSystemWatcherProject.exe
+obj\Debug\FileSystemWatcherProject.pdb
+bin\Release\FileSystemWatcherProject.exe
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\FileSystemWatcherProject.exe

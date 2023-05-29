@@ -1,0 +1,93 @@
+# configure the daily rolling file appender
+log4j.appender.DAILY=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.DAILY.File=/tmp/log4j/log4jtest.log
+log4j.appender.DAILY.DatePattern='.'yyyy-MM-dd
+log4j.appender.DAILY.layout=org.apache.log4j.PatternLayout
+log4j.appender.DAILY.layout.conversionPattern=%d{yyyy-MM-dd HH:mm:ss.SSS} [%p] %c:%L - %m%n
+
+
+
+Follow log4j.properties
+################## APPENDER ##################
+#Console
+log4j.appender.Console=org.apache.log4j.ConsoleAppender
+log4j.appender.Console.layout=org.apache.log4j.PatternLayout
+log4j.appender.Console.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %
+m%n
+
+#WebApp appender
+log4j.appender.WebApp=org.apache.log4j.DailyRollingFileAppender
+#log4j.appender.WebApp.DatePattern='.'yyyy-ww'.log'
+log4j.appender.WebApp.DatePattern='.'yyyy-MM-dd'.log'
+log4j.appender.WebApp.File=/home/mlegall/logs/WebApp
+log4j.appender.WebApp.layout=org.apache.log4j.PatternLayout
+log4j.appender.WebApp.layout.ConversionPattern=%d %c{2} %n   %-5p %m%n
+
+#Populate appender
+log4j.appender.Populate=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.Populate.DatePattern='.'yyyy-MM-dd'.log'
+log4j.appender.Populate.File=/home/mlegall/logs/Populate
+log4j.appender.Populate.layout=org.apache.log4j.PatternLayout
+log4j.appender.Populate.layout.ConversionPattern=%d %-5p %-15c{2} %m%n
+
+#ExpImpData appender
+log4j.appender.ExpImpData=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.ExpImpData.DatePattern='.'yyyy-MM-dd'.log'
+log4j.appender.ExpImpData.File=/home/mlegall/logs/ExpImpData
+log4j.appender.ExpImpData.layout=org.apache.log4j.PatternLayout
+log4j.appender.ExpImpData.layout.ConversionPattern=%d %-5p %c{1} %m%n
+
+#RegInData appender
+log4j.appender.RegInData=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.RegInData.DatePattern='.'yyyy-MM-dd'.log'
+log4j.appender.RegInData.File=/home/mlegall/logs/RegInData
+log4j.appender.RegInData.layout=org.apache.log4j.PatternLayout
+log4j.appender.RegInData.layout.ConversionPattern=%d %-5p %c{1} %m%n
+
+#WetLabsData appender
+log4j.appender.WetLabsData=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.WetLabsData.DatePattern='.'yyyy-MM-dd'.log'
+log4j.appender.WetLabsData.File=/home/mlegall/logs/WetLabsData
+log4j.appender.WetLabsData.layout=org.apache.log4j.PatternLayout
+log4j.appender.WetLabsData.layout.ConversionPattern=%d %-5p %c{1} %m%n
+
+#Msg appender
+log4j.appender.Msg=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.Msg.DatePattern='.'yyyy-MM-dd'.log'
+log4j.appender.Msg.File=/home/mlegall/logs/Msg
+log4j.appender.Msg.layout=org.apache.log4j.PatternLayout
+log4j.appender.Msg.layout.ConversionPattern=%d %-5p %-15c{2} %m%n
+
+################## LOGGER ##################
+
+# Set root logger level with level INFO and its only appender to WebApp
+#log4j.rootLogger=INFO, WebApp
+#log4j.rootLogger=DEBUG, Populate
+log4j.logger.twm=DEBUG, Console
+
+# Set the level of the logger named "twm" to Level.DEBUG, attach
+appender WebApp
+log4j.logger.twm.auth=DEBUG, WebApp
+log4j.logger.twm.db=DEBUG, WebApp, ExpImpData, Populate
+log4j.logger.twm.exceptions=DEBUG, WebApp, ExpImpData, Populate
+log4j.logger.twm.nc=DEBUG, WebApp
+log4j.logger.twm.util=DEBUG, WebApp, ExpImpData, Populate
+log4j.logger.twm.web=DEBUG, WebApp
+
+log4j.logger.twm.populate.Populate=DEBUG, Populate
+log4j.logger.twm.populate.QControl=DEBUG, Populate
+log4j.logger.twm.populate.Summarize=DEBUG, Populate
+
+log4j.logger.twm.populate.util.ExportData=DEBUG, ExpImpData
+log4j.logger.twm.populate.util.RecoverFromTxtFile=DEBUG, ExpImpData
+log4j.logger.twm.populate.util.ReProcessData=DEBUG, ExpImpData
+log4j.logger.twm.populate.util.ProcBuoyData=DEBUG, ExpImpData
+log4j.logger.twm.populate.util.CSVWebPage=DEBUG, ExpImpData
+
+log4j.logger.twm.populate.util.ProcWetLabsTxtFile=DEBUG, WetLabsData
+
+log4j.logger.twm.populate.util.RegularInData=DEBUG, RegInData
+log4j.logger.twm.populate.util.RegularInData2=DEBUG, RegInData
+
+log4j.logger.twm.msg=DEBUG, Msg, Populate
+

@@ -1,0 +1,93 @@
+<!--
+     WebSphere 6.x PerfServlet output DTD 
+-->
+
+<!-- ========== Level 1 (Root) ======================================== -->
+<!ELEMENT PerformanceMonitor (Node*,Comments?)>
+<!ATTLIST PerformanceMonitor version CDATA #IMPLIED>
+<!ATTLIST PerformanceMonitor responseStatus (success|failure) #REQUIRED>
+
+<!-- ========== Level 2 =============================================== -->
+<!ELEMENT Comments (#PCDATA)>
+
+<!-- ========== Level 2 =============================================== -->
+<!ELEMENT Node (Server*)>
+<!ATTLIST Node name CDATA #IMPLIED>
+
+<!-- ========== Level 3 =============================================== -->
+<!ELEMENT Server (Stat*)>
+<!ATTLIST Server name CDATA #IMPLIED>
+
+<!-- ========== Level 4 =============================================== -->
+<!ELEMENT Stat (AverageStatistic|BoundedRangeStatistic|CountStatistic|DoubleStatistic|RangeStatistic|TimeStatistic|Stat)*>
+<!ATTLIST Stat name CDATA #IMPLIED>
+
+<!-- ========== Level 5 =============================================== -->
+<!ELEMENT AverageStatistic (#PCDATA)>
+<!ATTLIST AverageStatistic name CDATA #IMPLIED>
+<!ATTLIST AverageStatistic ID CDATA #IMPLIED>
+<!ATTLIST AverageStatistic count CDATA #IMPLIED>
+<!ATTLIST AverageStatistic total CDATA #IMPLIED>
+<!ATTLIST AverageStatistic min CDATA #IMPLIED>
+<!ATTLIST AverageStatistic max CDATA #IMPLIED>
+<!ATTLIST AverageStatistic mean CDATA #IMPLIED>
+<!ATTLIST AverageStatistic sumOfSquares CDATA #IMPLIED>
+<!ATTLIST AverageStatistic startTime CDATA #IMPLIED>
+<!ATTLIST AverageStatistic lastSampleTime CDATA #IMPLIED>
+<!ATTLIST AverageStatistic unit CDATA #IMPLIED>
+
+<!ELEMENT BoundedRangeStatistic (#PCDATA)>
+<!ATTLIST BoundedRangeStatistic name CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic ID CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic value CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic low CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic high CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic lowerBound CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic upperBound CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic integral CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic mean CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic startTime CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic lastSampleTime CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic lowWaterMark CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic highWaterMark CDATA #IMPLIED>
+<!ATTLIST BoundedRangeStatistic unit CDATA #IMPLIED>
+
+<!ELEMENT CountStatistic (#PCDATA)>
+<!ATTLIST CountStatistic name CDATA #IMPLIED>
+<!ATTLIST CountStatistic ID CDATA #IMPLIED>
+<!ATTLIST CountStatistic count CDATA #IMPLIED>
+<!ATTLIST CountStatistic startTime CDATA #IMPLIED>
+<!ATTLIST CountStatistic lastSampleTime CDATA #IMPLIED>
+<!ATTLIST CountStatistic unit CDATA #IMPLIED>
+
+<!ELEMENT DoubleStatistic (#PCDATA)>
+<!ATTLIST DoubleStatistic name CDATA #IMPLIED>
+<!ATTLIST DoubleStatistic ID CDATA #IMPLIED>
+<!ATTLIST DoubleStatistic double CDATA #IMPLIED>
+<!ATTLIST DoubleStatistic startTime CDATA #IMPLIED>
+<!ATTLIST DoubleStatistic lastSampleTime CDATA #IMPLIED>
+<!ATTLIST DoubleStatistic unit CDATA #IMPLIED>
+
+<!ELEMENT RangeStatistic (#PCDATA)>
+<!ATTLIST RangeStatistic name CDATA #IMPLIED>
+<!ATTLIST RangeStatistic ID CDATA #IMPLIED>
+<!ATTLIST RangeStatistic low CDATA #IMPLIED>
+<!ATTLIST RangeStatistic high CDATA #IMPLIED>
+<!ATTLIST RangeStatistic integral CDATA #IMPLIED>
+<!ATTLIST RangeStatistic mean CDATA #IMPLIED>
+<!ATTLIST RangeStatistic value CDATA #IMPLIED>
+<!ATTLIST RangeStatistic startTime CDATA #IMPLIED>
+<!ATTLIST RangeStatistic lastSampleTime CDATA #IMPLIED>
+<!ATTLIST RangeStatistic lowWaterMark CDATA #IMPLIED>
+<!ATTLIST RangeStatistic highWaterMark CDATA #IMPLIED>
+<!ATTLIST RangeStatistic unit CDATA #IMPLIED>
+
+<!ELEMENT TimeStatistic (#PCDATA)>
+<!ATTLIST TimeStatistic name CDATA #IMPLIED>
+<!ATTLIST TimeStatistic ID CDATA #IMPLIED>
+<!ATTLIST TimeStatistic totalTime CDATA #IMPLIED>
+<!ATTLIST TimeStatistic min CDATA #IMPLIED>
+<!ATTLIST TimeStatistic max CDATA #IMPLIED>
+<!ATTLIST TimeStatistic startTime CDATA #IMPLIED>
+<!ATTLIST TimeStatistic lastSampleTime CDATA #IMPLIED>
+<!ATTLIST TimeStatistic unit CDATA #IMPLIED>

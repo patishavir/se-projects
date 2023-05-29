@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/logAnalyzerProject/src/oz/loganalyzer/LogAnalyzerMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="XXreportFileName" value="12345678.iii"/>
+<mapEntry key="XXreports2Generate" value="ApplicationServerSummaryReport,ResponseTimeReport"/>
+<mapEntry key="XXtimeRange" value="13-00"/>
+</mapAttribute>
+<booleanAttribute key="org.eclipse.hyades.trace.ui.ATTR_AUTO_FILTER_CRITERIA" value="true"/>
+<booleanAttribute key="org.eclipse.hyades.trace.ui.ATTR_AUTO_MONITORING" value="true"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DATA_COLLECTOR" value="org.eclipse.tptp.trace.jvmti.jvmtiMechanism:org.eclipse.tptp.analysisType.jvmti.execution"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DESTINATION_FILE" value=""/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DESTINATION_MONITOR" value="DefaultMonitor"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DESTINATION_PROJECT" value="ProfileProject"/>
+<booleanAttribute key="org.eclipse.hyades.trace.ui.ATTR_PROFILE_TO_FILE" value="false"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_PROFILING_SET" value="tptp-dummy-profiling-set-LogAnalyzerMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.loganalyzer.LogAnalyzerMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="O:\Scripts\java\LogAnalyzer\args\snifitTest_logAnalyzer.properties&#13;&#10;.\args\logAnalyzer_intranet85.properties&#13;&#10;.\args\logAnalyzer.properties&#13;&#10;.\args\maya_logAnalyzer.properties"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="logAnalyzerProject"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx300m -Dsun.net.inetaddr.ttl=-1 -Dsun.net.inetaddr.negative.ttl=-1"/>
+<booleanAttribute key="org.eclipse.tptp.platform.jvmti.client.ATTR_EXEC_OBJ_ALLOC_SITE" value="true"/>
+<stringAttribute key="org.eclipse.tptp.platform.jvmti.client.ATTR_FILTERSET_ID" value="auto_generated_filter_set"/>
+<booleanAttribute key="org.eclipse.tptp.platform.jvmti.client.ATTR_HEAP_COLLECT_INSTANCE" value="true"/>
+</launchConfiguration>

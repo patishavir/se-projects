@@ -1,0 +1,1988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--****************************************************************************-->
+<!--    IBM Confidential OCO Source Material                                    -->
+<!--    5639-D57, 5630-A36, 5630-A37, 5724-D18 (C) COPYRIGHT International      -->
+<!--    Business Machines Corp. 1997, 2004. The source code for this program is -->
+<!--    not published or otherwise divested of its trade secrets, irrespective  -->
+<!--    of what has been deposited with the U.S. Copyright Office.              -->
+<!--****************************************************************************-->
+<!--DOCTYPE PerformanceMonitor SYSTEM "./performancemonitor.dtd"-->
+
+<PerformanceMonitor responseStatus="success" version="6.0.2.33">
+<Node name="S603FA00Node01">
+<Server name="K1">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="Dynamic Caching">
+<Stat name="Object Cache">
+<Stat name="ws/WSSecureMap"/>
+</Stat>
+<Stat name="Servlet Cache">
+<Stat name="baseCache"/>
+</Stat>
+</Stat>
+<Stat name="JDBC Connection Pools">
+<Stat name="Cloudscape JDBC Provider (XA)">
+<Stat name="jdbc/DefaultEJBTimerDataSource">
+<CountStatistic ID="1" count="0" lastSampleTime="1257844917354" name="CreateCount" startTime="1257844917354" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257844917353" name="CloseCount" startTime="1257844917353" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257844917354" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257844917353" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917353" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257844917353" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257844917353" max="0" min="0" name="UseTime" startTime="1257844917353" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917353" max="0" min="0" name="WaitTime" startTime="1257844917353" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="0" lastSampleTime="1257844917354" name="CreateCount" startTime="1257844917353" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257844917354" name="CloseCount" startTime="1257844917353" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257844917353" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257844917353" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917353" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257844917353" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257844917353" max="0" min="0" name="UseTime" startTime="1257844917353" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917353" max="0" min="0" name="WaitTime" startTime="1257844917353" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="DB2 Universal JDBC Driver Provider">
+<Stat name="jdbc/matafdb">
+<CountStatistic ID="1" count="89" lastSampleTime="1257946136838" name="CreateCount" startTime="1257844917190" unit="N/A"/>
+<CountStatistic ID="2" count="89" lastSampleTime="1257946316859" name="CloseCount" startTime="1257844917190" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="1.762143E7" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="0.15547887671021818" name="PoolSize" startTime="1257844917190" unit="N/A" upperBound="10" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="1.7023948E7" lastSampleTime="1257958253679" lowWaterMark="-1" lowerBound="0" mean="0.15020712349753484" name="FreePoolSize" startTime="1257844917190" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253679" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917190" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="110" integral="5974820.0" lastSampleTime="1257958253679" lowWaterMark="70" mean="0.052717532126833395" name="PercentUsed" startTime="1257844917190" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257946147365" max="10031" min="2" name="UseTime" startTime="1257844917190" totalTime="175165" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917190" max="0" min="0" name="WaitTime" startTime="1257844917190" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="89" lastSampleTime="1257946136838" name="CreateCount" startTime="1257844917189" unit="N/A"/>
+<CountStatistic ID="2" count="89" lastSampleTime="1257946316859" name="CloseCount" startTime="1257844917189" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="1.762143E7" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="0.15547887533838395" name="PoolSize" startTime="1257844917189" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="1.7023948E7" lastSampleTime="1257958253679" lowWaterMark="-1" lowerBound="0" mean="0.1502071221722148" name="FreePoolSize" startTime="1257844917189" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253679" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917189" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253679" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257844917189" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257946147365" max="10031" min="0" name="UseTime" startTime="1257844917189" totalTime="175165" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917190" max="0" min="0" name="WaitTime" startTime="1257844917189" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="89" lastSampleTime="1257946136838" name="CreateCount" startTime="1257844917188" unit="N/A"/>
+<CountStatistic ID="2" count="89" lastSampleTime="1257946316859" name="CloseCount" startTime="1257844917188" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="1.762143E7" lastSampleTime="1257958253678" lowWaterMark="0" lowerBound="0" mean="0.15547887533838395" name="PoolSize" startTime="1257844917188" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="1.7023948E7" lastSampleTime="1257958253678" lowWaterMark="-1" lowerBound="0" mean="0.1502071221722148" name="FreePoolSize" startTime="1257844917188" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917188" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253678" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257844917188" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257946147365" max="10031" min="0" name="UseTime" startTime="1257844917188" totalTime="175165" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917353" max="0" min="0" name="WaitTime" startTime="1257844917188" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JCA Connection Pools">
+<Stat name="WebSphere MQ JMS Provider">
+<Stat name="jms/gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257844948425" name="CreateCount" startTime="1257844916517" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257844916517" name="CloseCount" startTime="1257844916517" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="1.13305254E8" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="0.9997184683343315" name="PoolSize" startTime="1257844916517" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257844916517" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253679" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844916517" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257844916517" max="0" min="0" name="UseTime" startTime="1257844916517" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844916517" max="0" min="0" name="WaitTime" startTime="1257844916517" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257844948425" name="CreateCount" startTime="1257844916517" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257844916518" name="CloseCount" startTime="1257844916516" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="1.13305254E8" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="0.9997184683343315" name="PoolSize" startTime="1257844916517" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257844916516" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253679" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844916516" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257844916517" max="0" min="0" name="UseTime" startTime="1257844916516" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844916517" max="0" min="0" name="WaitTime" startTime="1257844916516" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JMS Connection Factories">
+<Stat name="JMS$gmcf">
+<CountStatistic ID="1" count="2" lastSampleTime="1257879382303" name="CreateCount" startTime="1257844948431" unit="N/A"/>
+<CountStatistic ID="2" count="1" lastSampleTime="1257881182346" name="CloseCount" startTime="1257844948431" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="1.15105163E8" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="1.0158855395647692" name="PoolSize" startTime="1257844948431" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="1.15077458E8" lastSampleTime="1257958253680" lowWaterMark="0" lowerBound="0" mean="1.0156410141245973" name="FreePoolSize" startTime="1257844948431" unit="N/A" upperBound="10" value="1"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253680" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844948431" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257946147366" max="4821" min="26" name="UseTime" startTime="1257844948431" totalTime="27699" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844948431" max="0" min="0" name="WaitTime" startTime="1257844948431" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="2" lastSampleTime="1257879382303" name="CreateCount" startTime="1257844948431" unit="N/A"/>
+<CountStatistic ID="2" count="1" lastSampleTime="1257881182346" name="CloseCount" startTime="1257844948431" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="1.15105162E8" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="1.0158855307390529" name="PoolSize" startTime="1257844948431" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="1.15077456E8" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="1.0156410054369238" name="FreePoolSize" startTime="1257844948431" unit="N/A" upperBound="0" value="1"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253680" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844948430" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257946147366" max="4821" min="0" name="UseTime" startTime="1257844948431" totalTime="27699" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844948431" max="0" min="0" name="WaitTime" startTime="1257844948431" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="3" lastSampleTime="1257879382303" name="CreateCount" startTime="1257844916516" unit="N/A"/>
+<CountStatistic ID="2" count="1" lastSampleTime="1257881182346" name="CloseCount" startTime="1257844916513" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="2.28442838E8" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="2.0156039903698666" name="PoolSize" startTime="1257844916516" unit="N/A" upperBound="0" value="2"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="1.15109871E8" lastSampleTime="1257958253679" lowWaterMark="0" lowerBound="0" mean="1.015641012648252" name="FreePoolSize" startTime="1257844916516" unit="N/A" upperBound="0" value="1"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253679" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844916512" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257946147366" max="4821" min="0" name="UseTime" startTime="1257844916513" totalTime="27699" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844948431" max="0" min="0" name="WaitTime" startTime="1257844916515" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="110590" integral="0.0" lastSampleTime="1257958253680" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257844905076" unit="KILOBYTE" upperBound="262144" value="110590"/>
+<CountStatistic ID="3" count="73120" lastSampleTime="1257958253680" name="UsedMemory" startTime="1257844905075" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="113348" lastSampleTime="1257958253680" name="UpTime" startTime="1257844905075" unit="SECOND"/>
+</Stat>
+<Stat name="Object Pool">
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext"/>
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext.class@2c8164c2"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityIORInterceptor"/>
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="ActivityServiceServerInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="Servlet Session Manager">
+<Stat name="MatafEAR_K#MatafServer.war">
+<RangeStatistic ID="7" highWaterMark="4" integral="1.10758702E8" lastSampleTime="1257958253680" lowWaterMark="0" mean="0.9774796153486149" name="LiveCount" startTime="1257844943182" unit="N/A" value="1"/>
+</Stat>
+<RangeStatistic ID="7" highWaterMark="4" integral="1.10758702E8" lastSampleTime="1257958253680" lowWaterMark="0" mean="0.9774796153486149" name="LiveCount" startTime="1257844943182" unit="N/A" value="1"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="19" integral="5.66969149E8" lastSampleTime="1257958253680" lowWaterMark="1" lowerBound="5" mean="5.001993619067402" name="PoolSize" startTime="1257844905045" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="2.26623948E8" lastSampleTime="1257958253680" lowWaterMark="1" lowerBound="2" mean="1.9993531108746645" name="PoolSize" startTime="1257844905044" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Message Listener">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958253680" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257844905045" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958253680" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257844905044" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="1.13296623E8" lastSampleTime="1257958253680" lowWaterMark="1" lowerBound="1" mean="0.9999733979730226" name="PoolSize" startTime="1257844954043" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="3" integral="2.26596715E8" lastSampleTime="1257958253680" lowWaterMark="1" lowerBound="3" mean="1.9992521400447194" name="PoolSize" startTime="1257844912941" unit="N/A" upperBound="5" value="2"/>
+</Stat>
+<Stat name="WebContainer">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="3.37188596E8" lastSampleTime="1257958253680" lowWaterMark="1" lowerBound="10" mean="2.9760655776163634" name="PoolSize" startTime="1257844953557" unit="N/A" upperBound="50" value="3"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="19" integral="1.470884223E9" lastSampleTime="1257958253680" lowWaterMark="0" lowerBound="0" mean="12.976637822502992" name="PoolSize" startTime="1257844905042" unit="N/A" upperBound="0" value="13"/>
+</Stat>
+<Stat name="Transaction Manager">
+<CountStatistic ID="4" count="0" lastSampleTime="1257844914322" name="ActiveCount" startTime="1257844914322" unit="N/A"/>
+<CountStatistic ID="14" count="0" lastSampleTime="1257844914322" name="CommittedCount" startTime="1257844914322" unit="N/A"/>
+<CountStatistic ID="16" count="0" lastSampleTime="1257844914322" name="RolledbackCount" startTime="1257844914322" unit="N/A"/>
+</Stat>
+<Stat name="Web Applications">
+<Stat name="MatafEAR_K#MatafServer.war">
+<Stat name="Servlets">
+<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+<CountStatistic ID="11" count="15" lastSampleTime="1257932853579" name="RequestCount" startTime="1257844962870" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257932853580" max="361" min="1" name="ServiceTime" startTime="1257844962870" totalTime="631" unit="MILLISECOND"/>
+</Stat>
+<Stat name="CSReqProtocolServlet">
+<CountStatistic ID="11" count="1851" lastSampleTime="1257946146954" name="RequestCount" startTime="1257844963039" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257946147365" max="10049" min="0" name="ServiceTime" startTime="1257844963039" totalTime="214564" unit="MILLISECOND"/>
+</Stat>
+<Stat name="StartServerServlet">
+<CountStatistic ID="11" count="0" lastSampleTime="1257844944376" name="RequestCount" startTime="1257844944376" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257844944376" max="0" min="0" name="ServiceTime" startTime="1257844944376" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="11" count="1866" lastSampleTime="1257946146954" name="RequestCount" startTime="1257844943210" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257946147365" max="10049" min="0" name="ServiceTime" startTime="1257844943210" totalTime="215195" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<CountStatistic ID="11" count="1866" lastSampleTime="1257946146954" name="RequestCount" startTime="1257844943210" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257946147365" max="10049" min="0" name="ServiceTime" startTime="1257844943209" totalTime="215195" unit="MILLISECOND"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+<Server name="K2">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="Dynamic Caching">
+<Stat name="Object Cache">
+<Stat name="ws/WSSecureMap"/>
+</Stat>
+<Stat name="Servlet Cache">
+<Stat name="baseCache"/>
+</Stat>
+</Stat>
+<Stat name="JDBC Connection Pools">
+<Stat name="Cloudscape JDBC Provider (XA)">
+<Stat name="jdbc/DefaultEJBTimerDataSource">
+<CountStatistic ID="1" count="0" lastSampleTime="1257844917825" name="CreateCount" startTime="1257844917825" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257844917825" name="CloseCount" startTime="1257844917825" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257844917825" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257844917825" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917825" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257844917825" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257844917825" max="0" min="0" name="UseTime" startTime="1257844917825" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917825" max="0" min="0" name="WaitTime" startTime="1257844917825" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="0" lastSampleTime="1257844917826" name="CreateCount" startTime="1257844917824" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257844917826" name="CloseCount" startTime="1257844917824" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257844917825" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257844917824" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917824" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257844917824" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257844917825" max="0" min="0" name="UseTime" startTime="1257844917824" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917825" max="0" min="0" name="WaitTime" startTime="1257844917824" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="DB2 Universal JDBC Driver Provider">
+<Stat name="jdbc/matafdb">
+<CountStatistic ID="1" count="59" lastSampleTime="1257931751729" name="CreateCount" startTime="1257844917549" unit="N/A"/>
+<CountStatistic ID="2" count="59" lastSampleTime="1257931911706" name="CloseCount" startTime="1257844917549" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="1.1375506E7" lastSampleTime="1257958251988" lowWaterMark="0" lowerBound="0" mean="0.10037113255574504" name="PoolSize" startTime="1257844917549" unit="N/A" upperBound="10" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="1.0322042E7" lastSampleTime="1257958251988" lowWaterMark="-1" lowerBound="0" mean="0.09107595265019135" name="FreePoolSize" startTime="1257844917549" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917549" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="110" integral="1.053464E7" lastSampleTime="1257958251988" lowWaterMark="70" mean="0.09295179905553685" name="PercentUsed" startTime="1257844917549" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257931751903" max="3397" min="2" name="UseTime" startTime="1257844917549" totalTime="116037" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917549" max="0" min="0" name="WaitTime" startTime="1257844917549" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="59" lastSampleTime="1257931751729" name="CreateCount" startTime="1257844917548" unit="N/A"/>
+<CountStatistic ID="2" count="59" lastSampleTime="1257931911706" name="CloseCount" startTime="1257844917548" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="1.1375506E7" lastSampleTime="1257958251988" lowWaterMark="0" lowerBound="0" mean="0.10037113167012604" name="PoolSize" startTime="1257844917548" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="1.0322042E7" lastSampleTime="1257958251988" lowWaterMark="-1" lowerBound="0" mean="0.09107595184658786" name="FreePoolSize" startTime="1257844917548" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917548" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257844917548" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257931751903" max="3397" min="0" name="UseTime" startTime="1257844917548" totalTime="116037" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917549" max="0" min="0" name="WaitTime" startTime="1257844917548" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="59" lastSampleTime="1257931751729" name="CreateCount" startTime="1257844917547" unit="N/A"/>
+<CountStatistic ID="2" count="59" lastSampleTime="1257931911706" name="CloseCount" startTime="1257844917547" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="1.1375506E7" lastSampleTime="1257958251987" lowWaterMark="0" lowerBound="0" mean="0.10037113167012604" name="PoolSize" startTime="1257844917547" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="1.0322042E7" lastSampleTime="1257958251987" lowWaterMark="-1" lowerBound="0" mean="0.09107595184658786" name="FreePoolSize" startTime="1257844917547" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251987" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844917547" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958251987" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257844917547" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257931751903" max="3397" min="0" name="UseTime" startTime="1257844917547" totalTime="116037" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844917825" max="0" min="0" name="WaitTime" startTime="1257844917547" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JCA Connection Pools">
+<Stat name="WebSphere MQ JMS Provider">
+<Stat name="jms/gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257844948194" name="CreateCount" startTime="1257844916852" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257844916852" name="CloseCount" startTime="1257844916852" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="1.13303795E8" lastSampleTime="1257958251989" lowWaterMark="0" lowerBound="0" mean="0.9997234573422715" name="PoolSize" startTime="1257844916852" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958251989" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257844916852" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251989" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844916852" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257844916852" max="0" min="0" name="UseTime" startTime="1257844916852" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844916852" max="0" min="0" name="WaitTime" startTime="1257844916852" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257844948194" name="CreateCount" startTime="1257844916852" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257844916853" name="CloseCount" startTime="1257844916852" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="1.13303795E8" lastSampleTime="1257958251989" lowWaterMark="0" lowerBound="0" mean="0.9997234573422715" name="PoolSize" startTime="1257844916852" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958251989" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257844916852" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251989" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844916852" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257844916852" max="0" min="0" name="UseTime" startTime="1257844916852" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844916852" max="0" min="0" name="WaitTime" startTime="1257844916852" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JMS Connection Factories">
+<Stat name="JMS$gmcf">
+<CountStatistic ID="1" count="2" lastSampleTime="1257873685272" name="CreateCount" startTime="1257844948200" unit="N/A"/>
+<CountStatistic ID="2" count="1" lastSampleTime="1257875485309" name="CloseCount" startTime="1257844948200" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="1.15103675E8" lastSampleTime="1257958251989" lowWaterMark="0" lowerBound="0" mean="1.0158854881719799" name="PoolSize" startTime="1257844948200" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="4.7923108E7" lastSampleTime="1257958251989" lowWaterMark="0" lowerBound="0" mean="0.422961212709312" name="FreePoolSize" startTime="1257844948200" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251989" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844948200" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257876248000" max="4672" min="28" name="UseTime" startTime="1257844948200" totalTime="20384" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844948200" max="0" min="0" name="WaitTime" startTime="1257844948200" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="2" lastSampleTime="1257873685272" name="CreateCount" startTime="1257844948199" unit="N/A"/>
+<CountStatistic ID="2" count="1" lastSampleTime="1257875485309" name="CloseCount" startTime="1257844948199" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="1.15103676E8" lastSampleTime="1257958251989" lowWaterMark="0" lowerBound="0" mean="1.0158854880317771" name="PoolSize" startTime="1257844948199" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="4.7923108E7" lastSampleTime="1257958251989" lowWaterMark="0" lowerBound="0" mean="0.42296120897632816" name="FreePoolSize" startTime="1257844948199" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251989" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844948199" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257876248000" max="4672" min="0" name="UseTime" startTime="1257844948199" totalTime="20384" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844948200" max="0" min="0" name="WaitTime" startTime="1257844948199" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="3" lastSampleTime="1257873685272" name="CreateCount" startTime="1257844916851" unit="N/A"/>
+<CountStatistic ID="2" count="1" lastSampleTime="1257875485309" name="CloseCount" startTime="1257844916849" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="2.28439314E8" lastSampleTime="1257958251988" lowWaterMark="0" lowerBound="0" mean="2.015608928059089" name="PoolSize" startTime="1257844916851" unit="N/A" upperBound="0" value="2"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="4.7936367E7" lastSampleTime="1257958251988" lowWaterMark="0" lowerBound="0" mean="0.42296121281434546" name="FreePoolSize" startTime="1257844916851" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251988" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257844916848" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257876248000" max="4672" min="0" name="UseTime" startTime="1257844916849" totalTime="20384" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257844948200" max="0" min="0" name="WaitTime" startTime="1257844916851" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="163838" integral="0.0" lastSampleTime="1257958251989" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257844905197" unit="KILOBYTE" upperBound="262144" value="163838"/>
+<CountStatistic ID="3" count="106397" lastSampleTime="1257958251989" name="UsedMemory" startTime="1257844905196" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="113346" lastSampleTime="1257958251989" name="UpTime" startTime="1257844905196" unit="SECOND"/>
+</Stat>
+<Stat name="Object Pool">
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext"/>
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext.class@2ed2a4c2"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityIORInterceptor"/>
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="ActivityServiceServerInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="Servlet Session Manager">
+<Stat name="MatafEAR_K#MatafServer.war">
+<RangeStatistic ID="7" highWaterMark="2" integral="5.0221483E7" lastSampleTime="1257958251990" lowWaterMark="0" mean="0.44322731158413536" name="LiveCount" startTime="1257844943352" unit="N/A" value="0"/>
+</Stat>
+<RangeStatistic ID="7" highWaterMark="2" integral="5.0221483E7" lastSampleTime="1257958251990" lowWaterMark="0" mean="0.44322731158413536" name="LiveCount" startTime="1257844943352" unit="N/A" value="0"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="12" integral="5.66761049E8" lastSampleTime="1257958251990" lowWaterMark="1" lowerBound="5" mean="5.000237536428568" name="PoolSize" startTime="1257844905165" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="2.26620018E8" lastSampleTime="1257958251990" lowWaterMark="1" lowerBound="2" mean="1.9993503832154098" name="PoolSize" startTime="1257844905165" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Message Listener">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958251990" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257844905166" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958251990" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257844905164" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="1.1329493E8" lastSampleTime="1257958251990" lowWaterMark="1" lowerBound="1" mean="0.9999699907315491" name="PoolSize" startTime="1257844953660" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="3" integral="2.26593979E8" lastSampleTime="1257958251990" lowWaterMark="1" lowerBound="3" mean="1.999261215412303" name="PoolSize" startTime="1257844913134" unit="N/A" upperBound="5" value="2"/>
+</Stat>
+<Stat name="WebContainer">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="3.06894123E8" lastSampleTime="1257958251990" lowWaterMark="1" lowerBound="10" mean="2.7087150405010965" name="PoolSize" startTime="1257844953205" unit="N/A" upperBound="50" value="3"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="12" integral="1.440358675E9" lastSampleTime="1257958251990" lowWaterMark="0" lowerBound="0" mean="12.707534150911874" name="PoolSize" startTime="1257844905163" unit="N/A" upperBound="0" value="13"/>
+</Stat>
+<Stat name="Transaction Manager">
+<CountStatistic ID="4" count="0" lastSampleTime="1257844914563" name="ActiveCount" startTime="1257844914563" unit="N/A"/>
+<CountStatistic ID="14" count="0" lastSampleTime="1257844914563" name="CommittedCount" startTime="1257844914563" unit="N/A"/>
+<CountStatistic ID="16" count="0" lastSampleTime="1257844914563" name="RolledbackCount" startTime="1257844914563" unit="N/A"/>
+</Stat>
+<Stat name="Web Applications">
+<Stat name="MatafEAR_K#MatafServer.war">
+<Stat name="Servlets">
+<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+<CountStatistic ID="11" count="6" lastSampleTime="1257924333281" name="RequestCount" startTime="1257848065340" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257924333646" max="365" min="1" name="ServiceTime" startTime="1257848065340" totalTime="584" unit="MILLISECOND"/>
+</Stat>
+<Stat name="CSReqProtocolServlet">
+<CountStatistic ID="11" count="2299" lastSampleTime="1257932810062" name="RequestCount" startTime="1257848065555" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257932810063" max="3404" min="1" name="ServiceTime" startTime="1257848065555" totalTime="155666" unit="MILLISECOND"/>
+</Stat>
+<Stat name="StartServerServlet">
+<CountStatistic ID="11" count="0" lastSampleTime="1257844944461" name="RequestCount" startTime="1257844944461" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257844944461" max="0" min="0" name="ServiceTime" startTime="1257844944461" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="11" count="2305" lastSampleTime="1257932810062" name="RequestCount" startTime="1257844943380" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257932810063" max="3404" min="0" name="ServiceTime" startTime="1257844943380" totalTime="156250" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<CountStatistic ID="11" count="2305" lastSampleTime="1257932810062" name="RequestCount" startTime="1257844943379" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257932810063" max="3404" min="0" name="ServiceTime" startTime="1257844943379" totalTime="156250" unit="MILLISECOND"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+<Server name="nodeagent">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="81918" integral="0.0" lastSampleTime="1257414420231" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257341468316" unit="KILOBYTE" upperBound="262144" value="81918"/>
+<CountStatistic ID="3" count="38561" lastSampleTime="1257958253349" name="UsedMemory" startTime="1257341468313" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="616785" lastSampleTime="1257958253349" name="UpTime" startTime="1257341468313" unit="SECOND"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="System Data">
+<CountStatistic ID="1" count="0" lastSampleTime="1257958253349" name="CPUUsageSinceLastMeasurement" startTime="1257341468360" unit="N/A"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="20" integral="3.084311575E9" lastSampleTime="1257958253350" lowWaterMark="1" lowerBound="5" mean="5.000625947351841" name="PoolSize" startTime="1257341468250" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="1.233492857E9" lastSampleTime="1257958253350" lowWaterMark="1" lowerBound="2" mean="1.9998746030019208" name="PoolSize" startTime="1257341468250" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="7.36415623E8" lastSampleTime="1257958253350" lowWaterMark="1" lowerBound="10" mean="1.1939581903097882" name="PoolSize" startTime="1257341468249" unit="N/A" upperBound="50" value="2"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="6.16768046E8" lastSampleTime="1257958253350" lowWaterMark="1" lowerBound="1" mean="0.9999981646294264" name="PoolSize" startTime="1257341484172" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="4" integral="1.789373032E9" lastSampleTime="1257958253350" lowWaterMark="1" lowerBound="3" mean="2.9011849490832584" name="PoolSize" startTime="1257341480182" unit="N/A" upperBound="5" value="3"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="20" integral="7.460411692E9" lastSampleTime="1257958253350" lowWaterMark="0" lowerBound="0" mean="12.095641849663224" name="PoolSize" startTime="1257341468248" unit="N/A" upperBound="0" value="13"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+</Node>
+<Node name="S603FB00Node01">
+<Server name="TYV1">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="Dynamic Caching">
+<Stat name="Object Cache">
+<Stat name="ws/WSSecureMap"/>
+</Stat>
+<Stat name="Servlet Cache">
+<Stat name="baseCache"/>
+</Stat>
+</Stat>
+<Stat name="JDBC Connection Pools">
+<Stat name="Cloudscape JDBC Provider (XA)">
+<Stat name="jdbc/DefaultEJBTimerDataSource">
+<CountStatistic ID="1" count="0" lastSampleTime="1257924309467" name="CreateCount" startTime="1257924309467" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924309467" name="CloseCount" startTime="1257924309467" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257924309467" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257924309467" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924309467" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257924309467" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924309467" max="0" min="0" name="UseTime" startTime="1257924309467" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924309467" max="0" min="0" name="WaitTime" startTime="1257924309467" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="0" lastSampleTime="1257924309468" name="CreateCount" startTime="1257924309467" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924309468" name="CloseCount" startTime="1257924309466" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257924309467" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257924309467" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924309466" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257924309467" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924309467" max="0" min="0" name="UseTime" startTime="1257924309466" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924309467" max="0" min="0" name="WaitTime" startTime="1257924309466" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="DB2 Universal JDBC Driver Provider">
+<Stat name="jdbc/matafdb">
+<CountStatistic ID="1" count="5" lastSampleTime="1257951653011" name="CreateCount" startTime="1257924309321" unit="N/A"/>
+<CountStatistic ID="2" count="5" lastSampleTime="1257951833025" name="CloseCount" startTime="1257924309321" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="900093.0" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.02651710482931466" name="PoolSize" startTime="1257924309321" unit="N/A" upperBound="10" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="894242.0" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.026344731996333713" name="FreePoolSize" startTime="1257924309321" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924309321" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="100" integral="58510.0" lastSampleTime="1257958253185" lowWaterMark="90" mean="0.001723728329809476" name="PercentUsed" startTime="1257924309321" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257951653534" max="2304" min="27" name="UseTime" startTime="1257924309321" totalTime="5851" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924309321" max="0" min="0" name="WaitTime" startTime="1257924309321" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="5" lastSampleTime="1257951653011" name="CreateCount" startTime="1257924309320" unit="N/A"/>
+<CountStatistic ID="2" count="5" lastSampleTime="1257951833025" name="CloseCount" startTime="1257924309320" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="900093.0" lastSampleTime="1257958253184" lowWaterMark="0" lowerBound="0" mean="0.02651710482931466" name="PoolSize" startTime="1257924309320" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="894242.0" lastSampleTime="1257958253184" lowWaterMark="0" lowerBound="0" mean="0.026344731996333713" name="FreePoolSize" startTime="1257924309320" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924309320" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257924309320" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257951653534" max="2304" min="0" name="UseTime" startTime="1257924309320" totalTime="5851" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924309321" max="0" min="0" name="WaitTime" startTime="1257924309320" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="5" lastSampleTime="1257951653011" name="CreateCount" startTime="1257924309319" unit="N/A"/>
+<CountStatistic ID="2" count="5" lastSampleTime="1257951833025" name="CloseCount" startTime="1257924309319" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="900093.0" lastSampleTime="1257958253184" lowWaterMark="0" lowerBound="0" mean="0.02651710404811002" name="PoolSize" startTime="1257924309319" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="894242.0" lastSampleTime="1257958253184" lowWaterMark="0" lowerBound="0" mean="0.026344731220207245" name="FreePoolSize" startTime="1257924309319" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924309319" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253184" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257924309319" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257951653534" max="2304" min="0" name="UseTime" startTime="1257924309319" totalTime="5851" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924309467" max="0" min="0" name="WaitTime" startTime="1257924309319" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JCA Connection Pools">
+<Stat name="WebSphere MQ JMS Provider">
+<Stat name="jms/gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257924338464" name="CreateCount" startTime="1257924308888" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924308888" name="CloseCount" startTime="1257924308888" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="3.3914721E7" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.999128690159646" name="PoolSize" startTime="1257924308888" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257924308888" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253185" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924308888" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924308888" max="0" min="0" name="UseTime" startTime="1257924308888" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924308888" max="0" min="0" name="WaitTime" startTime="1257924308888" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257924338464" name="CreateCount" startTime="1257924308887" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924308888" name="CloseCount" startTime="1257924308887" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="3.3914721E7" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.9991286607252858" name="PoolSize" startTime="1257924308887" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257924308887" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253185" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924308887" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924308888" max="0" min="0" name="UseTime" startTime="1257924308887" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924308888" max="0" min="0" name="WaitTime" startTime="1257924308887" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JMS Connection Factories">
+<Stat name="JMS$gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257924338921" name="CreateCount" startTime="1257924338469" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924338469" name="CloseCount" startTime="1257924338469" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="3.3914264E7" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.9999866724521591" name="PoolSize" startTime="1257924338469" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.7307965E7" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.8051951548112625" name="FreePoolSize" startTime="1257924338469" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253185" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924338469" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924345535" max="6614" min="6614" name="UseTime" startTime="1257924338469" totalTime="6614" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924338469" max="0" min="0" name="WaitTime" startTime="1257924338469" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257924338921" name="CreateCount" startTime="1257924338468" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924338469" name="CloseCount" startTime="1257924338468" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="3.3914264E7" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.9999866429668276" name="PoolSize" startTime="1257924338468" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.7307965E7" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.8051951310695" name="FreePoolSize" startTime="1257924338468" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253185" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924338468" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924345535" max="6614" min="0" name="UseTime" startTime="1257924338468" totalTime="6614" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924338469" max="0" min="0" name="WaitTime" startTime="1257924338468" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="2" lastSampleTime="1257924338921" name="CreateCount" startTime="1257924308886" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924338470" name="CloseCount" startTime="1257924308885" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="6.7858566E7" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="1.9991153153321952" name="PoolSize" startTime="1257924308887" unit="N/A" upperBound="0" value="2"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.7331785E7" lastSampleTime="1257958253185" lowWaterMark="0" lowerBound="0" mean="0.8051951522109795" name="FreePoolSize" startTime="1257924308886" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253185" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924308884" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924345535" max="6614" min="0" name="UseTime" startTime="1257924308885" totalTime="6614" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924338469" max="0" min="0" name="WaitTime" startTime="1257924308886" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="163838" integral="0.0" lastSampleTime="1257958253185" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257924296744" unit="KILOBYTE" upperBound="262144" value="163838"/>
+<CountStatistic ID="3" count="104763" lastSampleTime="1257958253185" name="UsedMemory" startTime="1257924296744" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="33956" lastSampleTime="1257958253186" name="UpTime" startTime="1257924296743" unit="SECOND"/>
+</Stat>
+<Stat name="Object Pool">
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext"/>
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext.class@50decedb"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityIORInterceptor"/>
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="ActivityServiceServerInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="Servlet Session Manager">
+<Stat name="MatafEAR_TYV#MatafServer.war">
+<RangeStatistic ID="7" highWaterMark="1" integral="2.0252371E7" lastSampleTime="1257958253186" lowWaterMark="0" mean="0.5970717662870658" name="LiveCount" startTime="1257924333694" unit="N/A" value="0"/>
+</Stat>
+<RangeStatistic ID="7" highWaterMark="1" integral="2.0252371E7" lastSampleTime="1257958253186" lowWaterMark="0" mean="0.5970717486844511" name="LiveCount" startTime="1257924333693" unit="N/A" value="0"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="17" integral="1.69883753E8" lastSampleTime="1257958253186" lowWaterMark="1" lowerBound="5" mean="5.002985822467487" name="PoolSize" startTime="1257924296713" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="6.7841651E7" lastSampleTime="1257958253186" lowWaterMark="1" lowerBound="2" mean="1.997900341478329" name="PoolSize" startTime="1257924296712" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Message Listener">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958253186" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257924296714" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958253186" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257924296712" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="3.3903501E7" lastSampleTime="1257958253186" lowWaterMark="1" lowerBound="1" mean="0.9999053284761238" name="PoolSize" startTime="1257924346475" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="3" integral="6.7810755E7" lastSampleTime="1257958253186" lowWaterMark="1" lowerBound="3" mean="1.9974941315978432" name="PoolSize" startTime="1257924305274" unit="N/A" upperBound="5" value="2"/>
+</Stat>
+<Stat name="WebContainer">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="5.3723251E7" lastSampleTime="1257958253186" lowWaterMark="1" lowerBound="10" mean="1.5844067417912746" name="PoolSize" startTime="1257924345699" unit="N/A" upperBound="50" value="2"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="17" integral="3.93307401E8" lastSampleTime="1257958253186" lowWaterMark="0" lowerBound="0" mean="11.582692284755705" name="PoolSize" startTime="1257924296711" unit="N/A" upperBound="0" value="12"/>
+</Stat>
+<Stat name="Transaction Manager">
+<CountStatistic ID="4" count="0" lastSampleTime="1257924306578" name="ActiveCount" startTime="1257924306578" unit="N/A"/>
+<CountStatistic ID="14" count="0" lastSampleTime="1257924306578" name="CommittedCount" startTime="1257924306578" unit="N/A"/>
+<CountStatistic ID="16" count="0" lastSampleTime="1257924306578" name="RolledbackCount" startTime="1257924306578" unit="N/A"/>
+</Stat>
+<Stat name="Web Applications">
+<Stat name="MatafEAR_TYV#MatafServer.war">
+<Stat name="Servlets">
+<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+<CountStatistic ID="11" count="1" lastSampleTime="1257931401076" name="RequestCount" startTime="1257931401068" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257931401170" max="94" min="94" name="ServiceTime" startTime="1257931401068" totalTime="94" unit="MILLISECOND"/>
+</Stat>
+<Stat name="CSReqProtocolServlet">
+<CountStatistic ID="11" count="9" lastSampleTime="1257937227082" name="RequestCount" startTime="1257931401251" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257937228290" max="1777" min="7" name="ServiceTime" startTime="1257931401251" totalTime="6474" unit="MILLISECOND"/>
+</Stat>
+<Stat name="StartServerServlet">
+<CountStatistic ID="11" count="0" lastSampleTime="1257924334832" name="RequestCount" startTime="1257924334832" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257924334831" max="0" min="0" name="ServiceTime" startTime="1257924334831" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="11" count="10" lastSampleTime="1257937227082" name="RequestCount" startTime="1257924333717" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257937228290" max="1777" min="0" name="ServiceTime" startTime="1257924333717" totalTime="6568" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<CountStatistic ID="11" count="10" lastSampleTime="1257937227082" name="RequestCount" startTime="1257924333717" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257937228290" max="1777" min="0" name="ServiceTime" startTime="1257924333717" totalTime="6568" unit="MILLISECOND"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+<Server name="TYV2">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="Dynamic Caching">
+<Stat name="Object Cache">
+<Stat name="ws/WSSecureMap"/>
+</Stat>
+<Stat name="Servlet Cache">
+<Stat name="baseCache"/>
+</Stat>
+</Stat>
+<Stat name="JDBC Connection Pools">
+<Stat name="Cloudscape JDBC Provider (XA)">
+<Stat name="jdbc/DefaultEJBTimerDataSource">
+<CountStatistic ID="1" count="0" lastSampleTime="1257924730781" name="CreateCount" startTime="1257924730781" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924730780" name="CloseCount" startTime="1257924730780" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257924730781" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257924730780" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924730780" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257924730780" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924730780" max="0" min="0" name="UseTime" startTime="1257924730780" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924730780" max="0" min="0" name="WaitTime" startTime="1257924730780" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="0" lastSampleTime="1257924730781" name="CreateCount" startTime="1257924730780" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924730781" name="CloseCount" startTime="1257924730780" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257924730780" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257924730780" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924730779" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257924730780" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924730780" max="0" min="0" name="UseTime" startTime="1257924730780" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924730780" max="0" min="0" name="WaitTime" startTime="1257924730780" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="DB2 Universal JDBC Driver Provider">
+<Stat name="jdbc/matafdb">
+<CountStatistic ID="1" count="3" lastSampleTime="1257947460397" name="CreateCount" startTime="1257924730637" unit="N/A"/>
+<CountStatistic ID="2" count="3" lastSampleTime="1257947640413" name="CloseCount" startTime="1257924730637" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="540048.0" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.016111204687013072" name="PoolSize" startTime="1257924730637" unit="N/A" upperBound="10" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="537128.0" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.016024092582744415" name="FreePoolSize" startTime="1257924730637" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924730637" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="100" integral="29200.0" lastSampleTime="1257958250663" lowWaterMark="90" mean="8.711210426865421E-4" name="PercentUsed" startTime="1257924730637" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257947460856" max="2172" min="289" name="UseTime" startTime="1257924730637" totalTime="2920" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924730637" max="0" min="0" name="WaitTime" startTime="1257924730637" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="3" lastSampleTime="1257947460397" name="CreateCount" startTime="1257924730636" unit="N/A"/>
+<CountStatistic ID="2" count="3" lastSampleTime="1257947640413" name="CloseCount" startTime="1257924730636" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="540048.0" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.016111204206368926" name="PoolSize" startTime="1257924730636" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="537128.0" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.01602409210469908" name="FreePoolSize" startTime="1257924730636" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924730636" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257924730636" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257947460856" max="2172" min="0" name="UseTime" startTime="1257924730636" totalTime="2920" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924730637" max="0" min="0" name="WaitTime" startTime="1257924730636" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="3" lastSampleTime="1257947460397" name="CreateCount" startTime="1257924730636" unit="N/A"/>
+<CountStatistic ID="2" count="3" lastSampleTime="1257947640413" name="CloseCount" startTime="1257924730635" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="540048.0" lastSampleTime="1257958250662" lowWaterMark="0" lowerBound="0" mean="0.016111204687013072" name="PoolSize" startTime="1257924730636" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="537128.0" lastSampleTime="1257958250662" lowWaterMark="0" lowerBound="0" mean="0.01602409210469908" name="FreePoolSize" startTime="1257924730635" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924730635" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958250662" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257924730635" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257947460856" max="2172" min="0" name="UseTime" startTime="1257924730635" totalTime="2920" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924730780" max="0" min="0" name="WaitTime" startTime="1257924730635" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JCA Connection Pools">
+<Stat name="WebSphere MQ JMS Provider">
+<Stat name="jms/gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257924759969" name="CreateCount" startTime="1257924730147" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924730147" name="CloseCount" startTime="1257924730147" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="3.3490694E7" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.9991103358910107" name="PoolSize" startTime="1257924730147" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257924730147" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924730147" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924730147" max="0" min="0" name="UseTime" startTime="1257924730147" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924730147" max="0" min="0" name="WaitTime" startTime="1257924730147" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257924759969" name="CreateCount" startTime="1257924730146" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924730147" name="CloseCount" startTime="1257924730146" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="3.3490694E7" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.9991103060850762" name="PoolSize" startTime="1257924730146" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257924730146" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924730146" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924730147" max="0" min="0" name="UseTime" startTime="1257924730146" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924730147" max="0" min="0" name="WaitTime" startTime="1257924730146" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JMS Connection Factories">
+<Stat name="JMS$gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257924760425" name="CreateCount" startTime="1257924759974" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924759974" name="CloseCount" startTime="1257924759974" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="3.3490238E7" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.9999865335705694" name="PoolSize" startTime="1257924759974" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.2694566E7" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.6776380742719268" name="FreePoolSize" startTime="1257924759974" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924759974" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924766308" max="5883" min="5883" name="UseTime" startTime="1257924759974" totalTime="5883" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924759974" max="0" min="0" name="WaitTime" startTime="1257924759974" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257924760425" name="CreateCount" startTime="1257924759974" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924759975" name="CloseCount" startTime="1257924759974" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="3.3490238E7" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.9999865335705694" name="PoolSize" startTime="1257924759974" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.2694566E7" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.6776380742719268" name="FreePoolSize" startTime="1257924759974" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924759974" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924766308" max="5883" min="0" name="UseTime" startTime="1257924759974" totalTime="5883" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924759974" max="0" min="0" name="WaitTime" startTime="1257924759974" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="2" lastSampleTime="1257924760425" name="CreateCount" startTime="1257924730145" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257924759975" name="CloseCount" startTime="1257924730144" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="6.7010761E7" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="1.9990968218331233" name="PoolSize" startTime="1257924730145" unit="N/A" upperBound="0" value="2"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.2714779E7" lastSampleTime="1257958250663" lowWaterMark="0" lowerBound="0" mean="0.6776380663329845" name="FreePoolSize" startTime="1257924730145" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958250663" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257924730143" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257924766308" max="5883" min="0" name="UseTime" startTime="1257924730143" totalTime="5883" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257924759974" max="0" min="0" name="WaitTime" startTime="1257924730145" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="163838" integral="0.0" lastSampleTime="1257958250664" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257924718436" unit="KILOBYTE" upperBound="262144" value="163838"/>
+<CountStatistic ID="3" count="100996" lastSampleTime="1257958250664" name="UsedMemory" startTime="1257924718435" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="33532" lastSampleTime="1257958250664" name="UpTime" startTime="1257924718435" unit="SECOND"/>
+</Stat>
+<Stat name="Object Pool">
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext"/>
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext.class@56fecf86"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityIORInterceptor"/>
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="ActivityServiceServerInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="Servlet Session Manager">
+<Stat name="MatafEAR_TYV#MatafServer.war">
+<RangeStatistic ID="7" highWaterMark="1" integral="1.4689573E7" lastSampleTime="1257958250664" lowWaterMark="0" mean="0.43855395392959795" name="LiveCount" startTime="1257924755189" unit="N/A" value="0"/>
+</Stat>
+<RangeStatistic ID="7" highWaterMark="1" integral="1.4689573E7" lastSampleTime="1257958250664" lowWaterMark="0" mean="0.43855395392959795" name="LiveCount" startTime="1257924755189" unit="N/A" value="0"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="13" integral="1.67684399E8" lastSampleTime="1257958250664" lowWaterMark="1" lowerBound="5" mean="5.000689008157786" name="PoolSize" startTime="1257924718405" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="6.6993495E7" lastSampleTime="1257958250664" lowWaterMark="1" lowerBound="2" mean="1.9978819500350393" name="PoolSize" startTime="1257924718405" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Message Listener">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958250664" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257924718406" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958250664" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257924718404" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="3.3480322E7" lastSampleTime="1257958250664" lowWaterMark="1" lowerBound="1" mean="0.999906759890052" name="PoolSize" startTime="1257924767220" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="3" integral="6.6964361E7" lastSampleTime="1257958250664" lowWaterMark="1" lowerBound="3" mean="1.9975084375513812" name="PoolSize" startTime="1257924726720" unit="N/A" upperBound="5" value="2"/>
+</Stat>
+<Stat name="WebContainer">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="5.3680826E7" lastSampleTime="1257958250664" lowWaterMark="1" lowerBound="10" mean="1.60316902935343" name="PoolSize" startTime="1257924766468" unit="N/A" upperBound="50" value="2"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="13" integral="3.88945897E8" lastSampleTime="1257958250664" lowWaterMark="0" lowerBound="0" mean="11.599155124075887" name="PoolSize" startTime="1257924718403" unit="N/A" upperBound="0" value="12"/>
+</Stat>
+<Stat name="Transaction Manager">
+<CountStatistic ID="4" count="0" lastSampleTime="1257924728045" name="ActiveCount" startTime="1257924728045" unit="N/A"/>
+<CountStatistic ID="14" count="0" lastSampleTime="1257924728045" name="CommittedCount" startTime="1257924728045" unit="N/A"/>
+<CountStatistic ID="16" count="0" lastSampleTime="1257924728045" name="RolledbackCount" startTime="1257924728045" unit="N/A"/>
+</Stat>
+<Stat name="Web Applications">
+<Stat name="MatafEAR_TYV#MatafServer.war">
+<Stat name="Servlets">
+<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+<CountStatistic ID="11" count="1" lastSampleTime="1257932771175" name="RequestCount" startTime="1257932771167" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257932771299" max="123" min="123" name="ServiceTime" startTime="1257932771167" totalTime="123" unit="MILLISECOND"/>
+</Stat>
+<Stat name="CSReqProtocolServlet">
+<CountStatistic ID="11" count="1" lastSampleTime="1257932771504" name="RequestCount" startTime="1257932771497" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257932772913" max="1409" min="1409" name="ServiceTime" startTime="1257932771497" totalTime="1409" unit="MILLISECOND"/>
+</Stat>
+<Stat name="StartServerServlet">
+<CountStatistic ID="11" count="0" lastSampleTime="1257924756361" name="RequestCount" startTime="1257924756361" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257924756361" max="0" min="0" name="ServiceTime" startTime="1257924756361" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="11" count="2" lastSampleTime="1257932771504" name="RequestCount" startTime="1257924755213" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257932772913" max="1409" min="0" name="ServiceTime" startTime="1257924755213" totalTime="1532" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<CountStatistic ID="11" count="2" lastSampleTime="1257932771504" name="RequestCount" startTime="1257924755213" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257932772913" max="1409" min="0" name="ServiceTime" startTime="1257924755213" totalTime="1532" unit="MILLISECOND"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+<Server name="V1">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="Dynamic Caching">
+<Stat name="Object Cache">
+<Stat name="ws/WSSecureMap"/>
+</Stat>
+<Stat name="Servlet Cache">
+<Stat name="baseCache"/>
+</Stat>
+</Stat>
+<Stat name="JDBC Connection Pools">
+<Stat name="Cloudscape JDBC Provider (XA)">
+<Stat name="jdbc/DefaultEJBTimerDataSource">
+<CountStatistic ID="1" count="0" lastSampleTime="1257933632318" name="CreateCount" startTime="1257933632318" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933632318" name="CloseCount" startTime="1257933632318" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257933632318" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257933632318" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933632318" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257933632318" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257933632318" max="0" min="0" name="UseTime" startTime="1257933632318" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933632318" max="0" min="0" name="WaitTime" startTime="1257933632318" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="0" lastSampleTime="1257933632319" name="CreateCount" startTime="1257933632318" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933632319" name="CloseCount" startTime="1257933632317" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257933632318" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257933632318" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933632317" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257933632318" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257933632318" max="0" min="0" name="UseTime" startTime="1257933632317" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933632318" max="0" min="0" name="WaitTime" startTime="1257933632318" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="DB2 Universal JDBC Driver Provider">
+<Stat name="jdbc/matafdb">
+<CountStatistic ID="1" count="41" lastSampleTime="1257954874980" name="CreateCount" startTime="1257933632174" unit="N/A"/>
+<CountStatistic ID="2" count="41" lastSampleTime="1257955054996" name="CloseCount" startTime="1257933632174" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="7369065.0" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.2993236944561224" name="PoolSize" startTime="1257933632174" unit="N/A" upperBound="10" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="7160364.0" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.2908464786415398" name="FreePoolSize" startTime="1257933632174" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933632174" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="100" integral="2087010.0" lastSampleTime="1257958251224" lowWaterMark="70" mean="0.0847721581458261" name="PercentUsed" startTime="1257933632174" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257954875197" max="40084" min="3" name="UseTime" startTime="1257933632174" totalTime="208667" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933632174" max="0" min="0" name="WaitTime" startTime="1257933632174" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="41" lastSampleTime="1257954874980" name="CreateCount" startTime="1257933632173" unit="N/A"/>
+<CountStatistic ID="2" count="41" lastSampleTime="1257955054996" name="CloseCount" startTime="1257933632173" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="7369065.0" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.29932368229790823" name="PoolSize" startTime="1257933632173" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="7160364.0" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.29084646682766124" name="FreePoolSize" startTime="1257933632173" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933632173" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257933632173" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257954875197" max="40084" min="0" name="UseTime" startTime="1257933632173" totalTime="208667" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933632174" max="0" min="0" name="WaitTime" startTime="1257933632173" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="41" lastSampleTime="1257954874980" name="CreateCount" startTime="1257933632173" unit="N/A"/>
+<CountStatistic ID="2" count="41" lastSampleTime="1257955054996" name="CloseCount" startTime="1257933632172" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="7369065.0" lastSampleTime="1257958251223" lowWaterMark="0" lowerBound="0" mean="0.2993236944561224" name="PoolSize" startTime="1257933632173" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="7160364.0" lastSampleTime="1257958251223" lowWaterMark="0" lowerBound="0" mean="0.2908464786415398" name="FreePoolSize" startTime="1257933632173" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933632172" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958251223" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257933632172" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257954875197" max="40084" min="0" name="UseTime" startTime="1257933632172" totalTime="208667" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933632318" max="0" min="0" name="WaitTime" startTime="1257933632172" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JCA Connection Pools">
+<Stat name="WebSphere MQ JMS Provider">
+<Stat name="jms/gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257933660932" name="CreateCount" startTime="1257933631747" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933631746" name="CloseCount" startTime="1257933631746" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.4590292E7" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.9988145564586932" name="PoolSize" startTime="1257933631747" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257933631746" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933631746" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257933631746" max="0" min="0" name="UseTime" startTime="1257933631746" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933631746" max="0" min="0" name="WaitTime" startTime="1257933631746" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257933660932" name="CreateCount" startTime="1257933631746" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933631747" name="CloseCount" startTime="1257933631746" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.4590292E7" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.9988145158885985" name="PoolSize" startTime="1257933631746" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257933631746" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933631746" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257933631746" max="0" min="0" name="UseTime" startTime="1257933631746" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933631746" max="0" min="0" name="WaitTime" startTime="1257933631746" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JMS Connection Factories">
+<Stat name="JMS$gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257933661398" name="CreateCount" startTime="1257933660937" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933660937" name="CloseCount" startTime="1257933660937" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.4589826E7" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.9999812934261928" name="PoolSize" startTime="1257933660938" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="1.4967248E7" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.6086650391677006" name="FreePoolSize" startTime="1257933660937" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933660937" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257936312267" max="5066" min="46" name="UseTime" startTime="1257933660937" totalTime="5112" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933660937" max="0" min="0" name="WaitTime" startTime="1257933660937" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257933661398" name="CreateCount" startTime="1257933660937" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933660938" name="CloseCount" startTime="1257933660937" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.4589826E7" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.9999812527604903" name="PoolSize" startTime="1257933660937" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="1.4967248E7" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.6086650391677006" name="FreePoolSize" startTime="1257933660937" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933660937" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257936312267" max="5066" min="0" name="UseTime" startTime="1257933660937" totalTime="5112" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933660937" max="0" min="0" name="WaitTime" startTime="1257933660937" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="2" lastSampleTime="1257933661398" name="CreateCount" startTime="1257933631745" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933660938" name="CloseCount" startTime="1257933631743" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="4.9209311E7" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="1.9987957909263636" name="PoolSize" startTime="1257933631745" unit="N/A" upperBound="0" value="2"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="1.4985016E7" lastSampleTime="1257958251224" lowWaterMark="0" lowerBound="0" mean="0.6086650330821379" name="FreePoolSize" startTime="1257933631745" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958251224" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933631743" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257936312267" max="5066" min="0" name="UseTime" startTime="1257933631743" totalTime="5112" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933660937" max="0" min="0" name="WaitTime" startTime="1257933631745" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="192510" integral="0.0" lastSampleTime="1257958251225" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257933619864" unit="KILOBYTE" upperBound="262144" value="192510"/>
+<CountStatistic ID="3" count="92375" lastSampleTime="1257958251225" name="UsedMemory" startTime="1257933619864" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="24631" lastSampleTime="1257958251225" name="UpTime" startTime="1257933619864" unit="SECOND"/>
+</Stat>
+<Stat name="Object Pool">
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext"/>
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext.class@606210e4"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityIORInterceptor"/>
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="ActivityServiceServerInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="Servlet Session Manager">
+<Stat name="MatafEARV#MatafServer.war">
+<RangeStatistic ID="7" highWaterMark="8" integral="1.20075509E8" lastSampleTime="1257958251225" lowWaterMark="0" mean="4.882112138926494" name="LiveCount" startTime="1257933656233" unit="N/A" value="0"/>
+</Stat>
+<RangeStatistic ID="7" highWaterMark="8" integral="1.20075509E8" lastSampleTime="1257958251225" lowWaterMark="0" mean="4.882112138926494" name="LiveCount" startTime="1257933656233" unit="N/A" value="0"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="8" integral="1.23150886E8" lastSampleTime="1257958251225" lowWaterMark="1" lowerBound="5" mean="4.999753404111306" name="PoolSize" startTime="1257933619833" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="4.9192256E7" lastSampleTime="1257958251225" lowWaterMark="1" lowerBound="2" mean="1.9971366620286828" name="PoolSize" startTime="1257933619833" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Message Listener">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958251225" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257933619834" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958251225" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257933619832" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="2.4580649E7" lastSampleTime="1257958251225" lowWaterMark="1" lowerBound="1" mean="0.9998691824902227" name="PoolSize" startTime="1257933667360" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="3" integral="4.9165145E7" lastSampleTime="1257958251225" lowWaterMark="1" lowerBound="3" mean="1.9966979550120687" name="PoolSize" startTime="1257933627999" unit="N/A" upperBound="5" value="2"/>
+</Stat>
+<Stat name="WebContainer">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="9.8231871E7" lastSampleTime="1257958251225" lowWaterMark="1" lowerBound="10" mean="3.995664727364226" name="PoolSize" startTime="1257933666612" unit="N/A" upperBound="50" value="4"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="3.44571571E8" lastSampleTime="1257958251225" lowWaterMark="0" lowerBound="0" mean="13.989121809346235" name="PoolSize" startTime="1257933619831" unit="N/A" upperBound="0" value="14"/>
+</Stat>
+<Stat name="Transaction Manager">
+<CountStatistic ID="4" count="0" lastSampleTime="1257933629476" name="ActiveCount" startTime="1257933629476" unit="N/A"/>
+<CountStatistic ID="14" count="0" lastSampleTime="1257933629476" name="CommittedCount" startTime="1257933629476" unit="N/A"/>
+<CountStatistic ID="16" count="0" lastSampleTime="1257933629476" name="RolledbackCount" startTime="1257933629476" unit="N/A"/>
+</Stat>
+<Stat name="Web Applications">
+<Stat name="MatafEARV#MatafServer.war">
+<Stat name="Servlets">
+<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+<CountStatistic ID="11" count="10" lastSampleTime="1257933713307" name="RequestCount" startTime="1257933693449" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257933713310" max="110" min="2" name="ServiceTime" startTime="1257933693449" totalTime="435" unit="MILLISECOND"/>
+</Stat>
+<Stat name="CSReqProtocolServlet">
+<CountStatistic ID="11" count="560" lastSampleTime="1257953976483" name="RequestCount" startTime="1257933693656" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257953976484" max="40115" min="1" name="ServiceTime" startTime="1257933693656" totalTime="251445" unit="MILLISECOND"/>
+</Stat>
+<Stat name="StartServerServlet">
+<CountStatistic ID="11" count="0" lastSampleTime="1257933657289" name="RequestCount" startTime="1257933657289" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257933657289" max="0" min="0" name="ServiceTime" startTime="1257933657289" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="11" count="570" lastSampleTime="1257953976483" name="RequestCount" startTime="1257933656256" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257953976484" max="40115" min="0" name="ServiceTime" startTime="1257933656256" totalTime="251880" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<CountStatistic ID="11" count="570" lastSampleTime="1257953976483" name="RequestCount" startTime="1257933656256" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257953976484" max="40115" min="0" name="ServiceTime" startTime="1257933656256" totalTime="251880" unit="MILLISECOND"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+<Server name="nodeagent">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="98302" integral="5.3459963674974E13" lastSampleTime="1257958250898" lowWaterMark="51200" lowerBound="51200" mean="25442.690188841254" name="HeapSize" startTime="1255857059425" unit="KILOBYTE" upperBound="262144" value="94206"/>
+<CountStatistic ID="3" count="71323" lastSampleTime="1257958250898" name="UsedMemory" startTime="1255857059425" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="2101191" lastSampleTime="1257958250898" name="UpTime" startTime="1255857059425" unit="SECOND"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="System Data">
+<CountStatistic ID="1" count="0" lastSampleTime="1257958250898" name="CPUUsageSinceLastMeasurement" startTime="1255857059442" unit="N/A"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="13" integral="1.0506392223E10" lastSampleTime="1257958250898" lowWaterMark="1" lowerBound="5" mean="5.000206874527308" name="PoolSize" startTime="1255857059390" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="4.20231586E9" lastSampleTime="1257958250898" lowWaterMark="1" lowerBound="2" mean="1.9999680390865162" name="PoolSize" startTime="1255857059390" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="2.912935308E9" lastSampleTime="1257958250898" lowWaterMark="1" lowerBound="10" mean="1.386325470821232" name="PoolSize" startTime="1255857059389" unit="N/A" upperBound="50" value="2"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="2.101195634E9" lastSampleTime="1257958250898" lowWaterMark="1" lowerBound="1" mean="1.0000070289046725" name="PoolSize" startTime="1255857070033" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="6" integral="6.30359257E9" lastSampleTime="1257958250898" lowWaterMark="1" lowerBound="3" mean="3.000018548585051" name="PoolSize" startTime="1255857066366" unit="N/A" upperBound="5" value="3"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="13" integral="2.6026463188E10" lastSampleTime="1257958250898" lowWaterMark="0" lowerBound="0" mean="12.386525961167623" name="PoolSize" startTime="1255857059388" unit="N/A" upperBound="0" value="13"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+<Server name="V2">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="Dynamic Caching">
+<Stat name="Object Cache">
+<Stat name="ws/WSSecureMap"/>
+</Stat>
+<Stat name="Servlet Cache">
+<Stat name="baseCache"/>
+</Stat>
+</Stat>
+<Stat name="JDBC Connection Pools">
+<Stat name="Cloudscape JDBC Provider (XA)">
+<Stat name="jdbc/DefaultEJBTimerDataSource">
+<CountStatistic ID="1" count="0" lastSampleTime="1257933727927" name="CreateCount" startTime="1257933727927" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933727926" name="CloseCount" startTime="1257933727926" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257933727927" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257933727927" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933727926" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257933727927" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257933727926" max="0" min="0" name="UseTime" startTime="1257933727926" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933727926" max="0" min="0" name="WaitTime" startTime="1257933727926" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="0" lastSampleTime="1257933727927" name="CreateCount" startTime="1257933727926" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933727927" name="CloseCount" startTime="1257933727926" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257933727926" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257933727926" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933727926" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257933727926" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257933727926" max="0" min="0" name="UseTime" startTime="1257933727926" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933727926" max="0" min="0" name="WaitTime" startTime="1257933727926" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="DB2 Universal JDBC Driver Provider">
+<Stat name="jdbc/matafdb">
+<CountStatistic ID="1" count="14" lastSampleTime="1257951606891" name="CreateCount" startTime="1257933727781" unit="N/A"/>
+<CountStatistic ID="2" count="14" lastSampleTime="1257951787107" name="CloseCount" startTime="1257933727781" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="2708922.0" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="0.11045701693612933" name="PoolSize" startTime="1257933727782" unit="N/A" upperBound="10" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="2693394.0" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="0.10982385411719268" name="FreePoolSize" startTime="1257933727781" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252453" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933727781" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="100" integral="155280.0" lastSampleTime="1257958252453" lowWaterMark="80" mean="0.00633158315022521" name="PercentUsed" startTime="1257933727781" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257951665417" max="1802" min="4" name="UseTime" startTime="1257933727781" totalTime="15517" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933727781" max="0" min="0" name="WaitTime" startTime="1257933727781" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="14" lastSampleTime="1257951606891" name="CreateCount" startTime="1257933727780" unit="N/A"/>
+<CountStatistic ID="2" count="14" lastSampleTime="1257951787107" name="CloseCount" startTime="1257933727780" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="2708922.0" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="0.11045700792830143" name="PoolSize" startTime="1257933727780" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="2693394.0" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="0.10982384963909611" name="FreePoolSize" startTime="1257933727780" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252453" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933727780" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958252453" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257933727780" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257951665417" max="1802" min="0" name="UseTime" startTime="1257933727780" totalTime="15517" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933727781" max="0" min="0" name="WaitTime" startTime="1257933727780" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="14" lastSampleTime="1257951606891" name="CreateCount" startTime="1257933727780" unit="N/A"/>
+<CountStatistic ID="2" count="14" lastSampleTime="1257951787107" name="CloseCount" startTime="1257933727779" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="2708922.0" lastSampleTime="1257958252452" lowWaterMark="0" lowerBound="0" mean="0.1104570124322152" name="PoolSize" startTime="1257933727780" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="2693394.0" lastSampleTime="1257958252452" lowWaterMark="0" lowerBound="0" mean="0.10982385411719268" name="FreePoolSize" startTime="1257933727780" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933727779" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958252452" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257933727779" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257951665417" max="1802" min="0" name="UseTime" startTime="1257933727779" totalTime="15517" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933727926" max="0" min="0" name="WaitTime" startTime="1257933727779" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JCA Connection Pools">
+<Stat name="WebSphere MQ JMS Provider">
+<Stat name="jms/gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257933756819" name="CreateCount" startTime="1257933727288" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933727287" name="CloseCount" startTime="1257933727287" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.4495634E7" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="0.9987958898543597" name="PoolSize" startTime="1257933727288" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257933727287" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252454" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933727287" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257933727287" max="0" min="0" name="UseTime" startTime="1257933727287" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933727287" max="0" min="0" name="WaitTime" startTime="1257933727287" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257933756819" name="CreateCount" startTime="1257933727287" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933727288" name="CloseCount" startTime="1257933727287" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.4495634E7" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="0.998795849129013" name="PoolSize" startTime="1257933727287" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257933727287" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252454" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933727287" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257933727287" max="0" min="0" name="UseTime" startTime="1257933727287" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933727287" max="0" min="0" name="WaitTime" startTime="1257933727287" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JMS Connection Factories">
+<Stat name="JMS$gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257933757292" name="CreateCount" startTime="1257933756825" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933756825" name="CloseCount" startTime="1257933756825" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.4495162E7" lastSampleTime="1257958252454" lowWaterMark="0" lowerBound="0" mean="0.9999809353742254" name="PoolSize" startTime="1257933756825" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.4489804E7" lastSampleTime="1257958252454" lowWaterMark="0" lowerBound="0" mean="0.9997622024729391" name="FreePoolSize" startTime="1257933756825" unit="N/A" upperBound="10" value="1"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252454" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933756825" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257937084736" max="4863" min="74" name="UseTime" startTime="1257933756825" totalTime="5358" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933756825" max="0" min="0" name="WaitTime" startTime="1257933756825" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257933757292" name="CreateCount" startTime="1257933756825" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933756826" name="CloseCount" startTime="1257933756825" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.4495162E7" lastSampleTime="1257958252454" lowWaterMark="0" lowerBound="0" mean="0.9999809353742254" name="PoolSize" startTime="1257933756825" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.4489804E7" lastSampleTime="1257958252454" lowWaterMark="0" lowerBound="0" mean="0.9997622024729391" name="FreePoolSize" startTime="1257933756825" unit="N/A" upperBound="0" value="1"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252454" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933756824" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257937084736" max="4863" min="0" name="UseTime" startTime="1257933756824" totalTime="5358" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933756825" max="0" min="0" name="WaitTime" startTime="1257933756825" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="2" lastSampleTime="1257933757292" name="CreateCount" startTime="1257933727286" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257933756826" name="CloseCount" startTime="1257933727284" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="4.9020334E7" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="1.9987767667392438" name="PoolSize" startTime="1257933727286" unit="N/A" upperBound="0" value="2"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.4519334E7" lastSampleTime="1257958252453" lowWaterMark="0" lowerBound="0" mean="0.999762162679667" name="FreePoolSize" startTime="1257933727286" unit="N/A" upperBound="0" value="1"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252453" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257933727284" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257937084736" max="4863" min="0" name="UseTime" startTime="1257933727284" totalTime="5358" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257933756825" max="0" min="0" name="WaitTime" startTime="1257933727286" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="229374" integral="0.0" lastSampleTime="1257958252454" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257933715563" unit="KILOBYTE" upperBound="262144" value="229374"/>
+<CountStatistic ID="3" count="89126" lastSampleTime="1257958252454" name="UsedMemory" startTime="1257933715562" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="24536" lastSampleTime="1257958252454" name="UpTime" startTime="1257933715562" unit="SECOND"/>
+</Stat>
+<Stat name="Object Pool">
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext"/>
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext.class@6f825134"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityIORInterceptor"/>
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="ActivityServiceServerInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="Servlet Session Manager">
+<Stat name="MatafEARV#MatafServer.war">
+<RangeStatistic ID="7" highWaterMark="4" integral="5.9343578E7" lastSampleTime="1257958252454" lowWaterMark="1" mean="2.422155121967586" name="LiveCount" startTime="1257933752133" unit="N/A" value="2"/>
+</Stat>
+<RangeStatistic ID="7" highWaterMark="4" integral="5.9343578E7" lastSampleTime="1257958252454" lowWaterMark="0" mean="2.422155121967586" name="LiveCount" startTime="1257933752133" unit="N/A" value="2"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="18" integral="1.22729299E8" lastSampleTime="1257958252455" lowWaterMark="1" lowerBound="5" mean="5.001821092237197" name="PoolSize" startTime="1257933715532" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="4.9003683E7" lastSampleTime="1257958252455" lowWaterMark="1" lowerBound="2" mean="1.9971404321095831" name="PoolSize" startTime="1257933715531" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Message Listener">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958252455" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257933715533" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958252455" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257933715531" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="2.4486375E7" lastSampleTime="1257958252455" lowWaterMark="1" lowerBound="1" mean="0.9998754972758853" name="PoolSize" startTime="1257933763031" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="3" integral="4.8976563E7" lastSampleTime="1257958252455" lowWaterMark="1" lowerBound="3" mean="1.9967008094666405" name="PoolSize" startTime="1257933723711" unit="N/A" upperBound="5" value="2"/>
+</Stat>
+<Stat name="WebContainer">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="6.7608972E7" lastSampleTime="1257958252455" lowWaterMark="1" lowerBound="10" mean="2.76065966273544" name="PoolSize" startTime="1257933762304" unit="N/A" upperBound="50" value="3"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="18" integral="3.1299786E8" lastSampleTime="1257958252455" lowWaterMark="0" lowerBound="0" mean="12.7561974452789" name="PoolSize" startTime="1257933715530" unit="N/A" upperBound="0" value="13"/>
+</Stat>
+<Stat name="Transaction Manager">
+<CountStatistic ID="4" count="0" lastSampleTime="1257933725103" name="ActiveCount" startTime="1257933725103" unit="N/A"/>
+<CountStatistic ID="14" count="0" lastSampleTime="1257933725103" name="CommittedCount" startTime="1257933725103" unit="N/A"/>
+<CountStatistic ID="16" count="0" lastSampleTime="1257933725103" name="RolledbackCount" startTime="1257933725103" unit="N/A"/>
+</Stat>
+<Stat name="Web Applications">
+<Stat name="MatafEARV#MatafServer.war">
+<Stat name="Servlets">
+<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+<CountStatistic ID="11" count="6" lastSampleTime="1257948241366" name="RequestCount" startTime="1257936531489" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257948241369" max="119" min="2" name="ServiceTime" startTime="1257936531489" totalTime="229" unit="MILLISECOND"/>
+</Stat>
+<Stat name="CSReqProtocolServlet">
+<CountStatistic ID="11" count="230" lastSampleTime="1257951665402" name="RequestCount" startTime="1257936531687" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257951665417" max="1564" min="2" name="ServiceTime" startTime="1257936531687" totalTime="23477" unit="MILLISECOND"/>
+</Stat>
+<Stat name="StartServerServlet">
+<CountStatistic ID="11" count="0" lastSampleTime="1257933753117" name="RequestCount" startTime="1257933753117" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257933753117" max="0" min="0" name="ServiceTime" startTime="1257933753117" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="11" count="236" lastSampleTime="1257951665402" name="RequestCount" startTime="1257933752157" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257951665417" max="1564" min="0" name="ServiceTime" startTime="1257933752157" totalTime="23706" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<CountStatistic ID="11" count="236" lastSampleTime="1257951665402" name="RequestCount" startTime="1257933752156" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257951665417" max="1564" min="0" name="ServiceTime" startTime="1257933752156" totalTime="23706" unit="MILLISECOND"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+</Node>
+<Node name="S5380369Node01">
+<Server name="Q2">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="Dynamic Caching">
+<Stat name="Object Cache">
+<Stat name="ws/WSSecureMap"/>
+</Stat>
+<Stat name="Servlet Cache">
+<Stat name="baseCache"/>
+</Stat>
+</Stat>
+<Stat name="JDBC Connection Pools">
+<Stat name="Cloudscape JDBC Provider (XA)">
+<Stat name="jdbc/DefaultEJBTimerDataSource">
+<CountStatistic ID="1" count="0" lastSampleTime="1257666515452" name="CreateCount" startTime="1257666515452" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666515452" name="CloseCount" startTime="1257666515452" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257666515452" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257666515452" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666515452" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257666515452" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257666515452" max="0" min="0" name="UseTime" startTime="1257666515452" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666515452" max="0" min="0" name="WaitTime" startTime="1257666515452" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="0" lastSampleTime="1257666515453" name="CreateCount" startTime="1257666515451" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666515453" name="CloseCount" startTime="1257666515451" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257666515452" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257666515451" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666515451" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257666515451" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257666515452" max="0" min="0" name="UseTime" startTime="1257666515451" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666515452" max="0" min="0" name="WaitTime" startTime="1257666515451" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="DB2 Universal JDBC Driver Provider">
+<Stat name="jdbc/matafdb">
+<CountStatistic ID="1" count="335" lastSampleTime="1257956363979" name="CreateCount" startTime="1257666515307" unit="N/A"/>
+<CountStatistic ID="2" count="335" lastSampleTime="1257956544038" name="CloseCount" startTime="1257666515306" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="6.362502E7" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.21808923065023061" name="PoolSize" startTime="1257666515307" unit="N/A" upperBound="10" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="6.2103751E7" lastSampleTime="1257958253784" lowWaterMark="-1" lowerBound="0" mean="0.2128747350662285" name="FreePoolSize" startTime="1257666515307" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666515306" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="110" integral="1.521269E7" lastSampleTime="1257958253784" lowWaterMark="80" mean="0.05214495584002106" name="PercentUsed" startTime="1257666515307" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257956481233" max="12231" min="2" name="UseTime" startTime="1257666515306" totalTime="198626" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666515306" max="0" min="0" name="WaitTime" startTime="1257666515306" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="335" lastSampleTime="1257956363979" name="CreateCount" startTime="1257666515306" unit="N/A"/>
+<CountStatistic ID="2" count="335" lastSampleTime="1257956544038" name="CloseCount" startTime="1257666515305" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="6.362502E7" lastSampleTime="1257958253783" lowWaterMark="0" lowerBound="0" mean="0.21808923065023061" name="PoolSize" startTime="1257666515306" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="6.2103751E7" lastSampleTime="1257958253783" lowWaterMark="-1" lowerBound="0" mean="0.21287473433655194" name="FreePoolSize" startTime="1257666515305" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666515305" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257666515305" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257956481233" max="12231" min="0" name="UseTime" startTime="1257666515305" totalTime="198626" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666515306" max="0" min="0" name="WaitTime" startTime="1257666515305" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="335" lastSampleTime="1257956363979" name="CreateCount" startTime="1257666515305" unit="N/A"/>
+<CountStatistic ID="2" count="335" lastSampleTime="1257956544038" name="CloseCount" startTime="1257666515305" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="2" integral="6.362502E7" lastSampleTime="1257958253783" lowWaterMark="0" lowerBound="0" mean="0.21808922990268018" name="PoolSize" startTime="1257666515305" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="2" integral="6.2103751E7" lastSampleTime="1257958253783" lowWaterMark="-1" lowerBound="0" mean="0.21287473433655194" name="FreePoolSize" startTime="1257666515305" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666515304" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958253783" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257666515305" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257956481233" max="12231" min="0" name="UseTime" startTime="1257666515304" totalTime="198626" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666515452" max="0" min="0" name="WaitTime" startTime="1257666515305" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JCA Connection Pools">
+<Stat name="WebSphere MQ JMS Provider">
+<Stat name="jms/gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257666546865" name="CreateCount" startTime="1257666514759" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666514759" name="CloseCount" startTime="1257666514759" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.91706919E8" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.9998899530149933" name="PoolSize" startTime="1257666514760" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257666514759" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253784" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666514759" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257666514759" max="0" min="0" name="UseTime" startTime="1257666514759" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666514759" max="0" min="0" name="WaitTime" startTime="1257666514759" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257666546865" name="CreateCount" startTime="1257666514759" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666514760" name="CloseCount" startTime="1257666514759" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.91706919E8" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.9998899495876494" name="PoolSize" startTime="1257666514759" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257666514759" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253784" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666514759" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257666514759" max="0" min="0" name="UseTime" startTime="1257666514759" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666514759" max="0" min="0" name="WaitTime" startTime="1257666514759" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JMS Connection Factories">
+<Stat name="JMS$gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257666547029" name="CreateCount" startTime="1257666546870" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666546870" name="CloseCount" startTime="1257666546870" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.91706755E8" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.9999994549323572" name="PoolSize" startTime="1257666546870" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="4.3607616E7" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.1494911978671853" name="FreePoolSize" startTime="1257666546870" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253784" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666546870" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257693445506" max="4576" min="44" name="UseTime" startTime="1257666546870" totalTime="12887" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666546870" max="0" min="0" name="WaitTime" startTime="1257666546870" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257666547029" name="CreateCount" startTime="1257666546870" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666546870" name="CloseCount" startTime="1257666546869" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.91706755E8" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.9999994549323572" name="PoolSize" startTime="1257666546870" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="4.3607616E7" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.14949119735471475" name="FreePoolSize" startTime="1257666546869" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253784" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666546869" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257693445506" max="4576" min="0" name="UseTime" startTime="1257666546869" totalTime="12887" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666546870" max="0" min="0" name="WaitTime" startTime="1257666546869" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="2" lastSampleTime="1257666547029" name="CreateCount" startTime="1257666514758" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666546871" name="CloseCount" startTime="1257666514756" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="5.83445786E8" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="1.999889401152659" name="PoolSize" startTime="1257666514758" unit="N/A" upperBound="0" value="2"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="4.3612416E7" lastSampleTime="1257958253784" lowWaterMark="0" lowerBound="0" mean="0.1494911962858202" name="FreePoolSize" startTime="1257666514758" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253784" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666514756" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257693445506" max="4576" min="0" name="UseTime" startTime="1257666514756" totalTime="12887" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666546870" max="0" min="0" name="WaitTime" startTime="1257666514758" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="188414" integral="0.0" lastSampleTime="1257958253784" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257666503499" unit="KILOBYTE" upperBound="262144" value="188414"/>
+<CountStatistic ID="3" count="102007" lastSampleTime="1257958253784" name="UsedMemory" startTime="1257666503499" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="291750" lastSampleTime="1257958253784" name="UpTime" startTime="1257666503499" unit="SECOND"/>
+</Stat>
+<Stat name="Object Pool">
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext"/>
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext.class@63ce186c"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityIORInterceptor"/>
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="ActivityServiceServerInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="Servlet Session Manager">
+<Stat name="MatafEAR_Q#MatafServer.war">
+<RangeStatistic ID="7" highWaterMark="7" integral="6.30335297E8" lastSampleTime="1257958253785" lowWaterMark="0" mean="2.16082130045575" name="LiveCount" startTime="1257666542806" unit="N/A" value="1"/>
+</Stat>
+<Stat name="perfServletApp#perfServletApp.war">
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958253785" lowWaterMark="0" mean="0.0" name="LiveCount" startTime="1257666541591" unit="N/A" value="0"/>
+</Stat>
+<RangeStatistic ID="7" highWaterMark="7" integral="6.30337922E8" lastSampleTime="1257958253785" lowWaterMark="0" mean="2.1608212990918028" name="LiveCount" startTime="1257666541591" unit="N/A" value="1"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="15" integral="1.45908358E9" lastSampleTime="1257958253785" lowWaterMark="1" lowerBound="5" mean="5.001137959350145" name="PoolSize" startTime="1257666503469" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="5.83426575E8" lastSampleTime="1257958253785" lowWaterMark="1" lowerBound="2" mean="1.9997461562312544" name="PoolSize" startTime="1257666503468" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Message Listener">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958253785" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257666503469" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958253785" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257666503468" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="2.91697679E8" lastSampleTime="1257958253785" lowWaterMark="1" lowerBound="1" mean="0.999987836869812" name="PoolSize" startTime="1257666552558" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="3" integral="5.83400163E8" lastSampleTime="1257958253785" lowWaterMark="1" lowerBound="3" mean="1.9997085889996384" name="PoolSize" startTime="1257666511195" unit="N/A" upperBound="5" value="2"/>
+</Stat>
+<Stat name="WebContainer">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="8.68627945E8" lastSampleTime="1257958253785" lowWaterMark="1" lowerBound="10" mean="2.977792665195567" name="PoolSize" startTime="1257666551829" unit="N/A" upperBound="50" value="3"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="15" integral="3.786444508E9" lastSampleTime="1257958253785" lowWaterMark="0" lowerBound="0" mean="12.978373199236753" name="PoolSize" startTime="1257666503467" unit="N/A" upperBound="0" value="13"/>
+</Stat>
+<Stat name="Transaction Manager">
+<CountStatistic ID="4" count="0" lastSampleTime="1257666512434" name="ActiveCount" startTime="1257666512434" unit="N/A"/>
+<CountStatistic ID="14" count="0" lastSampleTime="1257666512435" name="CommittedCount" startTime="1257666512435" unit="N/A"/>
+<CountStatistic ID="16" count="0" lastSampleTime="1257666512435" name="RolledbackCount" startTime="1257666512435" unit="N/A"/>
+</Stat>
+<Stat name="Web Applications">
+<Stat name="MatafEAR_Q#MatafServer.war">
+<Stat name="Servlets">
+<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+<CountStatistic ID="11" count="46" lastSampleTime="1257951868267" name="RequestCount" startTime="1257666950395" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257951868268" max="348" min="1" name="ServiceTime" startTime="1257666950395" totalTime="779" unit="MILLISECOND"/>
+</Stat>
+<Stat name="CSReqProtocolServlet">
+<CountStatistic ID="11" count="4145" lastSampleTime="1257956489386" name="RequestCount" startTime="1257666950736" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257956489386" max="12256" min="0" name="ServiceTime" startTime="1257666950736" totalTime="274308" unit="MILLISECOND"/>
+</Stat>
+<Stat name="StartServerServlet">
+<CountStatistic ID="11" count="0" lastSampleTime="1257666543466" name="RequestCount" startTime="1257666543466" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257666543466" max="0" min="0" name="ServiceTime" startTime="1257666543466" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="11" count="4191" lastSampleTime="1257956489386" name="RequestCount" startTime="1257666542815" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257956489386" max="12256" min="0" name="ServiceTime" startTime="1257666542815" totalTime="275087" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<Stat name="perfServletApp#perfServletApp.war">
+<Stat name="Servlets">
+<CountStatistic ID="11" count="0" lastSampleTime="1257666541616" name="RequestCount" startTime="1257666541616" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257666541616" max="0" min="0" name="ServiceTime" startTime="1257666541616" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<CountStatistic ID="11" count="4191" lastSampleTime="1257956489386" name="RequestCount" startTime="1257666541615" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257956489386" max="12256" min="0" name="ServiceTime" startTime="1257666541615" totalTime="275087" unit="MILLISECOND"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+<Server name="Q1">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="Dynamic Caching">
+<Stat name="Object Cache">
+<Stat name="ws/WSSecureMap"/>
+</Stat>
+<Stat name="Servlet Cache">
+<Stat name="baseCache"/>
+</Stat>
+</Stat>
+<Stat name="JDBC Connection Pools">
+<Stat name="Cloudscape JDBC Provider (XA)">
+<Stat name="jdbc/DefaultEJBTimerDataSource">
+<CountStatistic ID="1" count="0" lastSampleTime="1257666355591" name="CreateCount" startTime="1257666355591" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666355591" name="CloseCount" startTime="1257666355591" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257666355591" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257666355591" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666355591" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257666355591" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257666355591" max="0" min="0" name="UseTime" startTime="1257666355591" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666355591" max="0" min="0" name="WaitTime" startTime="1257666355591" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="0" lastSampleTime="1257666355592" name="CreateCount" startTime="1257666355591" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666355592" name="CloseCount" startTime="1257666355590" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" lowerBound="0" mean="0.0" name="PoolSize" startTime="1257666355591" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257666355590" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666355590" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257666355590" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257666355591" max="0" min="0" name="UseTime" startTime="1257666355590" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666355591" max="0" min="0" name="WaitTime" startTime="1257666355590" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="DB2 Universal JDBC Driver Provider">
+<Stat name="jdbc/matafdb">
+<CountStatistic ID="1" count="351" lastSampleTime="1257953759470" name="CreateCount" startTime="1257666355325" unit="N/A"/>
+<CountStatistic ID="2" count="351" lastSampleTime="1257953992481" name="CloseCount" startTime="1257666355325" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="6.7669607E7" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.23182692383094275" name="PoolSize" startTime="1257666355325" unit="N/A" upperBound="10" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="6.7030465E7" lastSampleTime="1257958252426" lowWaterMark="-1" lowerBound="0" mean="0.22963730975868787" name="FreePoolSize" startTime="1257666355325" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666355325" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="110" integral="6391420.0" lastSampleTime="1257958252426" lowWaterMark="70" mean="0.02189614072254866" name="PercentUsed" startTime="1257666355325" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257953838420" max="10046" min="2" name="UseTime" startTime="1257666355325" totalTime="219983" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666355325" max="0" min="0" name="WaitTime" startTime="1257666355325" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="351" lastSampleTime="1257953759470" name="CreateCount" startTime="1257666355324" unit="N/A"/>
+<CountStatistic ID="2" count="351" lastSampleTime="1257953992481" name="CloseCount" startTime="1257666355324" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="6.7669607E7" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.23182692303673505" name="PoolSize" startTime="1257666355324" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="6.7030465E7" lastSampleTime="1257958252426" lowWaterMark="-1" lowerBound="0" mean="0.2296373089719815" name="FreePoolSize" startTime="1257666355324" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666355324" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257666355324" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257953838420" max="10046" min="0" name="UseTime" startTime="1257666355324" totalTime="219983" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666355325" max="0" min="0" name="WaitTime" startTime="1257666355324" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="351" lastSampleTime="1257953759470" name="CreateCount" startTime="1257666355323" unit="N/A"/>
+<CountStatistic ID="2" count="351" lastSampleTime="1257953992481" name="CloseCount" startTime="1257666355323" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="3" integral="6.7669607E7" lastSampleTime="1257958252425" lowWaterMark="0" lowerBound="0" mean="0.23182692383094275" name="PoolSize" startTime="1257666355324" unit="N/A" upperBound="0" value="0"/>
+<BoundedRangeStatistic ID="6" highWaterMark="3" integral="6.7030465E7" lastSampleTime="1257958252425" lowWaterMark="-1" lowerBound="0" mean="0.2296373089719815" name="FreePoolSize" startTime="1257666355323" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666355323" unit="N/A" value="0"/>
+<RangeStatistic ID="9" highWaterMark="0" integral="0.0" lastSampleTime="1257958252425" lowWaterMark="0" mean="0.0" name="PercentUsed" startTime="1257666355323" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257953838420" max="10046" min="0" name="UseTime" startTime="1257666355323" totalTime="219983" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666355591" max="0" min="0" name="WaitTime" startTime="1257666355323" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JCA Connection Pools">
+<Stat name="WebSphere MQ JMS Provider">
+<Stat name="jms/gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257666386170" name="CreateCount" startTime="1257666354875" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666354875" name="CloseCount" startTime="1257666354875" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.91866256E8" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.999892787726746" name="PoolSize" startTime="1257666354875" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257666354875" unit="N/A" upperBound="10" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666354875" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257666354875" max="0" min="0" name="UseTime" startTime="1257666354875" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666354875" max="0" min="0" name="WaitTime" startTime="1257666354875" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257666386170" name="CreateCount" startTime="1257666354874" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666354875" name="CloseCount" startTime="1257666354874" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.91866256E8" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.9998927843012537" name="PoolSize" startTime="1257666354874" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.0" name="FreePoolSize" startTime="1257666354874" unit="N/A" upperBound="0" value="0"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666354874" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257666354875" max="0" min="0" name="UseTime" startTime="1257666354874" totalTime="0" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666354875" max="0" min="0" name="WaitTime" startTime="1257666354874" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JMS Connection Factories">
+<Stat name="JMS$gmcf">
+<CountStatistic ID="1" count="1" lastSampleTime="1257666386332" name="CreateCount" startTime="1257666386176" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666386176" name="CloseCount" startTime="1257666386176" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.91866094E8" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.999999465508602" name="PoolSize" startTime="1257666386176" unit="N/A" upperBound="10" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.91822036E8" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.9998485128033817" name="FreePoolSize" startTime="1257666386176" unit="N/A" upperBound="10" value="1"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666386176" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257953838420" max="4738" min="25" name="UseTime" startTime="1257666386176" totalTime="44051" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666386176" max="0" min="0" name="WaitTime" startTime="1257666386176" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="1" lastSampleTime="1257666386332" name="CreateCount" startTime="1257666386175" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666386176" name="CloseCount" startTime="1257666386175" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="2.91866094E8" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.9999994620823769" name="PoolSize" startTime="1257666386175" unit="N/A" upperBound="0" value="1"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.91822036E8" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.9998485093776738" name="FreePoolSize" startTime="1257666386175" unit="N/A" upperBound="0" value="1"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666386175" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257953838420" max="4738" min="0" name="UseTime" startTime="1257666386175" totalTime="44051" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666386176" max="0" min="0" name="WaitTime" startTime="1257666386175" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="1" count="2" lastSampleTime="1257666386332" name="CreateCount" startTime="1257666354874" unit="N/A"/>
+<CountStatistic ID="2" count="0" lastSampleTime="1257666386177" name="CloseCount" startTime="1257666354872" unit="N/A"/>
+<BoundedRangeStatistic ID="5" highWaterMark="1" integral="5.83763651E8" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="1.9998922464413131" name="PoolSize" startTime="1257666354874" unit="N/A" upperBound="0" value="2"/>
+<BoundedRangeStatistic ID="6" highWaterMark="1" integral="2.91853334E8" lastSampleTime="1257958252426" lowWaterMark="0" lowerBound="0" mean="0.9998485119195226" name="FreePoolSize" startTime="1257666354873" unit="N/A" upperBound="0" value="1"/>
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252426" lowWaterMark="0" mean="0.0" name="WaitingThreadCount" startTime="1257666354871" unit="N/A" value="0"/>
+<TimeStatistic ID="12" lastSampleTime="1257953838420" max="4738" min="0" name="UseTime" startTime="1257666354872" totalTime="44051" unit="MILLISECOND"/>
+<TimeStatistic ID="13" lastSampleTime="1257666386176" max="0" min="0" name="WaitTime" startTime="1257666354873" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="155646" integral="0.0" lastSampleTime="1257958252427" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257666343180" unit="KILOBYTE" upperBound="262144" value="155646"/>
+<CountStatistic ID="3" count="104495" lastSampleTime="1257958252427" name="UsedMemory" startTime="1257666343179" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="291909" lastSampleTime="1257958252427" name="UpTime" startTime="1257666343179" unit="SECOND"/>
+</Stat>
+<Stat name="Object Pool">
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext"/>
+<Stat name="ObjectPool_ibm.system.objectpool_com.ibm.ws.webcontainer.srt.SRTConnectionContext.class@629c583c"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityIORInterceptor"/>
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="ActivityServiceServerInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="Servlet Session Manager">
+<Stat name="MatafEAR_Q#MatafServer.war">
+<RangeStatistic ID="7" highWaterMark="9" integral="7.42356101E8" lastSampleTime="1257958252427" lowWaterMark="0" mean="2.5434464815497337" name="LiveCount" startTime="1257666382279" unit="N/A" value="3"/>
+</Stat>
+<Stat name="perfServletApp#perfServletApp.war">
+<RangeStatistic ID="7" highWaterMark="0" integral="0.0" lastSampleTime="1257958252427" lowWaterMark="0" mean="0.0" name="LiveCount" startTime="1257666381066" unit="N/A" value="0"/>
+</Stat>
+<RangeStatistic ID="7" highWaterMark="9" integral="7.42359188E8" lastSampleTime="1257958252427" lowWaterMark="0" mean="2.5434464790005675" name="LiveCount" startTime="1257666381065" unit="N/A" value="3"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="17" integral="1.45974743E9" lastSampleTime="1257958252427" lowWaterMark="1" lowerBound="5" mean="5.000688724257297" name="PoolSize" startTime="1257666343150" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="5.8374494E8" lastSampleTime="1257958252427" lowWaterMark="1" lowerBound="2" mean="1.9997478120582382" name="PoolSize" startTime="1257666343149" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Message Listener">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958252427" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257666343150" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958252427" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1257666343148" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="2.91857182E8" lastSampleTime="1257958252427" lowWaterMark="1" lowerBound="1" mean="0.9999884602424" name="PoolSize" startTime="1257666391877" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="3" integral="5.8371836E8" lastSampleTime="1257958252427" lowWaterMark="1" lowerBound="3" mean="1.9997109777113304" name="PoolSize" startTime="1257666351064" unit="N/A" upperBound="5" value="2"/>
+</Stat>
+<Stat name="WebContainer">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="1.167346096E9" lastSampleTime="1257958252427" lowWaterMark="1" lowerBound="10" mean="3.999660660713053" name="PoolSize" startTime="1257666391143" unit="N/A" upperBound="50" value="4"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="17" integral="4.086670553E9" lastSampleTime="1257958252427" lowWaterMark="0" lowerBound="0" mean="13.999796625170669" name="PoolSize" startTime="1257666343147" unit="N/A" upperBound="0" value="14"/>
+</Stat>
+<Stat name="Transaction Manager">
+<CountStatistic ID="4" count="0" lastSampleTime="1257666352443" name="ActiveCount" startTime="1257666352443" unit="N/A"/>
+<CountStatistic ID="14" count="0" lastSampleTime="1257666352443" name="CommittedCount" startTime="1257666352443" unit="N/A"/>
+<CountStatistic ID="16" count="0" lastSampleTime="1257666352443" name="RolledbackCount" startTime="1257666352443" unit="N/A"/>
+</Stat>
+<Stat name="Web Applications">
+<Stat name="MatafEAR_Q#MatafServer.war">
+<Stat name="Servlets">
+<Stat name="CSAssignServiceIdAndServerTIDProtocolServlet">
+<CountStatistic ID="11" count="54" lastSampleTime="1257951520919" name="RequestCount" startTime="1257666415362" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257951520920" max="352" min="1" name="ServiceTime" startTime="1257666415362" totalTime="662" unit="MILLISECOND"/>
+</Stat>
+<Stat name="CSReqProtocolServlet">
+<CountStatistic ID="11" count="3824" lastSampleTime="1257955438214" name="RequestCount" startTime="1257666410221" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257955438215" max="10051" min="0" name="ServiceTime" startTime="1257666410221" totalTime="295874" unit="MILLISECOND"/>
+</Stat>
+<Stat name="StartServerServlet">
+<CountStatistic ID="11" count="0" lastSampleTime="1257666382897" name="RequestCount" startTime="1257666382897" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257666382897" max="0" min="0" name="ServiceTime" startTime="1257666382897" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="11" count="3878" lastSampleTime="1257955438214" name="RequestCount" startTime="1257666382317" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257955438215" max="10051" min="0" name="ServiceTime" startTime="1257666382317" totalTime="296536" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<Stat name="perfServletApp#perfServletApp.war">
+<Stat name="Servlets">
+<Stat name="controller">
+<CountStatistic ID="11" count="1" lastSampleTime="1257958246554" name="RequestCount" startTime="1257958246295" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257958246295" max="0" min="0" name="ServiceTime" startTime="1257958246295" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<Stat name="perfservlet60">
+<CountStatistic ID="11" count="1" lastSampleTime="1257958246579" name="RequestCount" startTime="1257958246569" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257958246569" max="0" min="0" name="ServiceTime" startTime="1257958246569" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+<CountStatistic ID="11" count="2" lastSampleTime="1257958246579" name="RequestCount" startTime="1257666381091" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257958246569" max="0" min="0" name="ServiceTime" startTime="1257666381091" totalTime="0" unit="MILLISECOND"/>
+</Stat>
+</Stat>
+<CountStatistic ID="11" count="3880" lastSampleTime="1257958246579" name="RequestCount" startTime="1257666381090" unit="N/A"/>
+<TimeStatistic ID="13" lastSampleTime="1257958246569" max="10051" min="0" name="ServiceTime" startTime="1257666381090" totalTime="296536" unit="MILLISECOND"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+<Server name="nodeagent">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="69630" integral="0.0" lastSampleTime="1257414416239" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257402468153" unit="KILOBYTE" upperBound="262144" value="69630"/>
+<CountStatistic ID="3" count="60513" lastSampleTime="1257958250614" name="UsedMemory" startTime="1257402468151" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="555782" lastSampleTime="1257958250614" name="UpTime" startTime="1257402468150" unit="SECOND"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="System Data">
+<CountStatistic ID="1" count="0" lastSampleTime="1257958250615" name="CPUUsageSinceLastMeasurement" startTime="1257402468185" unit="N/A"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="16" integral="2.779180485E9" lastSampleTime="1257958250615" lowWaterMark="1" lowerBound="5" mean="5.000482032076015" name="PoolSize" startTime="1257402468099" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="1.111492287E9" lastSampleTime="1257958250615" lowWaterMark="1" lowerBound="2" mean="1.999869112471325" name="PoolSize" startTime="1257402468099" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="5.55739154E8" lastSampleTime="1257958250615" lowWaterMark="1" lowerBound="10" mean="0.9999219802733054" name="PoolSize" startTime="1257402468099" unit="N/A" upperBound="50" value="1"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="5.5577386E8" lastSampleTime="1257958250615" lowWaterMark="1" lowerBound="1" mean="1.0000080483022358" name="PoolSize" startTime="1257402481228" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="4" integral="1.667310462E9" lastSampleTime="1257958250615" lowWaterMark="1" lowerBound="3" mean="2.9999846484085575" name="PoolSize" startTime="1257402477617" unit="N/A" upperBound="5" value="3"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="16" integral="6.66953794E9" lastSampleTime="1257958250615" lowWaterMark="0" lowerBound="0" mean="12.000265816205946" name="PoolSize" startTime="1257402468098" unit="N/A" upperBound="0" value="12"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+</Node>
+<Node name="S603FC00Node01">
+<Server name="nodeagent">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="81918" integral="0.0" lastSampleTime="1257958251546" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1257566949027" unit="KILOBYTE" upperBound="262144" value="81918"/>
+<CountStatistic ID="3" count="63090" lastSampleTime="1257958251546" name="UsedMemory" startTime="1257566949027" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="391302" lastSampleTime="1257958251546" name="UpTime" startTime="1257566949027" unit="SECOND"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="System Data">
+<CountStatistic ID="1" count="0" lastSampleTime="1257958251546" name="CPUUsageSinceLastMeasurement" startTime="1257566949048" unit="N/A"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="15" integral="1.956832796E9" lastSampleTime="1257958251550" lowWaterMark="1" lowerBound="5" mean="5.0008178351914925" name="PoolSize" startTime="1257566948995" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="7.82537265E8" lastSampleTime="1257958251550" lowWaterMark="1" lowerBound="2" mean="1.9998266175389527" name="PoolSize" startTime="1257566948995" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="3.91259302E8" lastSampleTime="1257958251550" lowWaterMark="1" lowerBound="10" mean="0.9998894614938318" name="PoolSize" startTime="1257566948994" unit="N/A" upperBound="50" value="1"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="3.91290774E8" lastSampleTime="1257958251550" lowWaterMark="1" lowerBound="1" mean="0.9999975568101068" name="PoolSize" startTime="1257566959820" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="3" integral="1.045654391E9" lastSampleTime="1257958251550" lowWaterMark="1" lowerBound="3" mean="2.6722900188540493" name="PoolSize" startTime="1257566956300" unit="N/A" upperBound="5" value="3"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="15" integral="4.567604893E9" lastSampleTime="1257958251550" lowWaterMark="0" lowerBound="0" mean="11.672821481204888" name="PoolSize" startTime="1257566948993" unit="N/A" upperBound="0" value="12"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+</Node>
+<Node name="snif-httpNode01">
+<Server name="nodeagent">
+<Stat name="server">
+<Stat name="DCS Statistics">
+<Stat name="DefaultCoreGroup"/>
+</Stat>
+<Stat name="HAManager">
+<Stat name="HAManagerMBean"/>
+</Stat>
+<Stat name="JVM Runtime">
+<BoundedRangeStatistic ID="1" highWaterMark="81918" integral="0.0" lastSampleTime="1257414421362" lowWaterMark="51200" lowerBound="51200" mean="0.0" name="HeapSize" startTime="1254049589393" unit="KILOBYTE" upperBound="262144" value="81918"/>
+<CountStatistic ID="3" count="48954" lastSampleTime="1257958254131" name="UsedMemory" startTime="1254049589392" unit="KILOBYTE"/>
+<CountStatistic ID="4" count="3908664" lastSampleTime="1257958254131" name="UpTime" startTime="1254049589392" unit="SECOND"/>
+</Stat>
+<Stat name="ORB">
+<Stat name="Interceptors">
+<Stat name="ActivityServiceClientInterceptor"/>
+<Stat name="PMIServerRequestInterceptor"/>
+<Stat name="SecurityIORInterceptor"/>
+<Stat name="TxIORInterceptor"/>
+<Stat name="WLMClientRequestInterceptor"/>
+<Stat name="WLMServerRequestInterceptor"/>
+<Stat name="WLMTaggedComponentManager"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIClientRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.CSIServerRI"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ClientRIWrapper"/>
+<Stat name="com.ibm.ISecurityLocalObjectBaseL13Impl.ServerRIWrapper"/>
+<Stat name="com.ibm.debug.DebugPortableInterceptor"/>
+<Stat name="com.ibm.ejs.ras.RasContextSupport"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxClientInterceptor"/>
+<Stat name="com.ibm.ws.Transaction.JTS.TxServerInterceptor"/>
+<Stat name="com.ibm.ws.runtime.workloadcontroller.OrbWorkloadRequestInterceptor"/>
+</Stat>
+</Stat>
+<Stat name="System Data">
+<CountStatistic ID="1" count="0" lastSampleTime="1257958254131" name="CPUUsageSinceLastMeasurement" startTime="1254049589416" unit="N/A"/>
+</Stat>
+<Stat name="Thread Pools">
+<Stat name="Default">
+<BoundedRangeStatistic ID="4" highWaterMark="17" integral="1.9543838744E10" lastSampleTime="1257958254131" lowWaterMark="1" lowerBound="5" mean="5.000131728871631" name="PoolSize" startTime="1254049589359" unit="N/A" upperBound="20" value="5"/>
+</Stat>
+<Stat name="HAManager.thread.pool">
+<BoundedRangeStatistic ID="4" highWaterMark="2" integral="7.817257776E9" lastSampleTime="1257958254131" lowWaterMark="1" lowerBound="2" mean="1.999981638230913" name="PoolSize" startTime="1254049589358" unit="N/A" upperBound="2" value="2"/>
+</Stat>
+<Stat name="Object Request Broker">
+<BoundedRangeStatistic ID="4" highWaterMark="10" integral="0.0" lastSampleTime="1257958254131" lowWaterMark="10" lowerBound="10" mean="0.0" name="PoolSize" startTime="1254049589358" unit="N/A" upperBound="50" value="0"/>
+</Stat>
+<Stat name="ProcessDiscovery">
+<BoundedRangeStatistic ID="4" highWaterMark="1" integral="3.908652853E9" lastSampleTime="1257958254131" lowWaterMark="1" lowerBound="1" mean="0.9999997375055373" name="PoolSize" startTime="1254049600252" unit="N/A" upperBound="2" value="1"/>
+</Stat>
+<Stat name="SoapConnectorThreadPool">
+<BoundedRangeStatistic ID="4" highWaterMark="4" integral="1.1557997718E10" lastSampleTime="1257958254131" lowWaterMark="1" lowerBound="3" mean="2.9570251267894747" name="PoolSize" startTime="1254049596875" unit="N/A" upperBound="5" value="3"/>
+</Stat>
+<BoundedRangeStatistic ID="4" highWaterMark="17" integral="4.2827780226E10" lastSampleTime="1257958254131" lowWaterMark="0" lowerBound="0" mean="10.95713823065247" name="PoolSize" startTime="1254049589357" unit="N/A" upperBound="0" value="11"/>
+</Stat>
+<Stat name="Workload Management">
+<Stat name="client"/>
+<Stat name="server"/>
+</Stat>
+</Stat>
+</Server>
+</Node>
+</PerformanceMonitor>

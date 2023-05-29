@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters 
+vobDirectory="d:\oj\CCviews\HRProj02_Fix\HRVob01"
+namePattern="*.txt"
+creatorOwner="Oded"
+fromDate="01-Mar-2005"
+toDate="31-Mar-2005"
+branch="HRProj02_Fix"
+/>
+</InputParametersSet>
+

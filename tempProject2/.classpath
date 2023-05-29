@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="args/log4j2"/>
+	<classpathentry kind="lib" path="/JarContainer/log4j2/2.8.2/log4j-api-2.8.2.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/log4j2/2.8.2/log4j-core-2.8.2.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/guava-20.0.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/jcl-over-slf4j-1.7.22.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/jna-4.3.0.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/jna-platform-4.3.0.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/logback-classic-1.1.9.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/logback-core-1.1.9.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/slf4j-api-1.7.22.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-jetty-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-jna-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-shiro-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-spring-security3-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-spring-security4-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-tests-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-tomcat6-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-tomcat7-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-tomcat8-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-tomcat85-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/waffle-tomcat9-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/Waffle.Windows.AuthProvider.dll"/>
+	<classpathentry kind="lib" path="/JarContainer/waffle/1.8.3/Waffle.Windows.AuthProvider.msm"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/InfraStructureProject"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

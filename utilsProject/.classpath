@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry including="src" kind="src" path=""/>
+	<classpathentry combineaccessrules="false" kind="src" path="/InfraStructureProject"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/clearCaseProject"/>
+	<classpathentry kind="lib" path="/JarContainer/commons/logging/1.1.1/commons-logging-1.1.1.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FibiInfraStructure"/>
+	<classpathentry kind="lib" path="/JarContainer/mindterm/3.4/mindterm.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/excelProject"/>
+	<classpathentry kind="lib" path="/JarContainer/commons/io/2.4/commons-io-2.4.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GUIGeneratorProject"/>
+	<classpathentry kind="lib" path="/JarContainer/jpathwatch/0.95/jpathwatch-0-95.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/POI/3.10.1/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/POI/3.10.1/poi-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/POI/3.10.1/poi-examples-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/POI/3.10.1/poi-excelant-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/POI/3.10.1/poi-ooxml-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/POI/3.10.1/poi-ooxml-schemas-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/POI/3.10.1/poi-scratchpad-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/POI/3.10.1/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/POI/3.10.1/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/JarContainer/sqlserver/4.1/sqljdbc41.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/httpclient/4.5.3/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/jna/4.5/jna-4.5.0.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/jna/4.5/jna-platform-4.5.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

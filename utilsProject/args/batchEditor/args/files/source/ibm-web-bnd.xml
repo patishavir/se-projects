@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-bnd 
+	xmlns="http://websphere.ibm.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://websphere.ibm.com/xml/ns/javaee http://websphere.ibm.com/xml/ns/javaee/ibm-web-bnd_1_0.xsd"
+	version="1.0">
+
+	<virtual-host name="default_host" />
+
+	<resource-ref name="matafdb" binding-name="jdbc/matafdb_%APPLICATION_CODE%" />
+	<resource-ref name="gmcf" binding-name="jms/gmcf" />
+	<resource-ref name="smcf" binding-name="jms/smcf" />
+	<resource-ref name="brcf" binding-name="jms/brcf" />
+	<resource-ref name="brcf2" binding-name="jms/brcf2" />
+	<resource-ref name="brcf3" binding-name="jms/brcf3" />
+	<resource-ref name="brreq" binding-name="jms/brreq_%ENVIRONMENT_CODE%" />
+	<resource-ref name="brreq2" binding-name="jms/brreq2_%ENVIRONMENT_CODE%" />
+	<resource-ref name="brreq3" binding-name="jms/brreq3" />
+	<resource-ref name="brres" binding-name="jms/brres_%ENVIRONMENT_CODE%" />
+	<resource-ref name="brres2" binding-name="jms/brres2_%ENVIRONMENT_CODE%" />
+	<resource-ref name="brres3" binding-name="jms/brres3" />
+	<resource-ref name="gm" binding-name="jms/gm_%ENVIRONMENT_CODE%" />
+	<resource-ref name="log" binding-name="jms/log_%ENVIRONMENT_CODE%" />
+	<resource-ref name="or" binding-name="jms/or_%ENVIRONMENT_CODE%" />
+	<resource-ref name="pool" binding-name="eis/pool_%ENVIRONMENT_CODE%" />
+	<resource-ref name="pool2" binding-name="eis/pool2_%ENVIRONMENT_CODE%" />
+	<resource-ref name="pool3" binding-name="eis/pool3" />
+	<resource-ref name="fixedLU254" binding-name="eis/fixedLU254" />
+	<resource-ref name="fixedLU255" binding-name="eis/fixedLU255" />
+	<resource-ref name="workmngr" binding-name="wm/workmngr" />
+	<resource-ref name="timermngr" binding-name="tm/timermngr" />
+	<resource-ref name="adroot" binding-name="url/adroot_%ENVIRONMENT_CODE%" />
+	<resource-ref name="peoplesoft" binding-name="url/peoplesoft" />
+	<resource-ref name="protocache" binding-name="services/cache/protocache" />
+	<resource-ref name="yozmacache" binding-name="services/cache/yozmacache" />
+	
+</web-bnd>

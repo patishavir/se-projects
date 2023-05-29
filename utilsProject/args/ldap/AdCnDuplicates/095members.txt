@@ -1,0 +1,8 @@
+CN=דודזון דנה,OU=095 גבעת שמואל,OU=862 מחוז שרון,OU=מחוזות וסניפים,OU=FIBI,DC=fibi,DC=corp
+CN=גורי הדס,OU=095 גבעת שמואל,OU=862 מחוז שרון,OU=מחוזות וסניפים,OU=FIBI,DC=fibi,DC=corp
+CN=חגולי דור,OU=095 גבעת שמואל,OU=862 מחוז שרון,OU=מחוזות וסניפים,OU=FIBI,DC=fibi,DC=corp
+CN=פרנסיס ירון,OU=095 גבעת שמואל,OU=862 מחוז שרון,OU=מחוזות וסניפים,OU=FIBI,DC=fibi,DC=corp
+CN=גורביץ קרינה,OU=095 גבעת שמואל,OU=862 מחוז שרון,OU=מחוזות וסניפים,OU=FIBI,DC=fibi,DC=corp
+CN=אגסי אפרת,OU=095 גבעת שמואל,OU=862 מחוז שרון,OU=מחוזות וסניפים,OU=FIBI,DC=fibi,DC=corp
+CN=דהן פנינה,OU=095 גבעת שמואל,OU=862 מחוז שרון,OU=מחוזות וסניפים,OU=FIBI,DC=fibi,DC=corp
+CN=טפירו ליאון,OU=095 גבעת שמואל,OU=862 מחוז שרון,OU=מחוזות וסניפים,OU=FIBI,DC=fibi,DC=corp

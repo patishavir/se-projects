@@ -1,0 +1,9 @@
+REVOKE SELECT ON TABLE "%schemaName%"."%tableName%" FROM USER MATAFDEV
+GRANT SELECT  ON TABLE "%schemaName%"."%tableName%" TO USER MATAFDEV
+REVOKE DELETE ON TABLE "%schemaName%"."%tableName%" FROM USER MATAFDEV
+GRANT DELETE  ON TABLE "%schemaName%"."%tableName%" TO USER MATAFDEV
+REVOKE UPDATE ON TABLE "%schemaName%"."%tableName%" FROM USER MATAFDEV
+GRANT UPDATE  ON TABLE "%schemaName%"."%tableName%" TO USER MATAFDEV
+REVOKE INSERT ON TABLE "%schemaName%"."%tableName%" FROM USER MATAFDEV
+GRANT INSERT  ON TABLE "%schemaName%"."%tableName%" TO USER MATAFDEV
+COMMIT

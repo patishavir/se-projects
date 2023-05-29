@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle-configurations file-format-version="5.0.0" default-check-configuration="Sun Checks-OZ">
+    <check-configuration name="Sun Checks-OZ" location="internal_config__1220618464046.xml" type="internal" description="Checkstyle configuration that checks the sun coding conventions."/>
+</checkstyle-configurations>

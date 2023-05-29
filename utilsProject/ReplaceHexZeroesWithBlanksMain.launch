@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/utilsProject/src/oz/utils/io/ReplaceHexZeroesWithBlanksMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.io.ReplaceHexZeroesWithBlanksMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="C:\temp\files\CF_2008_25_11_06_48_23.TXT C:\temp\files\CF_2008_25_11_06_48_23.TXT.No0"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="utilsProject"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx999M"/>
+</launchConfiguration>

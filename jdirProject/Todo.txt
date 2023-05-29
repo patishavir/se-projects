@@ -1,0 +1,12 @@
+1. XML to HashMap (for openOperation)
+2. Indication for view type (all, diff, equal)
+3. Operation (get the array return indication whether table has to be rebuilt)
+4. read XML as resource
+5. On size operation
+6. Enable Full path copy 
+7. Exit confirmation (if many files ?)
+8. Get File list from Class (4 activity)
+9. Recursive folder size
+
+Done
+1. StopWatch

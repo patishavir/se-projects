@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/datastageCmProject/src/oz/utils/cm/ds/DsCmMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="environment" value="Q"/>
+<mapEntry key="logFilePath" value="c:\temp\datastageCm.log"/>
+<mapEntry key="runDs" value="yes"/>
+<mapEntry key="runSql" value="false"/>
+<mapEntry key="sourceFolderPath" value="O:\docs\ClearCase\datastage\testdata\20140909"/>
+<mapEntry key="yyyymmdd" value="20131218"/>
+</mapAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.cm.ds.DsCmMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=".\args\dsCmRun.properties   .\args\datastageCm\datastageCm.properties .\args\dsCmSql\dsCmSql.properties .\args\dsCmClearCase\dsCmClearCase.properties"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="datastageCmProject"/>
+</launchConfiguration>

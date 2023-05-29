@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="perfMonProject" default="buildPerfMonJarFile"
+	basedir=".">
+	<target name="buildPerfMonJarFile">
+		<jar destfile=".\perfMon.jar" compress="true">
+			<fileset dir="./bin" />
+			<fileset dir="./src" />
+			<fileset dir="../InfraStructureProject/src" />
+			<fileset dir="../InfraStructureProject/bin" />
+			<manifest>
+				<attribute name="Main-Class"
+					value="oz.perfmon.PerfMonMain" />
+			</manifest>
+		</jar>
+	</target>
+</project>

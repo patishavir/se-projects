@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters operation="setXMLAttributeValue" inXMLFilePath="d:\\oj\\projects\\InfraStructureProject\\src\\oz\\infra\\xml\\XML\dse.xml" 
+outXMLFilePath="d:\oj\projects\InfraStructureProject\src\oz\infra\xml\XML\XMLUtilsTest.out.xml" elementPath="field#id#serverName" elementDelimiter="#" newElementText="NEWWW123456" 
+attributeName="value"   />
+</InputParametersSet>

@@ -1,0 +1,15 @@
+emailClass = MultiPartEmail
+# emailClass = SimpleEmail
+# emailClass = MultiPartEmail
+# emailClass = HtmlEmail
+hostname = mail.fibi.co.il
+# hostName = mail.bezeqint.net
+# authentication = userName,password
+to = Zimerman.O@fibi.co.il,Oded Zimerman
+# to = keidar.o@fibi.co.il,Omer Keidar;cohen.u@fibi.co.il,Uri Cohen;zimerman.o@fibi.co.il,Oded Zimerman
+# to = Zimerman.O@fibi.co.il,Oded Zimerman
+from = Zimerman.O@fibi.corp,Oded Z
+subject = 
+message = 
+attachmentPath = 
+debug=no

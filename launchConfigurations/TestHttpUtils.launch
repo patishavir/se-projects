@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/InfraStructureProject/src/oz/infra/http/test/TestHTTPUtils.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.infra.http.test.TestHTTPUtils"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="1 http://snifp-httpb:81/MatafServer/generalClientDefines.properties&#13;&#10;&#13;&#10;1 http://fibiux02:81/helloServerWeb/dsedata.xml &#13;&#10;http://10.18.188.55:9082/helloServerWeb/dsedata.xml&#13;&#10; http://snifp-httpp:81/MatafServer/dse/client/definitions/dsedata.xml"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="InfraStructureProject"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djavax.net.ssl.trustStrore=O:\docs\datasec\certificates\FibiCA\jks\fibica.jks -Djavax.net.ssl.trustStorePassword=fibica"/>
+</launchConfiguration>

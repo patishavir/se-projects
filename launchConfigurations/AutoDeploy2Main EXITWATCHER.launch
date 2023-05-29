@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/autodeploy2Project/src/oz/utils/autodeploy/AutoDeployMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="logFilePath" value="c:/temp/baboon/bab.log"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.autodeploy.AutoDeployMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="EXITWATCHER ./args/AutoDeploy2.properties   s5380440 9999"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="autodeploy2Project"/>
+</launchConfiguration>

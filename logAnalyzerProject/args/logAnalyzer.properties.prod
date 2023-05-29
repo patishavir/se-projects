@@ -1,0 +1,15 @@
+# logFilePath=http://snifp-http01.fibi.corp/access/,http://snifp-http02.fibi.corp/access/,http://snifp-http03.fibi.corp/access/
+logFilePath=http://www.fibi-online.co.il:81/Http7Logs/access/
+reportsFolder=\\\\matafcc\\public$\\snifit\\reports$
+reportFileName=SnifitDailyReport
+logfileNameCurrentDateFilterFormat=yyyy-MM-dd
+# fileNameTimeRange=14-30_15-00
+hhmmssRange=00:00:00_24:00:00
+excessiveReponseTimeThreshold=5
+uriFilter4ApplicationStartCount=dsedata
+responseTimeBreakdownInMicros=200000
+reports2Generate=ApplicationServerSummaryReport,ResponseTimeReport,BranchSummaryReport,EnvironmentSummaryReport,TransactionTypeSummaryReport,SlowTransactionsReport
+emailReport=yes
+openExcelWorkBook=yes
+emailProprtiesFilePath=\\\\matafcc\\private$\\s177571\\Scripts\\java\\LogAnalyzer\\args\\multiPartMail_fibi.properties
+serversPropertiesFilePath=\\\\matafcc\\private$\\s177571\\Scripts\\java\\LogAnalyzer\\args\\servers.properties

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<topLevelContainer title="ClearCase view manager options" />	
+	<pane title="file paths"/>
+	<textfield name="DetailedFilePath"
+		defaultValue="C:\\Temp\\lsview-l-prop.txt" browseButton="yes" />
+	<textfield name="NonDetailedFilePath"
+		defaultValue="C:\\Temp\\lsview.txt" browseButton="yes" />
+	<textfield name="ScriptFilePath"
+		defaultValue="C:\\Temp\\ccViewsMgrScripts.bat" browseButton="yes" />
+	<textfield name="Script2Run"
+		defaultValue="\\\\HRCC\\scripts\\" browseButton="yes" />	
+	<pane title="options"/>
+	<checkbox name="FileInput" defaultValue="no" toolTipText="get views information from a file ration than from excuting cleartool ls view"/>
+	<checkbox name="GenerateScripts" defaultValue="no" toolTipText="Generate scripts rather than excute commands"/>
+	<checkbox name="EnableAdminOperations" defaultValue="no" toolTipText="Enable ClearCase adminstrator operations"/>
+	<pane title="filters"/>
+	<textfield name="UserName" defaultValue="%USERNAME%" size="5" />
+	<textfield name="ViewTagFilter" />
+	<textfield name="ViewStorageFilter" />
+	<jpanel />
+	<submitButton value="set Parameters" />
+</params>

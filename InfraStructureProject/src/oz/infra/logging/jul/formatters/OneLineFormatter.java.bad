@@ -1,0 +1,21 @@
+package oz.infra.logging.jul.formatters;
+
+import java.util.logging.Formatter;
+import java.util.logging.LogRecord;
+import java.util.logging.SimpleFormatter;
+
+import oz.infra.datetime.DateTimeUtils;
+import oz.infra.string.StringUtils;
+import oz.infra.system.SystemUtils;
+
+public class OneLineFormatter extends Formatter {
+	/**
+	 * This method formats the given log record, in a java properties file style
+	 */
+	public final synchronized String format(final LogRecord logRecord) {
+		Formatter simpleFormatter = new SimpleFormatter();
+		String formattedLogRecord = simpleFormatter.format(logRecord);
+		return StringUtils.concat(DateTimeUtils.formatCurrentTime(DateTimeUtils.DATE_FORMAT_HHmmss), " ", logRecord.getLevel().getName(), " ",
+				logRecord.getSourceClassName(), " ", logRecord.getSourceMethodName(), ":  ", formattedLogRecord, SystemUtils.LINE_SEPARATOR);
+	}
+}

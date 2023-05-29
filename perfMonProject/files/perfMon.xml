@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+	<InputParameters command1="notepad"
+		command2="cleartool hostinfo" command3="cleartool hostinfo"
+		command4="cleartool lsview" command5="cleartool lsstgloc" command6="mspaint"
+		command7="cleartool checkout -nc d:\oj\CCviews\HRProj01_Dev\HRHermesh01\HRComp10C\zvl.txt"
+		command8="cleartool uncheckout -rm d:\oj\CCviews\HRProj01_Dev\HRHermesh01\HRComp10C\zvl.txt"/>
+</InputParametersSet>
+
+
+

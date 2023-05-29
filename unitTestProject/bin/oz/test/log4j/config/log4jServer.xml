@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="ASYNC_MAIN" class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="512" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="ROLLING_FILE_DEBUG" />
+		<appender-ref ref="ROLLING_FILE_INFO" />
+		<appender-ref ref="ROLLING_FILE_WARN" />
+	</appender>
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d][%t][%c][%p] - %m%n" />
+		</layout>
+	</appender>
+	<appender name="ROLLING_FILE_DEBUG" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="c:\\temp\\logs\\log4j_server_debug.log" />
+		<param name="Threshold" value="DEBUG" />
+		<param name="MaxFileSize" value="5MB" />
+		<param name="MaxBackupIndex" value="50" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d][%t][%c][%p]- %m%n" />
+		</layout>
+	</appender>
+	<appender name="ROLLING_FILE_INFO" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="c:\\temp\\logs\\log4j_server_info.log" />
+		<param name="Threshold" value="INFO" />
+		<param name="MaxFileSize" value="5MB" />
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d][%t][%c][%p]- %m%n" />
+		</layout>
+	</appender>
+	<appender name="ROLLING_FILE_WARN" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="c:\\temp\\logs\\log4j_server_warn.log" />
+		<param name="Threshold" value="WARN" />
+		<param name="MaxFileSize" value="5MB" />
+		<param name="MaxBackupIndex" value="2" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d][%t][%c][%p]- %m%n" />
+		</layout>
+	</appender>
+	<appender name="GM" class="mataf.logger.JMSQueueAppender">
+		<param name="InitialContextFactory" value="com.ibm.websphere.naming.WsnInitialContextFactory" />
+		<param name="ProviderUrl" value="iiop://localhost:2809" />
+		<param name="QueueConnectionFactoryBindingName" value="java:comp/env/gmcf" />
+		<param name="QueueBindingName" value="java:comp/env/gm" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{yyyyMMdd HH:mm:ss} BTT CATEGORY=[%c]PRIORITY=[%p]SERVER=%m%n" />
+		</layout>
+	</appender>
+
+	<!-- Categories -->
+	<logger name="MAIN">
+		<level value="DEBUG" />
+		<appender-ref ref="ASYNC_MAIN" />
+		<!-- <appender-ref ref="GM" /> -->
+	</logger>
+	<logger name="DEBUG">
+		<level value="DEBUG" />
+		<appender-ref ref="ROLLING_FILE_DEBUG" />
+	</logger>
+	<!-- Root must be last ! not used ! -->
+	<root>
+	</root>
+</log4j:configuration>

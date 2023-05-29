@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+	<InputParameters GUI="yes"
+		sourceDirectory="D:\oj\CCviews\OzProj01_Fix\sources"
+		destinationDirectory="D:\oj\CCviews\OzProj01_4Integ\sources"
+		show="different" operation="RebasePrep" enableCC="yes"
+		loggingLevel="FINE"
+		loggingHandlerClass="java.util.logging.FileHandler"
+		logFilePath="c:\temp\logparam.log" />
+</InputParametersSet>
+
+
+

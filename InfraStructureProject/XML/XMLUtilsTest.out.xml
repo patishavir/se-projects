@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dse.ini>
+
+	<!-- ======================================== -->
+	<!-- 			Settings	      -->
+	<!-- ======================================== -->
+	<!-- This file holds settings available to the whole toolkit -->
+	<!-- Statics methods in the Settings class allow to retrieve or set a value for a given parameter -->
+	<kColl id="settings">
+		<!-- You can provide the path of this file to your application running like this: -->
+		<!--   JAVA -DDSE=C:\MyPath MyStartingClass -->
+		<!-- Enable/Disable showing the progress bar when reading the XML files -->
+		<!-- Default is: no -->
+		<field id="showProgressBar" value="yes" />
+
+		<!-- Define modularity function mode for operation definitions: grouped, split or mixed -->
+		<!-- grouped: All the operation definitions are in the generic XML operations file      -->
+		<!-- split: Only self-defined operations will be used  -->
+		<!-- mixed: Operations may be defined in both ways  -->
+		<!-- Default is: mixed  -->
+		<field id="modularity" value="mixed" />
+
+		<!-- This the size of the buffer that will be used to read the XML files -->
+		<field id="bufferSize" value="200000" />
+		<!-- This the size of the queue buffer that stores the events handled by the automaton -->
+		<field id="queueBufferSize" value="20" />
+
+		<!-- ======================================== -->
+		<!-- 	Startup Process Parameters	      -->
+		<!-- ======================================== -->
+		<!-- Class and method to start the application. Used by the Startup class during the startup process -->
+		<!-- Enable cache for formats and operations -->
+		<kColl id="initialization">
+			<field id="classForInitialization" value="HermeshCreateCollateralMain" />
+			<field id="classMethodForInitialization" value="start" />
+			<field id="enableFormatsCache" value="true" />
+			<field id="enableOperationsCache" value="true" />
+		</kColl>
+
+		<!-- ==========================================  -->
+		<!-- 		HTML ATTRIBUTES		         -->
+		<!-- ==========================================  -->
+		<!-- Client/server attributes -->
+		<!-- These values can be read from an HTML page during the startup process. See the online documentation -->
+		<!-- for a complete description of the startup process and the possible values -->
+		<!-- They are here as a means of documenting the available settings -->
+		<kColl id="CSClient">
+
+			<kColl id="realCSClient">
+			<!--  NOTICE - the server name is the test server on wksu...84
+							in dev. time change it to the merked server name 
+				<field id="serverName" value="http://WKSU102571a84:9080/FEInfrastructureWeb" />-->
+				<field id="serverName" value="&quot;http://WKSU102577a007babunim:1234/FEInfrastructureWeb&quot;" />
+				<field id="sessionType" value="NonSecure" />
+				<field id="retryOnError" value="true" />
+				<field id="csAssignServletName" value="/servlet/com.ibm.dse.cs.servlet.CSAssignServiceIdAndServerTIDProtocolServlet" />
+				<field id="csNotifClToSrvServletName" value="/servlet/com.ibm.dse.cs.servlet.CSNotifClToSrvProtocolServlet" />
+				<field id="csNotifSrvToClServletName" value="/servlet/com.ibm.dse.cs.servlet.CSNotifSrvToClProtocolServlet" />
+				<field id="csReqProtocolServletName" value="/servlet/com.ibm.dse.cs.servlet.CSReqProtocolServlet" />
+				<field id="retryOnError" value="false" />
+				<field id="usedForServerToClientEventNotification" value="false" />
+				<field id="reconnectionAttempts" value="20" />
+				<field id="timeBetweenReconnectionAttempts" value="10000" />
+				<field id="userAgent" value="CSClient" />
+				<field id="useProxy" value="false" />
+				<field id="proxyHost" value="127.0.0.1" />
+				<field id="proxyPort" value="9080" />
+				<field id="serverCredentials" value="cred:cred" />
+				<field id="proxyCredentials" value="cred:cred" />
+				<field id="defaultOperationTimeout" value="400000" />
+				<field id="keepAliveConnection" value="false" />
+				<field id="runInSession" value="true" />
+				<field id="setTcpNoDelay" value="true" />
+				<field id="sendBufferSize" value="0" />
+				<field id="permanentConnectionForEvents" value="true" />
+				<field id="eventsPort" value="8082" />
+			</kColl>
+
+		</kColl>
+
+		<!-- ======================================== -->
+		<!-- 		Trace Settings			-->
+		<!-- ======================================== -->
+
+		<kColl id="traces">
+			<field id="traceToFile" value="no" />
+			<field id="traceToDisplay" value="yes" />
+			<field id="traceFileName" value="c:\dse\logs\dse-%date-%order.log" />
+			<field id="traceMaxLogFiles" value="5" />
+			<field id="font" value="monospaced" />
+			<field id="createBackup" value="yes" />
+			<field id="fileNumberOfLines" value="4000" />
+			<field id="displayNumberOfLines" value="200" />
+			<field id="linesOfBuffer" value="700" />
+			<field id="lineLength" value="128" />
+			<field id="showOriginator" value="yes" />
+			<field id="useServletsEngineLog" value="no" />
+			<field id="servletsEngineLogPort" value="9080" />
+			<field id="showWarningMessage" value="yes" />
+			<field id="traceWindowTitle" value="Client trace" />
+			<field id="traceTypes" value="DIPEWSV" />
+			<field id="traceLevels" value="HML" />
+
+			<kColl id="requestersComponents">
+				<!-- Core components -->
+				<traceRequester id="#CORE" trace="yes" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Client/server -->
+				<traceRequester id="#CS" trace="yes" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- HTML client -->
+				<traceRequester id="#HTML" trace="yes" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- CICS service -->
+				<traceRequester id="#CICS" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- MQ service -->
+				<traceRequester id="#MQ" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- LDAP service -->
+				<traceRequester id="#LDAP" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- ITOC service -->
+				<traceRequester id="#ITOC" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- OTMA service -->
+				<traceRequester id="#OTMA" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- GUI beans -->
+				<traceRequester id="#GUIB" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Desktop -->
+				<traceRequester id="#DESK" trace="yes" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Counters -->
+				<traceRequester id="#COUN" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Cash Drawers -->
+				<traceRequester id="#CSDW" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Automaton -->
+				<traceRequester id="#AUTO" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Event Manager -->
+				<traceRequester id="#EVMG" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Forms print service -->
+				<traceRequester id="#FPRT" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- LU0 service -->
+				<traceRequester id="#LU0" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- LU62 service -->
+				<traceRequester id="#LU62" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Communications pool -->
+				<traceRequester id="#POOL" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- JetForm service -->
+				<traceRequester id="#JETF" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- FormsPath service -->
+				<traceRequester id="#FPATH" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Notes service -->
+				<traceRequester id="#NOTES" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- WOSA printer service -->
+				<traceRequester id="#WPRT" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- MSR/E LANDP service -->
+				<traceRequester id="#LMSR" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Application tables service -->
+				<traceRequester id="#ATBL" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Electronic journal -->
+				<traceRequester id="#EJ" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Database tables service -->
+				<traceRequester id="#TBL" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Check reader service -->
+				<traceRequester id="#JCHR" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Store for forwarding service -->
+				<traceRequester id="#STOR" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- J/XFS printer service -->
+				<traceRequester id="#XPRT" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- J/XFS MSR/E service -->
+				<traceRequester id="#XMSD" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Tivoli bridge -->
+				<traceRequester id="#TVL" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Samples -->
+				<traceRequester id="#SMPL" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Forwarding service -->
+				<traceRequester id="#FORW" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Journal viewer -->
+				<traceRequester id="#JVIEW" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Overrides -->
+				<traceRequester id="#OVRR" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Foreign Exchange -->
+				<traceRequester id="#FXCH" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Access control -->
+				<traceRequester id="#SECUR" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Branch administration -->
+				<traceRequester id="#BADM" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Customer session -->
+				<traceRequester id="#CSES" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- JDBC connection methods -->
+				<traceRequester id="#DBCON" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- JDBC administration tools -->
+				<traceRequester id="#DBADM" trace="no" traceTypes="DIPEWS" traceLevels="HML" />
+				<!-- Unassigned component -->
+				<traceRequester id="unAssigned" trace="no" traceTypes="DIPEWSV" traceLevels="HML" />
+			</kColl>
+		</kColl>
+
+		<!-- ======================================== -->
+		<!-- 	Path to generic definition files      -->
+		<!-- ======================================== -->
+		<!-- Possible values are: an absolute or relative path to this settings file, an HTTP addreess -->
+		<!-- or the keyword: fromJAR -->
+		<kColl id="paths">
+			<field id="entities" value="./" />
+			<field id="desktop" value="../desktop" />
+		</kColl>
+
+		<!-- ======================================== -->
+		<!--   Name of the generic definition files   -->
+		<!-- ======================================== -->
+
+		<kColl id="files">
+			<field id="data" value="dsedata.xml" />
+			<field id="format" value="dsefmts.xml" />
+			<field id="context" value="dsectxt.xml" />
+			<field id="service" value="dsesrvce.xml" />
+			<field id="operation" value="dseoper.xml" />
+			<field id="type" value="dsetype.xml" />
+			<field id="desktop" value="desktop.xml" />
+			<field id="processor" value="dseproc.xml" />
+			<field id="view" value="dseviews.xml" />
+			<!-- ======================================== -->
+			<!-- Self defined operations definitions files -->
+			<!-- ======================================== -->
+			<!-- Possible values are: an absolute or relative path to this settings file, an HTTP addreess -->
+			<!-- or the keyword: fromJAR -->
+			<!-- See the online documentation for additional information -->
+			<kColl id="operations">
+
+				<!-- PagingTestView -->
+				<operDef id="testPagingActionCOP" value="FETemplateViews/PagingTestView.xml" />
+				<operDef id="initializePagingTestViewOp" value="FETemplateViews/PagingTestView.xml" />
+				<operDef id="deleteSelectedRowsOnPagingTestOperation" value="FETemplateViews/PagingTestView.xml" />
+				<operDef id="pagingTestLinkColumnsTestOP" value="FETemplateViews/PagingTestView.xml" />
+				<!-- PagingTestView -->
+				
+				<!-- WinflowServicesTiming -->
+				<operDef id="initializeWinflowServicesTimingViewOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="winflowServicesTimingLaunchAllButtonOP" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="clearResultTableOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="createCollatIdClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="winflowLogonClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="launchWorkflowClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="getWobNumAndQueueNameForGetProcessDataClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="getWorkflowProcessDataClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="setWorkflowProcessDataClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="getWobNumAndQueueNameForGetWorkItemClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="getWorkItemParametersClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="completeStepClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="getWobNumAndQueueNameForGetProcessFlowClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="getProcessFlowClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="retrieveQueueWithFilterClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="completeAllClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="retrieveQueueCompleteClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<operDef id="logoffClientOp" value="FETemplateViews/WinflowServicesTiming.xml" />
+
+				<!-- WinflowServicesTiming -->
+
+
+				<!-- HrStaticTreeTest -->
+				<operDef id="initializeHrStaticTreeTestOp" value="FETemplateViews/HrStaticTreeTestView.xml" />
+				<!-- HrStaticTreeTest -->
+
+
+				<!-- HrDynamicTreeTest -->
+				<operDef id="initializeHrDynamicTreeTestOp" value="FETemplateViews/HrDynamicTreeTestView.xml" />
+				<operDef id="testClosePopupOperation" value="FETemplateViews/HrDynamicTreeTestView.xml" />
+				<!-- HrDynamicTreeTest -->
+
+				<!-- HrtableTest -->
+				<operDef id="initializeHrTableTestListOp" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="addRowToHrTableTestOperation" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="clearHrTableTestEditorsOperation" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="updateHrTableTestRowsOperation" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="deleteSelectedRowsOnHrTableTestOperation" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="addRowToHrTableTestSecondTableOperation" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="clearHrTableTestEditorsSecondTableOperation" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="updateHrTableTestRowsSecondTableOperation" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="deleteSelectedRowsOnHrTableTestSecondTableOperation" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="hrTableTestLinkColumnsTestOP" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="hrTableTestToolBarButtonsTestOP" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="initHrTableTestLinkEditingViewOp" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="updateHrTableTestListFromLinkViewOP" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="hrTableTestSelectionEventOP" value="FETemplateViews/HrTableTestView.xml" />
+				<operDef id="hrTableTestDisableEnableAllRowsOP" value="FETemplateViews/HrTableTestView.xml" />
+				<!-- HrtableTest -->
+
+				<operDef id="LaunchERProcessCOP" value="FETemplateViews/ProcessContinuencyTest.xml" />
+				<operDef id="ReceptionAndRegistrationCompleteStepCOP" value="FETemplateViews/ProcessContinuencyTest.xml" />
+				<operDef id="StethoscopeCompleteStepCOP" value="FETemplateViews/ProcessContinuencyTest.xml" />
+				<operDef id="InitStethoscopeCompleteStepCOP" value="FETemplateViews/ProcessContinuencyTest.xml" />
+				<operDef id="TreatmentCompleteStepCOP" value="FETemplateViews/ProcessContinuencyTest.xml" />
+
+				<operDef id="stubButtonOperationTest" value="FETemplateViews/threeLevelModalViewTest.xml" />
+				<operDef id="disableOperationOnParentViewFromModalView" value="FETemplateViews/TestOperationOnModalView.xml" />
+
+				<operDef id="testDateValidationsFlow" value="FETemplateViews/TestDateValidations.xml" />
+				<operDef id="testViewExternalizerInit" value="FETemplateViews/ViewExternalizerViewModal.xml" />
+				<operDef id="testViewExternalizerInitClientOp" value="FETemplateViews/ViewExternalizerViewStandAlone.xml" />
+				<operDef id="tableBasicElementTemplateCOP" value="FETemplateViews/tableBETemplateView.xml" />
+				<operDef id="tableSecondBasicElementTemplateCOP" value="FETemplateViews/tableBETemplateView.xml" />
+				<operDef id="TableBETemplatePropertychangeLocalCOP" value="FETemplateViews/tableBETemplateView.xml" />
+				<operDef id="tableBasicElementTemplateRowUpdate" value="FETemplateViews/tableBETemplateView.xml" />
+				<operDef id="tableBasicElementTemplateDeleteRow" value="FETemplateViews/tableBETemplateView.xml" />
+				<operDef id="tableBasicElementTemplateAddRow" value="FETemplateViews/tableBETemplateView.xml" />
+				<operDef id="tableBasicElementTemplateRowUpdate2" value="FETemplateViews/tableBETemplateView.xml" />
+				<operDef id="tableOpenSecondBasicElementTemplateLocalCOP" value="FETemplateViews/tableBETemplateView.xml" />
+
+				<operDef id="tableBasicElementTemplateFinishCop" value="FETemplateViews/tableBETemplateView.xml" />
+				<operDef id="initComponenEnableLookAndFealClientOp" value="FETemplateViews/ComponenEnableLookAndFeal.xml" />
+				<operDef id="initFormattedTextFieldsTestClientOp" value="FETemplateViews/FormattedTextFieldsTest.xml" />
+				<operDef id="initI18NTestClientOp" value="FETemplateViews/I18NTest.xml" />
+				<operDef id="testMultipleValidationTaskClientOp" value="FETemplateViews/MultiValidationTest.xml" />
+				<operDef id="testMultipleValidationTaskFlowClientOp" value="FETemplateViews/MultiValidationTest.xml" />
+				<operDef id="BasicElementsLabelsViewCOP" value="FETemplateViews/BasicElementsLabelsView.xml" />
+				<operDef id="SecondBasicElementViewCOP" value="FETemplateViews/BasicElementsLabelsView.xml" />
+				<operDef id="BasicElementsViewChangeCardCOP" value="FETemplateViews/BasicElementsLabelsView.xml" />
+				<operDef id="TestWorkFlowComponentInitClientOp" value="FETemplateViews/TestWorkFlowComponentView.xml" />
+				<operDef id="TestWorkFlowComponentSetParamClientOp" value="FETemplateViews/TestWorkFlowComponentView.xml" />
+				<operDef id="TestWorkFlowComponentGetParamClientOp" value="FETemplateViews/TestWorkFlowComponentView.xml" />
+				<operDef id="TestWorkFlowComponentCompleteClientOp" value="FETemplateViews/TestWorkFlowComponentView.xml" />
+				<operDef id="treeTableTemplateCOP" value="FETemplateViews/treeTableTemplateView.xml" />
+				<operDef id="treeTableCleanLocalCOP" value="FETemplateViews/treeTableTemplateView.xml" />
+				<operDef id="treeTableFindTemplateCOP" value="FETemplateViews/treeTableTemplateView.xml" />
+				<operDef id="treeTableFindCleanLocalCOP" value="FETemplateViews/treeTableTemplateView.xml" />
+				<operDef id="treeTableDescribeLocalCOP" value="FETemplateViews/treeTableTemplateView.xml" />
+				<!--operDef id="testComboFilteringInitClientOp" value="FETemplateViews/TestComboFilteringView.xml" /-->
+				<operDef id="testDependentComboInitClientOp" value="FETemplateViews/TestDependentComboView.xml" />
+				<!-- HrTreeTable -->
+				<operDef id="treeTableTechnicalCOP" value="FETemplateViews/TreeTableTechnicalView.xml" />
+				<operDef id="treeTableTestLinkViewCOP" value="FETemplateViews/TreeTableTechnicalView.xml" />
+				<operDef id="deleteNodesFromTreeTableOperation" value="FETemplateViews/TreeTableTechnicalView.xml" />
+				<operDef id="deleteStaticNodesFromTreeTableOperation" value="FETemplateViews/TreeTableTechnicalView.xml" />
+				<operDef id="updateNodeTreeTableOperation" value="FETemplateViews/TreeTableTechnicalView.xml" />
+				<operDef id="updateStaticNodeTreeTableOperation" value="FETemplateViews/TreeTableTechnicalView.xml" />
+				<operDef id="updateSecondLevelStaticNodeOP" value="FETemplateViews/TreeTableTechnicalView.xml" />
+				<operDef id="addNodeTreeTableOperation" value="FETemplateViews/TreeTableTechnicalView.xml" />
+				<operDef id="clearAddNodeViewOperation" value="FETemplateViews/TreeTableTechnicalView.xml" />
+
+
+
+				<operDef id="testEditableComboInitClientOp" value="FETemplateViews/TestEditableComboView.xml" />
+				<operDef id="testEditableComboAddElementOp" value="FETemplateViews/TestEditableComboView.xml" />
+				<operDef id="testEditableComboRemoveElementOp" value="FETemplateViews/TestEditableComboView.xml" />
+				<operDef id="testEditableComboRequiredOp" value="FETemplateViews/TestEditableComboView.xml" />
+				<operDef id="testEditableComboButtonOp" value="FETemplateViews/TestEditableComboView.xml" />
+				<operDef id="testSecurityOp" value="FETemplateViews/TestSecurityView.xml" />
+				<operDef id="testSecurityAllowedClientOp" value="FETemplateViews/TestSecurityView.xml" />
+				<operDef id="testSecurityNotAllowedClientOp" value="FETemplateViews/TestSecurityView.xml" />
+				<operDef id="testSecurityAllAuthUsersClientOp" value="FETemplateViews/TestSecurityView.xml" />
+				<operDef id="testIsAuthenticatedForOrgUnitClientOp" value="FETemplateViews/TestSecurityView.xml" />
+				<operDef id="testIsAuthenticatedForRoleClientOp" value="FETemplateViews/TestSecurityView.xml" />				
+				<operDef id="initializeTestComboBoxTestingOptionsOp" value="FETemplateViews/TestComboxBoxView.xml" />
+				<operDef id="testComboBoxTestingOptionsOp" value="FETemplateViews/TestComboxBoxView.xml" />
+				<operDef id="showDocumentOp" value="FETemplateViews/ShowDocumentTestView.xml" />
+				<operDef id="CheckEmptyDecoratorInRollbackTestTableCOP" value="FETemplateViews/TestCancelRollbackFunctionality.xml" />
+				<operDef id="AddRowToTableInRollbackTestCOP" value="FETemplateViews/TestCancelRollbackFunctionality.xml" />
+				<operDef id="createCollateralOp" value="FETemplateViews/TestCreateCollateralView.xml" />
+				<operDef id="ipSearchSendOp" value="FETemplateViews/TestCreateCollateralView.xml" />
+				<operDef id="ipSearchCleanOp" value="FETemplateViews/TestCreateCollateralView.xml" />
+				<operDef id="initializeAvailableCollateralListOp" value="FETemplateViews/TestCreateCollateralView.xml" />
+				<operDef id="operationListenerOP" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerStepOP" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerInitOP" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerChangeCombosValueCOP" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerChooseCardToShow" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerChangeOperationOneCOP" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerChangeOperationTwoCOP" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerStepOP" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerCitizenshipStepOP" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerPositionLocalStepOP" value="FETemplateViews/operationListenerView.xml" />
+				<operDef id="operationListenerPropertyChangeLocalCOP" value="FETemplateViews/operationListenerView.xml" />
+
+				<!-- hr list header -->
+				<operDef id="testHrListHeaderInitClientOp" value="FETemplateViews/TestHrListHeaderView.xml" />
+				<operDef id="testHrListTableNullValueOp" value="FETemplateViews/TestHrListHeaderView.xml" />
+				<operDef id="testHrListTableAddToListOp" value="FETemplateViews/TestHrListHeaderView.xml" />
+				<operDef id="testHrListTableTakeFromListOp" value="FETemplateViews/TestHrListHeaderView.xml" />
+				<!-- renderers -->
+				<operDef id="tableRenderersInitClientOp" value="FETemplateViews/TableRenderersView.xml" />
+				<operDef id="tableRenderersLinkColumnsTestOP" value="FETemplateViews/TableRenderersView.xml" />
+				<operDef id="table2RenderersUpdateOp" value="FETemplateViews/TableRenderersView.xml" />
+				<operDef id="tableRenderersUpdateTopTableOp" value="FETemplateViews/TableRenderersView.xml" />
+
+				<operDef id="initSDITestOneClientOp" value="FETemplateViews/SDITestView.xml" />
+				<operDef id="initSDITestTwoClientOp" value="FETemplateViews/SDITestView.xml" />
+				<operDef id="initSDITestThreeClientOp" value="FETemplateViews/SDITestView.xml" />
+
+				<operDef id="limitedTextAreaTestInitClientOp" value="FETemplateViews/LimitedTextAreaView.xml" />
+
+				<operDef id="internalNavigationRandomCOP" value="FETemplateViews/TestWizardInternalNavigationSecondView.xml" />
+
+				<operDef id="initializeMultipleServerActivationClientOp" value="FETemplateViews/MultiServerOperationTest.xml" />
+				<operDef id="dynamicApplicationBarInitOP" value="FETemplateViews/dinamicAplicationBarView.xml" />
+
+				<operDef id="XIDInit" value="FETemplateViews/XIDTestView.xml" />
+				<operDef id="testXIDFormatClientOp" value="FETemplateViews/XIDTestView.xml" />
+				<operDef id="xidTestSwitchFields" value="FETemplateViews/XIDTestView.xml" />
+				<operDef id="testXIDFormatWithValueNullCheckClientOp" value="FETemplateViews/XIDTestView.xml" />
+				<operDef id="testXIDEnableClientOp" value="FETemplateViews/XIDTestView.xml" />
+				<operDef id="testXIDDisableClientOp" value="FETemplateViews/XIDTestView.xml" />
+				
+				
+				<operDef id="testExportFileCOP" value="FETemplateViews/TestFileExport.xml" />
+				
+				<operDef id="BoolenComboInitTestClientOp" value="FETemplateViews/TestBooleanCombo.xml" />		
+				
+				<operDef id="test_Extended_IsAuthenticatedForOrgUnitClientOp" value="FETemplateViews/TestSecurityView.xml" />				
+				
+
+				<!-- Query Log operations -->
+				<operDef id="InitQueryLogViewOP" value="BusinessLogViews/QueryBusinessLogView.xml" />				
+				<operDef id="AttributeNameChangedOP" value="BusinessLogViews/QueryBusinessLogView.xml" />				
+				<operDef id="ClearQueryDetailsOP" value="BusinessLogViews/QueryBusinessLogView.xml" />
+				<operDef id="RelationalOperatorChangedOP" value="BusinessLogViews/QueryBusinessLogView.xml" />
+				<operDef id="AddToWhereClauseTableOP" value="BusinessLogViews/QueryBusinessLogView.xml" />
+				<operDef id="DeleteFromWhereClauseTableOP" value="BusinessLogViews/QueryBusinessLogView.xml" />
+				<operDef id="UpdateWhereClauseTableOP" value="BusinessLogViews/QueryBusinessLogView.xml" />
+				<operDef id="MoveSelectedRowDownOP" value="BusinessLogViews/QueryBusinessLogView.xml" />
+				<operDef id="MoveSelectedRowUpOP" value="BusinessLogViews/QueryBusinessLogView.xml" />				
+				<operDef id="ReDefineQueryOP" value="BusinessLogViews/QueryBusinessLogView.xml" />
+				<operDef id="RunQueryLogOP" value="BusinessLogViews/QueryBusinessLogView.xml" />
+				<!-- end Query Log operations -->
+
+
+				<!--   LEV OPERATIONS   -->
+				<!--	Complex Community	-->
+
+				<operDef id="InitCreateComplexCommunityOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="InitUpdateComplexCommunityOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="InitAddIPToComplexCommunityOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="InitUpdateComplexCommunityFromWFOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="FindIPAndSupervisingByXIDOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="AddIPToCommunityMembersListOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="DeleteCommunityMemberOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="UpdateCommunityMemberOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="CleanCommunityMemberEditDataOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="RowSelectionOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="SaveComplexCommunityFlowOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="AdviseInclusionReasonsOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="CommunityTypeChangedOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="ChangeStatusDate" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="InitComplexCommunityReasonViewOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="AddManualInclusionReasonOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="DeleteInclusionReasonOp" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="SaveInclusionReasonsOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="InitUpdateComplexCommunityModalViewOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="IPTypeToIPXIDTypeFilter" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="IPTypeToIPXIDTypeFilterForUpdate" value="levViews/ComplexCommunityView.xml" />				
+				<operDef id="IPXIDValue4TypeFilter" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="InitCreateComplexCommunityXIDOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="SaveComplexCommunityOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="GetRecommendationFromContextorOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="CCRecommendOnComplexCommunityOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="CCShowComplexCommunityMapOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="FindInclusionReasonsOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="validateComplexCommunityDetailsOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="SetIPXIDValueOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="FindAllCurrentInclusionReasonsOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="InitComplexCommunityHandlingFunctionaryOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="launchContextorProcessOP" value="levViews/ComplexCommunityView.xml" />
+				<operDef id="isAuthorizedMemberOP" value="levViews/ComplexCommunityView.xml" />				
+				
+				<!-- start Applicative Role Authorization Enforcement -->
+				<operDef id="isAuthorizedForComplexCommunityRolesOP" value="levViews/ComplexCommunityView.xml" />
+				<!-- end Applicative Role Authorization Enforcement -->
+
+
+				<!--	End of Complex Community	-->
+				<!--    IP Relationships  		-->
+				<operDef id="initNPIPRelationshipsListOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="initNPIPRelationshipsListFromWFOP" value="levViews/IPRelationshipsView.xml" />
+
+				<operDef id="initFEIPRelationshipsListOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="initFEIPRelationshipsListFromWFOP" value="levViews/IPRelationshipsView.xml" />
+				
+				<operDef id="showRelationshipCriteriaOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="filterIPRelationshipListOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="clearIPRelationshipListOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="clearIPRelationshipDetailsOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="handleIPTypeChangedOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="NPRelationshipTypeChangedOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="FERelationshipTypeChangedOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveNPIPRelationshipsOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveFEIPRelationshipsOP" value="levViews/IPRelationshipsView.xml" />
+				
+				
+
+				<operDef id="addIPRelationshipOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="updateIPRelationshipOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="initIPRelationshipDetailsOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="deleteNPIPRelationshipOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="deleteFEIPRelationshipOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="setAddStatusOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="setUpdateStatusOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="handleIPRelationshipTypeChangeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="setIPRelationshipRoleOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="clearIPRelationshipDetailsOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="handleIPTypeChangedOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="relationshipTypeChangedOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="addOwnershipShareOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="deleteOwnershipShareOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="updateOwnershipShareOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="clearOwnershipShareEditorOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="handleShareChangeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="handleInfoSourceChangeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="findRelatedIPOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="clearRelatedIPOp" value="levViews/IPRelationshipsView.xml" />
+
+
+	
+				<operDef id="saveOwnershipDetailsOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveControlDetailsOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveRelationshipDetailsOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveExternalGuaranteeDetailsOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveCustomerSupplierDetailsOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveEssentialReasonsDetailsOp" value="levViews/IPRelationshipsView.xml" />
+								
+				<operDef id="addControlTypeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="updateControlTypeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="clearControlshipEditorOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="deleteControlTypeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="handleMainControlTypeChangeOp" value="levViews/IPRelationshipsView.xml" />
+
+				<operDef id="closeIPRelationshipDetailsViewOp" value="levViews/IPRelationshipsView.xml" />
+				
+				<operDef id="deleteEssentialReasonTypeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="clearEssentialReasonEditorOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="updateEssentialReasonTypeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="addEssentialReasonTypeOp" value="levViews/IPRelationshipsView.xml" />
+
+				<operDef id="deleteFinancialDependencyTypeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="addFinancialDependencyTypeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="updateFinancialDependencyTypeOp" value="levViews/IPRelationshipsView.xml" />
+
+				<operDef id="deleteJobTypeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="addJobTypeOp" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="updateJobTypeOp" value="levViews/IPRelationshipsView.xml" />
+
+				<operDef id="handleExternalGuaranteeLimitChangedOp" value="levViews/IPRelationshipsView.xml" />				
+				<operDef id="initGuaranteeRelationshipDetailsOp" value="levViews/IPRelationshipsView.xml" />
+				
+				<operDef id="ShowNPIPMapOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="ShowFEIPMapOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="ShowFEOwnersTreeMapOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="ShowNPOwnersTreeMapOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveAndRefreshNPIPRelationshipsOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveAndRefreshFEIPRelationshipsOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveNPAndRecommendOnComplexCommunityOP" value="levViews/IPRelationshipsView.xml" />
+				<operDef id="saveFEAndRecommendOnComplexCommunityOP" value="levViews/IPRelationshipsView.xml" />
+				
+				<!--    end IP relationships            -->
+				
+				<!-- Natural Person -->
+				<operDef id="initCreateNPIPDetailsOP" value="levViews/NPIPView.xml" />
+				<operDef id="findNPIPByXidOp" value="levViews/NPIPView.xml" />
+				<operDef id="clearNPIPByOp" value="levViews/NPIPView.xml" />
+				<operDef id="inquirePopulationRegistryOP" value="levViews/NPIPView.xml" />
+				<operDef id="additionalCitizenshipChangedOP" value="levViews/NPIPView.xml" />
+				<operDef id="identificationPlaceChangedOP" value="levViews/NPIPView.xml" />
+				<operDef id="saveNextValidation" value="levViews/NPIPView.xml" />
+				<operDef id="wasIpFoundValidation" value="levViews/NPIPView.xml" />
+
+				
+				<!-- np handling functionary -->
+				<operDef id="findDefaultNPIPHandlingFunctionaryOP" value="levViews/NPIPView.xml" />
+				<operDef id="initNPIPUpdateHandlingFunctionaryView" value="levViews/NPIPView.xml" />
+				<operDef id="saveNPIPHandlingFunctionaryOP" value="levViews/NPIPView.xml" />
+				
+				
+				<!--passport popup operations -->
+				<operDef id="initPassportDetailsOP" value="levViews/NPIPView.xml" />
+				<operDef id="identifyTypeChangeOP" value="levViews/NPIPView.xml" />
+				<operDef id="savePassportXIDOP" value="levViews/NPIPView.xml" />
+				<operDef id="clearPassportView" value="levViews/NPIPView.xml" />
+				<operDef id="cancelPassportOP" value="levViews/NPIPView.xml" />
+				
+				<!-- end passport popup operations -->
+				
+				<!-- test -->
+				<operDef id="initCreateNPIPGeneralDetailsOP" value="levViews/NPIPView.xml" />
+				<operDef id="currencyDiamondIndicationSelectionChangedOP" value="levViews/NPIPView.xml" />
+				<operDef id="publicPersonalityIndicationSelectionChangedOP" value="levViews/NPIPView.xml" />
+				<operDef id="legalStatusChangedOP" value="levViews/NPIPView.xml" />
+				<operDef id="validateNPIPGeneralDetailsOP" value="levViews/NPIPView.xml" />
+				<operDef id="saveNPIPDetailsOP" value="levViews/NPIPView.xml" />
+				<operDef id="validateAndSaveNPIPDetailsOP" value="levViews/NPIPView.xml" />
+				<operDef id="createNPIPOP" value="levViews/NPIPView.xml" />
+				<operDef id="updateNPIPOP" value="levViews/NPIPView.xml" />
+				<operDef id="disableAllPersonalDetailsFieldsOP" value="levViews/NPIPView.xml" />
+				<operDef id="initViewNPIPPersonalDetails4RelationshipOP" value="levViews/NPIPView.xml" />
+				<operDef id="initNaturalPersonTestOP" value="LevTestViews/NaturalPersonTestView.xml" />
+				<operDef id="findNaturalPersonTestOP" value="LevTestViews/NaturalPersonTestView.xml" />
+				<!-- end test -->
+				
+				<!-- contextor operations--><!--
+				<operDef id="ShowOwnerShipMapOP" value="LevTestViews/ContextorTestView.xml"/>	
+				<operDef id="RecommendOnComplexCommunityAssociationOP" value="LevTestViews/ContextorTestView.xml"/>	
+				<operDef id="ShowLegalEntityMapOP" value="LevTestViews/ContextorTestView.xml"/>	
+				<operDef id="ShowComplexCommunityMapOP" value="LevTestViews/ContextorTestView.xml"/>	
+				<operDef id="RecommendOnComplexCommunityEnsembleOP" value="LevTestViews/ContextorTestView.xml"/>	
+				<operDef id="ActivateContextorServicesOP" value="LevTestViews/ContextorTestView.xml"/>	
+				<operDef id="InitModelIdFromMetaDataOP" value="LevTestViews/ContextorTestView.xml"/>					
+				<operDef id="initModelIdFromMetaDataClientOP" value="LevTestViews/ContextorTestView.xml"/>		
+				<operDef id="DefaultClientServerOp" value="LevTestViews/ContextorTestView.xml"/>				
+-->				<!-- end contextor operations-->
+				<!-- Recommend IP On Complex Community -->
+				<operDef id="RecommendOnComplexCommunityOP" value="levViews/RecommendIPOnComplexCommunityView.xml" />				
+				<!-- Inquire complex community operations-->
+				<operDef id="initInquireCommunityViewOp" value="levViews/InquireComplexCommunityView.xml" />
+				<operDef id="clearBankIsraelNumberOp" value="levViews/InquireComplexCommunityView.xml" />
+				<operDef id="clearInquireCommunityView" value="levViews/InquireComplexCommunityView.xml" />
+				<operDef id="inquireComplexCommunityOp" value="levViews/InquireComplexCommunityView.xml" />
+				<operDef id="clearCommunityListOp" value="levViews/InquireComplexCommunityView.xml" />	
+				<operDef id="approveInquireComplexCommunityOp" value="levViews/InquireComplexCommunityView.xml" />			
+				<operDef id="openUpdateComplexCommunityTaskOP" value="levViews/InquireComplexCommunityView.xml" />							
+
+				<operDef id="clearComplexCommunityOP" value="levViews/ComplexCommunitySpouseBorrowersView.xml" />
+				<operDef id="findComplexCommunityOP" value="levViews/ComplexCommunitySpouseBorrowersView.xml" />
+				<operDef id="describeOP" value="levViews/ComplexCommunitySpouseBorrowersView.xml" />
+
+				<!-- start Applicative Role Authorization Enforcement -->
+				<operDef id="isAuthorizedForInquireComplexCommunityOP" value="levViews/InquireComplexCommunityView.xml" />							
+				<!-- end Applicative Role Authorization Enforcement -->	
+				
+				
+<!--				<operDef id="viewComplexCommunityDetailsOp" value="levViews/InquireComplexCommunityView.xml"/>			-->
+
+				<!-- FEIP operations -->
+				<operDef id="InitViewFEIPOp" value="levViews/FEIPView.xml" />			
+				<operDef id="InitFEIPGeneralDetailsOp" value="levViews/FEIPView.xml" />			
+				<operDef id="ValidateFEIPGeneralDetailsOp" value="levViews/FEIPView.xml" />			
+				<operDef id="ClearFEIPDetailsClientOp" value="levViews/FEIPView.xml" />		
+				<operDef id="FindFEIPClientOp" value="levViews/FEIPView.xml" />		
+				<operDef id="FindFEIPRegistrarFlowOp" value="levViews/FEIPView.xml" />
+				<operDef id="FindFEIPRegistrarOp" value="levViews/FEIPView.xml" />
+				<!--operDef id="ValidateFEIPGeneralDetailsOp"		value="FEIPView.xml"/-->
+				<operDef id="FEIPHandleXIDTypeChangeOp" value="levViews/FEIPView.xml" />
+				<operDef id="HandleFEIPGeneralDetailsUIOp" value="levViews/FEIPView.xml" />
+				<operDef id="CreateFEIPOp" value="levViews/FEIPView.xml" />
+				<operDef id="UpdateFEIPOp" value="levViews/FEIPView.xml" />
+				<operDef id="SaveFEIPDetailsFlowOp" value="levViews/FEIPView.xml" />
+				<operDef id="FEIPCheckLocationValidationOp" value="levViews/FEIPView.xml" />
+				<operDef id="FEIPFindWasActivatedValidatorOp" value="levViews/FEIPView.xml" />
+				<operDef id="FEIPEntityNameValidatorOp" value="levViews/FEIPView.xml" />
+				<operDef id="FEIPIsCreateModeValidatorOp" value="levViews/FEIPView.xml" />
+				<operDef id="FindFEIPInRegistrarFlowOp" value="levViews/FEIPView.xml" />
+				<operDef id="FindFEIPInRegistrarOp" value="levViews/FEIPView.xml" />
+				<operDef id="FEIPBusinessDetailsValidatorOp" value="levViews/FEIPView.xml" />
+				<operDef id="FEIPHandleOtherNameChangeClientOp" value="levViews/FEIPView.xml" />
+				<operDef id="FEIPHandleStockPercentageChangeClientOp" value="levViews/FEIPView.xml" />
+				<operDef id="findDefaultFEIPHandlingFunctionaryOP" value="levViews/FEIPView.xml" />
+				<operDef id="initFEIPUpdateHandlingFunctionaryView" value="levViews/FEIPView.xml" />
+
+				<operDef id="saveFEIPHandlingFunctionaryOP" value="levViews/FEIPView.xml" />
+				
+				
+				
+				<!-- position and business details operations -->
+				<operDef id="FEIPBusinessDetailsInitOp" value="levViews/FEIPView.xml" />
+				<operDef id="FEIPPositionAndBusinessDetailsInitOp" value="levViews/FEIPView.xml" />
+				<operDef id="AddEconomyBranchFlowOp" value="levViews/FEIPView.xml" />
+				<operDef id="UpdateEconomyBranchFlowOp" value="levViews/FEIPView.xml" />
+				<operDef id="DeleteEconomyBranchOp" value="levViews/FEIPView.xml" />
+				<operDef id="FEIPChangeLegalStatusUpdateDateOp" value="levViews/FEIPView.xml" />
+				<operDef id="ValidateFEIPPositionAndBusinessDetailsOp" value="levViews/FEIPView.xml" />
+				
+				<!-- information sources operations -->
+				<operDef id="FEIPInformationSourcesInitOp" value="levViews/FEIPView.xml" />
+				<operDef id="InitInfoSourceDetailsOp" value="levViews/FEIPView.xml" />
+				<operDef id="SaveInfoSourceDetailsOp" value="levViews/FEIPView.xml" />
+				<operDef id="SetCreateModeOp" value="levViews/FEIPView.xml" />
+				<operDef id="SetUpdateStatusOp" value="levViews/FEIPView.xml" />
+				<operDef id="DeleteInfoSourceOp" value="levViews/FEIPView.xml" />
+				
+				<!-- operations for relationship--><!--nana-->
+				<operDef id="wasFEIPFoundValidation" value="levViews/FEIPView.xml" />
+				<operDef id="initFEIPGeneralDetailsView4Relationship" value="levViews/FEIPView.xml" />
+				<operDef id="FindFEIP4RelationshipOp" value="levViews/FEIPView.xml" />
+				<operDef id="initIpRelationshipsAlertOp" value="levViews/IpRelationshipsAlertsModalView.xml" />
+				<operDef id="concludeIpRelationshipsAlertOp" value="levViews/IpRelationshipsAlertsModalView.xml" />
+
+				<!-- find fe -->
+				<operDef id="viewFEIPDetailsOp" value="levViews/FEIPView.xml" />				
+				<!-- end FEIP operations -->
+				
+				<operDef id="testExportFileCOP" value="FETemplateViews/TestFileExport.xml" />
+				
+				<operDef id="BoolenComboInitTestClientOp" value="FETemplateViews/TestBooleanCombo.xml" />		
+				
+				<!-- find NP by ID -->
+				<operDef id="initViewNPIPOp" value="levViews/NPIPView.xml" />				
+				<!-- end NPIP operations -->
+
+
+
+			</kColl>
+
+			<!-- ======================================== -->
+			<!-- Self defined processors definitions files -->
+			<!-- ======================================== -->
+			<!-- Possible values are: an absolute or relative path to this settings file, an HTTP addreess -->
+			<!-- or the keyword: fromJAR -->
+			<!-- See the online documentation for additional information -->
+			<kColl id="processors" />
+
+			<!-- ======================================== -->
+			<!-- Self defined views definitions files     -->
+			<!-- ======================================== -->
+			<!-- Possible values are: an absolute or relative path to this settings file, an HTTP addreess -->
+			<!-- or the keyword: fromJAR -->
+			<!-- See the online documentation for additional information -->
+			<kColl id="views">
+
+				<!-- PagingTestView -->
+				<viewDef id="PagingTestView" value="FETemplateViews/PagingTestView.xml" />
+				<!-- PagingTestView -->
+
+
+
+				<!-- WinflowServicesTiming -->
+				<viewDef id="WinflowServicesTimingView" value="FETemplateViews/WinflowServicesTiming.xml" />
+				<!-- WinflowServicesTiming -->
+
+
+
+				<!-- HrStaticTreeTest -->
+				<viewDef id="HrStaticTreeTestView" value="FETemplateViews/HrStaticTreeTestView.xml" />
+				<!-- HrStaticTreeTest -->
+
+				<!-- HrDynamicTreeTest -->
+				<viewDef id="HrDynamicTreeTestView" value="FETemplateViews/HrDynamicTreeTestView.xml" />
+				<!-- HrDynamicTreeTest -->
+
+				<!-- HrTableTest -->
+				<viewDef id="HrTableTestView" value="FETemplateViews/HrTableTestView.xml" />
+				<viewDef id="HrTableTestLinkEditingView" value="FETemplateViews/HrTableTestView.xml" />
+				<!-- HrTableTest -->
+
+				<viewDef id="receptionAndRegistrationView" value="FETemplateViews/ProcessContinuencyTest.xml" />
+				<viewDef id="stethoscopeView" value="FETemplateViews/ProcessContinuencyTest.xml" />
+				<viewDef id="treatmentView" value="FETemplateViews/ProcessContinuencyTest.xml" />
+
+				<viewDef id="MultiServerOperationView" value="FETemplateViews/MultiServerOperationTest.xml" />
+
+				<viewDef id="TestOperationOnBaseView" value="FETemplateViews/TestOperationOnModalView.xml" />
+				<viewDef id="TestOperationOnModalView" value="FETemplateViews/TestOperationOnModalView.xml" />
+
+
+				<viewDef id="testDateValidations" value="FETemplateViews/TestDateValidations.xml" />
+				<viewDef id="ViewExternalizerViewStandAlone" value="FETemplateViews/ViewExternalizerViewStandAlone.xml" />
+				<viewDef id="ViewExternalizerViewModal" value="FETemplateViews/ViewExternalizerViewModal.xml" />
+				<viewDef id="tableBETemplateView" value="FETemplateViews/tableBETemplateView.xml" />
+				<viewDef id="tableSecondBETemplateView" value="FETemplateViews/tableBETemplateView.xml" />
+				<viewDef id="TableBasicElementsSecondOperationView" value="FETemplateViews/tableBETemplateView.xml" />
+				<viewDef id="ComponenEnableLookAndFeal" value="FETemplateViews/ComponenEnableLookAndFeal.xml" />
+				<viewDef id="FormattedTextFieldsTestView" value="FETemplateViews/FormattedTextFieldsTest.xml" />
+				<viewDef id="I18NTestView" value="FETemplateViews/I18NTest.xml" />
+				<viewDef id="MultiValidationTestView" value="FETemplateViews/MultiValidationTest.xml" />
+				<viewDef id="BasicElementsLabelsView" value="FETemplateViews/BasicElementsLabelsView.xml" />
+				<viewDef id="TestWorkFlowComponentView" value="FETemplateViews/TestWorkFlowComponentView.xml" />
+				<viewDef id="TestLaunchWorkFlowComponentView" value="FETemplateViews/TestWorkFlowComponentView.xml" />
+
+				<viewDef id="treeTableTemplateView" value="FETemplateViews/treeTableTemplateView.xml" />
+				<viewDef id="treeTableTechnicalView" value="FETemplateViews/TreeTableTechnicalView.xml" />
+				<viewDef id="TreeTableTestLinkView" value="FETemplateViews/TreeTableTechnicalView.xml" />
+
+				<!--viewDef id="testComboFilteringView" value="FETemplateViews/TestComboFilteringView.xml" /-->
+				<viewDef id="testDependentComboView" value="FETemplateViews/TestDependentComboView.xml" />
+				<viewDef id="testEditableComboView" value="FETemplateViews/TestEditableComboView.xml" />
+				<viewDef id="sortableCombosView" value="FETemplateViews/SortableCombosView.xml" />
+				<viewDef id="testSecurityView" value="FETemplateViews/TestSecurityView.xml" />
+				<viewDef id="HrComboBoxTestView" value="FETemplateViews/TestComboxBoxView.xml" />
+				<viewDef id="HrListTablePanelTestView" value="FETemplateViews/TestListTablePanelView.xml" />
+				<viewDef id="HrOpenListTablePanelTestView" value="FETemplateViews/TestOpenListTableView.xml" />
+				<viewDef id="TestCancelRollbackFunctionality" value="FETemplateViews/TestCancelRollbackFunctionality.xml" />
+				<viewDef id="TestModalCancelRollbackFunctionality" value="FETemplateViews/TestCancelRollbackFunctionality.xml" />
+				<viewDef id="threeLevelModalViewTestBase" value="FETemplateViews/threeLevelModalViewTest.xml" />
+				<viewDef id="threeLevelModalViewTestOne" value="FETemplateViews/threeLevelModalViewTest.xml" />
+				<viewDef id="threeLevelModalViewTestTwo" value="FETemplateViews/threeLevelModalViewTest.xml" />
+				<viewDef id="showDocumentTestView" value="FETemplateViews/ShowDocumentTestView.xml" />
+				<viewDef id="testCreateCollateralView" value="FETemplateViews/TestCreateCollateralView.xml" />
+				<viewDef id="operationListenerView" value="FETemplateViews/operationListenerView.xml" />
+				<viewDef id="operationListenerTwoView" value="FETemplateViews/operationListenerView.xml" />
+				<viewDef id="testHrListHeaderView" value="FETemplateViews/TestHrListHeaderView.xml" />
+
+				<viewDef id="testTabsInternalNavigationFirstView" value="FETemplateViews/TestTabsInternalNavigationFirstView.xml" />
+				<viewDef id="testTabsInternalNavigationSecondView" value="FETemplateViews/TestTabsInternalNavigationSecondView.xml" />
+				<viewDef id="testTabsInternalNavigationThirdView" value="FETemplateViews/TestTabsInternalNavigationThirdView.xml" />
+
+				<viewDef id="testWizardInternalNavigationFirstView" value="FETemplateViews/TestWizardInternalNavigationFirstView.xml" />
+				<viewDef id="testWizardInternalNavigationSecondView" value="FETemplateViews/TestWizardInternalNavigationSecondView.xml" />
+				<viewDef id="testWizardInternalNavigationThirdView" value="FETemplateViews/TestWizardInternalNavigationThirdView.xml" />
+				<viewDef id="testWizardInternalNavigationFourthView" value="FETemplateViews/TestWizardInternalNavigationFourthView.xml" />
+
+				<viewDef id="tableRenderersView" value="FETemplateViews/TableRenderersView.xml" />
+
+				<viewDef id="SDITestViewOne" value="FETemplateViews/SDITestView.xml" />
+				<viewDef id="SDITestViewTwo" value="FETemplateViews/SDITestView.xml" />
+				<viewDef id="SDITestViewThree" value="FETemplateViews/SDITestView.xml" />
+
+				<viewDef id="limitedTextAreaTestView" value="FETemplateViews/LimitedTextAreaView.xml" />
+
+				<viewDef id="HrComboBoxTestMainframeView" value="FETemplateViews/TestComboxBoxMainframeView.xml" />
+				<viewDef id="dynamicApplicationBarView" value="FETemplateViews/dinamicAplicationBarView.xml" />
+				
+				<viewDef id="launchERProcessView" value="FETemplateViews/ProcessContinuencyTest.xml" />
+
+				<viewDef id="testStetoscopeFirstView" value="FETemplateViews/ProcessContinuencyTest.xml" />
+				<viewDef id="testStetoscopeSecondView" value="FETemplateViews/ProcessContinuencyTest.xml" />
+
+				<viewDef id="XIDTestView" value="FETemplateViews/XIDTestView.xml" />
+				
+				<viewDef id="BooleanComboTestView" value="FETemplateViews/TestBooleanCombo.xml" />		
+				
+				
+				<viewDef id="FileExportTestView" value="FETemplateViews/TestFileExport.xml" />
+
+				<!--   BUSINESS LOG VIEWS   -->
+				<viewDef id="QueryBusinessLogView" value="BusinessLogViews/QueryBusinessLogView.xml" />
+				<!--   BUSINESS LOG VIEWS   -->
+				
+				<!--   LEV VIEWS   -->
+				<viewDef id="DropDownLocationCoordinatorTest" value="levViews/LocationFrameworkTestView.xml" />
+				<!-- complex community -->
+				<viewDef id="ComplexCommunityDetailsView" value="levViews/ComplexCommunityView.xml" />
+				<viewDef id="ComplexCommunityUpdateDetailsView" value="levViews/ComplexCommunityView.xml" />
+				<viewDef id="ComplexCommunityUpdateDetailsModalView" value="levViews/ComplexCommunityView.xml" />
+				<viewDef id="ComplexCommunityInitAddIPDetailsView" value="levViews/ComplexCommunityView.xml" />
+				<viewDef id="ComplexCommunityInitUpdateFromWFOPDetailsView" value="levViews/ComplexCommunityView.xml" />
+				<viewDef id="ComplexCommunityReasonUpdateView" value="levViews/ComplexCommunityView.xml" />
+				<viewDef id="ComplexCommunityHandlingFunctionaryView" value="levViews/ComplexCommunityView.xml" />				
+				
+				<viewDef id="ComplexCommunitySpouseBorrowersView" value="levViews/ComplexCommunitySpouseBorrowersView.xml" />
+				
+				
+				<!-- end of complex community -->
+				
+				<viewDef id="QuickFindTestView" value="levViews/QuickFindTestView.xml" />
+
+				<!-- relationship views -->
+				<viewDef id="NPIPRelationshipsListView" value="levViews/IPRelationshipsView.xml" />
+				<viewDef id="NPIPRelationshipsListFromWFView" value="levViews/IPRelationshipsView.xml" />
+				<viewDef id="FEIPRelationshipsListFromWFView" value="levViews/IPRelationshipsView.xml" />
+				<viewDef id="FEIPRelationshipsListView" value="levViews/IPRelationshipsView.xml" />
+				<viewDef id="NPIPRelationshipDetailsView" value="levViews/IPRelationshipsView.xml" />
+				<viewDef id="FEIPRelationshipDetailsView" value="levViews/IPRelationshipsView.xml" />
+				<viewDef id="NPIPGuaranteeRelationshipDetailsView" value="levViews/IPRelationshipsView.xml" />
+				<viewDef id="FEIPGuaranteeRelationshipDetailsView" value="levViews/IPRelationshipsView.xml" />
+				<viewDef id="IPRelationshipAlertsModalView" value="levViews/IpRelationshipsAlertsModalView.xml" />
+
+				<!-- test -->
+				<viewDef id="NaturalPersonTestView" value="LevTestViews/NaturalPersonTestView.xml" />	
+				<!-- end test -->
+				
+				<!-- natural person -->				
+				<viewDef id="NPIPPersonalDetailsView" value="levViews/NPIPView.xml" />
+				<viewDef id="NPIPPersonalDetailsView4Relationship" value="levViews/NPIPView.xml" />
+				<viewDef id="NPIPPersonalDetailsView4HandlingFunctionary" value="levViews/NPIPView.xml" />				
+				<viewDef id="NPIPGeneralDetailsView" value="levViews/NPIPView.xml" />
+				<viewDef id="NPIPHandlingFunctionaryView" value="levViews/NPIPView.xml" />				
+				<viewDef id="NPIPUpdateHandlingFunctionaryView" value="levViews/NPIPView.xml" />				
+				<viewDef id="viewNPIP" value="levViews/NPIPView.xml" />	
+
+				
+				<!-- natural person passport popup view-->
+				<viewDef id="NPIPPassportView" value="levViews/NPIPView.xml" />
+				
+							
+
+				<!-- Inquire complex community views-->
+				<viewDef id="InquireCommunityView" value="levViews/InquireComplexCommunityView.xml" />
+				<viewDef id="InquireCommunityModalView" value="levViews/InquireComplexCommunityView.xml" />
+
+				<!--contextor views-->
+				
+				<!--viewDef id="ContextorTestView" value="LevTestViews/contextor.xml"-->	
+				<viewDef id="ContextorDummyView" value="levViews/ContextorDummyView.xml" />	
+				
+				<!-- end contextor views  -->
+				
+				<viewDef id="RecommendIPOnComplexCommunityView" value="levViews/RecommendIPOnComplexCommunityView.xml" />	
+				
+				
+				<!-- FE views -->
+				<viewDef id="viewFEIP" value="levViews/FEIPView.xml" />	
+				<viewDef id="FEIPGeneralDetailsView" value="levViews/FEIPView.xml" />	
+				<viewDef id="FEIPBusinessDetailsView" value="levViews/FEIPView.xml" />	
+				<viewDef id="FEIPPositionAndBusinessDetailsView" value="levViews/FEIPView.xml" />	
+				<viewDef id="FEIPInformationSourcesView" value="levViews/FEIPView.xml" />	
+				<viewDef id="FEIPInformationSourcesUpdateView" value="levViews/FEIPView.xml" />	
+				<viewDef id="FEIPGeneralDetailsView4Relationship" value="levViews/FEIPView.xml" />	
+				<viewDef id="FEIPHandlingFunctionaryView" value="levViews/FEIPView.xml" />				
+				<viewDef id="FEIPGeneralDetailsView4HandlingFunctionary" value="levViews/FEIPView.xml" />				
+
+				<viewDef id="FEIPUpdateHandlingFunctionaryView" value="levViews/FEIPView.xml" />				
+
+				<!-- End FE views -->
+
+			</kColl>
+		</kColl>
+
+		<!-- ========================================================= -->
+		<!-- Desktop classes not externalized in the desktop.xml file  -->
+		<!-- ========================================================= -->
+		<!-- If you want to replace TaskButton class or ExternalTaskButton class or the NavigationController class -->
+		<!-- by your own implementation replace the values in the collection -->
+		<!-- See the online documentation for additional information -->
+		<kColl id="desktop">
+			<field id="TaskButton" value="il.co.bll.hrmsh.infra.ui.btt.desktop.HrTaskButton" />
+			<field id="ExternalTaskButton" value="com.ibm.dse.desktop.ExternalTaskButton" />
+			<!--Changed to support real modal views and disabling the detenable and set visible - and support three level modals -->
+			<!--<field id="NavigationController" value="com.ibm.dse.desktop.DSENavigationController"/>-->
+			<field id="NavigationController" value="il.co.bll.hrmsh.infra.ui.btt.desktop.navigation.HRNavigationController" />
+		</kColl>
+
+		<kColl id="packages">
+
+			<!-- ================================================== -->
+			<!-- List of packages containing operations definitions	-->
+			<!-- ================================================== -->
+			<!-- List of packages where the operations externalizer look for the operation class -->
+			<!-- if it not included in the operations file -->
+			<kColl id="operations" />
+
+			<!-- ================================================== -->
+			<!-- List of packages containing processors definitions	-->
+			<!-- ================================================== -->
+			<!-- List of packages where the processors externalizer look for the processor class -->
+			<!-- if it not included in the processors file -->
+			<kColl id="processors" />
+
+			<!-- ================================================== -->
+			<!-- List of packages containing typed data definitions	-->
+			<!-- ================================================== -->
+			<kColl id="typedData">
+				<field id="package1" value="com.ibm.dse.base.types.ext" />
+				<field id="package2" value="com.ibm.dse.base.types" />
+			</kColl>
+		</kColl>
+
+		<!-- ======================================== -->
+		<!--  Collection for externalizer accessors   -->
+		<!-- ======================================== -->
+
+		<kColl id="externalizerAccessors">
+			<field id="processor" value="com.ibm.dse.automaton.ProcExternalizerAccessor" />
+			<field id="view" value="com.ibm.dse.gui.ViewExternalizerAccessor" />
+		</kColl>
+
+		
+		<!-- ======================================== -->
+		<!-- 	    Tag - Class relationship	      -->
+		<!-- ======================================== -->
+		<!-- These collections contains the relationship between tags names in the XML definition files -->
+		<!-- and the corresponding classes -->
+		<!-- If you want your own classes to be instantiated depending on the tag include here their -->
+		<!-- relationship -->
+		<!-- The attribute description with value compound especifies that the tag can include subtags -->
+		<kColl id="tags">
+
+			<!-- ======================================== -->
+			<!-- 			Data			-->
+			<!-- ======================================== -->
+
+			<kColl id="data">
+				<field id="field" value="com.ibm.dse.base.DataField" />
+				<field id="iColl" value="com.ibm.dse.base.IndexedCollection" description="compound" />
+				<field id="kColl" value="com.ibm.dse.base.KeyedCollection" description="compound" />
+				<field id="refData" />
+				<field id="sessionEntry" value="com.ibm.dse.base.SessionEntry" description="compound" />
+				<field id="sessionTable" value="com.ibm.dse.base.SessionTable" description="compound" />
+				<field id="viewerDefinition" value="com.ibm.dse.base.KeyedCollection" description="compound" />
+
+
+				<field id="MoneyAmount" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.MoneyAmountField" description="compound" />
+				<field id="SimpleNumber" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.SimpleNumberField" description="compound" />
+				<field id="NaturalNumber" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.NaturalNumberField" description="compound" />
+				<field id="SecurityAmount" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.SecurityAmountField" description="compound" />
+				<field id="Factor" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.FactorField" description="compound" />
+				<field id="Part" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.PartField" description="compound" />
+				<field id="DatePoint" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.DatePointField" description="compound" />
+				<field id="TimePoint" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.TimePointField" description="compound" />
+				<field id="TimePeriod" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.TimePeriodField" description="compound" />
+				<field id="TableCode" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.TableCodeField" description="compound" />
+				<field id="DataObjectType" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.DataObjectTypeField" description="compound" />
+				<field id="ObjectId" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.ObjectIdField" description="compound" />
+				<field id="SecuritySum" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.SecuritySumField" description="compound" />
+				<field id="TimedSecuritySum" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.TimedSecuritySumField" description="compound" />
+				<field id="MoneySum" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.MoneySumField" description="compound" />
+				<field id="TimedMoneySum" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.TimedMoneySumField" description="compound" />
+				<field id="SequenceId" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.SequenceIdField" description="compound" />
+				<field id="TimeOnly" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.TimeOnlyField" description="compound" />
+				<field id="Frequency" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.FrequencyField" description="compound" />
+				<field id="Boolean" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.BooleanField" description="compound" />
+				<field id="treeNodeKColl" value="il.co.bll.hrmsh.infra.ui.btt.data.tree.KeyedCollectionTreeNode" />
+				<field id="XID" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.XIDField" description="compound" />
+
+			</kColl>
+
+			<!-- ======================================== -->
+			<!-- 			Formats			-->
+			<!-- ======================================== -->
+
+			<kColl id="formats">
+				<field id="codeSetTrans" value="com.ibm.dse.base.CodeSetTranslator" />
+				<field id="compress" value="com.ibm.dse.base.Compressor" />
+				<field id="constant" value="com.ibm.dse.base.ConstantFormat" />
+				<field id="delim" value="com.ibm.dse.base.Delimiter" />
+				<field id="fDate" value="com.ibm.dse.base.DateFormat" />
+				<field id="fixedLength" value="com.ibm.dse.base.FixedLength" />
+				<field id="fNumString" value="com.ibm.dse.base.NumericStringFormat" />
+				<field id="fString" value="com.ibm.dse.base.StringFormat" />
+				<field id="hashtable" value="com.ibm.dse.base.HashtableFormat" description="compound" />
+				<field id="iCollF" value="com.ibm.dse.base.IndexedCollectionFormat" description="compound" />
+				<field id="id" value="com.ibm.dse.base.Identifier" />
+				<field id="map" value="com.ibm.dse.services.ldap.MapFormat" description="compound" />
+				<field id="mapper" value="com.ibm.dse.base.DataMapperFormat" description="compound" />
+				<field id="mapperConverter" value="com.ibm.dse.base.DataMapperConverterFormat" />
+				<field id="mapping" value="com.ibm.dse.services.ldap.Mapping" />
+				<field id="maxLength" value="com.ibm.dse.base.MaximumLength" />
+				<field id="nullCheck" value="com.ibm.dse.base.NullCheckDecorator" />
+				<field id="record" value="com.ibm.dse.base.RecordFormat" description="compound" />
+				<!--<field id="fInteger" value="com.ibm.dse.base.IntegerFormat"/>-->
+				<field id="fInteger" value="il.co.bll.hrmsh.infra.ui.formatters.IntegerFormat" />
+				<field id="refFmt" />
+				<field id="fBigDecimal" value="il.co.bll.hrmsh.infra.ui.formatters.BigDecimalFormat" />
+				<field id="fBoolean" value="il.co.bll.hrmsh.infra.ui.formatters.BooleanFormat" />
+				<field id="fLong" value="il.co.bll.hrmsh.infra.ui.formatters.LongFormat" />
+				<field id="fdXML" value="com.ibm.dse.base.DynamicXMLFormat" />
+				<field id="fXML" value="il.co.bll.hrmsh.infra.ui.formatters.xml.HRXMLFormat" />
+				<field id="fFloat" value="com.ibm.dse.base.FloatFormat" />
+
+
+				<field id="fDatePoint" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.DatePointFormat" description="compound" />
+				<field id="fTimePoint" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.TimePointFormat" description="compound" />
+				<field id="fTimePeriod" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.TimePeriodFormat" description="compound" />
+				<field id="fAbstractEnumeration" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.AbstractEnumerationFormat" description="compound" />
+				<field id="fBigDecimal" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.BigDecimalFormat" description="compound" />
+				<field id="fDataObjectType" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.DataObjectTypeFormat" description="compound" />
+				<field id="fEnumerationCode" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.EnumerationCodeFormat" description="compound" />
+				<field id="fFactor" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.FactorFormat" description="compound" />
+				<field id="fFrequency" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.FrequencyFormat" description="compound" />
+				<field id="fGeneralNumber" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.GeneralNumberFormat" description="compound" />
+				<field id="fLong" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.LongFormat" description="compound" />
+				<field id="fMoneySum" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.MoneySumFormat" description="compound" />
+				<field id="fSecuritySum" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.SecuritySumFormat" description="compound" />
+				<field id="fTimedMoneySum" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.TimedMoneySumFormat" description="compound" />
+				<field id="fTimedSecuritySum" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.TimedSecuritySumFormat" description="compound" />
+				<field id="fMoneyAmount" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.MoneyAmountFormat" description="compound" />
+				<field id="fNaturalNumber" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.NaturalNumberFormat" description="compound" />
+				<field id="fObjectId" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.ObjectIdFormat" description="compound" />
+				<field id="fPart" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.PartFormat" description="compound" />
+				<field id="fSecurityAmount" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.SecurityAmountFormat" description="compound" />
+				<field id="fSequenceId" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.SequenceIdFormat" description="compound" />
+				<field id="fSimpleNumber" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.SimpleNumberFormat" description="compound" />
+				<field id="fTableCode" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.TableCodeFormat" description="compound" />
+				<field id="fTimeOnly" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.TimeOnlyFormat" description="compound" />
+				<field id="fErrorSeverityEnumerated" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.ErrorSeverityEnumeratedFormat" description="compound" />
+
+				<field id="formatsContainer" value="il.co.bll.hrmsh.infra.ui.formatters.xml.FormatsContainer" />
+				<field id="fDXmlKColl" value="il.co.bll.hrmsh.infra.ui.formatters.xml.DynamicXMLKCollFormat" />
+				<field id="fHRDXml" value="il.co.bll.hrmsh.infra.ui.formatters.xml.HrDynamicXMLFormat" />
+
+				<field id="noKCollVal" value="il.co.bll.hrmsh.infra.ui.formatters.NoKeyedCollectionValueDecorator" />
+				<field id="emptyValue" value="il.co.bll.hrmsh.infra.ui.formatters.decorators.KeepEmptyDecorator" />
+				<field id="stringDelim" value="il.co.bll.hrmsh.infra.ui.formatters.decorators.StringDelimiter" />
+
+				<field id="fXID" value="il.co.bll.hrmsh.infra.btt.basicelements.fields.formatters.XIDFormat" description="compound" />
+
+			</kColl>
+
+			<!-- ======================================== -->
+			<!-- 		Contexts			-->
+			<!-- ======================================== -->
+			<kColl id="contexts">
+				<field id="context" value="com.ibm.dse.base.Context" description="compound" />
+				<field id="iniValue" />
+				<field id="refService" />
+			</kColl>
+
+			<!-- ======================================== -->
+			<!-- 		Services			-->
+			<!-- ======================================== -->
+
+			<kColl id="services">
+				<field id="CSClient" value="com.ibm.dse.cs.servlet.CSClient" />
+				<field id="CSServer" value="com.ibm.dse.cs.servlet.CSServer" />
+				<!--LEV - contextor service -->
+				<field id="ContextorClientService" value="il.co.bll.hrmsh.contextor.service.ContextorClientService" />
+				<!-- end contextor service  -->
+				
+			</kColl>
+
+			<!-- ======================================== -->
+			<!-- 		Operations                    -->
+			<!-- ======================================== -->
+
+			<kColl id="operations">
+				<field id="operation" value="il.co.bll.hrmsh.infra.ui.btt.operation.HrBaseClientOperationFlow" />
+				<field id="serverRefOpStep" value="il.co.bll.hrmsh.infra.ui.btt.operation.HrServerReferenceStep" />
+				<field id="futureDateValidationStep" value="il.co.bll.hrmsh.infra.ui.btt.operation.HrFutureDateValidation" />
+				<field id="opStep" />
+				<field id="refKColl" description="compound" />
+				<field id="refFormat" />
+				<field id="refOpSteps" />
+			</kColl>
+
+			<!-- ======================================== -->
+			<!-- 		Operation Steps		      -->
+			<!-- ======================================== -->
+
+			<kColl id="opSteps" />
+
+			<!-- ======================================== -->
+			<!-- 		Processors		      -->
+			<!-- ======================================== -->
+
+			<kColl id="processors" />
+
+			<!-- ======================================== -->
+			<!-- 			Views		      -->
+			<!-- ======================================== -->
+
+			<kColl id="views">
+				<field id="view" />
+			</kColl>
+
+			<!-- ======================================== -->
+			<!-- 			Types		      -->
+			<!-- ======================================== -->
+
+			<kColl id="types">
+				<field id="type" value="com.ibm.dse.base.types.DSEType" description="compound" />
+				<field id="stringConverter" />
+				<field id="dateConverter" />
+				<field id="dateValidator" />
+			</kColl>
+
+		</kColl>
+
+	</kColl>
+
+</dse.ini>

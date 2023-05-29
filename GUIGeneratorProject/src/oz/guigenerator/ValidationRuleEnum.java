@@ -1,0 +1,5 @@
+package oz.guigenerator;
+
+public enum ValidationRuleEnum {
+	NOT_NULL, NUMERIC, NUMERIC_IF_NOTNULL, FILE_EXISTS, FILE_EXISTS_IF_NOTNULL, FOLDER_EXISTS, FOLDER_EXISTS_IF_NOTNULL
+}

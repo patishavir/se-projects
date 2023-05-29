@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<topLevelContainer title="Run command on remote server" />
+	<pane title="Snifit production severs" />
+	<label value="Select servers to run command" foregroundcolor="Blue" />
+	<checkbox name="snifp-beta01" displayName="snifp-beta01 (10.10.100.32)"
+		defaultValue="no" />
+	<checkbox name="snifp-beta02" displayName="snifp-beta02 (10.10.100.132)"
+		defaultValue="no" />
+	<checkbox name="snifp-load01" displayName="snifp-load01 (10.10.100.33)"
+		defaultValue="no" />
+	<checkbox name="snifp-load02" displayName="snifp-load02 (10.10.100.133)"
+		defaultValue="no" />
+	<checkbox name="snifp-prod01" displayName="snifp-prod01 (10.10.100.31)"
+		defaultValue="no" />
+	<checkbox name="snifp-prod02" displayName="snifp-prod02 (10.10.100.131)"
+		defaultValue="no" />
+	<checkbox name="snifp-http01" displayName="snifp-http01 (10.10.100.30)"
+		defaultValue="no" />
+	<checkbox name="snifp-http02" displayName="snifp-http02 (10.10.100.130)"
+		defaultValue="no" />
+	<checkbox name="snifp-udb01" displayName="snifp-udb01 (10.10.100.34)"
+		defaultValue="no" />
+	<checkbox name="snifp-udb02" displayName="snifp-udb02 (10.10.100.134)"
+		defaultValue="no" />
+	<checkbox name="ALL_SERVERS_PROD" displayName="all prod servers" defaultValue="no" />
+	<checkbox name="ALL_WAS_SERVERS_PROD" displayName="all prod was servers" defaultValue="no" />
+
+	<pane title="Snifit Test servers" />
+	<label value="Select servers to run command" foregroundcolor="Blue" />
+	<checkbox name="snif-k" displayName="snif-k (10.18.191.144)"
+		defaultValue="no" />
+	<checkbox name="snif-q" displayName="snif-q (10.18.191.148)"
+		defaultValue="no" />
+	<checkbox name="snif-t" displayName="snif-t (10.18.191.147)"
+		defaultValue="no" />
+	<checkbox name="snif-v" displayName="snif-v (10.18.191.146)"
+		defaultValue="no" />
+	<checkbox name="snif-http" displayName="snif-http (10.18.191.143)"
+		defaultValue="no" />
+	<checkbox name="snif-udb" displayName="snif-udb (10.18.191.152)"
+		defaultValue="no" />
+	<checkbox name="suswastest" displayName="suswastest (10.18.191.153)"
+		defaultValue="no" />
+
+	<checkbox name="ALL_SERVERS_TEST" displayName="all test servers" defaultValue="no" />
+	<checkbox name="ALL_WAS_SERVERS_TEST" displayName="all test was servers"  defaultValue="no" />
+	<pane title="Intranet 8.5" />
+	<label value="Select servers to run command" foregroundcolor="Blue" />
+	<checkbox name="supintra-was1" displayName="supintra-was1 (10.10.100.28)"
+		defaultValue="no" />
+	<checkbox name="supintra-was2" displayName="supintra-was2 (10.10.100.149)"
+		defaultValue="no" />
+	<checkbox name="supintra-was3" displayName="supintra-was3 (10.10.100.188)"
+		defaultValue="no" />
+	<checkbox name="supintra-was4" displayName="supintra-was4 (10.10.100.164)"
+		defaultValue="no" />
+	<checkbox name="intramgmt" displayName="INTRAMGMT (10.10.100.55)"
+		defaultValue="no" />
+	<pane title="Intranet" />
+	<label value="Select servers to run command" foregroundcolor="Blue" />
+	<checkbox name="s5380503" displayName="s5380503 (10.18.188.115)"
+		defaultValue="no" />
+	<checkbox name="s603ix00" displayName="s603ix00 (10.18.188.205)"
+		defaultValue="no" />
+	<checkbox name="s603iy00" displayName="s603iy00 (10.18.188.42)"
+		defaultValue="no" />
+	<checkbox name="s603mr00" displayName="S603MR00 (10.10.100.20)"
+		defaultValue="no" />
+	<checkbox name="s603mp00" displayName="S603MP00 (10.10.100.52)"
+		defaultValue="no" />
+	<jpanel />
+	<combobox name="COMMAND"
+		values="
+-------------------- enter command --------------------#
+"
+		editAble="yes" />
+	<submitButton value="Run command" />
+</params>

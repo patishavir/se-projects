@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters GUI="yes" sourceDir="f:\jdirTest\docs1" 
+destinationDir="f:\temp" show="different"  loggingLevel="FINER"
+fileComparisonCriteria="Size and message digest" enableCC="yes" operation="rebaseprep"/>
+</InputParametersSet>
+
+
+

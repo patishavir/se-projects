@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters GUI="nes" sourceDirectory="d:\oj\CCviews\OzProj01_Fix\sources\ozComp01\folder1" 
+destinationDirectory="d:\oj\CCviews\OzProj01_ChildFix\sources\ozComp01\folder1" 
+show="different" operation="rebaseprep" enableCC="yes" loggingLevel="INFO"
+xloggingHandlerClass="java.util.logging.FileHandler" />
+</InputParametersSet>
+
+
+

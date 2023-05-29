@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<kColl id="settings">
+<!--  Comment -->
+	<secodLevel>22222222222222
+		<thirdLevel kakun="babun" > 33333333  </thirdLevel>
+	</secodLevel>
+	<InputParameters XMLOperation="displayXMLElementValue"
+		XMLFilePath="c:\\temp\xxx.xml"
+		XMLElementHierarchy="XMLUtilOperations#XMLUtilOperation"
+		delimiter="#" />
+<!-- Closing comment -->
+</kColl>
+</InputParametersSet>

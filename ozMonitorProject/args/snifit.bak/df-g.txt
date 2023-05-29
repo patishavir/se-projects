@@ -1,0 +1,14 @@
+Filesystem    GB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4           0.75      0.70    7%     4419     3% /
+/dev/hd2           4.25      0.92   79%    76552    26% /usr
+/dev/hd9var        1.00      0.82   19%     4645     3% /var
+/dev/hd3           1.00      0.99    1%       43     1% /tmp
+/dev/hd1           0.25      0.25    1%       15     1% /home
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt       1.00      0.55   45%     7651     6% /opt
+/dev/fslv00        5.00      0.21   96%     1650     4% /Install
+/dev/fslv01        0.50      0.50    1%        4     1% /Log
+/dev/fslv02        7.00      0.90   88%    31367    13% /software
+/dev/fslv03        0.50      0.46    8%       77     1% /logs
+/dev/fslv04        3.00      3.00    1%        4     1% /nd61
+snifpprod01:/snifit     15.00      1.12   93%    20228     8% /snifit

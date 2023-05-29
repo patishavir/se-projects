@@ -1,0 +1,22 @@
+
+------------------------------------------------------------------------
+name = ifs
+stats_type = LS
+table_type = STATS
+dlc_type = ETHERNET
+ls_st_mus_sent = 2679
+ls_st_mus_received = 9757
+ls_st_bytes_sent = 1073409
+ls_st_bytes_received = 10572925
+ls_st_test_cmds_sent = 0
+ls_st_test_cmds_rec = 0
+ls_st_data_pkt_resent = 0
+ls_st_inv_pkt_rec = 0
+ls_st_adp_rec_err = 0
+ls_st_adp_send_err = 0
+ls_st_rec_inact_to = 0
+ls_st_cmd_polls_sent = 798
+ls_st_cmd_repolls_sent = 0
+ls_st_cmd_cont_repolls = 0
+
+------------------------------------------------------------------------

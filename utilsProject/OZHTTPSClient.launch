@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ozutilsProject/src/oz/utils/io/OZHTTPSClient.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.io.OZHTTPSClient"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="https://sysu.bll/hermesh11-logs/bll_external_system_idm.log  UTXET06 6Y7U8I \\hrcc\Scripts\jars\bll.jks  123456 c:\temp\1.log"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ozutilsProject"/>
+</launchConfiguration>

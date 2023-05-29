@@ -1,0 +1,8 @@
+
+http://snif-http.fibi.corp/MatafServer_K_Z5/SmServlet?type=1
+http://snif-http.fibi.corp/MatafServer_K_Z5/SmServlet?type=2
+http://snif-http.fibi.corp/MatafServer_K_Z5/SmServlet?type=3
+http://snif-http.fibi.corp/MatafServer_K_Z5/SmServlet?type=4
+http://snif-http.fibi.corp/MatafServer_K_Z5/SmServlet?type=5
+http://snif-http.fibi.corp/MatafServer_K_Z5/SmServlet?type=6
+http://snif-http.fibi.corp/MatafServer_K_Z5/SmServlet?type=7

@@ -1,0 +1,7 @@
+#JpcapDumper
+#Tue Apr 05 16:22:32 IDT 2011
+WinX=-4
+TableView=IPv4\:Source IP,IPv4\:Destination IP,Packet Information\:Captured Time,Packet Information\:Captured Length,IPv4\:Length
+WinHeight=780
+WinWidth=1036
+WinY=-4

@@ -1,0 +1,43 @@
+if [[ ! -d  %targetFolderPath%  ]] ; then
+	mkdir -p 	%targetFolderPath% 
+fi
+
+if [[ ! -d  $(dirname %remoteBackupFilePath%)  ]] ; then
+	 mkdir -p 	$(dirname %remoteBackupFilePath%) 
+fi
+
+cd  %targetFolderPath% 
+
+if [[ -d  %sourceFolderPath%  ]] ; then
+	cd  %sourceFolderPath%
+	/usr/bin/find . -type f > %findFile%  
+	while IFS= read -r partialPath 
+	do
+		echo "$partialPath"
+	done <"%findFile%"
+fi
+
+cd %targetFolderPath% 
+/usr/bin/cat %findFile% | /usr/bin/xargs zip -q %remoteBackupFilePath% 
+echo folder  %targetFolderPath% 	has been backed up to %remoteBackupFilePath% 
+
+/usr/bin/cp -pr %sourceFolderPath%/* %targetFolderPath%
+/usr/bin/echo copy of   %sourceFolderPath%/*  to %targetFolderPath% has completed
+
+cd %sourceFolderPath%
+/usr/bin/echo +++++++++++++++++++++++++ source files from %sourceFolderPath% on $(hostname) +++++++++++++++++++++++++
+/usr/bin/cat %findFile% | /usr/bin/xargs ls -l  | tee %sourceDiffFile%
+/usr/bin/echo +++++++++++++++++++++++++ target files from %targetFolderPath% on $(hostname) +++++++++++++++++++++++++
+
+cd %targetFolderPath%
+/usr/bin/cat %findFile% | /usr/bin/xargs ls -l | tee %targetDiffFile% 
+/usr/bin/echo +++++++++++++++++++++++++ end of source and target file list on $(hostname) +++++++++++++++++++++++++ 
+/usr/bin/echo
+
+/usr/bin/diff %sourceDiffFile% %targetDiffFile%
+
+if [ $? -eq 0 ]; then
+	echo !!!!!!!!!!!!!!!!!!!!!!!!! %folder% source and target files are equal on $(hostname) !!!!!!!!!!!!!!!!!!!!!!!!!
+else
+	echo \?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\? %folder% source and target files are not equal on $(hostname) \?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?\?
+fi

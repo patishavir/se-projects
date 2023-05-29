@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+<topLevelContainer title="Import into table"  />
+<label value="Select input file" foregroundcolor="Magenta" />
+<textfield name="importFilePath" displayName="File path:" defaultValue="c:\temp" size="13" browseButton="yes" FileSelectionMode="FILES_ONLY"/>
+<submitButton value="Select file"/> 
+</params>

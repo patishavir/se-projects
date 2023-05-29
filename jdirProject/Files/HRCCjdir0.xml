@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters GUI="yes" sourceDir="C:\temp\bag" 
+destinationDir="C:\CCViews\tempProject_Dev\tempVOB\tempCompC\HRRnDC" show="all" operation="mirror" enableCC="yes" loggingLevel="INFO"/>
+</InputParametersSet>
+
+
+

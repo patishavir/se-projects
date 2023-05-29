@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+	<!-- <InputParameters folder="C:\\temp\\cleanupTest\\04052016" recursive="yes" 
+		actuallyDelete="yes" deleteIfFileLengthGreaterThan="25" filesOrFolders="FILES" 
+		/> <InputParameters folder="C:\\temp\\cleanupTest\\04052016" recursive="no" 
+		namePattern="[0-6][0-7]" actuallyDelete="yes" filesOrFolders="FOLDERS" /> 
+		<InputParameters folder="C:\\temp\\cleanupTest\\04052016" recursive="yes" 
+		namePattern="[0-6][0-7]" actuallyDelete="no" filesOrFolders="FILES" /> <InputParameters 
+		folder="C:\\temp\\cleanupTest\\04052016" recursive="yes" namePattern="[0-6][0-7].*" 
+		actuallyDelete="no" filesOrFolders="FILES" /> <InputParameters folder="C:\\temp\\cleanupTest\\04052016" 
+		recursive="yes" namePattern="[0-6][0-7].*" actuallyDelete="no" depth="1" 
+		filesOrFolders="FILES" /> <InputParameters folder="C:\\temp\\cleanupTest\\" 
+		recursive="yes" namePattern="[0-6][0-7].*" actuallyDelete="no" depth="1" 
+		filesOrFolders="FILES" /> <InputParameters folder="C:\\temp\\cleanupTest\\" 
+		recursive="yes" namePattern="[0-6][0-7].*" actuallyDelete="no" depth="2" 
+		filesOrFolders="FILES" /> <InputParameters folder="C:\\temp\\cleanupTest\\" 
+		recursive="yes" namePattern="[0-6][0-7].*" deleteIfAgeinDaysIsGreaterThan="28" 
+		actuallyDelete="no" depth="2" filesOrFolders="FILES" /> <InputParameters 
+		folder="C:\\temp\\cleanupTest\\" recursive="yes" namePattern="^(0[1-9]|[12][0-9]|3[01])(0[1-9]|1[012])(19|20)\d\d$" 
+		actuallyDelete="no" depth="2" filesOrFolders="FOLDERS" /> <InputParameters 
+		folder="C:\\temp\\cleanupTest\\" namePattern="^(0[1-9]|[12][0-9]|3[01])(0[1-9]|1[012])(19|20)\d\d$" 
+		recursive="no" deleteIfAgeinDaysIsGreaterThan="18" filesOrFolders="FOLDERS" 
+		actuallyDelete="no"/> <InputParameters folder="\\\\s5380315\\d$\\Actimize\\backup\\Logs_backup" 
+		namePattern="^(0[1-9]|[12][0-9]|3[01])(0[1-9]|1[012])(19|20)\d\d$" recursive="no" 
+		deleteIfAgeinDaysIsGreaterThan="180" filesOrFolders="FOLDERS" actuallyDelete="yes" 
+		/> -->
+	<InputParameters folder="\\\\s5380315\\d$\\PerfLogs\\"
+		namePattern="^S5380315_(19|20)\d\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])\-\d{6}$"
+		recursive="no" deleteIfAgeinDaysIsGreaterThan="100" filesOrFolders="FOLDERS"
+		actuallyDelete="yes" />
+</InputParametersSet>

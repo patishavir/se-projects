@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters GUI="yes" sourceDir="D:\oj\CCviews\OzProj01_Dev\sources\ozComp01\folder1" 
+destinationDir="D:\oj\CCviews\OzProj01_Dev\sources\ozComp01\folder2" 
+show="different" operation="rebaseprep" enableCC="yes" loggingLevel="INFO"
+xloggingHandlerClass="java.util.logging.FileHandler" />
+</InputParametersSet>
+
+
+

@@ -1,0 +1,6 @@
+cd %productVersionFolder%
+if [[ -d  %remoteVersionFolder2ProcessPath% ]] ; then
+	mv %remoteVersionFolder2ProcessPath% %backupFolderPath%
+fi
+unzip %remoteZipFilePath%
+if [[ $? -ne 0 ]] ; then echo unzip %remoteZipFilePath% to %productVersionFolder% has failed ; fi

@@ -1,0 +1,16 @@
+﻿--G.w.
+-- EyalP change the discriptions in DNST_NIHUL_REFERANT_EFSHARUYOT table - 5.28.9
+UPDATE DNST_NIHUL_REFERANT_EFSHARUYOT SET DN_PEULA_TEUR='הוספת צוות / רפרנט חדש' WHERE DN_PEULA_KOD='1';
+UPDATE DNST_NIHUL_REFERANT_EFSHARUYOT SET DN_PEULA_TEUR='ביטול צוות / רפרנט' WHERE DN_PEULA_KOD='3';
+COMMIT;
+
+
+-- ArielT 
+-- Please add here yours SQL lines for release number 5.28.09:
+
+INSERT INTO HLST_KOD_PERAON (HL_CODE_SGIRA_PERAON, HL_SGIRA_PERAON_TEUR) VALUES ('1', 'ביטול תשלומים ראשונים');
+COMMIT;
+
+
+UPDATE mataf.BTT_VERSION_SUPPORT SET  VERSION = '5.28.09' WHERE VERSION = '5.28.08';
+COMMIT;

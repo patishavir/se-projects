@@ -1,0 +1,13 @@
+environment=Oz test
+log4jconfigFilePath=log4j.properties
+alertsFoldersPaths=alerts
+# monitorsFoldersPaths=monitors/debug/failure
+monitorsFoldersPaths=monitors/p8
+# defaultAlerts=alertLog,sms,gmemail
+defaultAlerts=alertLog
+heartBeatRateInSeconds=7200
+heartBeatDestinations=gmemail
+# sendHeartBeatMessageAt=0829,0830,0831,0900,0911,0922,0933,0941,1213
+defaultStartTimeHHMM=0500
+defaultEndTimeHHMM=2200
+logFilePath=

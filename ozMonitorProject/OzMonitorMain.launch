@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ozMonitorProject/src/oz/monitor/OzMonitorMain.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="logFilePath" value="c:\temp\logenv.lll"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.monitor.OzMonitorMain"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=".\args\main\ozMonitor.properties&#13;&#10;.\args\kyc\ozMonitor.properties&#13;&#10;O:\Scripts\java\ozMonitor\monitor\main\ozMonitor_S5380440.properties"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ozMonitorProject"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dhostname=bonbonyuki -DlogsRoot=c:\\temp -DapplicationRoot=./args -Dlog4jLogsRoot=c:/temp"/>
+</launchConfiguration>

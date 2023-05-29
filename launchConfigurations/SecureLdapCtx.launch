@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/tempProject/src/oz/temp/ldap/SecureLdapCtx.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.temp.ldap.SecureLdapCtx"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="s177571 ujik78 fibi.corp  fibi.corp c:/oj/security/trust.jks WebAS"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="tempProject"/>
+</launchConfiguration>

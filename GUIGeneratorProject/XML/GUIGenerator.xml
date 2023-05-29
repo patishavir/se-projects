@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+<pane title="first pane"/>
+<log level="fine"/>
+<variable key="ccviewsroot" value="c:\ccviews\bl8"/>
+<variable key="setparams1" value="\\hrfs\userinfo\oded\zzz.nnn"/>
+<variable key="contextorServer" value="ntas102570T08"/>
+<variable key="installdir" value="\\wksu102570A40\install"/>
+<variable key="googleURL" value="www.google.com" />
+<runCommandDelimiter value="_"/>
+<label value="Set parameters for My test batch file!%installdir%" foregroundcolor="Magenta" />
+<topLevelContainer title="Set parameters for My test batch file!   %installdir%???"  />
+<textfield name="yourDate" dateFormat="dd-MMM-yyyy" defaultValue="03-Mar-2008" dateButton="yes" validationRule="NOT_NULL"/>
+<textfield name="param1" defaultValue="paramValue1ooooooohhhhhhf123456 88"/>
+<textfield name="param2" defaultValue="f:\temp\bankjava" browseButton="yes" FileSelectionMode="FILES_AND_DIRECTORIES"/>
+<textfield name="param3" defaultValue="googleURL" helpText="baba kaka lala 123456789" />
+<textfield name="param4" defaultValue="paramValue1%contextorServer%%ccviewsroot%"/>
+<textfield name="dirsOnly" defaultValue="%setparams1%" browseButton="yes" FileSelectionMode="DIRECTORIES_ONLY"/>
+<textfield name="filesOnly" defaultValue="%setparams1%" browseButton="yes" FileSelectionMode="FILES_ONLY"/>
+<textfield name="FilesAndDirs" defaultValue="%paramValue2%" browseButton="yes" FileSelectionMode="FILES_AND_DIRECTORIES"/>
+<textfield name="param6" defaultValue="123" size="24" validationRule="NUMERIC"/>
+<textfield name="param11" defaultValue="r%USERNAME%%COMPUTERNAME%"/>
+<textfield name="param22" defaultValue="notepad_C:\temp\crtrace.log" runButton="yes"/>
+
+<textfield name="param33" defaultValue="paramValue3"  />
+<textfield name="param44" defaultValue="paramValue1" toolTipText="my tool tip" />
+<textfield name="param55" defaultValue="googleURL" runButton="yes" validationRule="NOT_NULL"/>
+<textfield name="myDate"  dateButton="yes"/>
+
+<textfield name="param66" defaultValue="paramValue3"  />
+<textfield name="param67" defaultValue="paramValue3"  />
+
+<pane title="buba" />
+<radioButton name="version" selected="no"  group="element-version-branch" toolTipText="version Add suffix to view tag to enable users to create more than one view per stream and different workstations"/> 
+<radioButton name="element" selected="yes" group="element-version-branch" toolTipText="element Add suffix to view tag to enable users to create more than one view per stream and different workstations"/> 
+<radioButton name="branch" selected="no" group="element-version-branch" toolTipText="branch Add suffix to view tag to enable users to create more than one view per stream and different workstations"/> 
+<radioButton name="bunch" selected="no" group="element-version-branch" toolTipText="bunch Add suffix to view tag to enable users to create more than one view per stream and different workstations"/> 
+<radioButtonGroup name="element-version-branch" rows="3" toolTipText="group Add suffix to view tag to enable users to create more than one view per stream and different workstations"/>
+<textfield name="paramxxxyyy" defaultValue="paramValue3 99999999555" />
+<textfield name="param1234567890" />
+<radioButton name="zvl" displayName="zvl display"  selected="no"  group="zefet" toolTipText="version Add suffix to view tag to enable users to create more than one view per stream and different workstations"/> 
+<radioButton name="none" selected="yes" group="zefet" toolTipText="element Add suffix to view tag to enable users to create more than one view per stream and different workstations"/> 
+<radioButton name="bull" selected="no" group="zefet" toolTipText="branch Add suffix to view tag to enable users to create more than one view per stream and different workstations"/> 
+<radioButton name="crap" selected="no" group="zefet" toolTipText="bunch Add suffix to view tag to enable users to create more than one view per stream and different workstations"/> 
+<radioButtonGroup name="zefet" displayName="zefet Display name" rows="2" toolTipText="group Add suffix to view tag to enable users to create more than one view per stream and different workstations"/>
+
+<textfield name="p" defaultValue="000i"/>
+<checkbox name="addViewTagSuffix" displayName="displayNamesuffix" defaultValue="yes" toolTipText="Add suffix to view tag to enable users to create more than one view per stream and different workstations" helpText="Help, I need somebody, Help"/>
+<combobox name="listname" delimiter="#" values="list value 1#list value 3#list value 5#list value 2#LIST VALUE 4" editAble="no" sort="ascending" helpText="BonBon baba kaka lala 123456789" />
+<combobox name="listname1" displayName="DN listname1"  values="list value 2,list value 4,list value 5,????????" defaultValue="%COMPUTERGIFT%" editAble="yeS" toolTipText="ComboBox!"/>
+<!-- combobox name="pVOB"  populationParameters="oz.infra.clearcase.ClearCaseInfo#getPVOBs" /-->
+<!-- combobox name="component"  populationParameters="oz.infra.clearcase.ClearCaseInfo#getComponentsInPVOB#\projects" /-->
+<password name="myDefPassword" defaultValue="defpass" />
+<password name="myPassword" toolTipText="Secert password !!!" defaultValue="987" validationRule="NUMERIC"/>
+<pane title="link" />
+<textarea name="Tdids" defaultValue="1,2,3" delimiter="," wdith="120" height="150" toolTipText="Add tdids ..." validationRule="NOT_NULL"/> 
+<link name="Click_for_help" displayName="babu ??? !!!"  text="bonbon" url="\\hrcc\HRDocs\Technology-Infrastructure\operationInstructions\multipleTDidsQuery.pps" toolTipText="Click on link" helpText="Link help text for %USERNAME%"/>
+<jpanel />
+<button value="Help %USERNAME%" message="God help , Please!"/>
+<submitButton value="submit from %COMPUTERNAME%" message="My message from %USERNAME%?!"/> 
+</params>

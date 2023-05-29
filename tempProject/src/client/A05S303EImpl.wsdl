@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://a05s303e" xmlns:impl="http://a05s303e" xmlns:intf="http://a05s303e" xmlns:tns2="http://data.a05s303e" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsi="http://ws-i.org/profiles/basic/1.1/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <wsdl:types>
+  <schema targetNamespace="http://data.a05s303e" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <complexType name="A05C303DSADOT">
+    <sequence>
+     <element name="recordName" nillable="true" type="xsd:string"/>
+     <element name="recordShortDescription" nillable="true" type="xsd:string"/>
+     <element name="bytes" type="xsd:base64Binary"/>
+     <element name="a05c303d__kod__pnia" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__kod__nose" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__kod__zero" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__linkage__cics" nillable="true" type="xsd:string"/>
+     <element name="fill__0" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__k__bank" type="xsd:short"/>
+     <element name="a05c303d__k__snif" type="xsd:short"/>
+     <element name="a05c303d__k__mch" type="xsd:int"/>
+     <element name="a05c303d__r__sch__x" type="xsd:short"/>
+     <element name="a05c303d__r__mch__x" type="xsd:int"/>
+     <element name="a05c303d__k__mat" type="xsd:short"/>
+     <element name="fill__1" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__p__matzav__bank" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__p__matzav__snif" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__p__matzav__mch" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__p__check" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__p__ifun__sch" nillable="true" type="xsd:string"/>
+     <element name="a05c303d__p__sifrat__bikoret" type="xsd:short"/>
+     <element name="a05c303d__p__error" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema targetNamespace="http://a05s303e" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns2="http://data.a05s303e" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://data.a05s303e"/>
+   <element name="runResponse">
+    <complexType>
+     <sequence>
+      <element name="runReturn" nillable="true" type="tns2:A05C303DSADOT"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="run">
+    <complexType>
+     <sequence>
+      <element name="arg" nillable="true" type="tns2:A05C303DSADOT"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="runResponse">
+     <wsdl:part element="impl:runResponse" name="parameters"/>
+
+  </wsdl:message>
+
+   <wsdl:message name="runRequest">
+     <wsdl:part element="impl:run" name="parameters"/>
+
+  </wsdl:message>
+
+   <wsdl:portType name="A05S303EImpl">
+     <wsdl:operation name="run">
+       <wsdl:input message="impl:runRequest" name="runRequest"/>
+
+       <wsdl:output message="impl:runResponse" name="runResponse"/>
+
+    </wsdl:operation>
+
+  </wsdl:portType>
+
+   <wsdl:binding name="A05S303EImplSoapBinding" type="impl:A05S303EImpl">
+ <wsaw:UsingAddressing wsdl:required="false" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+
+     <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+     <wsdl:operation name="run">
+       <wsdlsoap:operation soapAction=""/>
+
+       <wsdl:input name="runRequest">
+         <wsdlsoap:body use="literal"/>
+
+      </wsdl:input>
+
+       <wsdl:output name="runResponse">
+         <wsdlsoap:body use="literal"/>
+
+      </wsdl:output>
+
+    </wsdl:operation>
+
+  </wsdl:binding>
+
+   <wsdl:service name="A05S303EImplService">
+     <wsdl:port binding="impl:A05S303EImplSoapBinding" name="A05S303EImpl">
+       <!-- wsdlsoap:address location="http://localhost:9080/CtgServicesWeb/services/A05S303EImpl"/-->
+       <wsdlsoap:address location="http://10.18.188.115:9083/CtgServicesCICST/services/A05S303EImpl"/>
+
+    </wsdl:port>
+
+  </wsdl:service>
+
+</wsdl:definitions>

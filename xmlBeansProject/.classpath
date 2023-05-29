@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/InfraStructureProject"/>
+	<classpathentry kind="lib" path="schemajar/schema0.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/excelProject"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/JarContainer/xmlbeans/2.5/xbean.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

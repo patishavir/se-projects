@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters GUI="yes" sourceDirectory="C:\CCViews\tempProject_Dev\tempVOB\tempCompC\Office Docs" 
+destinationDirectory="C:\CCViews\tempProject_FixT24\tempVOB\tempCompC\Office Docs" show="all" operation="mirror" enableCC="yes" loggingLevel="INFO"/>
+</InputParametersSet>
+
+
+

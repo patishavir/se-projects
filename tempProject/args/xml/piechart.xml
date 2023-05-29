@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<chart>
+	<chart renderTo="pieContainer" defaultSeriesType="pie" zoomType="xy"
+		plotBackgroundColor="null" plotBorderWidth="null" plotShadow="false"></chart>
+	<legend id="legendNode">
+		<align>center</align>
+		<backgroundColor>null</backgroundColor>
+		<borderColor>#909090</borderColor>
+		<borderRadius>25</borderRadius>
+	</legend>
+</chart>

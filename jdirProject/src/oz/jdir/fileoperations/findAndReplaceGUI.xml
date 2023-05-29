@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<topLevelContainer title="String search and replace" />
+	<param name="string2Find" size="12" />
+	<param name="replaceWithString" size="12" />
+	<combobox name="suffixFilter"  values=".java,.txt,.bat, " editAble="y"/>		                
+	<submitButton value="set Parameters" />	
+</params>
+
+

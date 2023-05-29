@@ -1,0 +1,2 @@
+java -agentpath:"C:\Program Files\dynaTrace\dynaTrace 3.2\agent\lib\dtagent.dll“=name=localhost,server=xp8400
+java -agentpath:"C:\Progra~1\dynaTrace\dynaTrace 3.2\agent\lib\dtagent.dll"=name=localhost,server=xp8400

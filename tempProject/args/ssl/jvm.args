@@ -1,0 +1,7 @@
+-Djavax.net.debug=ssl
+-Djavax.net.ssl.keyStoreType=pkcs12
+-Djavax.net.ssl.keyStore=client.p12
+-Djavax.net.ssl.keyStorePassword=whatever
+-Djavax.net.ssl.trustStoreType=jks
+-Djavax.net.ssl.trustStore=client-truststore.jks
+-Djavax.net.ssl.trustStorePassword=whatever

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/utilsProject/src/oz/utils/daylightsaving/DaylightSavingUtils.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.utils.daylightsaving.DaylightSavingUtils"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="2015.03.11_02.03.04 2015.03.26_02.03.04 2015.03.27_02.03.04 2015.03.28_02.03.04  2015.10.24_02.03.04 2015.10.24_23.24.25   2015.10.25_00.01.02  2015.10.25_01.02.03 2015.10.25_02.03.04 2015.10.26_14.15.16"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="utilsProject"/>
+</launchConfiguration>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration packages="mataf.log4j2plugins" status="warn">
+	<Properties>
+		<Property name="location">${jndiurlpath:log4j}</Property>
+		<Property name="server">${hostName}</Property>
+		<Property name="application">${web:servletContextName}</Property>
+		<Property name="version">${web:attr.Version}</Property>
+	</Properties>
+	<Appenders>
+		<RollingRandomAccessFile name="ROLLING_FILE_WARN" fileName="${location}log4j_server_warn.log" filePattern="${location}log4j_server_warn.log.%i">
+			<ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout>
+				<Pattern>[%date][${server}][${application}][${version}][%level][%X{station}][%X{username}][%X{transaction}][%X{operation}]-%message %X{addinfo}%throwable%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="5 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="2" />
+		</RollingRandomAccessFile>
+		<RollingRandomAccessFile name="ROLLING_FILE_BEETLE_BUTTON" fileName="${location}log4j_server_beetle.log" filePattern="${location}log4j_server_beetle.log.%i">
+			<ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout>
+				<Pattern>[%date][${server}][${application}][${version}][%level][%X{station}][%X{username}][%X{transaction}][%X{operation}]-%message %X{addinfo}%throwable%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="5 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="50" />
+		</RollingRandomAccessFile>
+		<RollingRandomAccessFile name="ROLLING_FILE_LOGSTASH" fileName="${location}log4j_server_logstash.log" filePattern="${location}log4j_server_logstash.log.%i">
+ 			<DynamicThresholdFilter key="logger" onMatch="ACCEPT" onMismatch="DENY">
+    			<KeyValuePair key="SERVER" value="WARN" />
+    			<KeyValuePair key="INFRA" value="INFO" />
+  			</DynamicThresholdFilter>			
+			<PatternLayout>
+				<!-- Pattern>&lt;EVENT&gt;&lt;SRC&gt;%X{logger}&lt;/SRC&gt;&lt;DTS&gt;%d{yyyy-MM-dd HH:mm:ss.SSS}&lt;/DTS&gt;&lt;LVL&gt;%level&lt;/LVL&gt;&lt;APP&gt;${application}&lt;/APP&gt;&lt;THR&gt;%thread&lt;/THR&gt;&lt;BRN&gt;%X{branch}&lt;/BRN&gt;&lt;WKS&gt;%X{station}&lt;/WKS&gt;&lt;SRV&gt;${server}&lt;/SRV&gt;&lt;USR&gt;%X{username}&lt;/USR&gt;&lt;LOC&gt;%X{source}&lt;/LOC&gt;&lt;VER&gt;${version}&lt;/VER&gt;&lt;TRN&gt;%X{transaction}&lt;/TRN&gt;&lt;OPR&gt;%X{operation}&lt;/OPR&gt;&lt;MSG&gt;%xmlenc{%message}&lt;/MSG&gt;&lt;ADD&gt;%xmlenc{%X{addinfo}}&lt;/ADD&gt;&lt;EXC&gt;%xmlenc{%throwable}&lt;/EXC&gt;&lt;/EVENT&gt;%n%throwable{none}</Pattern-->
+				<Pattern>&lt;EVENT&gt;&lt;SRC&gt;SERVER&lt;/SRC&gt;&lt;DTS&gt;%d{yyyy-MM-dd HH:mm:ss.SSS}&lt;/DTS&gt;&lt;LVL&gt;%level&lt;/LVL&gt;&lt;APP&gt;${application}&lt;/APP&gt;&lt;THR&gt;%thread&lt;/THR&gt;&lt;BRN&gt;%X{branch}&lt;/BRN&gt;&lt;WKS&gt;%X{station}&lt;/WKS&gt;&lt;SRV&gt;${server}&lt;/SRV&gt;&lt;USR&gt;%X{username}&lt;/USR&gt;&lt;LOC&gt;%X{source}&lt;/LOC&gt;&lt;VER&gt;${version}&lt;/VER&gt;&lt;TRN&gt;%X{transaction}&lt;/TRN&gt;&lt;OPR&gt;%X{operation}&lt;/OPR&gt;&lt;MSG&gt;%xmlenc{%message}&lt;/MSG&gt;&lt;ADD&gt;%xmlenc{%X{addinfo}}&lt;/ADD&gt;&lt;EXC&gt;%xmlenc{%throwable}&lt;/EXC&gt;&lt;/EVENT&gt;%n%throwable{none}</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="5 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="2" />
+		</RollingRandomAccessFile>
+		<JMSX name="GM" destinationBindingName="java:comp/env/gm" factoryBindingName="java:comp/env/gmcf" factoryName="com.ibm.websphere.naming.WsnInitialContextFactory" providerURL="iiop://localhost:2809">
+			<ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout>
+				<Pattern>%date{yyyyMMdd HH:mm:ss} BTT LVL=[%level]SRV=[${server}]APP=[${application}]VER=[${version}]SRC=[%X{source}]WKS=[%X{station}]USR=[%X{username}]TRN=[%X{transaction}]OPR=[%X{operation}]MSG=[%message]ADD=[%X{addinfo}]EXC=[%throwable]%n</Pattern>
+			</PatternLayout>
+		</JMSX>
+		<Console name="CONSOLE" target="SYSTEM_OUT">
+			<PatternLayout>
+				<Pattern>[%date][${server}][${application}][${version}][%level][%X{station}][%X{username}][%X{transaction}][%X{operation}]-%message %X{addinfo}%throwable%n</Pattern>
+			</PatternLayout>
+		</Console>
+		<Null name="NULL" />
+		<Routing name="CONSOLE_OR_NULL">
+			<Script name="CONSOLE_OR_NULL_INIT" language="JavaScript"><![CDATA[
+	        	importPackage(java.lang);
+	        	System.getProperty("os.name").search("Windows") > -1 ? "ServiceWindows" : "ServiceOther";]]>
+			</Script>
+			<Routes>
+				<Route key="ServiceOther" ref="NULL" />
+				<Route key="ServiceWindows" ref="CONSOLE" />
+			</Routes>
+		</Routing>
+	</Appenders>
+	<Loggers>
+		<Logger name="MAIN" level="${select:${sys:RAD:-N}?Y:DEBUG;*:WARN;}" additivity="false">
+ 			<AppenderRef ref="ROLLING_FILE_WARN" />
+			<AppenderRef ref="ROLLING_FILE_LOGSTASH" />
+			<AppenderRef ref="CONSOLE_OR_NULL" />
+			<AppenderRef ref="GM" />
+		</Logger>
+		<Logger name="DEBUG" level="TRACE" additivity="false">
+			<AppenderRef ref="ROLLING_FILE_BEETLE_BUTTON" />
+		</Logger>
+		<Logger name="INFRA" level="INFO" additivity="false">
+			<AppenderRef ref="ROLLING_FILE_LOGSTASH" />
+			<AppenderRef ref="CONSOLE_OR_NULL" />
+		</Logger>
+		<Root />
+	</Loggers>
+</Configuration>

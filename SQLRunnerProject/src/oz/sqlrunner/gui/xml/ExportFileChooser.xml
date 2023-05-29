@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+<topLevelContainer title="Export table"  />
+<label value="Select target folder" foregroundcolor="Magenta" />
+<textfield name="exportFolderPath" displayName="Folder path:" defaultValue="c:\temp" size="13" browseButton="yes" FileSelectionMode="DIRECTORIES_ONLY"/>
+<submitButton value="Select folder"/> 
+</params>

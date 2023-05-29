@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/xmlBeansProject"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="oz.xmlbeans.SimpleJaxp"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="C:\oj\projects\XMLProject\files\performace\perfservlet.xml C:\oj\projects\XMLProject\files\performace\WebApplications.xsl&#13;&#10;c:\oj\projects\XMLProject\xml\message\message.xml c:\oj\projects\XMLProject\xml\message\message.xsl"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="xmlBeansProject"/>
+</launchConfiguration>

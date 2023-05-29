@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project name="Jpcap" default="jar">
+	<property name="version" value="0.3"/>
+	
+    <target name="jar" depends="compile">
+        <jar
+             jarfile="JpcapDumper-${version}.jar"
+             basedir="bin"
+        	manifest="JpcapDumper.MF"
+        />
+    </target>
+
+    <target name="compile">
+        <javac
+        	srcdir="src"
+      		destdir="bin"
+       />
+    </target>
+	
+	<target name="source zip">
+		<zip
+			destfile="JpcapDumper-${version}-src.zip"
+			basedir="."
+			excludes="**/.* **/*.zip bin/** **/*.jar"
+		/>
+	</target>
+</project>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/JarContainer/commons/email/1.2/commons-email-1.2.jar"/>
+	<classpathentry kind="lib" path="/JarContainer/mail/1.44/mail.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/InfraStructureProject"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FibiInfraStructure"/>
+	<classpathentry kind="lib" path="/JarContainer/jpathwatch/0.95/jpathwatch-0-95.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

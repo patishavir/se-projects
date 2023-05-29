@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+	<InputParameters GUI="yes"
+		sourceDir="M:\HRCommonComp_Dev_Oz\HRVob14\HRCommonCompC\CommonCompComm"
+		destinationDir="M:\HRCommonComp_FixT24_bad_Oz\HRVob14\HRCommonCompC\CommonCompComm"
+		show="diff" operation="RebasePrep" enableCC="yes" loggingLevel="INFO" />
+</InputParametersSet>
+
+
+

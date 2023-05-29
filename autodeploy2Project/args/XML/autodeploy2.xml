@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+<label value="Deploy Ear File" foregroundcolor="Magenta" />
+<topLevelContainer title="Deploy Ear File" />
+<combobox name="earFilePath" displayName="Ear file path" values="O:\Scripts\java\autoDeploy2\test\snifit\DBTest.ear,O:\Scripts\java\autoDeploy2\test\snifit\MatafEAR_T_OZ.ear" editAble="yes" />
+<submitButton value="Submit"/> 
+</params>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<topLevelContainer title="Connect to database" />
+	<label value="Enter user name and password to connect" foregroundcolor="BLUE"/>
+	<textfield name="username" displayName="User name" SIZE="10" />
+	<password name="password" displayName="Password" SIZE="10" />
+	<combobox name="database"  displayName="Database" values="DATABASE1,DATABASE2" editAble="no" sort="ascending" helpText="Select database" />
+	<checkbox name="savepassword" displayName="Save password ?" defaultValue="yes" toolTipText="Select checkbox to save password for future use"/>
+	<submitButton value="Connect" />	
+</params>
+
+

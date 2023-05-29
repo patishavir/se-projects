@@ -1,0 +1,178 @@
+18:58:54 INFO oz.utils.websphere.autodeploy.snifit.FolderWatcherFileProcessor processFile:  
+============================================ processing C:\oj\TEMP\AutoDeploy\T_OZ\MatafEAR.ear ============================================
+18:58:54 INFO oz.utils.websphere.autodeploy.snifit.FolderWatcherFileProcessor processValidFile:  target ear file: C:\oj\TEMP\AutoDeployWorkFolder\inProgress\MatafEAR_T_OZ.2015.09.10_18.58.54.ear
+18:58:54 INFO oz.infra.thread.ThreadUtils sleep:  oz.utils.websphere.autodeploy.snifit.FolderWatcherFileProcessor processValidFile Start sleeping for 1000 milli seconds
+18:58:55 INFO oz.utils.websphere.autodeploy.snifit.FolderWatcherFileProcessor processValidFile:  C:\oj\TEMP\AutoDeploy\T_OZ\MatafEAR.ear has been move to C:\oj\TEMP\AutoDeployWorkFolder\inProgress\MatafEAR_T_OZ.2015.09.10_18.58.54.ear
+18:58:55 INFO oz.utils.websphere.autodeploy.snifit.AutoDeployFileProcessor processEarFile:  Start processing C:\oj\TEMP\AutoDeployWorkFolder\inProgress\MatafEAR_T_OZ.2015.09.10_18.58.54.ear ... Suffix: T_OZ
+18:58:55 INFO oz.infra.properties.PropertiesUtils printProperties:  oz.utils.websphere.autodeploy.snifit.AutoDeployUtils sendMail
+nodes2Sync = S603FB00Node03,S5380369Node03
+virtualHost = default_host
+targerCell = S5380369Cell04
+mailFrom = Zimerman.O@fibi.corp,Oded Z
+mailTo = Zimerman.O@fibi.co.il,צימרמן עודד;
+applicationNameSuffix = T_OZ
+generalClientDefinesUrl = http://snif-http:82/MatafServer_T_OZ/generalClientDefines.properties
+restartCluster = ClusterOZ
+
+18:58:55 INFO oz.infra.properties.PropertiesUtils printProperties:  oz.utils.websphere.autodeploy.snifit.AutoDeployUtils sendMail
+debug = no
+hostname = mail.fibi.co.il
+attachmentPath = 
+to = s177571@fibi.corp,Oded Zimerman
+from = s177571@fibi.corp,Oded Zimerman
+
+18:58:56 WARNING oz.infra.email.EmailUtils sendHtmlEmail:  Sending the email to the following server failed : mail.fibi.co.il:25
+18:59:15 INFO oz.utils.websphere.autodeploy.snifit.AutoDeployFileProcessor runPrepare4Deploy:  
+returnCode: 0
+stderr:
+
+
+18:59:15 INFO oz.utils.websphere.autodeploy.snifit.AutoDeployFileProcessor runPrepare4Deploy:  Prepare for deploy has completed ... earFilePath: C:\oj\TEMP\AutoDeployWorkFolder\inProgress\MatafEAR_T_OZ.2015.09.10_18.58.54.ear applicationNameSuffix: T_OZ preparedEarFilePath: C:\oj\TEMP\AutoDeployWorkFolder\inProgress\MatafEAR_T_OZ.2015.09.10_18.58.54_T_OZ.ear
+18:59:15 INFO oz.utils.websphere.autodeploy.snifit.AutoDeployFileProcessor processEarFile:  earFilePath: C:\oj\TEMP\AutoDeployWorkFolder\inProgress\MatafEAR_T_OZ.2015.09.10_18.58.54.ear applicationNameSuffix: T_OZ  preparedEarFilePath: C:\oj\TEMP\AutoDeployWorkFolder\inProgress\MatafEAR_T_OZ.2015.09.10_18.58.54_T_OZ.ear
+18:59:15 INFO oz.utils.websphere.autodeploy.snifit.AutoDeployFileProcessor runRemoteWsadmin:  applicationName: MatafEAR_T_OZ preparedEarFilePath: C:\oj\TEMP\AutoDeployWorkFolder\inProgress\MatafEAR_T_OZ.2015.09.10_18.58.54_T_OZ.ear
+18:59:15 INFO oz.utils.websphere.autodeploy.snifit.AutoDeployFileProcessor buildJythonScript:  jython script:
+import time
+from time import gmtime, localtime, strftime
+print strftime("%d/%m/%Y %H:%M:%S ", localtime())
+
+print "Starting wsadmin script ..."
+targetCell=AdminControl.getCell()
+updateParams= '[  -operation update -contents /snifit/autoDeploy/snifit/MatafEAR_T_OZ.2015.09.10_18.58.54_T_OZ.ear  -nopreCompileJSPs -installed.ear.destination $(APP_INSTALL_ROOT)/' + targetCell + ' -distributeApp -nouseMetaDataFromBinary -nodeployejb -createMBeansForResources -noreloadEnabled -nodeployws -validateinstall warn -processEmbeddedConfig  -filepermission .*\.dll=755#.*\.so=755#.*\.a=755#.*\.sl=755 -noallowDispatchRemoteInclude  -noallowServiceRemoteInclude -MapWebModToVH [[ MatafServer MatafServer.war,WEB-INF/web.xml default_host ][ BTTRuntimeMonitor BTTRuntimeMonitor.war,WEB-INF/web.xml default_host ]] -MapRolesToUsers [[ snifituser AppDeploymentOption.No AppDeploymentOption.Yes "" "" AppDeploymentOption.No "" "" ]]]'
+# print 'updateParams: ' + updateParams
+AdminApp.update('MatafEAR_T_OZ', 'app', updateParams)
+print strftime("%d/%m/%Y %H:%M:%S ", localtime()) + "Update has completed ..."
+AdminConfig.save()
+print strftime("%d/%m/%Y %H:%M:%S ", localtime()) + "Save has completed ..."
+
+for node in [ 'S603FB00Node03' , 'S5380369Node03'] :	
+	SyncName = AdminControl.completeObjectName('type=NodeSync,node=' + node +',*')
+	print SyncName
+	SyncResult = AdminControl.invoke(SyncName, 'sync')
+	print strftime("%d/%m/%Y %H:%M:%S ", localtime()) + "Sync has completed ... " + SyncName + " sync result: " + SyncResult
+	time.sleep(5)
+
+cluster = AdminControl.completeObjectName('type=Cluster,name=ClusterOZ,*')
+print 'cluster: ' + cluster
+
+AdminControl.invoke(cluster, 'rippleStart')
+print strftime("%d/%m/%Y %H:%M:%S ", localtime()) + "rippleStart has completed ... " + cluster
+
+loopCount = 20
+sleepInterval = 12
+i = 0
+while i < loopCount :
+        i+=1
+        time.sleep(sleepInterval)
+        clusterState=AdminControl.getAttribute(cluster, 'state')
+        print str(i) +  ' clusterState: ' + clusterState
+        if clusterState == 'websphere.cluster.running':
+                break
+                
+loopCount = 20
+sleepInterval = 12
+i = 0
+while i < loopCount :
+        i+=1
+        time.sleep(sleepInterval)
+        appReady = AdminApp.isAppReady('MatafEAR_T_OZ')
+        print str(i) +  ' appReady: ' + appReady
+        if appReady == 'true':
+                break                
+18:59:15 INFO oz.infra.io.FileUtils writeFile:  C:\oj\projects\se\autodeployProject\.\args\autoDeploy\dev\..\scripts\adminAppUpdate_MatafEAR_T_OZ_2015.09.10_18.59.15.py has been successfully written. Size: 2428
+18:59:16 INFO oz.infra.ssh.scp.ScpUtils scp:  scp operation has completed in 1311
+18:59:17 INFO oz.infra.ssh.scp.ScpUtils scp:  scp operation has completed in 1343
+18:59:17 INFO oz.infra.ssh.SshUtils runRemoteCommand:  Start remote command. server:snif-q:22 user: root command: /snifit/scripts/was/wsadmin/autoDeploy/runWsadmin85.sh	/snifit/autoDeploy/snifit/adminAppUpdate_MatafEAR_T_OZ_2015.09.10_18.59.15.py
+19:05:03 INFO oz.utils.websphere.autodeploy.snifit.AutoDeployFileProcessor processWsadminResponse:  
+returnCode: 0
+stdout:
+WASX7209I: Connected to process "dmgr" on node S5380369CellManager03 using SOAP connector;  The type of process is: DeploymentManager
+10/09/2015 18:59:30
+Starting wsadmin script ...
+ADMA5017I: Uninstallation of MatafEAR_T_OZ started.
+ADMA5104I: The server index entry for WebSphere:cell=S5380369Cell04,node=S603FB00Node03+WebSphere:cell=S5380369Cell04,node=snif-httpNode04+WebSphere:cell=S5380369Cell04,node=S5380369Node03+WebSphere:cell=S5380369Cell04,node=snif-httpNode85 is updated successfully.
+ADMA5102I: The configuration data for MatafEAR_T_OZ from the configuration repository is deleted successfully.
+ADMA5011I: The cleanup of the temp directory for application MatafEAR_T_OZ is complete.
+ADMA5106I: Application MatafEAR_T_OZ uninstalled successfully.
+ADMA5016I: Installation of MatafEAR_T_OZ started.
+ADMA0115W: Resource assignment of name mamadim and type java.net.URL, with JNDI name url/mamadim is not found within scope of module MatafServer with URI MatafServer.war,WEB-INF/web.xml deployed to target WebSphere:cell=S5380369Cell04,cluster=ClusterOZ.
+ADMA5068I: The resource validation for application MatafEAR_T_OZ completed successfully, but warnings occurred during validation.
+ADMA5058I: Application and module versions are validated with versions of deployment targets.
+ADMA5005I: The application MatafEAR_T_OZ is configured in the WebSphere Application Server repository.
+ADMA5005I: The application MatafEAR_T_OZ is configured in the WebSphere Application Server repository.
+ADMA5081I: The bootstrap address for client module is configured in the WebSphere Application Server repository.
+ADMA5053I: The library references for the installed optional package are created.
+ADMA5005I: The application MatafEAR_T_OZ is configured in the WebSphere Application Server repository.
+ADMA5001I: The application binaries are saved in /nd85/IBM/WebSphere/AppServer/profiles/Dmgr01/wstemp/Script14fb7fb9bfa/workspace/cells/S5380369Cell04/applications/MatafEAR_T_OZ.ear/MatafEAR_T_OZ.ear
+ADMA5005I: The application MatafEAR_T_OZ is configured in the WebSphere Application Server repository.
+SECJ0400I: Successfully updated the application MatafEAR_T_OZ with the appContextIDForSecurity information.
+ADMA5005I: The application MatafEAR_T_OZ is configured in the WebSphere Application Server repository.
+ADMA5005I: The application MatafEAR_T_OZ is configured in the WebSphere Application Server repository.
+ADMA5113I: Activation plan created successfully.
+ADMA5011I: The cleanup of the temp directory for application MatafEAR_T_OZ is complete.
+ADMA5013I: Application MatafEAR_T_OZ installed successfully.
+10/09/2015 19:00:16 Update has completed ...
+10/09/2015 19:00:26 Save has completed ...
+WebSphere:name=nodeSync,process=nodeagent,platform=common,node=S603FB00Node03,diagnosticProvider=true,version=7.0.0.37,type=NodeSync,mbeanIdentifier=nodeSync,cell=S5380369Cell04,spec=1.0
+10/09/2015 19:00:34 Sync has completed ... WebSphere:name=nodeSync,process=nodeagent,platform=common,node=S603FB00Node03,diagnosticProvider=true,version=7.0.0.37,type=NodeSync,mbeanIdentifier=nodeSync,cell=S5380369Cell04,spec=1.0 sync result: true
+WebSphere:name=nodeSync,process=nodeagent,platform=common,node=S5380369Node03,diagnosticProvider=true,version=7.0.0.37,type=NodeSync,mbeanIdentifier=nodeSync,cell=S5380369Cell04,spec=1.0
+10/09/2015 19:00:45 Sync has completed ... WebSphere:name=nodeSync,process=nodeagent,platform=common,node=S5380369Node03,diagnosticProvider=true,version=7.0.0.37,type=NodeSync,mbeanIdentifier=nodeSync,cell=S5380369Cell04,spec=1.0 sync result: true
+cluster: WebSphere:name=ClusterOZ,process=dmgr,platform=common,node=S5380369CellManager03,version=8.5.5.6,type=Cluster,mbeanIdentifier=ClusterOZ,cell=S5380369Cell04,spec=1.0
+10/09/2015 19:00:50 rippleStart has completed ... WebSphere:name=ClusterOZ,process=dmgr,platform=common,node=S5380369CellManager03,version=8.5.5.6,type=Cluster,mbeanIdentifier=ClusterOZ,cell=S5380369Cell04,spec=1.0
+1 clusterState: websphere.cluster.starting
+2 clusterState: websphere.cluster.starting
+3 clusterState: websphere.cluster.partial.start
+4 clusterState: websphere.cluster.partial.start
+5 clusterState: websphere.cluster.partial.start
+6 clusterState: websphere.cluster.partial.start
+7 clusterState: websphere.cluster.partial.start
+8 clusterState: websphere.cluster.partial.start
+9 clusterState: websphere.cluster.partial.start
+10 clusterState: websphere.cluster.partial.start
+11 clusterState: websphere.cluster.partial.start
+12 clusterState: websphere.cluster.partial.start
+13 clusterState: websphere.cluster.partial.start
+14 clusterState: websphere.cluster.partial.start
+15 clusterState: websphere.cluster.partial.start
+16 clusterState: websphere.cluster.partial.start
+17 clusterState: websphere.cluster.partial.start
+18 clusterState: websphere.cluster.partial.start
+19 clusterState: websphere.cluster.partial.start
+20 clusterState: websphere.cluster.partial.start
+ADMA5071I: Distribution status check started for application MatafEAR_T_OZ.
+WebSphere:cell=S5380369Cell04,node=snif-httpNode85,distribution=true,expansion=notprocessing
+WebSphere:cell=S5380369Cell04,node=S5380369Node03,distribution=true,expansion=notprocessing
+WebSphere:cell=S5380369Cell04,node=snif-httpNode04,distribution=unknown,expansion=unknown
+WebSphere:cell=S5380369Cell04,node=S603FB00Node03,distribution=true,expansion=notprocessing
+ADMA5011I: The cleanup of the temp directory for application MatafEAR_T_OZ is complete.
+ADMA5072I: Distribution status check completed for application MatafEAR_T_OZ.
+1 appReady: true
+
+stderr:
+null
+
+19:05:03 INFO oz.infra.datetime.StopWatch getElapsedTime:  10/09/2015 processWsadminResponse has completed in  348491 milliseconds.
+19:05:03 INFO oz.infra.properties.PropertiesUtils printProperties:  oz.utils.websphere.autodeploy.snifit.AutoDeployUtils sendMail
+returnCode = 0
+preparedEarFilePath = /snifit/autoDeploy/snifit/MatafEAR_T_OZ.2015.09.10_18.58.54_T_OZ.ear
+mailTo = Zimerman.O@fibi.co.il,צימרמן עודד;
+restartCluster = ClusterOZ
+targerCell = S5380369Cell04
+generalClientDefinesUrl = http://snif-http:82/MatafServer_T_OZ/generalClientDefines.properties
+applicationName = MatafEAR_T_OZ
+applicationNameSuffix = T_OZ
+virtualHost = default_host
+node2 = S5380369Node03
+mailFrom = Zimerman.O@fibi.corp,Oded Z
+node1 = S603FB00Node03
+nodes2Sync = S603FB00Node03,S5380369Node03
+
+19:05:03 INFO oz.infra.properties.PropertiesUtils printProperties:  oz.utils.websphere.autodeploy.snifit.AutoDeployUtils sendMail
+debug = no
+hostname = mail.fibi.co.il
+attachmentPath = 
+to = s177571@fibi.corp,Oded Zimerman
+from = s177571@fibi.corp,Oded Zimerman
+
+19:05:03 WARNING oz.infra.email.EmailUtils sendHtmlEmail:  Sending the email to the following server failed : mail.fibi.co.il:25
+19:05:03 INFO oz.infra.io.filesystem.watch.FileSystemWatcher writeWatchMessage:  
+========================================== wait for event ENTRY_CREATE on C:\oj\TEMP\AutoDeploy\ ==========================================

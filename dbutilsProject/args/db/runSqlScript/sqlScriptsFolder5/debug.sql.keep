@@ -1,0 +1,17 @@
+-- ALTER TABLE "MATAF"."NEST_TOFES" ADD COLUMN NE_TOFES_AMLA_NAME_FF VARCHAR(6);
+REORG TABLE NEST_TOFES;
+
+-- *** Start File: "C:\ClearCaseViews\Snifit_BTT710_dev\App\NiarotErechServer\DBChanges\DB_SaritL - dbchanges for niyarotErech - for 5.35.01.sql"
+/*
+/* 
+ALTER TABLE "MATAF"."NEST_TOFES" ADD COLUMN NE_TOFES_NAME_FF_UU VARCHAR(6);
+ALTER TABLE "MATAF"."NEST_TOFES" ADD COLUMN NE_TOFES_AMLA_NAME_FF_OO VARCHAR(6);
+*/
+REORG TABLE NEST_TOFES;
+/*
+ * 
+ */
+*/
+
+
+;

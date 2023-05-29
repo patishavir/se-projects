@@ -1,0 +1,1 @@
+Select * from %SCHEMA%.GLST_SEX

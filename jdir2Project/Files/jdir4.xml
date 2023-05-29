@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InputParametersSet>
+<InputParameters GUI="yes" sourceDirectory="c:\temp\t2" 
+destinationDirectory="c:\temp\t1" show="all" operation="Sync" loggingLevel="FINE"/>
+</InputParametersSet>
+
+
+
