@@ -1,2 +1,8 @@
 # Compiled class file
 *.class
+# gwt jar files
+gwt*.jar
+# ignore jar files
+*.jar
+# ignore log files
+*.log
